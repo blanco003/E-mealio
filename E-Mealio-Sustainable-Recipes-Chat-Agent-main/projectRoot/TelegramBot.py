@@ -1,0 +1,293 @@
+import logging
+import os
+import ChatbotController as cc
+import Constants as con
+import dto.User as user
+import service.domain.UserDataService as us
+from telegram.constants import ChatAction
+from telegram import *
+from telegram.ext import *
+from dotenv import load_dotenv, find_dotenv
+from functools import wraps
+import service.domain.FoodHistoryService as foodHistory
+from apscheduler.schedulers.background import BackgroundScheduler
+from datetime import datetime, timedelta
+import service.asyncr.ComputeMonthlyUserTasteService as cmu
+import asyncio
+
+
+load_dotenv(find_dotenv())
+
+token = os.getenv("TELEGRAM_BOT_TOKEN")
+"""Token del bot telegram."""
+
+
+logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
+logger = logging.getLogger(__name__)
+"""Logger per tenere traccia delle attività del bot."""
+
+
+userData = ''
+"""
+L'oggetto user_data  definito all'interno del contesto del bot telegram (context: ContextTypes.DEFAULT_TYPE), 
+viene usato per monitorare il flusso conversazionale e i dati utente, e contiene le seguenti informazioni:
+
+- userData: contiene i dati utente come definiti nella classe DTO. L'oggetto viene recuperato dal database all'inizio di una conversazione
+oppure viene creato durante la prima interazione e quindi archiviato. Questi dati vengono passati avanti e indietro al controller e utilizzati da quest'ultimo quando necessario.
+- action: contiene il token successivo che rappresenta l'azione che deve essere invocata. Questo valore viene restituito dal controller dell'agente.
+- memory: per alcune funzionalità, è abilitata la possibilità di tenere traccia di una parte della conversazione.
+- info: simile alla memoria, questo campo archivia le informazioni utilizzate dal controller per fornire al livello LLM i dettagli estratti
+- callbackMessage: se popolato dall'agente controller, questo campo contiene un messaggio utente fittizio che viene immediatamente ritrasmesso al controller. Ciò consente di 
+generare due risposte in determinati casi, ad esempio quando un'interazione si sta chiudendo e l'hub deve essere nuovamente presentato.
+"""
+
+
+userMessage = ''
+MULTIPLE_MESSAGES = True
+
+#chatbot states
+INTERACTION = range(1)
+"""Stato responsabile della gestione della conversazione continua tra l'utente e l'agente."""
+
+
+MENU_BUTTON = [
+        [InlineKeyboardButton("🍽️ Recipe Recommendation", callback_data="Recipe Recommendation")],
+        [InlineKeyboardButton("🛠️ Recipe Improvement", callback_data="Recipe Improvement")],
+        [InlineKeyboardButton("🌱 Sustainability Expert", callback_data="Sustainability Expert")],  
+        [InlineKeyboardButton("👤 User Profile Recap and Update", callback_data="User Profile Recap and Update")],
+        [InlineKeyboardButton("📊 Food Diary Recap", callback_data="Food Diary Recap")],
+        [InlineKeyboardButton("🥘 Food Diary", callback_data="Food Diary")],
+        ]
+"""Menu con bottoni delle funzionalità del bot."""
+
+
+
+
+def update_context(context: ContextTypes.DEFAULT_TYPE, response):
+    """ Aggiorna lo stato corrente dell'utente in base alla risposta ricevuta dal modello."""
+    context.user_data['action'] = response.action
+    context.user_data['memory'] = response.memory
+    context.user_data['info'] = response.info
+    context.user_data['callbackMessage'] = response.modifiedPrompt
+    return context
+
+
+def send_action(action):
+    def decorator(func):
+        @wraps(func)
+        async def command_func(update, context, *args, **kwargs):
+            await context.bot.send_chat_action(chat_id=update.effective_message.chat_id, action=action)
+            return await func(update, context,  *args, **kwargs)
+        return command_func
+    
+    return decorator
+
+
+@send_action(ChatAction.TYPING)
+async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    """L'utente ha iniziato la conversazione inviando il comando /start."""
+
+    # estraimo l'utente che ha inviato il comando interagendo con il bot
+    telegramUser = update.message.from_user
+
+    # e salviamo le informazioni nel contesto corrente
+    context.user_data['info'] = ''
+    context.user_data['userData'] =  us.getUserData(telegramUser['id']) # recupera dal db l'utente con dato id
+
+    # se l'utente non è presente nel db, iniziamo una conversazione "get data" per ricavare le sue informazioni
+    if(context.user_data['userData'] == None):
+
+        # creiamo un nuovo utente
+        context.user_data['userData'] = user.User(telegramUser['username'],telegramUser['id'],None,None,None,None,None,None,None,None,None,None,None,None,None)
+        
+        # l'utente ha inviato il comando /start ed è prima volta che interagisce con il chatbot,
+        # per questo come messaggio da inviare al chatbot usiamo USER_FIRST_MEETING_PHRASE = "Hi! It's the first time we met."
+        # con TASK_0_HOOK che indica di chiedere all'utente i dati personali.
+        response = cc.answer_question(context.user_data['userData'], con.USER_FIRST_MEETING_PHRASE,con.TASK_0_HOOK,None,"")
+        
+        # print("Invio messaggio all'utente : \n",response.answer)
+        
+        await context.bot.sendMessage(chat_id=update.message.chat_id, text=response.answer)
+        context = update_context(context,response)
+
+    else:
+
+        # l'utente ha inviato il comando /start ma ha già interagito precedentemente con il chatbot, 
+        # per questo come messaggio da inviare al chatbot usiamo USER_GREETINGS_PHRASE = "Hi!"
+        # con TASK_1_HOOK che indica il messaggio di benvenuto.
+        response = cc.answer_router(context.user_data['userData'],con.USER_GREETINGS_PHRASE,con.TASK_1_HOOK,"",None)
+        foodHistory.clean_temporary_declined_suggestions(context.user_data['userData'].id)
+
+        # print("Invio messaggio all'utente : \n",response.answer)
+ 
+        tastiera_markup = InlineKeyboardMarkup(MENU_BUTTON)
+        
+        #await context.bot.sendMessage(chat_id=update.message.chat_id, text=response.answer)
+        await update.message.reply_text(response.answer, reply_markup=tastiera_markup)
+        context = update_context(context,response)
+     
+
+    return INTERACTION
+
+
+
+@send_action(ChatAction.TYPING)
+async def interaction(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    """L'utente ha interagito con il bot (dopo l'inizio della conversazione), premendo un bottone o scrivendo un messaggio."""
+    #print("\n\n===================================================================================")
+    #print("context.user_data['callbackMessage'] : ", context.user_data['callbackMessage'])
+    #print("update.message.text : ", update.message.text)
+
+    userMessage = context.user_data['callbackMessage'] if len(context.user_data['callbackMessage']) > 0 else update.message.text
+    context.user_data['callbackMessage'] = ""  
+
+    response = cc.answer_router(context.user_data['userData'], userMessage, context.user_data['action'], context.user_data['memory'], context.user_data['info'])
+
+    #print("Invio messaggio all'utente : \n", response.answer)
+
+    # LOGICA PER MENU AL SECONDO MESSAGGIO TASK_1_HOOK O TASK_MINUS_1_HOOK
+    if response.action == con.TASK_1_HOOK or response.action == con.TASK_MINUS_1_HOOK    :
+        if context.user_data.get('menu_ready', False):
+            # secondo messaggio: mostra il menu
+            tastiera_markup = InlineKeyboardMarkup(MENU_BUTTON)
+            await update.message.reply_text(response.answer, reply_markup=tastiera_markup)
+            context.user_data['menu_ready'] = False  
+        else:
+            # primo messaggio TASK_1_HOOK: non mostrare menu, ma imposta flag
+            await context.bot.sendMessage(chat_id=update.message.chat_id, text=response.answer)
+            context.user_data['menu_ready'] = True
+    else:
+        await context.bot.sendMessage(chat_id=update.message.chat_id, text=response.answer)
+        # reset se cambia token
+        context.user_data['menu_ready'] = False  
+
+    context = update_context(context, response)
+
+    # gestione ricorsiva
+    if len(context.user_data['callbackMessage']) > 0 and MULTIPLE_MESSAGES:
+        return await interaction(update, context)
+    if context.user_data['action'] == "TASK -1" and MULTIPLE_MESSAGES:
+        context.user_data['callbackMessage'] = con.USER_GREETINGS_PHRASE
+        return await interaction(update, context)
+
+    return None
+
+
+
+async def cancel(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    """Termina la conversazione."""
+    await update.message.reply_text('Bye! Hope to talk to you again soon.', reply_markup=ReplyKeyboardRemove())
+    return ConversationHandler.END
+
+
+
+
+"""
+# VERSIONE VECCHIA
+async def send_reminder(context: CallbackContext):
+    users = us.get_all_users_with_reminder()
+    for user in users:
+        last_interaction = datetime.strptime(user['lastInteraction'], '%Y-%m-%d %H:%M:%S').date()
+        if datetime.now().date() - last_interaction >= timedelta(days=2):
+            await context.bot.send_message(chat_id=user['id'], text="Hey! It's been a while since we last talked. How about a chat to keep up with your sustainable habits and discover new recipe? Just write me something and I'll be here for you!")
+"""
+
+def schedule_user_reminder(scheduler, bot, user):
+    """Avvia i reminder per gli utenti che lo hanno attivato, in modo personalizzato."""
+
+    days_reminder = us.get_num_days_reminder(user['id'])
+    hour_reminder = us.get_hour_reminder(user['id'])
+    
+    async def personalized_reminder():
+        last_interaction = datetime.strptime(user['lastInteraction'], '%Y-%m-%d %H:%M:%S').date()
+        if datetime.now().date() - last_interaction >= timedelta(days=days_reminder):
+            await bot.send_message(chat_id=user['id'], text="Hey! It's been a while since we last talked. How about a chat to keep up with your sustainable habits and discover new recipe? Just write me something and I'll be here for you!")
+    
+
+    # job personalizzato
+    scheduler.add_job(lambda: asyncio.run(personalized_reminder()),'cron', hour=hour_reminder, minute=0, id=f"user_reminder_{user['id']}", replace_existing=True)
+
+    # print(f"Reminder impostato per l'utente {user['username']} dopo {days_reminder} giorni di inattività alle ore {hour_reminder}\n")
+
+
+async def compute_monthly_user_taste():
+    """Calcola il profilo di gusto degli utenti per ogni tipologia di pasto alla fine del mese."""
+    cmu.compute_monthly_user_taste()
+
+
+
+async def callback(update: Update, context: CallbackContext) -> None:
+    """Gestisce il callback generato dall'utente che ha premuto un pulsante del menu."""
+    
+    opzione = update.callback_query.data
+
+    # print(f"\n{update.effective_user.username} ha cliccato : {opzione} !")
+    # await update.effective_user.send_message(f"hai cliccato : {opzione} !")
+    
+    response = cc.answer_router(context.user_data['userData'],con.USER_BUTTON_CLICK.format(functionality=opzione),context.user_data['action'],context.user_data['memory'],context.user_data['info'])
+
+    # print("Invio messaggio all'utente : \n",response.answer)
+
+    await update.effective_user.send_message(response.answer)    
+    context = update_context(context,response)
+
+    await update.callback_query.message.delete()
+
+
+
+def main() -> None:
+    """Avvia il bot telegram."""
+
+    application = Application.builder().token(token).build()
+    
+    # definiamo il gestore delle conversazioni ConversationHandler(entry_points, states, fallbacks) :
+    # entry_points rappresenta il punto di inizio della conversazione, states è il dizionario degli stati della conversazione
+    # e fallbacks sono i comandi che interrompono la conversazione.
+
+    # il gestore dei comandi CommandHandler("comando", callbackfunction) gestisce l'arrivo di un comando da parte dell'utente : 
+    # quando il bot riceve dall'utente il comando \comando esegue la funzione callbackfunction.
+
+    # il gestore dei messaggi MessageHandler(filters, callbackfunction) gestisce l'arrivo di messaggi di testo da parte dell'utente :
+    # quando il bot riceve un messaggio di testo (filters.TEXT) e non di comando (~filters.COMMAND) eseguie la funzione callbackfunction.
+
+    conv_handler = ConversationHandler(
+        entry_points=[CommandHandler('start', start)],  
+        states={
+            INTERACTION: [MessageHandler(filters.TEXT & ~filters.COMMAND, interaction)]},
+        fallbacks=[CommandHandler('cancel', cancel)],  
+    )
+
+    # aggiunge il ConversationHandler all'applicazione, così che il bot sappia gestire la conversazione
+    application.add_handler(conv_handler)
+
+    # Handle the case when a user sends /start but they're not in a conversation
+    application.add_handler(CommandHandler('start', start))
+
+    # AGGIUNTO PER LA GESTIONE DEI CALLBACK DEI PULSANTI
+    application.add_handler(CallbackQueryHandler(callback))
+ 
+
+    # configuriamo lo scheduler (che verrà eseguito in background su un thread separato)
+    scheduler = BackgroundScheduler()
+
+    #reminder scheduled to be sent every day at 12:00 if the user hasn't interacted in the last 2 days
+    
+    # VERSIONE VECCHIA : TUTTI GLI UTENTI UGUALI
+    # scheduler.add_job(lambda: asyncio.run(send_reminder(application)), 'cron', hour=12, minute=00)
+
+    # VERSIONE NUOVA : PERSONALIZZATO IN BASE ALL'UTENTE
+    users = us.get_all_users_with_reminder()
+    for user in users:
+        schedule_user_reminder(scheduler, application.bot, user)
+
+    #compute the user's taste at the start of the month based on the previous month's data
+    scheduler.add_job(lambda: asyncio.run(compute_monthly_user_taste()), 'cron', day=1, hour=0, minute=0)
+
+    scheduler.start()
+
+    # per restare in attesa di messagggi (gestiti dalle funzioni asincrone)
+    application.run_polling()
+
+
+if __name__ == '__main__':
+    main()
