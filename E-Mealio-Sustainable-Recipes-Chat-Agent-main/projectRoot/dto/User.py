@@ -4,7 +4,7 @@ class User:
 
     """Rappresenta un utente che interagisce con il sistema."""
 
-    def __init__(self, username, id, name, surname, dateOfBirth, nation, allergies, restrictions, disliked_ingredients, evolving_diet, reminder, days_reminder, hour_reminder, lastInteraction, tastes):
+    def __init__(self, username, id, name, surname, dateOfBirth, nation, language, allergies, restrictions, disliked_ingredients, evolving_diet, reminder, days_reminder, hour_reminder, lastInteraction, tastes):
         """
         Inizializza un oggetto istanza della classe Recipe.
 
@@ -21,19 +21,19 @@ class User:
         - lastInteraction: Ultima volta che l'utente ha interagito con il sistema.
         - tastes: Dizione contenente i gusti dell'utente per ogni tipologia di pasto.
 
-        # AGGIUNTI
+        - language : lingua con cui l'utente vuole interagire con il bot.
         - disliked_ingredients : ingredienti che all'utente non piacciono.
         - evolving_diet : eventuale dieta futura dell'utente.
-        - days_reminder : numero di giorni di inattività dopo i quali l'utente vuole ricevere il reminder (se attivo)
+        - day : numero di giorni di inattività dopo i quali l'utente vuole ricevere il reminder (se attivo)
         - hour_reminder : ora in cui, passati i giorni di inattività, l'utente vuole ricevere il reminder
         """
-
         self.username = username
         self.id = str(id)
         self.name = name
         self.surname = surname
         self.dateOfBirth = dateOfBirth
         self.nation = nation
+        self.language = language
         self.allergies = allergies
         self.restrictions = restrictions
         self.disliked_ingredients = disliked_ingredients
@@ -48,7 +48,9 @@ class User:
     def from_json(self, jsonString):
         """
         Decodifica una stringa JSON e popola l'istanza corrente di User.
+
         I campi reminder, lastInteraction, tastes potrebbero non essere presenti, in quanto opzionali.
+        
         I campi username e id sono presenti solo quando si sta costruendo l'utente a partire dal db.
 
         Args:
@@ -62,6 +64,8 @@ class User:
         self.surname = json_obj['surname']
         self.dateOfBirth = json_obj['dateOfBirth']
         self.nation = json_obj['nation']
+        if('language' in json_obj):
+            self.language = json_obj['language']
         self.allergies = json_obj['allergies']
         self.restrictions = json_obj['restrictions']
         self.disliked_ingredients = json_obj['disliked_ingredients']
@@ -85,7 +89,6 @@ class User:
         
         return self
     
-
     def update_from_json(self, jsonString):
         """
         Decodifica una stringa JSON e popola l'istanza corrente di User solo con i campi presenti.
@@ -105,6 +108,8 @@ class User:
             self.dateOfBirth = json_obj['dateOfBirth']
         if('nation' in json_obj):
             self.nation = json_obj['nation']
+        if('language' in json_obj):
+            self.language = json_obj['language']
         if('allergies' in json_obj):
             self.allergies = json_obj['allergies']
         if('restrictions' in json_obj):
@@ -125,7 +130,6 @@ class User:
             self.tastes = json_obj['tastes']
         return self
     
-
     def to_json(self):
         """
         Codifica l'oggetto User in una stringa JSON.
@@ -134,7 +138,6 @@ class User:
         - str: La rappresentazione JSON dell'oggetto.
         """
         return jsonpickle.encode(self)
-    
     
     def to_plain_json(self):
         """

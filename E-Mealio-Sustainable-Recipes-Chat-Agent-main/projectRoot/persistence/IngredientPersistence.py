@@ -11,13 +11,13 @@ db = mongo.get_connection()
 collection = db['ingredients']
 """Collection degli ingredienti nel db : ingredients"""
 
+# variabili globali per recuperare i dati una sola volta
 
 ingredientsList = None
 """Collezione degli ingredienti presenti nel db."""
 
 numpyIngredientEmbeddings = None
 """Embeddings degli ingredienti presenti nel db."""
-
 
 def get_ingredients_list():
     """
@@ -47,7 +47,6 @@ def get_numpy_ingredient_embeddings():
         ingredients_df = pd.DataFrame(get_ingredients_list())
         numpyIngredientEmbeddings = np.vstack(ingredients_df['ingredient_embedding'], dtype=np.float32)
     return numpyIngredientEmbeddings
-
 
 def get_ingredient_by_name(ingredientName):
     """

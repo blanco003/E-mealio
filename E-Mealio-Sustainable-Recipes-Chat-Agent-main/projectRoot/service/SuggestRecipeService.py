@@ -31,10 +31,6 @@ def get_recipe_suggestion(mealDataJson, userData):
     - Recipe : ricetta che viene fornita come suggerimento all'utente.
     """
 
-    #restriction and allergy and meal type must always be respected
-    #the search will try to respect healthiness and meal duration if possible, but if no recipe is found that respects them, it will return a recipe that does not respect them
-    #the system keeps track of the kind of constraints that are not respected in order to give the user a feedback about them
-   
 
     """
     mealDataJson ha il seguente formato :
@@ -50,6 +46,15 @@ def get_recipe_suggestion(mealDataJson, userData):
     }
     """
 
+
+    print("\nDebug (get_recipe_suggestion)")
+    print("\nmealDataJson : \n", mealDataJson)
+    print("\nuserData : \n", userData)
+
+    #restriction and allergy and meal type must always be respected
+    #the search will try to respect healthiness and meal duration if possible, but if no recipe is found that respects them, it will return a recipe that does not respect them
+    #the system keeps track of the kind of constraints that are not respected in order to give the user a feedback about them
+    
 
     """
     Nella query : 
@@ -88,12 +93,16 @@ def get_recipe_suggestion(mealDataJson, userData):
     tagsUserHistory = ""
     tagsHealthiness = ""
     tagsMealDuration = ""
-    tagsPreference = "" # aggiunto per il nudging
+    tagsPreference = ""
 
-   
-    # nelle proiezioni usiamo 1 per i campi che vogliamo considerare nel risultato.
+    """
+    Nelle proiezioni usiamo 1 per i campi che vogliamo considerare nel risultato.
+    """
+
     projection = {"_id": 1, "recipe_id": 1, "title_embedding": 1, "ingredients_embedding": 1, "sustainability_score": 1} 
 
+
+    
 
     #initialize as empty numpy array
     desiredIngredientsEmbedding = np.array([])
@@ -103,8 +112,9 @@ def get_recipe_suggestion(mealDataJson, userData):
 
     mealData = jsonpickle.decode(mealDataJson) 
 
-  
-    # controlliamo se l'utente ha fornito qualche informazione riguardo al suggerimento delle ricetta
+    """
+    Controlliamo se l'utente ha fornito qualche informazione riguardo al suggerimento delle ricetta
+    """
 
     if(mealData['recipeName'] != None and mealData['recipeName']  != ''):
         recipeNameEmbedding = embedder.embed_sentence(mealData['recipeName'])
@@ -135,6 +145,11 @@ def get_recipe_suggestion(mealDataJson, userData):
         for ingredient in mealData['ingredients_not_desired']:
             if ingredient not in all_disliked_ingredients:
                 all_disliked_ingredients.append(ingredient)
+
+
+    print("\nmealData['ingredients_desired'] : ", mealData['ingredients_desired'])
+    print("disliked_ingredients_in_user_profile : ",disliked_ingredients_in_user_profile)
+    print("all_disliked_ingredients : ",all_disliked_ingredients)
 
 
     if all_disliked_ingredients != None:
@@ -330,6 +345,11 @@ def get_recipe_suggestion(mealDataJson, userData):
     #convert the recipe to a Recipe object
     suggestedRecipe = recipeService.convert_in_emealio_recipe(suggestedRecipe,removedConstraints,mealType)
 
+
+    print("\nsuggestedRecipe : \n",suggestedRecipe)
+
+    print("\nDebug (get_recipe_suggestion)")
+
     return suggestedRecipe
 
 
@@ -349,6 +369,14 @@ def query_template_replacement (mandatoryRepalcement, notMandatoryReplacement, n
     - queryTemplate : stringa rappresentate la query finale che verrà effettivamente usata sul db.
     """
 
+    print("\nDebug (query_template_replacement)")
+
+    print("\nmandatoryRepalcement : \n", mandatoryRepalcement)
+    print("\nnotMandatoryReplacement : \n", notMandatoryReplacement)
+    print("\nnumberReplacement : \n", numberReplacement)
+    print("\nqueryTemplate : \n", queryTemplate)
+
+
     for replacement in mandatoryRepalcement:
         queryTemplate = queryTemplate.replace(replacement[0],replacement[1])
 
@@ -360,6 +388,8 @@ def query_template_replacement (mandatoryRepalcement, notMandatoryReplacement, n
     #clean the query from the not mandatory replacement that are not used
     for replacement in range(len(notMandatoryReplacement)-remainingReplacement,len(notMandatoryReplacement)):
         queryTemplate = queryTemplate.replace(notMandatoryReplacement[replacement][0],"")
+
+    print("\nreturn queryTemplate :\n", queryTemplate)
 
     return queryTemplate
 

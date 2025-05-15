@@ -107,6 +107,11 @@ def web_search(input_prompt, input_query, temperature, userData, memory=None, me
     
     """
 
+    print("\nMemory aggiornata:")
+    for msg in memory:
+        print(msg)
+        print()
+
     response = client.messages.create(
         model=MODEL,
         max_tokens=1024,
@@ -333,5 +338,3 @@ Message(id='msg_01GNEJxMttaZ8QZGumfWo5B4', content=[
 
 
 """
-
-

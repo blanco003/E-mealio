@@ -41,7 +41,6 @@ class Log:
         self.userId = json_obj.userId
         return self
     
-    
     def to_json(self):
         """
         Codifica l'oggetto Log in una stringa JSON.

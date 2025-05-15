@@ -8,7 +8,9 @@ def extract_json(text, which):
     matches = re.findall(INFO_REGEX_CURLY, text, flags=re.DOTALL)
     counter = 0
     for match in matches:
+        print(f"Counter {counter}: ", match)
         if counter == which:
+            print("returing : ", match)
             return match
         counter += 1
 

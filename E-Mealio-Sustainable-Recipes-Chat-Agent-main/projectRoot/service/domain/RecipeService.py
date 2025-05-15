@@ -1,4 +1,6 @@
 import math
+
+import jsonpickle
 import service.domain.IngredientService as ingredientService
 import dto.Recipe as recipe
 import persistence.RecipePersistence as rp
@@ -128,10 +130,23 @@ def convert_in_emealio_recipe(mongoRecipe,removedConstraints,mealType):
 def get_nutrional_facts(recipe_id):
 
     recipeData = rp.get_recipe_by_id(int(recipe_id))
-   
+    print("recipeData:", recipeData)
+    print("recipe_id:", recipe_id)
+        
     nutrional_facts = {}
     for info in ['calories [cal]', 'totalFat [g]', 'saturatedFat [g]', 'totalCarbohydrate [g]', 'protein [g]', 'sugars [g]', 'dietaryFiber [g]', 'cholesterol [mg]', 'sodium [mg]']:
         if recipeData[info] is not None:
             nutrional_facts[info] = recipeData[info]
 
     return nutrional_facts
+
+
+def get_substitutions_info(DataJson):
+
+
+    info = jsonpickle.decode(DataJson)
+
+    ingredients_to_remove = info['ingredients_to_remove']
+    ingredients_to_add = info['ingredients_to_add']
+    
+    return ingredients_to_remove, ingredients_to_add

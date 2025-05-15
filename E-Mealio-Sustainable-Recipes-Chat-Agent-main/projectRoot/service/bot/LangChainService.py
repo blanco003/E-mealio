@@ -49,7 +49,6 @@ load_dotenv(find_dotenv())
 if(MODEL == 'openai'):
     openai_api_key = os.getenv("OPENAI_API_KEY")
     llm = ChatOpenAI(api_key=openai_api_key, model="gpt-4o-2024-08-06")
-    
 if(MODEL == 'anthropic'):
     anthropic_api_key=os.getenv("ANTHROPIC_API_KEY")
     llm = ChatAnthropic(model='claude-3-5-sonnet-20241022')
@@ -197,14 +196,25 @@ def execute_chain(input_prompt, input_query, temperature, userData, memory = Non
     # answer rappresenta la risposta dal modello LLM, che oltre al semplice testo da inviare all'utente
     # tramite chatbot contiene altre informazioni da estrarre
 
+
+    print("\n\nanswer: \n", answer)
+
+
     """
     Il LLM restituisce come risposta il TOKEN in cui fa la transizione di stato corrispodente 
     ed eventualmente un messaggio di risposta.
     """
-        
+
+    
     action = get_token(answer)
     info = get_info(answer)
     answer = clean_answer_from_token_and_info(answer, info)
+
+    print("\naction from get_token(answer): ", action)
+
+    print("\ninfo from get_info(answer): \n", info)
+    print("\nanswer from clean_answer_from_token_and_info(answer, info): \n", answer)
+
 
     if(memory != None):
         memory.add_user_message(input_query)
@@ -212,6 +222,119 @@ def execute_chain(input_prompt, input_query, temperature, userData, memory = Non
         
     response = resp.Response(answer,action,info,memory,'')
     log.save_log(response, datetime.datetime.now(), "Agent "+MODEL, userData.id, PRINT_LOG)
+
+
+    print("\nresponse: \n", response.__dict__)
     
     return response
 
+
+
+
+def translate_text(text, target_language):
+    """
+    Traduce un testo nella lingua specificata utilizzando il LLM.
+
+    Args:
+    - text : testo da tradurre.
+    - target_language : lingua di destinazione.
+
+    Returns:
+    - str : testo tradotto.
+    """
+
+    # se target_language è l'inglese non serve manco chiamare il LLM
+    if target_language.lower() == "english":
+        return text
+
+
+    translation_prompt = f"Traduci il seguente testo in {target_language}. Fornisci solo la traduzione, mantenendo i ritorni a capo e la struttura originale del testo, senza aggiungere spiegazioni o commenti."
+    
+    prompt = ChatPromptTemplate.from_messages([
+        ("system", translation_prompt),
+        ("human", "{query}")
+    ])
+    
+    print("text : ", text)
+
+    output_parser = StrOutputParser()
+
+    chain = prompt | llm | output_parser
+
+    translated = chain.invoke({ "query": text })
+
+    translated_text = translated.strip()
+
+    print("translated_text : ",translated_text)
+
+    return translated_text
+
+
+
+
+
+def translate_info(info, input_language, fields_to_translate = None):
+    """
+    Data una stringa rappresentante un json, traduce i valori dei campi dalla lingua di partenza data in input all'inglese.
+    """
+
+    if input_language.lower() == "english":
+        print("\nfunz. translate_info : restituito direttamente")
+        return info
+
+    if fields_to_translate == None :
+        translation_prompt = f"I valori dei campi nella seguente stringa, in formato JSON, sono scritti in {input_language}. Riscrivili in inglese, mantenendo la struttura originale e senza aggiungere spiegazioni o commenti. Se sono scritti già in inglese non c'è bisogno di tradurli, puoi restituirli direttamente."
+    else:
+        translation_prompt = f"I valori dei campi {fields_to_translate} nella seguente stringa, in formato JSON, sono scritti in {input_language}. Riscrivili in inglese, mantenendo la struttura originale e senza aggiungere spiegazioni o commenti." 
+    
+    prompt = ChatPromptTemplate.from_messages([
+        ("system", translation_prompt),
+        ("human", "{query}")
+    ])
+    
+
+
+    output_parser = StrOutputParser()
+
+    chain = prompt | llm | output_parser
+
+    translated = chain.invoke({ "query": info })
+
+    translated_text = translated.strip()
+
+    print("translated_info : \n",translated_text)
+
+    return translated_text
+
+
+
+
+
+
+def translate_ingredients_list(ingredients, input_language):
+
+   
+    # Costruisci il prompt con la lista come stringa
+    joined_ingredients = ", ".join(ingredients)
+    
+    prompt_text = (
+        f"Traduci i seguenti ingredienti dall'{input_language} in inglese. "
+        f"Restituisci solo una lista Python valida nel formato ['x', 'y', ...], senza aggiungere testo extra:\n{joined_ingredients}"
+    )
+    
+    prompt = ChatPromptTemplate.from_messages([
+        ("system", prompt_text),
+        ("human", "Esegui la traduzione.")
+    ])
+    
+    chain = prompt | llm | StrOutputParser()
+    raw_output = chain.invoke({ "query": "" }).strip()
+
+    try:
+        translated_list = eval(raw_output)
+        if isinstance(translated_list, list) and all(isinstance(i, str) for i in translated_list):
+            return translated_list
+        else:
+            raise ValueError("Output non è una lista valida di stringhe.")
+    except Exception as e:
+        raise ValueError(f"Errore nel parsing della risposta del modello: {e}\nRisposta grezza: {raw_output}")

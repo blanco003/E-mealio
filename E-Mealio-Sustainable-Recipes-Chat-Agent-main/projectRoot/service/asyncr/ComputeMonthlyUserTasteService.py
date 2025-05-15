@@ -19,7 +19,7 @@ def compute_monthly_user_taste():
     for user in users:
         #convert the user from dictionary to object
         userJson = jsonpickle.encode(user)
-        userData = userDto.User(None,None,None,None,None,None,None,None,None,None,None,None,None,None,None)
+        userData = userDto.User(None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None)
         userData.from_json(userJson)
         compute_user_taste(userData)
 

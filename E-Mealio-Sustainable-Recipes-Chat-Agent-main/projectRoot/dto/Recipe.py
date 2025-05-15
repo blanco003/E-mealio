@@ -12,11 +12,11 @@ class Recipe:
         - name : Nome della ricetta.
         - id : Identificatore univoc della ricetta.
         - ingredients : Elenco degli ingredienti utilizzati nella ricetta.
-        - sustainabilityScore : Punteggio di sostenibilità della ricetta.
+        - sustainabilityScore : Punteggio di sostenibilit`a della ricetta.
         - instructions : URL che rimanda alle istruzioni di preparazione della ricetta.
         - description : Descrizione testuale della ricetta.
         - removedConstraints: Elenco di vincoli che sono stati rimossi dalla query per estrarre la ricetta.
-        - mealType : Tipo di pasto
+        - mealType : Tipo di pasto (ad esempio, ”Cena”, ”Pranzo”).
         """
         self.name = name
         self.id = id
@@ -49,7 +49,6 @@ class Recipe:
         self.mealType = json_obj.mealType
         return self
     
-
     def to_json(self):
         """
         Codifica l'oggetto Recipe in una stringa JSON.

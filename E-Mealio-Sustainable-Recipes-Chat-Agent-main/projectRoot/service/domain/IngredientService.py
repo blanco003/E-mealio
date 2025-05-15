@@ -105,16 +105,6 @@ def get_ingredient_list_from_generic_list_of_string(ingredientsListOfString):
 
 
 def get_data_origin(ingredient_name):
-    """
-    Dato il nome di un ingrediente estare dal db la fonte di origine.
-
-    Args : 
-    - ingredient_name : stringa rappresentante il nome dell'ingrediente di cui recuperare la fonte di origine
-
-    Returns : 
-    - str or None : stringa rappresentate la fonte di origine del dato ingrediente, oppure None se inesistente
-    """
-
 
     ingredientData = ip.get_ingredient_by_name(str(ingredient_name))
 

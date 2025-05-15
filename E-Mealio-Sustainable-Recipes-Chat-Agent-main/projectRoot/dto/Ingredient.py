@@ -20,20 +20,19 @@ class Ingredient:
 
     def from_json(self, jsonString):
         """
-        Decodifica una stringa JSON e popola l'istanza corrente della classe Ingredient.
+        Decodifica una stringa JSON e popola l'istanza corrente di Ingredient.
 
         Args:
-        - jsonString : stringa JSON che rappresenta un oggetto Ingredient.
+        - jsonString (str): Una stringa JSON che rappresenta un oggetto Ingredient.
 
         Returns:
-        - Ingredient: istanza della classe Ingredient rappresentante l'ingrediente corrispondente, con i campi popolati.
+        - Ingredient: L'istanza stessa, con i campi popolati.
         """
         json_obj = jsonpickle.decode(jsonString)
         self.name = json_obj.name
         self.cfp = json_obj.cfp
         self.wfp = json_obj.wfp
         return self
-    
     
     def to_json(self):
         """

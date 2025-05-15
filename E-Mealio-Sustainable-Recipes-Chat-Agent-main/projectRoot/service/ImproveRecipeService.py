@@ -36,7 +36,6 @@ def get_base_recipe(mealDataJson):
     recipeService.compute_recipe_sustainability_score(baseRecipe)
     return baseRecipe
 
-
 def get_recipe_improved(baseRecipe, userData):
     """
     A partire da una ricetta base che l'utente ha fornito, e i suoi dati utente, genera un nuovo suggerimento
