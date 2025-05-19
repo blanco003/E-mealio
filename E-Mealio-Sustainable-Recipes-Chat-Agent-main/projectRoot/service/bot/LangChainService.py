@@ -312,8 +312,17 @@ def translate_info(info, input_language, fields_to_translate = None):
 
 
 def translate_ingredients_list(ingredients, input_language):
+    """
+    Traduce una lista di nomi di ingredienti, dalla lingua di partenza all'inglese.
 
-   
+    Args :
+    - ingredients : lista di stringhe rappresentanti i nomi degli ingredienti da tradurre
+    - input_language : lingua di partenza dei nomi degli ingredienti da tradurre
+
+    Returns : 
+    - lista di stringhe rappresentanti in nomi degli ingredienti tradotti in inglese.
+    
+    """
     # Costruisci il prompt con la lista come stringa
     joined_ingredients = ", ".join(ingredients)
     

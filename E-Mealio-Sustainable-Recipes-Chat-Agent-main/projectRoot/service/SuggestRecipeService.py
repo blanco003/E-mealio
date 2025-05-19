@@ -31,6 +31,9 @@ def get_recipe_suggestion(mealDataJson, userData):
     - Recipe : ricetta che viene fornita come suggerimento all'utente.
     """
 
+    print("\nDebug (get_recipe_suggestion)")
+    print("\nmealDataJson : \n", mealDataJson)
+    print("\nuserData : \n", userData)
 
     """
     mealDataJson ha il seguente formato :
@@ -45,11 +48,6 @@ def get_recipe_suggestion(mealDataJson, userData):
     "healthiness": ""  
     }
     """
-
-
-    print("\nDebug (get_recipe_suggestion)")
-    print("\nmealDataJson : \n", mealDataJson)
-    print("\nuserData : \n", userData)
 
     #restriction and allergy and meal type must always be respected
     #the search will try to respect healthiness and meal duration if possible, but if no recipe is found that respects them, it will return a recipe that does not respect them
@@ -95,26 +93,19 @@ def get_recipe_suggestion(mealDataJson, userData):
     tagsMealDuration = ""
     tagsPreference = ""
 
-    """
-    Nelle proiezioni usiamo 1 per i campi che vogliamo considerare nel risultato.
-    """
 
+    # nelle proiezioni usiamo 1 per indicare i campi che vogliamo considerare nel risultato.
     projection = {"_id": 1, "recipe_id": 1, "title_embedding": 1, "ingredients_embedding": 1, "sustainability_score": 1} 
 
-
-    
 
     #initialize as empty numpy array
     desiredIngredientsEmbedding = np.array([])
     notDesiredIngredientsEmbedding = np.array([])
     recipeNameEmbedding = np.array([])
 
-
     mealData = jsonpickle.decode(mealDataJson) 
 
-    """
-    Controlliamo se l'utente ha fornito qualche informazione riguardo al suggerimento delle ricetta
-    """
+    # controlliamo se l'utente ha fornito qualche informazione riguardo al suggerimento delle ricetta
 
     if(mealData['recipeName'] != None and mealData['recipeName']  != ''):
         recipeNameEmbedding = embedder.embed_sentence(mealData['recipeName'])
@@ -128,7 +119,7 @@ def get_recipe_suggestion(mealDataJson, userData):
             desiredIngredientsEmbedding = np.array(tastes, dtype=np.float32)
     
     
-    # oltre agli ingredienti che l'utente ha specificato non volere nel suggerimento aggigungiamo quelli che non li piacciono salvati nel profilo
+    # oltre agli ingredienti che l'utente ha specificato non volere nel suggerimento aggiungiamo quelli che non li piacciono salvati nel profilo
     disliked_ingredients_in_user_profile = userService.get_disliked_ingredients(userData.id)
 
     all_disliked_ingredients = []
@@ -168,7 +159,6 @@ def get_recipe_suggestion(mealDataJson, userData):
     if(mealData['sustainabilityScore'] != ""):
         tagsSustainability = """ "sustainability_score": { "$lt": SUSTAINABILITY_VALUE } """
         tagsSustainability = tagsSustainability.replace("SUSTAINABILITY_VALUE",str(mealData['sustainabilityScore']))
-
 
 
     """
@@ -265,18 +255,16 @@ def get_recipe_suggestion(mealDataJson, userData):
 
     #replace the tags in the query template
 
-    """
-    Filtri obbligatori che devono essere sempre presenti nella query.
-    """
+    # filtri obbligatori che devono essere sempre presenti nella query.
 
     mandatoryReplacement = [["TAGS_SUSTAINABILITY",tagsSustainability],
                             ["TAGS_RESTRICTIONS",tagsRestrictions],
                             ["TAGS_ALLERGENES",allergenes],
                             ["TAGS_MEAL_TYPE",tagsMealType]]
     
-    """
-    Filtri opzionali che possono essere sempre presenti nella query.
-    """
+
+    # filtri opzionali che possono essere presenti nella query.
+
     
     notMadatoryReplacement = [["TAGS_USER_HISTORY",tagsUserHistory],
                               ["TAGS_HEALTHINESS",tagsHealthiness],

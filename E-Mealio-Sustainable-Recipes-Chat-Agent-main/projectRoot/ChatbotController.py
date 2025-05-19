@@ -67,10 +67,7 @@ def answer_router(userData,userPrompt,token,memory,info):
             response = rc.Response("I'm sorry, I was not able to process your request. Please send an email to a.iacovazzi6@studenti.uniba.it", "TOKEN 1", '', None, '')
             raise e
         
-
         print("\n#### ",token, " ---->>> ",response.action, " ####")
-
-
         token = response.action
         info = response.info
         memory = response.memory
@@ -108,14 +105,16 @@ def answer_question(userData,userPrompt,token,memory,info):
     print("\ninfo : \n",info)
 
 
-
     """
     A seconda dello stato che il sistema si trova (determinato da TASK_N_HOOK), effettuiamo una chiamata al LLM
     passando in input il prompt corrispondente al TASK_N_HOOK (TASK_N_NN_PROMPT), il messaggio ricevuto dall'utente,
     la temperatura della specifica chimata al LLM ed i dati dell'utente.
     """
 
+    # recuperiamo la lingua con cui l'utente vuole interagire con il chatbot
+    # se per qualche motivo non è presente, si interagisce di default in inglese
     language = userData.language if userData.language is not None else "english"
+
 
 # 0 USER DATA RETRIEVAL##################################################################
 
@@ -131,19 +130,13 @@ def answer_question(userData,userPrompt,token,memory,info):
     
     if(token == p.TASK_0_0_2_HOOK):
         log.save_log("PERFORMING_USER_LANGUAGE_RETRIEVAL", datetime.datetime.now(), "System", userData.id, PRINT_LOG)
-        
-        # not managed by LLMS since it is straightforward
-        # setting lingua
         userData.language = user.get_language_from_json(info)
         user.update_user(userData)
 
         # possiamo andare direttamente alla presentazione dei dati che l'utente deve inserire per registrarsi
         action = p.TASK_0_HOOK
-        # print(f"TOKEN : {token} -----> {action}")
-        response = lcs.execute_chain(p.GET_DATA_PROMPT_BASE_0.format(language=userData.language), userPrompt, 0.3, userData, memory, True) # qui usiamo userData.language e non userData.language perchè a questo punto arriviamo direttamente senza transizione tramite LLM
 
-        # senza gestione automatica
-        # response = lcs.execute_chain(p.GET_LANGUAGE_PROMPT_BASE_0_2, userPrompt, 0.6, userData)
+        response = lcs.execute_chain(p.GET_DATA_PROMPT_BASE_0.format(language=userData.language), userPrompt, 0.3, userData, memory, True) # qui usiamo userData.language e non userData.language perchè a questo punto arriviamo direttamente senza transizione tramite LLM
         return response
     
     if(token == p.TASK_0_HOOK):
@@ -158,8 +151,7 @@ def answer_question(userData,userPrompt,token,memory,info):
     
     elif(token == p.TASK_0_2_HOOK):
         log.save_log("PERFORMING_USER_DATA_EVALUATION", datetime.datetime.now(), "System", userData.id, PRINT_LOG)
-        #update user data using the information so far retrieved
-        
+
         # l'utente ha inserito i dati nella sua lingua, ma affinche siano compatibili con il db li dobbiamo prima tradurre in inglese
         translated_info = lcs.translate_info(info, language, "allergies, restrictions, disliked_ingredients, evolving_diet")
         userData.from_json(translated_info)
@@ -308,41 +300,30 @@ def answer_question(userData,userPrompt,token,memory,info):
         log.save_log("PROVIDING_FOOD_SUGGESTION", datetime.datetime.now(), "System", userData.id, PRINT_LOG)
         
         # call recommender system
-        
-        print("\nTEMP_SUGG , info : ", info)
 
         # traduciamo le informazioni sul suggerimento
         translated_info = lcs.translate_info(info, language)
-
-        print("\nTEMP_SUGG , translated_info : ", translated_info)
-        
-        # PRIMA DI CAMBIARE LINGUA
-        """
-        temp_suggestedRecipe = food.get_recipe_suggestion(info,userData)
-        suggestedRecipe = utils.adapt_output_to_bot(temp_suggestedRecipe)
-        info = utils.escape_curly_braces(info)
-        userDataStr = utils.escape_curly_braces(userData.to_json())
-        userPrompt = "Suggest me a recipe given the following constraints " + info
-        """
 
         temp_suggestedRecipe = food.get_recipe_suggestion(translated_info,userData)
         suggestedRecipe = utils.adapt_output_to_bot(temp_suggestedRecipe)
         translated_info = utils.escape_curly_braces(translated_info)
         userDataStr = utils.escape_curly_braces(userData.to_json())
-        userPrompt = "Suggest me a recipe given the following constraints " + translated_info
 
+        userPrompt = "Suggest me a recipe given the following constraints " + translated_info
 
         if(suggestedRecipe != 'null'):
 
             # recuperiamo le informazioni sulla ricetta da suggerire
-            nutritional_facts = rcpService.get_nutrional_facts(int(temp_suggestedRecipe.id))
+            nutritional_facts = rcpService.get_nutritional_facts_by_id(int(temp_suggestedRecipe.id))
             nutritional_facts = utils.escape_curly_braces(str(nutritional_facts))
+
+            who_score = rcpService.get_who_score(int(temp_suggestedRecipe.id))
 
             allergies = user.get_allergies(userData.id)
             restrictions = user.get_restrictions(userData.id)
             evolving_diet = user.get_evolving_diet(userData.id)
             
-            response = lcs.execute_chain(p.TASK_2_10_PROMPT.format(suggestedRecipe=suggestedRecipe, mealInfo=translated_info, userData=userDataStr, language = language, allergies=allergies, restrictions=restrictions, evolving_diet=evolving_diet, nutritional_facts=nutritional_facts), userPrompt, 0.6, userData, memory, True)
+            response = lcs.execute_chain(p.TASK_2_10_PROMPT.format(suggestedRecipe=suggestedRecipe, mealInfo=translated_info, userData=userDataStr, language = language, allergies=allergies, restrictions=restrictions, evolving_diet=evolving_diet, nutritional_facts=nutritional_facts, who_score=who_score), userPrompt, 0.6, userData, memory, True)
         else:
             response = lcs.execute_chain(p.TASK_2_10_1_PROMPT.format(mealInfo=translated_info, userData=userDataStr, language = language), userPrompt, 0.6, userData, memory, False)        
         
@@ -358,16 +339,11 @@ def answer_question(userData,userPrompt,token,memory,info):
 
     elif(token == p.TASK_2_25_HOOK):
 
-        log.save_log("SWAP_INGREDIENT", datetime.datetime.now(), "System", userData.id, PRINT_LOG)
+        log.save_log("SUGGESTION_SWAP_INGREDIENT", datetime.datetime.now(), "System", userData.id, PRINT_LOG)
 
-        originalPrompt = utils.de_escape_curly_braces(memory.messages[0].content)
-        print("\noriginalPrompt :", originalPrompt)
+        originalPrompt = utils.de_escape_curly_braces(memory.messages[0].content)    
     
         jsonRecipe = utils.extract_json(originalPrompt, 0)
-        print("\n\njsonRecipe :", jsonRecipe)
-
-
-        print("\n SWAPPING INFO : \n", info)
 
         ingredients_to_remove, ingredients_to_add = rcpService.get_substitutions_info(info)
 
@@ -432,13 +408,10 @@ def answer_question(userData,userPrompt,token,memory,info):
     
     elif(token == p.TASK_3_20_HOOK):
         log.save_log("RECIPE_IMPROVEMENT_EXECUTION", datetime.datetime.now(), "System", userData.id, PRINT_LOG)
+        
         #call the recipe improvement service
 
-        print("\n\nREC IMP, info : ", info)
-
         translated_info = lcs.translate_info(info, language)
-
-        print("translated_info : ", translated_info)
 
         baseRecipe = imp.get_base_recipe(translated_info)
         improvedRecipe = imp.get_recipe_improved(baseRecipe,userData)
@@ -448,37 +421,15 @@ def answer_question(userData,userPrompt,token,memory,info):
         for ingredient in baseRecipe.ingredients:
             base_ingredient_list.append(ingredient.name)
         
-        print("\nbase_ingredient_list : ", base_ingredient_list)
-
         imp_ingredient_list = []
         for ingredient in improvedRecipe.ingredients:
             imp_ingredient_list.append(ingredient.name)
 
-        print("\nimp_ingredient_list : ", imp_ingredient_list)
-
         result_ingredient = list(set(base_ingredient_list + imp_ingredient_list))
-
-        print("\nresult_ingredient : ", result_ingredient)
 
         improvedRecipe = utils.adapt_output_to_bot(improvedRecipe)
 
-
-        ###### nut facts : come gli ricavo?????????
-        """
-        # se fossero tutte ricette del db
-        base_nutritional_facts = rcpService.get_nutrional_facts(int(baseRecipe.id))
-        base_nutritional_facts = utils.escape_curly_braces(str(base_nutritional_facts))
-        
-        imp_nutritional_facts = rcpService.get_nutrional_facts(int(improvedRecipe.id))
-        imp_nutritional_facts = utils.escape_curly_braces(str(imp_nutritional_facts))
-
-        print("base_nutritional_facts : \n", base_nutritional_facts)
-        print("imp_nutritional_facts : \n", imp_nutritional_facts)
-        """
-        ###
-
         if(improvedRecipe != 'null'):
-            
             
             # recupera le fonti degli ingredienti usati
             ingredients_data_origins = {}
@@ -493,6 +444,7 @@ def answer_question(userData,userPrompt,token,memory,info):
         
 
             ingredients_data_origins = utils.adapt_output_to_bot(ingredients_data_origins)
+
             response = lcs.execute_chain(p.TASK_3_20_PROMPT.format(baseRecipe=utils.adapt_output_to_bot(baseRecipe), improvedRecipe=improvedRecipe, language=language, ingredients_data_origins=ingredients_data_origins), userPrompt, 0.1, userData, memory, True)
         else:
             None
@@ -505,8 +457,30 @@ def answer_question(userData,userPrompt,token,memory,info):
         response = lcs.execute_chain(p.TASK_3_30_PROMPT.format(language=language), userPrompt, 0.6, userData, memory, True)
         return response
     
+    # ricetta migliorata accettata con sostituzioni/aggiunte/rimozioni
+    elif(token == p.TASK_3_35_HOOK):
+
+        log.save_log("RECIPE_IMPROVEMENT_SWAP_INGREDIENT", datetime.datetime.now(), "System", userData.id, PRINT_LOG)
+
+        originalPrompt = utils.de_escape_curly_braces(memory.messages[0].content)
+    
+        jsonRecipe = utils.extract_json(originalPrompt, 1)
+
+        ingredients_to_remove, ingredients_to_add = rcpService.get_substitutions_info(info)
+
+
+        fhService.build_and_save_user_history(userData, jsonRecipe, "accepted", ingredients_to_remove, ingredients_to_add)
+        fhService.clean_temporary_declined_suggestions(userData.id)
+
+        answer = lcs.translate_text(p.CUSTOM_RECIPE_IMPROVEMENT_ACCEPTED, language)
+        response = rc.Response(answer,"TOKEN 1",'',None,p.USER_GREETINGS_PHRASE)
+
+        return response
+    
+    # ricetta migliorata accettata direttamente
     elif(token == p.TASK_3_40_HOOK):
         log.save_log("RECIPE_IMPROVEMENT_ACCEPTED", datetime.datetime.now(), "System", userData.id, PRINT_LOG)
+        
         #save the improved recipe as consumed by the user since she will have to eat it
         manage_suggestion(userData,memory,"accepted",1)
         fhService.clean_temporary_declined_suggestions(userData.id)
@@ -516,6 +490,7 @@ def answer_question(userData,userPrompt,token,memory,info):
     
     elif(token == p.TASK_3_50_HOOK):
         log.save_log("RECIPE_IMPROVEMENT_DECLINED", datetime.datetime.now(), "System", userData.id, PRINT_LOG)
+        
         #don't save the rejected recipe, this because this don't have to be considered as a suggestion? i'm thinking about it
         manage_suggestion(userData,memory,"declined")
         fhService.clean_temporary_declined_suggestions(userData.id)
@@ -582,6 +557,7 @@ def answer_question(userData,userPrompt,token,memory,info):
     elif(token == p.TASK_5_01_HOOK):
         log.save_log("FOOD_HISTORY_WEEK", datetime.datetime.now(), "System", userData.id, PRINT_LOG)
         foodHistory = utils.adapt_output_to_bot(history.get_user_history_of_week(userData.id))
+
         #not managed by LLMS since it is straightforward
         action = p.TASK_5_05_HOOK
         print(f"TOKEN : {token} -----> {action}")
@@ -593,6 +569,7 @@ def answer_question(userData,userPrompt,token,memory,info):
     elif(token == p.TASK_5_02_HOOK):
         log.save_log("FOOD_HISTORY_MONTH", datetime.datetime.now(), "System", userData.id, PRINT_LOG)
         foodHistory = utils.adapt_output_to_bot(history.get_user_history_of_month(userData.id))
+
         #not managed by LLMS since it is straightforward
         action = p.TASK_5_05_HOOK
         print(f"TOKEN : {token} -----> {action}")
@@ -604,14 +581,13 @@ def answer_question(userData,userPrompt,token,memory,info):
         log.save_log("FOOD_HISTORY", datetime.datetime.now(), "System", userData.id, PRINT_LOG)
         begin_date, end_date = history.get_custom_dates(info)
         foodHistory = utils.adapt_output_to_bot(history.get_user_history_of_custom_date(userData.id, begin_date, end_date))
+        
         #not managed by LLMS since it is straightforward
         action = p.TASK_5_05_HOOK
         print(f"TOKEN : {token} -----> {action}")
         response = lcs.execute_chain(p.TASK_5_05_PROMPT.format(food_history=foodHistory, language=language), userPrompt, 0.3, userData, memory, True)
         return response
     
-
-
     elif(token == p.TASK_5_10_HOOK):
         log.save_log("FOOD_HISTORY_LOOP", datetime.datetime.now(), "System", userData.id, PRINT_LOG)
         response = lcs.execute_chain(p.TASK_5_10_PROMPT.format(language=language), userPrompt, 0.3, userData, memory, True)
@@ -642,9 +618,6 @@ def answer_question(userData,userPrompt,token,memory,info):
         clean_answer = response.answer['clean_answer']
         citations_and_urls = response.answer['citations_and_urls']
 
-        # OLD : risposta diretta del LLM 
-        # response = lcs.execute_chain(p.TASK_6_10_PROMPT.format(concept = concept, allergies = allergies, restrictions = restrictions), userPrompt, 0.3, userData, memory, True)
-        
         citations_and_urls = utils.escape_curly_braces(str(citations_and_urls))
 
         response = lcs.execute_chain(p.TASK_6_10_PROMPT.format(concept = concept, language=language, clean_answer = clean_answer, allergies = allergies, restrictions = restrictions, citations_and_urls = citations_and_urls), userPrompt, 0.3, userData, memory, True)
@@ -657,9 +630,7 @@ def answer_question(userData,userPrompt,token,memory,info):
         restrictions = user.get_restrictions(userData.id)
         ingredientsData = jsonpickle.decode(info)
 
-        print("\n\nSUS EXP, ingredientsData['ingredients']: ",ingredientsData['ingredients'] )
         translated_ingredients = lcs.translate_ingredients_list(ingredientsData['ingredients'],language)
-        print("translated_ingredients : ", translated_ingredients)
 
         # recupera le fonti
         ingredients_data_origins = {}
@@ -681,16 +652,29 @@ def answer_question(userData,userPrompt,token,memory,info):
         response = lcs.execute_chain(p.TASK_6_20_PROMPT.format(ingredients = ingredientsData, language=language, allergies = allergies, restrictions = restrictions, ingredients_data_origins=ingredients_data_origins), userPrompt, 0.3, userData, memory, True)
         return response
     
+
+    elif(token == p.TASK_6_25_HOOK):
+        log.save_log("HEALTHNIESS_INGREDIENTS_EXPERT_INTERACTION", datetime.datetime.now(), "System", userData.id, PRINT_LOG)
+        
+        allergies = user.get_allergies(userData.id)
+        restrictions = user.get_restrictions(userData.id)
+        ingredientsData = jsonpickle.decode(info)
+
+        translated_ingredients = lcs.translate_ingredients_list(ingredientsData['ingredients'],language)    
+
+        ingredientsData = ingService.get_nutritional_facts_from_list_of_ingredients(translated_ingredients)
+        ingredientsData = utils.adapt_output_to_bot(ingredientsData)
+        
+        
+        response = lcs.execute_chain(p.TASK_6_25_PROMPT.format(ingredients = ingredientsData, language=language, allergies = allergies, restrictions = restrictions), userPrompt, 0.3, userData, memory, True)
+        return response
+    
     elif(token == p.TASK_6_30_HOOK):
         log.save_log("SUSTAINABILITY_RECIPE_EXPERT_INTERACTION", datetime.datetime.now(), "System", userData.id, PRINT_LOG)
         allergies = user.get_allergies(userData.id)
         restrictions = user.get_restrictions(userData.id)
         recipesData = jsonpickle.decode(info)
 
-
-        print("\nrecipesData : ", recipesData)
-
-        
         recipes = er.extractRecipes(recipesData)
     
         recipe_data_origins = {}
@@ -699,21 +683,30 @@ def answer_question(userData,userPrompt,token,memory,info):
         #sueatablelife_link = "https://www.sueatablelife.eu/"
         sueatablelife_link = "https://doi.org/10.6084/m9.figshare.13271111.v2"
         
-        for recipe in recipes:
-            recipe_data_origins[recipe.name] = recipe.instructions
-            for ingredient in recipe.ingredients:
+        for recipe_obj, nutritional_facts in recipes:
+            recipe_data_origins[recipe_obj.name] = recipe_obj.instructions 
+            for ingredient in recipe_obj.ingredients:
                 ingredientDataOrigin = ingService.get_data_origin(ingredient.name)
                 if ingredientDataOrigin != None:
                     ingredients_data_origins[ingredient.name] = ingredientDataOrigin
                 else :
                     ingredients_data_origins[ingredient.name] = sueatablelife_link
 
-        print("recipe_data_origins : ",recipe_data_origins)
-        print("ingredients_data_origins : ",ingredients_data_origins)
-        
-
         recipes = utils.adapt_output_to_bot(recipes)
         response = lcs.execute_chain(p.TASK_6_30_PROMPT.format(recipes = recipes, language=language, allergies = allergies, restrictions = restrictions), userPrompt, 0.3, userData, memory, True)
+        return response
+    
+
+    elif(token == p.TASK_6_35_HOOK):
+        log.save_log("HEALTHINESS_RECIPE_EXPERT_INTERACTION", datetime.datetime.now(), "System", userData.id, PRINT_LOG)
+        allergies = user.get_allergies(userData.id)
+        restrictions = user.get_restrictions(userData.id)
+        recipesData = jsonpickle.decode(info)
+
+        recipes = er.extractRecipes(recipesData)
+        recipes = utils.adapt_output_to_bot(recipes)
+
+        response = lcs.execute_chain(p.TASK_6_35_PROMPT.format(recipes = recipes, language=language, allergies = allergies, restrictions = restrictions), userPrompt, 0.3, userData, memory, True)
         return response
     
     elif(token == p.TASK_6_40_HOOK):
@@ -739,18 +732,21 @@ def answer_question(userData,userPrompt,token,memory,info):
     
     elif(token == p.TASK_7_20_HOOK):
         log.save_log("RECIPE_CONSUPTION_DIARY_DATA_SAVING", datetime.datetime.now(), "System", userData.id, PRINT_LOG)
-        #calling the proper service to save the meal data computing the sustainability
-
-        print("\n\nRECIPE_CONSUPTION_DIARY_DATA_SAVING, info : \n", info)
-
+        
         jsonRecipeAssertion = utils.extract_json(info, 0)
 
-        print("jsonRecipeAssertion : ", jsonRecipeAssertion)
+        """
+        jsonRecipeAssertion :  {
+                "mealType": "Lunch",
+                "ingredients": ["pasta", "chicken", "spinach", "olive oil"],
+                "quantities": [80, 150, 100, 10],
+                "name": "Pasta with chicken and spinach"
+        }
+        """
 
-        translated_jsonRecipeAssertion = lcs.translate_info(jsonRecipeAssertion, language)
+        fhService.build_and_save_user_history_from_user_assertion(userData, jsonRecipeAssertion)
 
-        fhService.build_and_save_user_history_from_user_assertion(userData, translated_jsonRecipeAssertion)
-        response = lcs.execute_chain(p.TASK_7_20_PROMPT.format(language=language), "Meal data: " + translated_jsonRecipeAssertion, 0.1, userData)
+        response = lcs.execute_chain(p.TASK_7_20_PROMPT.format(language=language), "Meal data: " + jsonRecipeAssertion, 0.1, userData)
         return response
 ########################################################################################
 
@@ -801,30 +797,18 @@ def answer_question(userData,userPrompt,token,memory,info):
         # passiamo le informazioni sul pasto consumato dall'utente
         return rc.Response('',"TOKEN 7",info, None,'')
     
-
-
-
-
-
 ########################################################################################
-
 
 
     print("\n----------------------------------------------------------------------------------------------------")
 
 
 
-
-
 def manage_suggestion(userData,memory,status,whichJson=0):
 
     originalPrompt = utils.de_escape_curly_braces(memory.messages[0].content)
-
-    print("\noriginalPrompt :", originalPrompt)
     
     jsonRecipe = utils.extract_json(originalPrompt, whichJson)
-
-    print("\n\njsonRecipe :", jsonRecipe)
 
     fhService.build_and_save_user_history(userData, jsonRecipe, status)
 

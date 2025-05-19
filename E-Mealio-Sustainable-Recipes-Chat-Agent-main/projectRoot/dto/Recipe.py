@@ -2,7 +2,7 @@ import jsonpickle
 
 class Recipe:
 
-    """Rappresenta una ricetta."""
+    """Rappresenta una ricetta già presente nel db."""
 
     def __init__(self, name, id, ingredients, sustainabilityScore, instructions, description, removedConstraints, mealType):
         """
@@ -10,9 +10,9 @@ class Recipe:
 
         Args:
         - name : Nome della ricetta.
-        - id : Identificatore univoc della ricetta.
+        - id : Identificatore univoco della ricetta.
         - ingredients : Elenco degli ingredienti utilizzati nella ricetta.
-        - sustainabilityScore : Punteggio di sostenibilit`a della ricetta.
+        - sustainabilityScore : Punteggio di sostenibilità della ricetta.
         - instructions : URL che rimanda alle istruzioni di preparazione della ricetta.
         - description : Descrizione testuale della ricetta.
         - removedConstraints: Elenco di vincoli che sono stati rimossi dalla query per estrarre la ricetta.

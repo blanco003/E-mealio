@@ -20,7 +20,6 @@ class User:
         - reminder: Valore booleano che indica se l'utente vuole ricevere promemoria.
         - lastInteraction: Ultima volta che l'utente ha interagito con il sistema.
         - tastes: Dizione contenente i gusti dell'utente per ogni tipologia di pasto.
-
         - language : lingua con cui l'utente vuole interagire con il bot.
         - disliked_ingredients : ingredienti che all'utente non piacciono.
         - evolving_diet : eventuale dieta futura dell'utente.
@@ -138,6 +137,7 @@ class User:
         - str: La rappresentazione JSON dell'oggetto.
         """
         return jsonpickle.encode(self)
+    
     
     def to_plain_json(self):
         """

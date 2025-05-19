@@ -37,6 +37,7 @@ def get_recipe_list():
         recipe_list = list(collection.find({},projection))
     return recipe_list
 
+
 def get_numpy_recipe_embeddings():
     """
     Recupera dal db gli embeddings di tutte le ricette presenti.
@@ -49,6 +50,7 @@ def get_numpy_recipe_embeddings():
         recipe_df = pd.DataFrame(get_recipe_list())
         numpyRecipeEmbeddings = np.vstack(recipe_df['title_embedding'], dtype=np.float32)
     return numpyRecipeEmbeddings
+
 
 def get_recipe_by_id(recipeId):
     """

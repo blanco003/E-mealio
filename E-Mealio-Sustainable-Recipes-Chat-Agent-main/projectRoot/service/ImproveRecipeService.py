@@ -18,7 +18,7 @@ def get_base_recipe(mealDataJson):
     Returns :  
     - baseRecipe : ricetta come oggetto istanza della classe Recipe.
     """
-
+    
     mealData = jsonpickle.decode(mealDataJson)
     if(mealData['ingredients'] != [] and mealData['ingredients'] != None):
         ingredients = ingService.get_ingredient_list_from_generic_list_of_string(mealData['ingredients'])
@@ -36,17 +36,18 @@ def get_base_recipe(mealDataJson):
     recipeService.compute_recipe_sustainability_score(baseRecipe)
     return baseRecipe
 
+
 def get_recipe_improved(baseRecipe, userData):
     """
     A partire da una ricetta base che l'utente ha fornito, e i suoi dati utente, genera un nuovo suggerimento
-    di ricetta, migliore rispetto a quella base, da fornire all'utente.
+    di ricetta, migliore rispetto a quella base rispetto allo score di sostenibilità, da fornire all'utente.
 
     Args : 
     - baseRecipe : ricetta, oggetto istanza della classe Recipe, da cui partire per fornire una ricetta migliore.
     - userData : dati dell'utente.
 
     Returns :
-    - suggestedRecipe : nuova ricetta migliorare da suggerire all'utente.
+    - suggestedRecipe : nuova ricetta migliorata rispetto allo score di sostenibilità da suggerire all'utente.
     """
 
     recipeCluster = recipeService.get_recipe_cluster(baseRecipe)

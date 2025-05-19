@@ -26,8 +26,6 @@ sys.stderr = log_file
 
 #---------------------------------------------------------
 
-
-
 load_dotenv(find_dotenv())
 
 token = os.getenv("TELEGRAM_BOT_TOKEN")

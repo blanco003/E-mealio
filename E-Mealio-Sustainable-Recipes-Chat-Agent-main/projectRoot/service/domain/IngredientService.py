@@ -4,7 +4,8 @@ import dto.Ingredient as ingredientDto
 
 def remove_additional_info(ingredient):
     """
-    Rimuove dalla stringa in input, rappresentante un ingrediente, informazioni addizionali come quantità, unità e caratteri aggiuntivi, restituendo la stringa contenente il solo testo dell'ingrediente.
+    Rimuove dalla stringa in input, rappresentante un ingrediente, informazioni addizionali come quantità,
+    unità e caratteri aggiuntivi, restituendo la stringa contenente il solo testo dell'ingrediente.
 
     Args : 
     - ingredient : stringa rappresentante un ingrediente da ripulire.
@@ -105,7 +106,15 @@ def get_ingredient_list_from_generic_list_of_string(ingredientsListOfString):
 
 
 def get_data_origin(ingredient_name):
+    """
+    Recupera la fonte di origine della sostenibilità a partire dal nome dell'ingrediente dato in input.
 
+    Args : 
+    - ingredient_name : stringa rappresentante il nome dell'ingrediente di cui recuperare la fonte.
+
+    Returns : 
+    - data_origin : fonte di origine, se presente, della sostenibilità dell'ingrediente.
+    """
     ingredientData = ip.get_ingredient_by_name(str(ingredient_name))
 
     # su 9000 ingredienti circa 7000 non hanno il campo data_origin
@@ -113,3 +122,58 @@ def get_data_origin(ingredient_name):
         return ingredientData['data_origin']
     else:
         return None 
+    
+
+
+def get_nutritional_facts(ingredient_name):
+    """
+    Recupera i valori nutrizionali dell'ingrediente dal db a partire dal nome dato in input.
+    Se non esiste nessun ingrediente con il nome dato, vengono recuperati i valori nutrizionali
+    dell'ingrediente con similarità del coseno più alta del nome rispetto al nome dell'ingrediente dato in input.
+
+    Args :
+    - ingredient_name : stringa rappresentante il nome dell'ingrediente di cui recuperare i valori nutrizionali.
+
+    Returns :
+    - nut_facts : valori nutrizionali, rappresentati come dizionario (nutriente:valore) dell'ingrediente di nome dato in input
+    """
+
+    nut_info = ['calories [cal]', 'totalFat [g]', 'saturatedFat [g]', 'totalCarbohydrate [g]', 'protein [g]', 'sugars [g]', 'dietaryFiber [g]', 'cholesterol [mg]', 'sodium [mg]']
+
+
+    ingredientData = ip.get_ingredient_by_name(str(ingredient_name))
+
+    if ingredientData == None or ingredientData == 'null':
+            ingredientData = ip.get_most_similar_ingredient(str(ingredient_name))
+
+    if ingredientData != None:
+        nut_facts = {}
+        for nut in nut_info:
+            value = ingredientData.get(nut, None)
+            nut_facts[nut] = value
+        return nut_facts
+    else:
+        return None 
+
+
+def get_nutritional_facts_from_list_of_ingredients(ingredientsListOfString):
+    """
+    Recupera i valori nutrizionali di una lista di ingredienti dal db a partire dal nome dato in input.
+    Se non esiste nessun ingrediente con uno dei nomi dati, vengono recuperati i valori nutrizionali
+    dell'ingrediente con similarità del coseno più alta del nome rispetto al nome dell'ingrediente dato in input.
+
+    Args :
+    - ingredientsListOfString : lista di stringhe rappresentanti gli ingredienti di cui recuperare i valori nutrizionali 
+
+    Returns :
+    - nutritional_facts : valori nutrizionali, rappresentati come dizionario (ingrediente:valori nutrizionali), dove valori nutrizionali è 
+    un altro dizionario (nutriente:valore), della lista dei nomi degli ingredienti dati in input.
+    """
+
+    nutritional_facts = {}
+
+    for ingredient in ingredientsListOfString:
+        nut_facts = get_nutritional_facts(ingredient)
+        nutritional_facts[ingredient] = nut_facts
+
+    return nutritional_facts
