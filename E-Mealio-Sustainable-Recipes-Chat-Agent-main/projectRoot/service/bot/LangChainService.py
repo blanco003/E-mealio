@@ -348,3 +348,23 @@ def translate_ingredients_list(ingredients, input_language):
             raise ValueError("Output non è una lista valida di stringhe.")
     except Exception as e:
         raise ValueError(f"Errore nel parsing della risposta del modello: {e}\nRisposta grezza: {raw_output}")
+    
+
+
+def ask_model(input, prompt):
+    """
+    Effettua domande al LLM, dato un prompt ed un input custom.
+    """
+
+    prompt = ChatPromptTemplate.from_messages([
+        ("system", prompt),
+        ("human", "{query}")
+    ])
+    
+    output_parser = StrOutputParser()
+    
+    chain = prompt | llm | output_parser
+
+    answer = chain.invoke({ "query": input })
+
+    return answer

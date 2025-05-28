@@ -1,0 +1,1784 @@
+
+################################################################################
+
+Ingredienti con valori nutrizionali trovati dall'API : 8089 di 9087
+
+Counter di ingredienti con valori nutrizionali non ragionevoli,
+secondo il LLM, in base all'ingrediente di cui sono stati recuperati i valori : 1048 di 8089
+
+
+################################################################################
+0 - 100 :
+{
+    "sauce-sauce": "Termine troppo generico, può riferirsi a molti tipi di salse con valori nutrizionali molto diversi",
+    "juice-juice": "Termine troppo generico, i valori nutrizionali variano significativamente tra diversi tipi di succo",
+    "soup-soup": "Termine troppo generico, i valori nutrizionali variano significativamente tra diversi tipi di zuppe",
+    "seasoning-seasoning": "Termine troppo generico, può riferirsi a condimenti con composizioni molto diverse",
+    "breadcrumb-bread": "Il pangrattato ha valori nutrizionali diversi dal pane per via della disidratazione",
+    "cornstarch-cornstarch": "L'amido di mais ha valori nutrizionali diversi dal mais intero",
+    "soda-soda": "Termine troppo generico, può riferirsi a bevande con composizioni molto diverse"
+}
+
+Numero di mappature non ragionevoli : 7
+################################################################################
+
+################################################################################
+100 - 200 :
+{
+    "paste-tomato paste": "Il termine 'paste' è troppo generico e potrebbe riferirsi a molti tipi diversi di paste (es. pasta di mandorle, pasta di curry, etc.)",
+    "zest-fruit": "Lo zest si riferisce specificamente alla scorza degli agrumi e ha valori nutrizionali molto diversi dalla polpa della frutta",
+    "leaf-vegetables": "Il termine 'leaf' è troppo generico e potrebbe riferirsi a vari tipi di foglie (aromatiche, commestibili, etc.) con valori nutrizionali molto diversi",
+    "flake-barley": "Il termine 'flake' è troppo generico e potrebbe riferirsi a vari tipi di fiocchi (mais, avena, etc.) con valori nutrizionali diversi",
+    "crust-crispbread": "'Crust' è un termine troppo generico che può riferirsi a diversi tipi di croste (pane, torte, etc.) con valori nutrizionali molto diversi"
+}
+
+Numero di mappature non ragionevoli : 5
+################################################################################
+
+################################################################################
+200 - 300 :
+{
+    "white-yogurt": "Il termine 'white' da solo è troppo generico e non necessariamente si riferisce allo yogurt",
+    "peel-fruit": "Il termine 'peel' (buccia) è una parte specifica del frutto, non il frutto intero",
+    "flakes-cereals": "Il termine 'flakes' è troppo generico e potrebbe riferirsi a diversi tipi di alimenti in scaglie",
+    "soup mix-soup": "Il 'soup mix' è un preparato secco con valori nutrizionali diversi dalla zuppa pronta",
+    "icing sugar-icing": "L'icing sugar è zucchero a velo mentre 'icing' è la glassa già preparata",
+    "white pepper-pepper": "Il pepe bianco ha proprietà nutrizionali specifiche diverse dal pepe generico",
+    "breast-chicken": "Il termine 'breast' da solo è troppo generico e potrebbe riferirsi a diversi tipi di carne",
+    "pie shell-pie": "Il guscio della torta ha valori nutrizionali molto diversi dalla torta completa",
+    "pine nut-nut": "I pinoli hanno valori nutrizionali specifici diversi dalla categoria generica dei 'nut'"
+}
+
+Numero di mappature non ragionevoli : 9
+################################################################################
+
+################################################################################
+300 - 400 :
+{
+    "puree-tomato puree": "Puree è un termine generico che può riferirsi a qualsiasi alimento ridotto in purea, non solo pomodoro",
+    "fish-fish": "Fish è troppo generico, diversi tipi di pesce hanno valori nutrizionali molto diversi",
+    "sprout-sprout": "Sprout è troppo generico, può riferirsi a diversi tipi di germogli con valori nutrizionali differenti",
+    "pastry-pastry": "Pastry è un termine troppo generico che può includere prodotti molto diversi tra loro",
+    "dough-dough": "Dough è troppo generico, può riferirsi a impasti con ingredienti e valori nutrizionali molto diversi",
+    "candy-candy": "Candy è troppo generico, può riferirsi a dolciumi molto diversi tra loro",
+    "preserve-jam": "Preserve può riferirsi a vari tipi di conserve, non solo marmellate",
+    "meat-meat": "Meat è troppo generico, diversi tipi di carne hanno valori nutrizionali molto diversi",
+    "whites-yogurt": "Whites probabilmente si riferisce ad albumi d'uovo, non a yogurt"
+}
+
+Numero di mappature non ragionevoli : 9
+################################################################################
+
+################################################################################
+400 - 500 :
+{
+    "cube-vegetable": "Non è possibile mappare 'cube' su 'vegetable' poiché il termine 'cube' è troppo generico e potrebbe riferirsi a diversi tipi di dado/cubetto, non necessariamente vegetale",
+    "lemon extract-lemon": "Il lemon extract è un concentrato aromatico con proprietà nutrizionali molto diverse dal limone fresco",
+    "rice wine vinegar-rice wine": "L'aceto di riso ha proprietà nutrizionali molto diverse dal vino di riso",
+    "shell-shell": "Il termine 'shell' è troppo generico e ambiguo senza ulteriore contesto, potrebbe riferirsi a gusci/conchiglie di vario tipo",
+    "dill weed-dill": "Il dill weed (aneto) ha proprietà nutrizionali diverse dalle verdure generiche"
+}
+
+Numero di mappature non ragionevoli : 5
+################################################################################
+
+################################################################################
+500 - 600 :
+{
+    "nectar-fruit": "Nectar e frutta sono ingredienti diversi - il nettare è una bevanda zuccherata mentre la frutta è l'alimento intero",
+    "egg substitute-egg substitute": "I sostituti dell'uovo possono avere composizioni molto diverse dalle uova naturali",
+    "sugar substitute-sugar": "I sostituti dello zucchero hanno una composizione nutrizionale molto diversa dallo zucchero naturale",
+    "gluten-wheat": "Il glutine è solo una componente proteica del grano, con valori nutrizionali molto diversi",
+    "rose water-rose": "L'acqua di rose è un estratto aromatico mentre la rosa è un fiore - composizioni completamente diverse",
+    "corn flake-corn": "I corn flakes sono cereali processati con valori nutrizionali diversi dal mais grezzo"
+}
+
+Numero di mappature non ragionevoli : 6
+################################################################################
+
+################################################################################
+600 - 700 :
+{
+    "beverage-soft drink": "Beverage è un termine più generico che include anche bevande alcoliche e calde, mentre soft drink si riferisce specificamente a bevande analcoliche gassate",
+    "peanut butter chip-peanut butter": "I peanut butter chips sono pezzi solidi dolci aromatizzati al burro di arachidi, con composizione nutrizionale diversa dal burro di arachidi vero e proprio",
+    "food coloring-caramel": "Il colorante alimentare è un termine generico che include molti tipi di coloranti, mentre il caramello è uno specifico colorante bruno",
+    "coloring-caramel": "Il colorante è un termine generico che include molti tipi di coloranti, mentre il caramello è uno specifico colorante bruno",
+    "chop-lamb meat": "Chop è un termine troppo generico che può riferirsi a diversi tipi di carne, non solo agnello",
+    "orange extract-orange": "L'estratto di arancia è un concentrato aromatico molto più intenso del frutto fresco, con composizione nutrizionale completamente diversa",
+    "morsel-chocolate": "Morsel è un termine generico che significa 'pezzetto' e non è specificamente riferito al cioccolato"
+}
+
+Numero di mappature non ragionevoli : 7
+################################################################################
+
+################################################################################
+700 - 800 :
+{
+    "coconut extract-coconut": "Coconut extract è un aroma concentrato con proprietà nutrizionali molto diverse dalla polpa di cocco",
+    "chicken drumstick-chicken": "Il drumstick ha una composizione nutrizionale specifica con più grasso e proteine rispetto al pollo generico",
+    "spaghetti squash-spaghetti squash": "Lo spaghetti squash ha valori nutrizionali specifici diversi dalla zucca generica",
+    "scoop-ice cream": "Scoop è un'unità di misura, non un ingrediente specifico",
+    "apple pie filling-apple pie filling": "Il ripieno per torta di mele ha ingredienti e valori nutrizionali diversi dalle mele crude",
+    "panko breadcrumb-panko": "Il panko ha una composizione specifica diversa dal pane comune",
+    "skewer-chicken meat": "Skewer (spiedino) è un utensile, non un ingrediente",
+    "Krispies-cereals": "Krispies è un prodotto specifico con valori nutrizionali diversi dai cereali generici",
+    "parmigiano-reggiano cheese-cheese": "Il Parmigiano Reggiano ha valori nutrizionali specifici molto diversi dal formaggio generico"
+}
+
+Numero di mappature non ragionevoli : 9
+################################################################################
+
+################################################################################
+800 - 900 :
+{
+    "dry breadcrumb-bread": "Il pane secco grattugiato ha valori nutrizionali diversi dal pane normale, essendo disidratato e più concentrato",
+    "lemonade concentrate-lemonade concentrate": "Il concentrato di limonata ha valori nutrizionali molto diversi dalla limonata normale, essendo più concentrato di zuccheri e aromi",
+    "weed-fennel": "Weed (erbaccia) è un termine troppo generico e non equivale al finocchio",
+    "cream of celery soup-cream of celery soup": "La zuppa cremosa di sedano è un prodotto trasformato con valori nutrizionali molto diversi dal sedano fresco",
+    "peach schnapps-peach": "Il liquore alla pesca ha valori nutrizionali completamente diversi dalla pesca fresca, contenendo alcol e zuccheri aggiunti",
+    "lime rind-lime": "La scorza di lime ha una composizione nutrizionale diversa dalla polpa del frutto",
+    "marshmallow creme-marshmallow creme": "La crema di marshmallow ha valori nutrizionali diversi dalla panna normale",
+    "wine vinegar-wine": "L'aceto di vino ha una composizione nutrizionale molto diversa dal vino",
+    "prepared horseradish-horseradish": "Il rafano preparato contiene ingredienti aggiuntivi che ne modificano i valori nutrizionali rispetto al rafano fresco",
+    "pastry shell-pastry": "Il guscio di pasta sfoglia ha valori nutrizionali diversi dalla pasta sfoglia non cotta",
+    "bread dough-bread": "L'impasto del pane ha una composizione nutrizionale diversa dal pane cotto"
+}
+
+Numero di mappature non ragionevoli : 11
+################################################################################
+
+################################################################################
+900 - 1000 :
+{
+    "heart-vegetables": "Il cuore è un organo animale, non un vegetale - sono categorie di alimenti completamente diverse",
+    "bar-snickers": "Il termine 'bar' è troppo generico e non necessariamente si riferisce a una barretta di cioccolato tipo Snickers",
+    "butterscotch schnapps-butterscotch": "Lo schnapps è un liquore alcolico, mentre il butterscotch è una caramella/dolce - sono prodotti molto diversi",
+    "chipotle-pepper": "Il chipotle è un peperoncino affumicato specifico, mentre 'pepper' è troppo generico",
+    "wrapper-egg": "Il wrapper (involucro) non è correlato all'uovo - sono ingredienti completamente diversi",
+    "orange Jell-O-orange": "Il Jell-O è una gelatina dolce, mentre orange si riferisce al frutto - sono alimenti molto diversi",
+    "liquor-liquor": "Il termine è troppo generico per stabilire equivalenza nutrizionale",
+    "bread machine yeast-bread": "Il lievito è un ingrediente completamente diverso dal pane",
+    "liver-liver": "Il termine è troppo generico senza specificare il tipo di fegato",
+    "butter flavor crisco-butter": "Il Crisco è un grasso vegetale aromatizzato, nutrizionalmente molto diverso dal burro reale",
+    "Rice Krispie-rice": "I Rice Krispies sono cereali processati, nutrizionalmente diversi dal riso normale"
+}
+
+Numero di mappature non ragionevoli : 11
+################################################################################
+
+################################################################################
+1000 - 1100 :
+{
+    "grape tomato-grape": "Grape tomatoes sono pomodori, non uva. Il confronto con 'grape' non è appropriato, dovrebbe essere confrontato con 'tomato'.",
+    "cottage-cheese": "Il termine 'cottage' da solo è troppo generico e ambiguo. Dovrebbe essere specificato come 'cottage cheese'.",
+    "hearts-artichoke": "Il termine 'hearts' da solo è troppo generico e ambiguo. Dovrebbe essere specificato come 'artichoke hearts'.",
+    "orange blossom water-orange": "L'acqua di fiori d'arancio è un'essenza aromatica, molto diversa dall'arancia come frutto.",
+    "dripping-dressing": "Il 'dripping' si riferisce al grasso di cottura della carne, mentre il 'dressing' è un condimento per insalata. Sono ingredienti diversi.",
+    "kaffir lime leaf-lime": "Le foglie di lime kaffir sono un ingrediente aromatico molto diverso dal frutto del lime.",
+    "hen-meat": "Il termine 'hen' si riferisce specificamente al pollame, mentre 'meat' è troppo generico.",
+    "sherry wine vinegar-sherry wine": "L'aceto di vino sherry è un prodotto fermentato molto diverso dal vino sherry."
+}
+
+Numero di mappature non ragionevoli : 8
+################################################################################
+
+################################################################################
+1100 - 1200 :
+{
+    "lime leaf-lime": "Il lime leaf (foglia di lime/combava) è una foglia aromatica con proprietà nutritive molto diverse dal frutto del lime",
+    "concentrate-fruit juice": "Il termine 'concentrate' è troppo generico e potrebbe riferirsi a molti tipi diversi di concentrati, non solo succhi di frutta",
+    "lemon Jell-O-lemon": "Il Jell-O al limone è un dessert gelatinoso con proprietà nutritive molto diverse dal frutto del limone",
+    "apple pie spice-apple pie": "L'apple pie spice è una miscela di spezie, mentre apple pie è una torta intera - sono alimenti completamente diversi",
+    "corn flake crumb-corn": "I corn flake crumbs sono briciole di cereali processati, nutritivamente molto diverse dal mais",
+    "chili-garlic sauce-sauce": "Una salsa specifica piccante all'aglio non può essere approssimata con una generica 'sauce'",
+    "butterscotch chips-butterscotch chips": "I butterscotch chips sono dolciumi processati che non possono essere approssimati con il burro",
+    "maraschino cherry juice-maraschino cherry": "Il succo delle ciliegie maraschino ha proprietà nutritive diverse dalle ciliegie intere"
+}
+
+Numero di mappature non ragionevoli : 8
+################################################################################
+
+################################################################################
+1200 - 1300 :
+{
+    "salt & pepper-salt": "Non ragionevole poiché 'salt & pepper' è una miscela di due condimenti diversi, mentre 'salt' rappresenta solo uno dei due componenti",
+    "pie filling-pie": "Non ragionevole poiché il ripieno della torta è solo una componente del dolce intero e ha valori nutrizionali molto diversi",
+    "shaving-chocolate": "Non ragionevole poiché 'shaving' è un termine troppo generico che potrebbe riferirsi a diversi ingredienti",
+    "orange bell pepper-orange": "Non ragionevole poiché il peperone arancione è un vegetale completamente diverso dall'arancia",
+    "green food coloring-caramel": "Non ragionevole poiché sono coloranti alimentari di tipo e composizione completamente diversi",
+    "bone-ham": "Non ragionevole poiché l'osso è una parte strutturale con composizione nutrizionale molto diversa dalla carne",
+    "stalk-celery": "Non ragionevole poiché 'stalk' è un termine troppo generico che può riferirsi a diverse parti di piante",
+    "protein-protein": "Non ragionevole poiché 'protein' è un termine troppo generico senza specificare la fonte o il tipo",
+    "kiss-chocolate": "Non ragionevole poiché 'kiss' è un termine troppo generico che potrebbe riferirsi a diversi prodotti",
+    "banana liqueur-banana": "Non ragionevole poiché il liquore alla banana è una bevanda alcolica con composizione molto diversa dalla frutta fresca"
+}
+
+Numero di mappature non ragionevoli : 10
+################################################################################
+
+################################################################################
+1300 - 1400 :
+{
+    "starter-bread": "Il termine 'starter' è troppo generico e potrebbe riferirsi a diversi tipi di alimenti, non necessariamente correlati al pane",
+    "butter flavoring-butter": "Il butter flavoring è un aroma artificiale con composizione nutrizionale molto diversa dal burro reale",
+    "apricot brandy-apricot": "L'apricot brandy è una bevanda alcolica con valori nutrizionali molto diversi dall'albicocca fresca",
+    "strawberry Jell-O-strawberry": "La gelatina alla fragola ha una composizione nutrizionale molto diversa dalla fragola fresca",
+    "square-crackers": "Il termine 'square' è troppo generico e ambiguo per essere mappato ai crackers",
+    "shoot-pea": "Il termine 'shoot' è troppo generico e potrebbe riferirsi a diversi germogli, non solo ai piselli",
+    "crisp rice cereal-crisp": "Il termine 'crisp' da solo è troppo generico e ambiguo"
+}
+
+Numero di mappature non ragionevoli : 7
+################################################################################
+
+################################################################################
+1400 - 1500 :
+{
+    "malt vinegar-malt": "Malt vinegar è un tipo di aceto (vinegar), non può essere approssimato con il malto",
+    "slices-bread": "Slices è un termine generico che indica fette/affettati, non specificatamente pane",
+    "raspberry Jell-O-raspberry": "Raspberry Jell-O è un dessert gelatinoso, non può essere approssimato con il frutto lampone",
+    "celery root-celery": "Il sedano rapa (celery root) ha valori nutrizionali diversi dal sedano normale",
+    "alfalfa sprout-alfalfa": "I germogli di alfalfa hanno valori nutrizionali diversi dalla pianta alfalfa",
+    "rice paper-rice paper": "La carta di riso ha valori nutrizionali molto diversi dal riso",
+    "sour-soda": "Sour è un termine troppo generico e non specificatamente riferito a bevande gassate",
+    "Dorito-crackers": "I Doritos sono snack di mais fritto con valori nutrizionali diversi dai crackers"
+}
+
+Numero di mappature non ragionevoli : 8
+################################################################################
+
+################################################################################
+1500 - 1600 :
+{
+    "orange flower water-orange": "Orange flower water è un'essenza/aroma derivato dai fiori d'arancio, molto diverso dal frutto dell'arancia",
+    "palm-nut": "Palm e nut sono ingredienti completamente diversi, palm si riferisce alla palma mentre nut ai frutti secchi in generale",
+    "Creme de Cacao-cacao": "Creme de Cacao è un liquore, mentre il cacao è l'ingrediente base in polvere - hanno composizioni e valori nutrizionali molto diversi",
+    "creme de menthe-creme de menthe": "Creme de menthe è un liquore alla menta, non confrontabile con una generica marmellata",
+    "Midori melon liqueur-melon": "Midori è un liquore al melone, non confrontabile nutrizionalmente con il frutto del melone",
+    "tart apple-tart": "Tart apple si riferisce a una mela aspra, mentre tart è un tipo di torta - sono alimenti completamente diversi",
+    "Chambord raspberry liquor-chambord": "Chambord è un liquore ai lamponi, non confrontabile con un generico liquore",
+    "French-fried onion-onion": "Le cipolle fritte hanno valori nutrizionali molto diversi dalle cipolle crude a causa della frittura",
+    "custard powder-custard": "Il custard powder è una miscela in polvere, mentre il custard è la crema pronta - hanno composizioni diverse",
+    "round-bread": "Round è un termine troppo generico/ambiguo per essere confrontato con il pane",
+    "pork and bean-pork": "Pork and beans è un piatto completo con fagioli, non confrontabile con la sola carne di maiale",
+    "black bean sauce-black bean sauce": "La salsa di fagioli neri è un condimento elaborato, non confrontabile con i semplici fagioli"
+}
+
+Numero di mappature non ragionevoli : 12
+################################################################################
+
+################################################################################
+1600 - 1700 :
+{
+    "paper-rice": "Paper e riso sono ingredienti completamente diversi e non correlati",
+    "chipotle powder-garlic powder": "Il chipotle in polvere e l'aglio in polvere sono spezie completamente diverse con proprietà nutritive diverse",
+    "almond bark-almond": "L'almond bark è un tipo di cioccolato per ricoperture, non mandorle",
+    "butter flavor shortening-butter": "Lo shortening aromatizzato al burro ha una composizione nutritiva molto diversa dal burro vero",
+    "lime Jell-O gelatin-lime": "Il Jell-O alla lima è un dessert gelatinoso dolce, non può essere equiparato al frutto lime",
+    "A.1. Original Sauce-sauce": "L'A.1. è una salsa specifica con composizione unica, non può essere generalizzata come generica 'salsa'",
+    "curry leaf-curry": "La foglia di curry è un'erba aromatica, mentre il curry è una miscela di spezie",
+    "season salt-salt": "Il sale aromatizzato contiene altri ingredienti oltre al sale",
+    "phyllo-crispbread": "La pasta fillo e il pane croccante sono prodotti completamente diversi con composizioni diverse"
+}
+
+Numero di mappature non ragionevoli : 9
+################################################################################
+
+################################################################################
+1700 - 1800 :
+{
+    "spinach fettuccine-spinach": "Spinach fettuccine is primarily pasta with some spinach content - using pure spinach values would be incorrect",
+    "lemonade mix-lemonade": "Lemonade mix is a concentrated powder form, with different nutritional composition than prepared lemonade",
+    "Italian breadcrumb-crispbread": "Italian breadcrumbs have different seasonings and composition than plain crispbread",
+    "brown-chocolate": "Too ambiguous - 'brown' could refer to many ingredients, not necessarily chocolate",
+    "beef consomme-beef": "Beef consomme is a clear soup made from beef, very different from plain beef meat",
+    "rum flavoring-rum": "Artificial rum flavoring has very different composition from actual rum alcohol",
+    "gumdrop-sugar": "Gumdrops contain other ingredients beyond sugar, including gelatin and other additives",
+    "liquid-yeast": "Too ambiguous - 'liquid' could refer to many ingredients, not specifically yeast",
+    "chocolate powder-chocolate": "Chocolate powder has different fat content and composition than solid chocolate",
+    "lime Jell-O-lime": "Lime Jell-O is a gelatin dessert, nutritionally very different from fresh lime",
+    "wax-bean": "Too ambiguous - 'wax' alone is not clearly referring to wax beans",
+    "morsels-chocolate": "Too ambiguous - 'morsels' could refer to many types of ingredients"
+}
+
+Numero di mappature non ragionevoli : 12
+################################################################################
+
+################################################################################
+1800 - 1900 :
+{
+    "currant jelly-currant": "La gelatina di ribes è un prodotto trasformato con zuccheri aggiunti, significativamente diverso dal frutto fresco",
+    "cinnamon-sugar mixture-cinnamon": "La miscela cannella-zucchero ha una composizione nutrizionale molto diversa dalla sola cannella",
+    "tarragon vinegar-tarragon": "L'aceto aromatizzato al dragoncello ha un profilo nutrizionale molto diverso dall'erba fresca",
+    "lemon yogurt-lemon": "Lo yogurt al limone ha un profilo nutrizionale completamente diverso dal limone",
+    "yellow food coloring-caramel": "Il colorante alimentare giallo è un additivo sintetico con composizione diversa dal caramello",
+    "whole berry cranberry sauce-berry": "La salsa di mirtilli rossi è un prodotto trasformato con zuccheri aggiunti, diverso dai frutti freschi",
+    "hot chocolate powder-hot chocolate": "La polvere di cioccolata calda è un prodotto secco con composizione diversa dalla bevanda pronta",
+    "chocolate milk mix-chocolate milk": "Il preparato per latte al cioccolato è una polvere con composizione diversa dalla bevanda pronta",
+    "buttermilk baking mix-buttermilk": "Il preparato per dolci al latticello contiene farina e altri ingredienti, molto diverso dal solo latticello",
+    "lime gelatin-lime": "La gelatina al lime è un prodotto trasformato con composizione molto diversa dal frutto fresco",
+    "strawberry gelatin-strawberry": "La gelatina alla fragola è un prodotto trasformato con composizione molto diversa dal frutto fresco"
+}
+
+Numero di mappature non ragionevoli : 11
+################################################################################
+
+################################################################################
+1900 - 2000 :
+{
+    "potato water-potato": "Il potato water è l'acqua di cottura delle patate, con valori nutrizionali molto diversi dalle patate stesse",
+    "ginger syrup-ginger": "Lo sciroppo di zenzero ha valori nutrizionali molto diversi dallo zenzero fresco a causa dell'alto contenuto di zuccheri",
+    "melon liqueur-melon": "Il liquore al melone ha valori nutrizionali molto diversi dal melone fresco, dato l'alto contenuto alcolico e di zuccheri",
+    "chicken rice-a-roni-chicken": "Il Rice-a-Roni è un prodotto a base di riso e pasta con condimenti, molto diverso dal pollo puro",
+    "onion juice-onion": "Il succo di cipolla è molto più diluito e ha valori nutrizionali diversi dalla cipolla intera",
+    "candy coating-candy": "Il candy coating è uno strato di rivestimento dolce con composizione specifica, diverso dai dolciumi generici",
+    "chocolate drink mix-chocolate drink": "Il mix in polvere ha una composizione diversa dalla bevanda già preparata"
+}
+
+Numero di mappature non ragionevoli : 7
+################################################################################
+
+################################################################################
+2000 - 2100 :
+{
+    "Italian seasoned breadcrumb-crispbread": "Different products - seasoned breadcrumbs are ground seasoned bread while crispbread is a crisp flatbread",
+    "fraiche-cheese": "Crème fraiche is a dairy cream product, not a cheese",
+    "amarula-fruit": "Amarula is a cream liqueur, not a fruit",
+    "marula cream liqueur-cream": "A liqueur is an alcoholic beverage, very different from cream",
+    "seafood cocktail sauce-seafood": "Cocktail sauce is a condiment/sauce, not seafood",
+    "raspberry gelatin powder-raspberry": "Gelatin powder is a processed dessert mix, significantly different from fresh raspberries",
+    "rose-rose": "Too ambiguous without context - could refer to flower, wine, or other products",
+    "crabapple-vegetables": "Crabapple is a fruit, not a vegetable",
+    "cinnamon syrup-cinnamon": "Syrup has very different nutritional profile from ground spice",
+    "strawberry Jell-O gelatin dessert -strawberry": "Processed gelatin dessert is very different from fresh fruit",
+    "jalapeno juice-jalapeno": "Juice has different nutritional profile from whole pepper",
+    "raspberry liqueur-raspberry": "Alcoholic beverage is very different from fresh fruit",
+    "head-vegetables": "Too ambiguous without context",
+    "pulp-fruit juice": "Pulp is the solid part while juice is liquid - different nutritional profiles",
+    "Dijon-dijon": "Too ambiguous without context - needs to specify mustard"
+}
+
+Numero di mappature non ragionevoli : 15
+################################################################################
+
+################################################################################
+2100 - 2200 :
+{
+    "bulb-onion": "Bulb è un termine troppo generico che può riferirsi a diversi tipi di vegetali bulbosi (aglio, cipolla, scalogno, ecc.)",
+    "dog-sausages": "Dog e sausages sono due alimenti completamente diversi",
+    "grape leaf-grape": "Le foglie di vite e l'uva hanno valori nutrizionali molto diversi",
+    "sesame seed oil-sesame seed": "L'olio di semi di sesamo ha valori nutrizionali molto diversi dai semi interi",
+    "baking-baking powder": "Baking da solo è troppo generico e ambiguo",
+    "Splenda brown sugar blend-splenda": "Il blend con zucchero di canna ha valori nutrizionali diversi dalla Splenda pura",
+    "patties-beef": "Patties è troppo generico e può riferirsi a polpette di diversi ingredienti",
+    "maple-maple syrup": "Maple da solo è troppo generico e ambiguo",
+    "rice stick-rice": "Rice stick si riferisce a un tipo di noodle/pasta, non al riso",
+    "poppy-poppy seed": "Poppy da solo è troppo generico e ambiguo",
+    "almond liqueur-almond": "Il liquore alla mandorla ha valori nutrizionali molto diversi dalle mandorle",
+    "thread-saffron": "Thread da solo è troppo generico e ambiguo",
+    "mint chocolate chip-mint chocolate": "Il gelato alla menta e cioccolato ha valori nutrizionali diversi dal cioccolato alla menta"
+}
+
+Numero di mappature non ragionevoli : 13
+################################################################################
+
+################################################################################
+2200 - 2300 :
+{
+    "jalapeno jack cheese-jalapeno": "Non ragionevole perché il jalapeno jack cheese è un formaggio con peperoncini, mentre il jalapeno è solo il peperoncino - sono ingredienti molto diversi",   
+    "orange Curacao-orange": "Non ragionevole perché l'Orange Curacao è un liquore, mentre orange si riferisce al frutto - sono ingredienti completamente diversi",
+    "apple brandy-apple": "Non ragionevole perché l'apple brandy è un liquore mentre apple è il frutto - sono ingredienti completamente diversi",
+    "gingerbread-ginger": "Non ragionevole perché il gingerbread è un dolce/biscotto mentre il ginger è la spezia zenzero - sono ingredienti molto diversi",
+    "salt and black pepper-salt": "Non ragionevole perché 'salt and black pepper' è una miscela di due condimenti mentre salt è solo il sale - sono ingredienti diversi",
+    "cayenne pepper sauce-cayenne pepper": "Non ragionevole perché la cayenne pepper sauce è una salsa liquida mentre il cayenne pepper è la spezia in polvere - hanno composizioni e usi diversi"
+}
+
+Numero di mappature non ragionevoli : 6
+################################################################################
+
+################################################################################
+2300 - 2400 :
+{
+    "almond essence-almond": "L'essenza di mandorla è un aroma concentrato, molto diverso dalle mandorle in termini nutrizionali",
+    "peach liqueur-peach": "Il liquore alla pesca ha una composizione molto diversa dalla pesca fresca, principalmente per il contenuto alcolico",
+    "Malibu rum-malibu": "Il rum Malibu ha una composizione specifica diversa dal termine generico 'malibu'",
+    "7-Up soda-soda": "La 7-Up ha una composizione specifica che può differire significativamente da una generica soda",
+    "dried tart cherry-tart cherry": "Le ciliegie secche hanno valori nutrizionali molto diversi dalle ciliegie fresche",
+    "guava paste-guava": "La pasta di guava è un prodotto concentrato con valori nutrizionali diversi dalla guava fresca",
+    "strawberry preserve-strawberry": "La confettura di fragole ha un contenuto di zuccheri e calorie molto diverso dalle fragole fresche",
+    "malted milk powder-milk": "Il latte malto in polvere ha una composizione molto diversa dal latte normale",
+    "Amarula cream liqueur-cream": "Il liquore alla crema ha una composizione molto diversa dalla crema, principalmente per il contenuto alcolico",
+    "Heath candy bar-heath": "La barretta Heath ha una composizione specifica che non può essere approssimata dal termine generico 'heath'",
+    "Hersheys Chocolate Syrup-hersheys": "Lo sciroppo al cioccolato Hershey's ha una composizione specifica che non può essere approssimata dal termine generico 'hersheys'",
+    "orange food coloring-orange": "Il colorante alimentare arancione non ha nulla a che fare nutrizionalmente con l'arancia",
+    "Karo-sugar": "Il Karo è uno sciroppo di mais con una composizione diversa dallo zucchero"
+}
+
+Numero di mappature non ragionevoli : 13
+################################################################################
+
+################################################################################
+2400 - 2500 :
+{
+    "nut butter-nut": "Nut butter è una pasta/crema di frutta secca, mentre nut è la frutta secca intera - hanno composizioni nutrizionali diverse",
+    "strawberry glaze-strawberry": "La glassa alla fragola contiene zuccheri aggiunti e altri ingredienti, è nutrizionalmente diversa dalla fragola fresca",
+    "Butter Flavor Crisco-butter": "Il Crisco è un grasso vegetale idrogenato, nutrizionalmente molto diverso dal burro",
+    "Sweet n Low-sugar": "Sweet n Low è un dolcificante artificiale con composizione molto diversa dallo zucchero",
+    "frozen limeade concentrate-limeade": "Il concentrato congelato ha una densità di nutrienti molto maggiore rispetto alla bevanda diluita",
+    "carob powder-carob": "Il carob in polvere ha una concentrazione di nutrienti diversa dal frutto intero",
+    "fat-free half-and-half-milk": "Il fat-free half-and-half ha una composizione nutrizionale specifica diversa dal latte generico",
+    "tangerine peel-tangerine": "La buccia del mandarino ha una composizione nutrizionale molto diversa dalla polpa",
+    "peach brandy-peach": "Il brandy alla pesca è una bevanda alcolica con composizione molto diversa dalla pesca fresca",
+    "stir-fry sauce-sauce": "La salsa per stir-fry ha ingredienti e valori nutrizionali specifici diversi da una salsa generica",
+    "raspberry Jell-O gelatin-raspberry": "La gelatina ha una composizione molto diversa dal frutto fresco",
+    "Applejack-apple": "L'Applejack è una bevanda alcolica con composizione molto diversa dalla mela",
+    "imitation crabmeat-crabmeat": "Il surimi ha una composizione nutrizionale diversa dalla vera carne di granchio",
+    "instant malted milk powder-milk": "Il latte malto in polvere ha una composizione diversa dal latte normale"
+}
+
+Numero di mappature non ragionevoli : 14
+################################################################################
+
+################################################################################
+2500 - 2600 :
+{
+    "onion seed-onion": "Onion seeds sono semi aromatici, mentre onion è la verdura - hanno proprietà nutrizionali molto diverse",
+    "tomato passata-tomato": "La passata ha una consistenza e concentrazione diversa dal pomodoro fresco, con valori nutrizionali differenti",
+    "juniper berry-berry": "Il ginepro ha proprietà e valori nutrizionali molto diversi dalle bacche comuni",
+    "ancho chile powder-chile": "Il peperoncino in polvere ha valori nutrizionali e concentrazione molto diversi dal peperoncino fresco",
+    "bulgar-wheat": "Il bulgur è grano elaborato con valori nutrizionali diversi dal grano semplice",
+    "brown rice syrup-brown rice": "Lo sciroppo di riso ha valori nutrizionali molto diversi dal riso integrale",
+    "orange gelatin-orange": "La gelatina all'arancia ha valori nutrizionali completamente diversi dall'arancia fresca",
+    "rice syrup-rice": "Lo sciroppo di riso ha valori nutrizionali molto diversi dal riso",
+    "sunflower-sunflower seed": "Il girasole intero è diverso dai semi di girasole",
+    "banana extract-banana": "L'estratto di banana è un aroma concentrato con valori nutrizionali molto diversi dalla banana",
+    "acid-milk": "Acido e latte sono ingredienti completamente diversi e non correlati",
+    "turnip green-turnip": "Le foglie di rapa hanno valori nutrizionali diversi dal tubero",
+    "chocolate soymilk-chocolate": "Il latte di soia al cioccolato ha valori nutrizionali molto diversi dal cioccolato puro"
+}
+
+Numero di mappature non ragionevoli : 13
+################################################################################
+
+################################################################################
+2600 - 2700 :
+{
+    "curls-chocolate": "I valori nutrizionali del cioccolato non possono rappresentare i curls, che sono probabilmente snack/biscotti dalla forma arricciata",
+    "rice bubbles-rice": "I rice bubbles sono cereali per colazione trasformati, con valori nutrizionali diversi dal riso semplice",
+    "panir-goat cheese": "Il panir è un formaggio fresco indiano fatto con latte vaccino, molto diverso dal formaggio di capra",
+    "cream sherry-cream": "Il cream sherry è un tipo di vino fortificato, non ha nulla a che fare con la panna",
+    "pork & beans-pork": "Pork & beans è un piatto composto che include fagioli, non può essere rappresentato solo dalla carne di maiale",
+    "candy corn-candy corn": "Il candy corn è una caramella dolce, non correlata al mais nonostante il nome",
+    "vanilla instant pudding mix-vanilla": "Il pudding mix è un prodotto trasformato con ingredienti aggiuntivi, non può essere rappresentato dalla sola vaniglia",
+    "meatloaf mix-meatloaf": "Il meatloaf mix è una miscela di carni crude, mentre il meatloaf è il prodotto cotto finale",
+    "lemon sherbet-lemon": "Il sorbetto al limone è un dessert ghiacciato trasformato, non può essere rappresentato dal limone fresco",
+    "cherry gelatin-cherry": "La gelatina alla ciliegia è un prodotto trasformato dolce, non può essere rappresentato dalle ciliegie fresche",
+    "cherry Kool-Aid-cherry": "Il Kool-Aid è una bevanda artificiale aromatizzata, non può essere rappresentata dalla frutta fresca"
+}
+
+Numero di mappature non ragionevoli : 11
+################################################################################
+
+################################################################################
+2700 - 2800 :
+{
+    "apple syrup-apple": "Apple syrup is a concentrated sweetener with very different nutritional profile from whole apples",
+    "strawberry extract-strawberry": "Strawberry extract is a concentrated flavoring with negligible nutritional value compared to whole strawberries",
+    "orange flavoring-orange": "Orange flavoring is an artificial concentrate with negligible nutritional value compared to whole oranges",
+    "soya flour-flour": "Soya flour has significantly different nutritional profile (higher protein, different carbs) than regular wheat flour",
+    "banana syrup-banana": "Banana syrup is a concentrated sweetener with very different nutritional profile from whole bananas",
+    "cinnamon baking chip-cinnamon": "Baking chips contain additional ingredients like sugar and oils, very different from pure cinnamon",
+    "black bean garlic sauce-black bean": "The sauce contains multiple ingredients and has very different nutritional profile from plain black beans",
+    "banana leaf-banana": "Banana leaf is not edible and has completely different nutritional properties from banana fruit",
+    "pine-pine nuts": "Pine (tree) is completely different from edible pine nuts",
+    "pasta water-pasta": "Pasta cooking water is mostly water with minimal dissolved starch, completely different from pasta itself"
+}
+
+Numero di mappature non ragionevoli : 10
+################################################################################
+
+################################################################################
+2800 - 2900 :
+{
+    "Italian herb seasoning-herb": "Le erbe aromatiche italiane sono una miscela specifica di erbe diverse dal generico 'herb'",
+    "Chinese wine-wine": "Il vino cinese (tipicamente vino di riso) ha caratteristiche nutrizionali diverse dal vino tradizionale",
+    "pineapple sherbet-pineapple": "Il sorbetto all'ananas ha valori nutrizionali molto diversi dall'ananas fresco",
+    "toasted pine nut-nut": "I pinoli hanno valori nutrizionali specifici diversi da un generico 'nut'",
+    "rose petal-rose": "I petali di rosa commestibili hanno valori nutrizionali specifici diversi dalla rosa generica",
+    "ReaLemon juice-juice": "Il succo di limone ha valori nutrizionali specifici diversi da un generico 'juice'",
+    "creme de banane-banana": "Il liquore alla banana ha valori nutrizionali molto diversi dalla banana fresca",
+    "bean sauce-bean": "La salsa di fagioli ha valori nutrizionali diversi dai fagioli",
+    "vanilla instant pudding-vanilla": "Il budino alla vaniglia ha valori nutrizionali molto diversi dalla vaniglia pura",
+    "salad leaf-salad": "Le foglie per insalata hanno valori nutrizionali diversi da un'insalata completa",
+    "popsicle stick-popsicle": "Il bastoncino del ghiacciolo non è commestibile e non ha valori nutrizionali comparabili",
+    "ranch style bean-ranch": "I fagioli in stile ranch hanno valori nutrizionali diversi dal condimento ranch",
+    "pineapple preserves-pineapple": "La confettura di ananas ha valori nutrizionali diversi dall'ananas fresco",
+    "orange cake mix-orange": "Il preparato per torta all'arancia ha valori nutrizionali molto diversi dall'arancia",
+    "wasabi pea-wasabi": "I piselli al wasabi hanno valori nutrizionali diversi dal wasabi puro",
+    "pepper oil-pepper": "L'olio al pepe ha valori nutrizionali molto diversi dal pepe",
+    "carob chip-carob": "Le gocce di carruba hanno valori nutrizionali diversi dalla carruba pura"
+}
+
+Numero di mappature non ragionevoli : 17
+################################################################################
+
+################################################################################
+2900 - 3000 :
+{
+    "candy sprinkles-candy": "Candy sprinkles sono decorazioni zuccherine specifiche con composizione diversa dai dolciumi generici",
+    "cupcake liner-cupcake": "Il liner è un contenitore non commestibile, non può essere mappato con il cupcake",
+    "matcha green tea powder-tea": "Il tè matcha in polvere ha una composizione nutrizionale molto diversa dal tè generico",
+    "anise oil-anise": "L'olio essenziale di anice ha una composizione molto diversa dal seme di anice",
+    "cinnamon schnapps-cinnamon": "Il liquore alla cannella ha una composizione molto diversa dalla spezia cannella",
+    "chicken fat-chicken": "Il grasso di pollo ha una composizione nutrizionale completamente diversa dalla carne di pollo",
+    "grated-cheese": "Grated (grattugiato) è un termine generico che non può essere mappato specificamente al formaggio",
+    "chile powder-chile": "La polvere di peperoncino ha una composizione diversa dal peperoncino fresco",
+    "phyllo cup-crispbread": "La sfoglia phyllo ha una composizione diversa dal pane croccante",
+    "chocolate whipped cream-chocolate": "La panna montata al cioccolato ha una composizione molto diversa dal cioccolato puro",
+    "spinach linguine-spinach": "La pasta agli spinaci ha una composizione nutrizionale molto diversa dagli spinaci",
+    "farfel-bread": "Il farfel è una pasta all'uovo, nutrizionalmente diversa dal pane",
+    "black walnut flavoring-black walnut": "L'aroma artificiale ha una composizione completamente diversa dalla noce vera",
+    "cream soup-cream": "La zuppa cremosa ha una composizione molto diversa dalla panna",
+    "turkey neck-turkey": "Il collo di tacchino ha una composizione diversa dalla carne di tacchino in generale"
+}
+
+Numero di mappature non ragionevoli : 15
+################################################################################
+
+################################################################################
+3000 - 3100 :
+{
+    "butter substitute-butter": "Butter substitute (like margarine) ha una composizione nutrizionale significativamente diversa dal burro naturale",
+    "deviled ham-ham": "Il deviled ham è un prodotto trasformato con ingredienti aggiunti che modificano significativamente il profilo nutrizionale rispetto al prosciutto semplice",
+    "chive & onion cream cheese-onion": "Questi sono prodotti completamente diversi - il cream cheese aromatizzato è un formaggio spalmabile mentre la cipolla è un vegetale",
+    "grapefruit soda-grapefruit": "La soda al pompelmo è una bevanda zuccherata gassata, nutrizionalmente molto diversa dal frutto fresco",
+    "dessert mix-shortbread cookie": "Un mix per dessert generico e un biscotto specifico hanno composizioni nutrizionali potenzialmente molto diverse",
+    "orange syrup-orange": "Lo sciroppo all'arancia è un prodotto zuccherino concentrato, molto diverso dal frutto fresco",
+    "Cherry 7-Up-cherry": "La bevanda gassata ha una composizione nutrizionale completamente diversa dalla ciliegia fresca",
+    "raspberry vodka-raspberry": "Il liquore aromatizzato al lampone ha un profilo nutrizionale completamente diverso dal frutto",
+    "ginger biscuit-ginger": "Un biscotto allo zenzero è un prodotto da forno elaborato, molto diverso dallo zenzero puro",
+    "coconut essence-coconut": "L'essenza è un aroma concentrato, non paragonabile nutrizionalmente al cocco fresco",
+    "packet Lipton Onion Soup Mix-onion soup mix-onion": "Il mix per zuppa di cipolle è un prodotto processato con vari ingredienti, molto diverso dalla cipolla fresca"
+}
+
+Numero di mappature non ragionevoli : 11
+################################################################################
+
+################################################################################
+3100 - 3200 :
+{
+    "garlic granules-garlic": "Garlic granules sono una forma disidratata e processata di aglio, con valori nutrizionali diversi dall'aglio fresco",   
+    "cherry preserve-cherry": "La conserva di ciliegie contiene zuccheri aggiunti e ha valori nutrizionali molto diversi dalle ciliegie fresche",
+    "grated lime zest-lime": "La scorza di lime ha una composizione nutrizionale molto diversa dal frutto intero",
+    "clove minced garlic-clove": "L'aglio tritato e i chiodi di garofano sono ingredienti completamente diversi",
+    "plum jelly-plum": "La gelatina di prugne contiene zuccheri aggiunti e ha valori nutrizionali molto diversi dalle prugne fresche",
+    "mixed baby green-vegetables": "I germogli hanno valori nutrizionali specifici che differiscono significativamente dalla media generica delle verdure",
+    "pastry for double-crust pie-pastry": "La pasta per torta doppia ha una composizione specifica che differisce dalla pasta generica",
+    "snow pea pod-pea": "I baccelli dei piselli dolci hanno una composizione nutrizionale diversa dai piselli",
+    "seasoned flour-flour": "La farina condita contiene spezie e sale aggiunti che modificano significativamente il profilo nutrizionale",
+    "pea shoot-pea": "I germogli di pisello hanno una composizione nutrizionale molto diversa dai piselli",
+    "pork bean-pork": "I fagioli con carne di maiale sono un piatto composto con valori nutrizionali molto diversi dalla sola carne di maiale"
+}
+
+Numero di mappature non ragionevoli : 11
+################################################################################
+
+################################################################################
+3200 - 3300 :
+{
+    "banana chip-banana": "Banana chips sono snack trasformati e fritti, con valori nutrizionali molto diversi dalla banana fresca",
+    "candy orange slice-candy": "Le fette d'arancia candite hanno valori nutrizionali specifici diversi dai dolciumi generici",
+    "cranberry vodka-cranberry": "Il liquore ha valori nutrizionali completamente diversi dal frutto",
+    "meat substitute-meat": "I sostituti della carne sono prodotti vegetali con composizione nutrizionale molto diversa dalla carne vera",
+    "pita chip-pita": "I chips di pita sono snack fritti con valori nutrizionali diversi dal pane pita normale",
+    "strawberry juice-strawberry": "Il succo ha valori nutrizionali diversi dal frutto intero",
+    "Coffee-mate-coffee": "Il Coffee-mate è un sostituto del latte/panna con composizione molto diversa dal caffè",
+    "pineapple preserve-pineapple": "La confettura ha valori nutrizionali diversi dal frutto fresco per l'aggiunta di zuccheri"
+}
+
+Numero di mappature non ragionevoli : 8
+################################################################################
+
+################################################################################
+3300 - 3400 :
+{
+    "cinnamon-sugar-cinnamon": "Cinnamon-sugar is a mixture of cinnamon and sugar, which has significantly different nutritional values from pure cinnamon",
+    "jerk spice-pepper": "Jerk spice is a complex blend of multiple spices, not comparable to simple pepper",
+    "rye whiskey-rye": "Rye whiskey is an alcoholic beverage with very different nutritional properties from raw rye grain",
+    "flower water-water": "Flower water typically contains essential oils and other compounds not present in plain water",
+    "carrot cake mix-carrot cake": "A dry cake mix has very different nutritional composition from the finished cake",
+    "pie filling mix-pie": "A dry pie filling mix has very different nutritional composition from a finished pie",
+    "potato gnocchi-potato": "Gnocchi contains additional ingredients like flour and eggs beyond just potato",
+    "ginger wine-ginger": "Ginger wine is an alcoholic beverage with very different nutritional properties from raw ginger",
+    "crushed potato chip-potato": "Potato chips are processed with oil and have very different nutritional values from raw potatoes",
+    "chicken soup base-chicken soup": "Soup base is a concentrated form with different nutritional composition than prepared soup",
+    "raisin bran cereal-raisins": "Raisin bran cereal contains additional ingredients beyond raisins, including bran flakes",
+    "spinach souffle-spinach": "Spinach souffle contains additional ingredients like eggs and cheese beyond just spinach",
+    "hollandaise sauce mix-hollandaise sauce": "A dry sauce mix has different nutritional composition from the prepared sauce"
+}
+
+Numero di mappature non ragionevoli : 13
+################################################################################
+
+################################################################################
+3400 - 3500 :
+{
+    "Mars bar-mars": "Mars bar è una barretta di cioccolato specifica, mentre 'mars' è troppo generico e potrebbe riferirsi ad altri concetti",
+    "pastry flour-pastry": "La farina per dolci (pastry flour) è un ingrediente base, mentre pastry si riferisce al prodotto finito (dolce/pasta)",
+    "M&Ms peanut chocolate candy-peanut": "M&Ms sono caramelle di cioccolato con arachidi, mentre 'peanut' si riferisce solo alle arachidi",
+    "truffle-truffle": "Il termine truffle è ambiguo e può riferirsi sia al tartufo (fungo) che al cioccolatino, rendendo l'approssimazione non affidabile",
+    "fruit filling-fruit": "Il ripieno di frutta è un prodotto processato con zuccheri e altri ingredienti, diverso dalla frutta fresca",
+    "banana flavoring-banana": "L'aroma di banana è un prodotto artificiale con valori nutrizionali molto diversi dalla banana vera",
+    "cake yeast-cake": "Il lievito per dolci è completamente diverso dal dolce (cake) come prodotto finito",
+    "wheat flakes cereal-wheat": "I cereali in fiocchi sono un prodotto processato con valori nutrizionali diversi dal grano semplice",
+    "snap-pea": "Il termine 'snap' è troppo generico e ambiguo per essere mappato correttamente",
+    "shank-beef meat": "Lo stinco (shank) è un taglio specifico con osso, diverso dalla carne di manzo generica",
+    "drops green food coloring-caramel": "Il colorante alimentare verde è completamente diverso dal caramello",
+    "coating-candy": "Il termine 'coating' è troppo generico e può riferirsi a diversi tipi di rivestimento",
+    "ice cream topping-ice cream": "La guarnizione per gelato è un prodotto diverso dal gelato stesso",
+    "strawberry cream liqueur-strawberry": "Il liquore alla fragola è una bevanda alcolica processata, molto diversa dalla fragola fresca"
+}
+
+Numero di mappature non ragionevoli : 14
+################################################################################
+
+################################################################################
+3500 - 3600 :
+{
+    "salad cream-salad": "Salad cream è una salsa/condimento, mentre salad è un'insalata - sono alimenti completamente diversi",
+    "shrimp stock-shrimp": "Il brodo di gamberi ha una composizione nutrizionale molto diversa dai gamberi interi",
+    "chocolate crumb crust-chocolate": "La crosta di briciole di cioccolato contiene altri ingredienti oltre al cioccolato come biscotti/cracker",
+    "pistachio pudding mix-pistachio": "Il mix per budino al pistacchio contiene molti altri ingredienti oltre al pistacchio",
+    "strand-string bean": "Il termine 'strand' è troppo generico e non necessariamente si riferisce ai fagiolini",
+    "cubes-beef bouillon": "Il termine 'cubes' è troppo generico e non specificatamente riferito al dado da brodo",
+    "turkey ham-turkey": "Il prosciutto di tacchino è un prodotto processato con composizione diversa dalla carne di tacchino pura",
+    "squash blossom-squash": "I fiori di zucca hanno una composizione nutrizionale molto diversa dalla zucca",
+    "alfredo-cheese": "La salsa Alfredo è una preparazione complessa con ingredienti diversi dal solo formaggio",
+    "grain-wheat": "Il termine 'grain' è troppo generico e può riferirsi a diversi tipi di cereali",
+    "cream of asparagus soup-asparagus": "La zuppa cremosa di asparagi contiene molti altri ingredienti oltre agli asparagi"
+}
+
+Numero di mappature non ragionevoli : 11
+################################################################################
+
+################################################################################
+3600 - 3700 :
+{
+    "nugget-nugget": "Il termine 'nugget' è troppo generico per essere mappato senza ulteriori specifiche, meglio usare C (chicken bone free meat)",
+    "orange twist-orange": "Orange twist è una guarnizione/scorza, non comparabile al frutto intero",
+    "pear nectar-pear": "Il nettare di pera è una bevanda, non comparabile al frutto intero",
+    "orange pekoe tea bag-orange": "Orange pekoe è un tipo di tè, non ha relazione con l'arancia",
+    "plum wine-plum": "Il vino di prugne è una bevanda alcolica, non comparabile al frutto",
+    "strawberry daiquiri mix-strawberry daiquiri": "Il mix per daiquiri ha una composizione diversa dal cocktail finale",
+    "peach gelatin-peach": "La gelatina alla pesca ha una composizione molto diversa dal frutto",
+    "raspberry syrup-raspberry": "Lo sciroppo di lampone ha una composizione diversa dal frutto",
+    "green apple vodka-green apple": "La vodka aromatizzata è una bevanda alcolica, non comparabile al frutto",
+    "fruit pectin-fruit": "La pectina è un additivo, non comparabile alla frutta",
+    "strawberry Kool-Aid-strawberry": "Il Kool-Aid è una bevanda artificiale, non comparabile al frutto",
+    "peanut satay sauce-peanut": "La salsa satay ha una composizione complessa, non comparabile alle arachidi pure",
+    "lemon verbena-lemon": "La verbena è un'erba aromatica, non ha relazione con il limone",
+    "banana rum-banana": "Il rum alla banana è una bevanda alcolica, non comparabile al frutto",
+    "vanilla candy coating-vanilla": "Il rivestimento dolce alla vaniglia ha una composizione diversa dalla vaniglia pura",
+    "mary mix-tomato juice": "Il mix per Bloody Mary contiene altri ingredienti oltre al succo di pomodoro",
+    "apricot gelatin-apricot": "La gelatina all'albicocca ha una composizione molto diversa dal frutto"
+}
+
+Numero di mappature non ragionevoli : 17
+################################################################################
+
+################################################################################
+3700 - 3800 :
+{
+    "aquavit-wine": "Aquavit è un liquore distillato scandivano, significativamente diverso dal vino",
+    "Tang orange crystal-orange": "Tang orange crystal è una bevanda in polvere artificiale, non comparabile a un'arancia fresca",
+    "chicken foot-chicken": "Il piede di pollo ha una composizione nutrizionale molto diversa dalla carne di pollo generale",
+    "beef bone-beef": "L'osso di manzo ha una composizione nutrizionale molto diversa dalla carne di manzo",
+    "egg mayonnaise-egg": "La maionese all'uovo è una salsa, non comparabile a un uovo",
+    "pie pastry-pie": "La pasta per torte è solo l'involucro, non comparabile alla torta completa",
+    "pineapple Jell-O-pineapple": "Il Jell-O all'ananas è una gelatina artificiale, non comparabile all'ananas fresco",
+    "meat tenderizer-meat": "Il tenerizzante per carne è un condimento/additivo, non carne",
+    "pepper paste-pepper": "La pasta di peperoni ha una composizione e concentrazione molto diversa dai peperoni freschi",
+    "hot roll mix-roll": "Il mix per panini è una miscela di ingredienti secchi, non comparabile al prodotto finito",
+    "vanilla baking chip-vanilla": "Le gocce di vaniglia da forno sono un prodotto dolciario, non comparabile alla vaniglia pura"
+}
+
+Numero di mappature non ragionevoli : 11
+################################################################################
+
+################################################################################
+3800 - 3900 :
+{
+    "bell-pepper": "Il termine 'bell' da solo è troppo generico e non può essere mappato su 'pepper'",
+    "soup pasta-soup": "Il soup pasta è un tipo di pasta, non può essere mappato su soup",
+    "pomegranate syrup-pomegranate": "Il sciroppo di melograno è un prodotto derivato, non equivalente al frutto",
+    "cabbage and carrot coleslaw mix-cabbage": "Il coleslaw mix contiene anche carote, non solo cavolo",
+    "pocket-bread": "Il termine 'pocket' da solo è troppo generico per essere mappato su 'bread'",
+    "raspberry chipotle sauce-raspberry": "La salsa è un prodotto composto, non equivalente al frutto",
+    "clove crushed garlic-clove": "L'aglio schiacciato non può essere mappato sui chiodi di garofano",
+    "pork & bean-pork": "Il piatto pork & beans è una preparazione composta, non equivalente alla sola carne di maiale",
+    "banana flower-banana": "Il fiore di banana è una parte diversa della pianta, non equivalente al frutto",
+    "chipotle chile in adobo-chile": "Il chipotle in adobo è una preparazione specifica, non equivalente al peperoncino generico",
+    "sour apple liqueur-apple": "Il liquore di mela è un prodotto derivato, non equivalente al frutto",
+    "bubbles-cereals": "Il termine 'bubbles' è troppo generico per essere mappato sui cereali",
+    "lemon-lime beverage-fruit juice": "Una bevanda aromatizzata non è equivalente a un succo di frutta",
+    "cranberry gelatin-cranberry": "La gelatina al mirtillo è un prodotto derivato, non equivalente al frutto",
+    "cranberry-apple-fruit": "È una combinazione specifica di frutti, non mappabile sul termine generico 'fruit'",
+    "dried soup mix-soup": "Il mix per zuppa disidratato è un prodotto diverso dalla zuppa pronta",
+    "ham stock-ham": "Il brodo di prosciutto è un prodotto derivato, non equivalente alla carne",
+    "pods-pea": "Il termine 'pods' (baccelli) è troppo generico per essere mappato sui piselli",
+    "spear-asparagus": "Il termine 'spear' da solo è troppo generico per essere mappato sugli asparagi",
+    "goldschlager-crackers": "Goldschlager è un liquore alla cannella, non può essere mappato sui crackers"
+}
+
+Numero di mappature non ragionevoli : 20
+################################################################################
+
+################################################################################
+3900 - 4000 :
+{
+    "dry ice-ice": "Il ghiaccio secco è CO2 solida, chimicamente diverso dal ghiaccio (H2O) e non commestibile",
+    "macadamia nut oil-macadamia nut": "L'olio ha proprietà nutrizionali molto diverse dalla noce intera",
+    "chocolate wafer pie crust-chocolate wafer": "La crosta per torta contiene altri ingredienti oltre ai wafer",
+    "banana cake mix-banana cake": "Il mix per torta ha composizione diversa dalla torta finita",
+    "peppermint syrup-peppermint": "Lo sciroppo ha composizione e valori nutrizionali molto diversi dalla menta piperita",
+    "mushroom soy sauce-mushroom": "La salsa di soia ai funghi è principalmente salsa di soia, non funghi",
+    "chile pepper jam-chile": "La marmellata ha composizione e valori nutrizionali molto diversi dal peperoncino fresco",
+    "white wine worcestershire sauce-white wine": "La salsa worcestershire ha composizione molto diversa dal vino bianco",
+    "cornbread-muffin mix-flour": "Il mix per muffin contiene più ingredienti della semplice farina",
+    "marshmallow whip-marshmallow": "La crema ha consistenza e composizione diverse dal marshmallow solido",
+    "creme de coconut-coconut": "La crema di cocco ha composizione diversa dal cocco fresco",
+    "hazelnut spread-hazelnut": "La crema spalmabile ha composizione molto diversa dalla nocciola intera"
+}
+
+Numero di mappature non ragionevoli : 12
+################################################################################
+
+################################################################################
+4000 - 4100 :
+{
+    "garlic and red chile paste-garlic": "Garlic and chile paste is a compound ingredient with significantly different nutritional profile from plain garlic",
+    "cheese whiz-cheese": "Cheese Whiz is a processed cheese product with different nutritional composition from regular cheese",
+    "strawberry liqueur-strawberry": "Liqueur has very different nutritional content from fresh fruit due to alcohol content and added sugars",
+    "mango liqueur-mango": "Liqueur has very different nutritional content from fresh fruit due to alcohol content and added sugars",
+    "Chinese white rice vinegar-white rice": "Vinegar and rice are completely different products with very different nutritional profiles",
+    "crab boil seasoning-crab": "Seasoning mix is completely different from actual crab meat",
+    "sazon goya-coriander": "Sazon goya is a seasoning blend while coriander is a single spice",
+    "coconut juice-coconut": "Coconut juice/water has very different nutritional profile from coconut meat",
+    "giblet-meat": "Giblets (organ meats) have significantly different nutritional content than regular muscle meat",
+    "passion fruit pulp-passion fruit": "Pulp represents only part of the fruit with different nutritional density"
+}
+
+Numero di mappature non ragionevoli : 10
+################################################################################
+
+################################################################################
+4100 - 4200 :
+{
+    "vanilla chips-vanilla": "Vanilla chips sono un prodotto dolciario a base di cioccolato bianco/grasso vegetale, mentre vanilla è un aroma/spezia - sono ingredienti molto diversi",
+    "corn husk-corn": "La foglia del mais (husk) è completamente diversa dal mais stesso, con valori nutrizionali molto differenti",
+    "chestnut mushroom-chestnut": "I funghi champignon sono completamente diversi dalle castagne, con profili nutrizionali molto differenti",
+    "orange oil-orange": "L'olio essenziale di arancia è un concentrato aromatico molto diverso dal frutto intero",
+    "chipotle paste-tomato paste": "La pasta di chipotle è fatta con peperoncini affumicati, mentre la pasta di pomodoro è un prodotto completamente diverso",
+    "Teddy Grahams-grahams": "I Teddy Grahams sono biscotti dolci specifici, mentre graham si riferisce a farina/crackers integrali",
+    "corn beef hash-corn beef": "Il corn beef hash include patate e altri ingredienti oltre al corn beef, con valori nutrizionali molto diversi",
+    "tomato bouillon-tomato": "Il brodo di pomodoro è una preparazione liquida molto diversa dal pomodoro fresco",
+    "light soya sauce-sauce": "La salsa di soia light è un condimento specifico molto diverso da una generica 'sauce'",
+    "snack-biscuits": "Snack è un termine troppo generico che può riferirsi a molti tipi di alimenti diversi dai biscotti",
+    "Teddy Graham-graham": "Come sopra, i Teddy Graham sono biscotti dolci specifici diversi dai graham crackers",
+    "chocolate instant malted milk powder-chocolate": "Il malto al cioccolato in polvere è una bevanda preparata molto diversa dal cioccolato puro",
+    "malted milk ball-milk": "Le palline al malto sono dolciumi ricoperti di cioccolato, molto diversi dal latte",
+    "preserved gingerroot-jam": "Lo zenzero conservato è molto diverso da una generica marmellata",
+    "chocolate flavored syrup-chocolate": "Lo sciroppo al cioccolato è una preparazione liquida zuccherata molto diversa dal cioccolato solido"
+}
+
+Numero di mappature non ragionevoli : 15
+################################################################################
+
+################################################################################
+4200 - 4300 :
+{
+    "drops red food coloring-caramel": "Food coloring and caramel are different ingredients with different nutritional properties and uses",
+    "gingered rum raisins-rum": "Gingered rum raisins contain additional ingredients beyond just rum, making the nutritional values significantly different",
+    "citrus peel-fruit": "Citrus peel has very different nutritional properties compared to whole fruit",
+    "salt & freshly ground black pepper-salt": "This is a mixture of two distinct ingredients with different nutritional properties",
+    "powdered chocolate milk mix-chocolate milk": "Powdered mix has different nutritional composition than prepared chocolate milk",
+    "coconut liqueur-coconut": "Liqueur has very different nutritional properties from the fruit it's flavored with"
+}
+
+Numero di mappature non ragionevoli : 6
+################################################################################
+
+################################################################################
+4300 - 4400 :
+{
+    "mold-butter": "Mold e butter sono ingredienti completamente diversi e non correlati. Mold si riferisce a uno stampo/forma, non a un ingrediente alimentare.",
+    "chocolate stout-chocolate": "Chocolate stout è una birra aromatizzata al cioccolato, non cioccolato puro. I valori nutrizionali sono molto diversi.",
+    "drop green food coloring-caramel": "Il colorante alimentare verde e il caramello sono coloranti completamente diversi con composizioni chimiche differenti.",
+    "chicken bacon-chicken": "Il chicken bacon è un prodotto trasformato simile al bacon ma fatto con pollo, con valori nutrizionali molto diversi dal pollo normale.",
+    "almond flavored liqueur-almond": "Un liquore aromatizzato alla mandorla è una bevanda alcolica, non mandorle. I valori nutrizionali sono completamente diversi.",
+    "chocolate crumb pie shell-chocolate": "Un guscio di torta al cioccolato è un prodotto da forno complesso, non cioccolato puro.",
+    "pan dripping-dressing": "I grassi di cottura (pan dripping) sono sostanzialmente diversi da un condimento/dressing per insalata.",
+    "French vanilla flavored coffee creamer-vanilla": "Il coffee creamer alla vaniglia è un prodotto lattiero non caseario, molto diverso dalla vaniglia pura."
+}
+
+Numero di mappature non ragionevoli : 8
+################################################################################
+
+################################################################################
+4400 - 4500 :
+{
+    "cream of onion soup-cream": "La crema di cipolle è una zuppa, non può essere approssimata con la panna/crema da cucina",
+    "herb stuffing mix-herb": "Il mix per ripieno alle erbe è un preparato complesso, non può essere approssimato con le sole erbe",
+    "Jello Instant Vanilla Pudding-jello": "Il budino alla vaniglia istantaneo è un dessert specifico, non può essere approssimato con il solo jello generico",
+    "strawberry ice cream topping-strawberry ice cream": "La salsa/topping alla fragola per gelato è diversa dal gelato alla fragola",
+    "chocolate-covered coffee bean-coffee": "I chicchi di caffè ricoperti di cioccolato sono un prodotto specifico, non approssimabile con il solo caffè",
+    "chicken giblet-chicken": "Le interiora di pollo hanno valori nutrizionali molto diversi dalla carne di pollo",
+    "peanut butter cookie dough-peanut butter cookie": "L'impasto per biscotti al burro di arachidi è diverso dai biscotti cotti",
+    "garlic seasoning-garlic": "Il condimento all'aglio è un mix di spezie, non può essere approssimato con il solo aglio",
+    "butter powder-butter": "Il burro in polvere ha composizione diversa dal burro normale",
+    "caponata-eggplant": "La caponata è un piatto elaborato con più ingredienti, non può essere approssimata con le sole melanzane",
+    "onion roll-onion": "Il panino alla cipolla è un prodotto da forno, non può essere approssimato con le cipolle",
+    "gingersnaps-ginger": "I biscotti allo zenzero sono un prodotto da forno, non possono essere approssimati con il solo zenzero",
+    "honey barbecue sauce-honey": "La salsa barbecue al miele è una salsa complessa, non può essere approssimata con il solo miele",
+    "beef suet-beef": "Il sego di manzo è grasso animale, ha valori nutrizionali molto diversi dalla carne",
+    "soy cheese-cheese": "Il formaggio di soia è un prodotto vegetale con composizione molto diversa dal formaggio normale"
+}
+
+Numero di mappature non ragionevoli : 15
+################################################################################
+
+################################################################################
+4500 - 4600 :
+{
+    "boursin-camembert": "Boursin e Camembert sono formaggi diversi con composizioni e valori nutrizionali differenti",
+    "butter flavor-butter": "Il butter flavor è un aroma artificiale, non burro reale, con valori nutrizionali molto diversi",
+    "chocolate flavoring-chocolate": "L'aroma al cioccolato è un additivo artificiale, non cioccolato vero, con valori nutrizionali molto diversi",
+    "browning sauce-sauce": "Il browning sauce è un condimento specifico a base di caramello/zucchero bruciato, molto diverso da una generica salsa",
+    "green chili salsa-chili": "La salsa verde di peperoncini è un condimento elaborato, diverso dal solo peperoncino",
+    "squash seed-squash": "I semi di zucca hanno valori nutrizionali molto diversi dalla polpa della zucca",
+    "sun-dried tomatoes-tomatoes": "I pomodori secchi hanno una composizione nutrizionale molto diversa dai pomodori freschi, con maggiore concentrazione di nutrienti"
+}
+
+Numero di mappature non ragionevoli : 7
+################################################################################
+
+################################################################################
+4600 - 4700 :
+{
+    "garlic cheese roll-garlic": "Garlic cheese roll è un formaggio aromatizzato all'aglio, non può essere approssimato con il solo aglio",
+    "grape Jell-O-grape": "Il Jell-O all'uva è una gelatina dolce, nutrizionalmente molto diversa dall'uva fresca",
+    "salt water-salt": "L'acqua salata è una soluzione diluita, non può essere approssimata con il solo sale",
+    "dried Italian herb seasoning-herb": "Il mix di erbe secche ha una composizione e concentrazione diversa dalle singole erbe fresche",
+    "Frenchs cheddar french fried onion-cheddar": "È un prodotto processato di cipolla fritta con formaggio, non può essere approssimato con il solo formaggio",
+    "raspberry-flavored wine cooler-wine cooler": "È una bevanda alcolica aromatizzata, non può essere approssimata con il solo vino",
+    "raisin nut bread-raisin": "È un pane con uvetta e frutta secca, non può essere approssimato con la sola uvetta",
+    "brandy flavoring-brandy": "L'aroma di brandy è un estratto artificiale, nutrizionalmente molto diverso dal brandy vero",
+    "fresh chive-vegetables": "L'erba cipollina è un'erba aromatica specifica, non può essere generalizzata come verdura generica",
+    "papaya seeds-papaya": "I semi di papaya hanno proprietà nutrizionali molto diverse dalla polpa del frutto",
+    "banana liquor-banana": "Il liquore alla banana è una bevanda alcolica aromatizzata, non può essere approssimato con la banana fresca",
+    "orange jelly crystal-orange": "I cristalli per gelatina all'arancia sono un prodotto processato, non possono essere approssimati con l'arancia fresca",
+    "orange yogurt-orange": "Lo yogurt all'arancia è un prodotto lattiero-caseario aromatizzato, non può essere approssimato con l'arancia fresca",
+    "amaretto syrup-amaretto": "Lo sciroppo di amaretto è un prodotto dolcificante non alcolico, diverso dal liquore amaretto"
+}
+
+Numero di mappature non ragionevoli : 14
+################################################################################
+
+################################################################################
+4700 - 4800 :
+{
+    "japanese plum wine-plum": "Il vino di prugne giapponese è una bevanda alcolica, non equivalente alla frutta fresca",
+    "vanilla whey protein powder-vanilla": "La proteina del siero al gusto vaniglia è un integratore proteico, non equivalente alla vaniglia pura",
+    "malt liquor-malt": "Il malt liquor è una bevanda alcolica, non equivalente al malto puro",
+    "sugar-free strawberry gelatin-strawberry": "La gelatina senza zucchero alla fragola è un dessert preparato, non equivalente alla frutta fresca",
+    "ice wine-ice": "L'ice wine è un tipo di vino, non equivalente al ghiaccio",
+    "bavarian raspberry beer-raspberry": "La birra al lampone è una bevanda alcolica, non equivalente al frutto fresco",
+    "candied mint leaf-mint": "La foglia di menta candita è un dolciume, non equivalente alla menta fresca",
+    "dash red food coloring-caramel": "Il colorante alimentare rosso è un additivo sintetico, non equivalente al caramello",
+    "tamarillo-fruit": "Il tamarillo è un frutto specifico con valori nutrizionali propri, non approssimabile a un generico 'frutto'",
+    "prickly pear cactus-prickly pear": "Il cactus intero è diverso dal solo frutto",
+    "grand marnier custard-custard": "La crema al Grand Marnier contiene liquore, non equivalente alla crema semplice",
+    "lemon cucumber-lemon": "Il cetriolo limone è una varietà di cetriolo, non un limone",
+    "tahitian coconut vanilla rum-coconut": "Il rum aromatizzato è una bevanda alcolica, non equivalente al cocco fresco"
+}
+
+Numero di mappature non ragionevoli : 13
+################################################################################
+
+################################################################################
+4800 - 4900 :
+{
+    "arrow starch-tuber": "Arrow starch is a specific type of starch powder while tuber refers to the whole vegetable - these have very different nutritional profiles",
+    "hiram walker sour apple liqueur-apple": "A liqueur has very different nutritional content from fresh apple, containing alcohol and added sugars",
+    "garlic and herb marinade-garlic": "A marinade contains multiple ingredients and liquid components beyond just garlic",
+    "melon seeds-melon": "Seeds have a very different nutritional profile (high fat/protein) compared to melon flesh (mostly water/carbs)",
+    "clover-vegetables": "Clover is an herb/spice rather than a typical vegetable",
+    "rooibos-vegetables": "Rooibos is an herbal tea, not a vegetable",
+    "red-hot candies-candies": "Red-hot candies have specific ingredients/composition that may differ from generic candies",
+    "caramel apple dip-caramel apple": "A dip has different composition than a whole caramel-covered apple",
+    "dekuyper pucker raspberry Schnapps-raspberry": "A liqueur has very different nutritional content from fresh raspberries",
+    "lemon soda-lemon": "Lemon soda contains added sugars and carbonation unlike fresh lemon",
+    "vegetable seasoning-vegetable": "A seasoning blend is concentrated and processed unlike whole vegetables",
+    "blackberry wine-blackberry": "Wine has alcohol and different nutritional content than fresh blackberries",
+    "white malt vinegar-malt": "Vinegar has very different properties than malted grains",
+    "powdered fruit pectin-fruit": "Pectin is a specific fiber extract, very different from whole fruit",
+    "onion dip mix-onion dip": "A dry mix has different composition than prepared dip",
+    "sugar-free instant butterscotch pudding-butterscotch": "Instant pudding mix has very different composition than pure butterscotch",
+    "tuaca liqueur-liqueur": "A specific branded liqueur may have unique nutritional properties"
+}
+
+Numero di mappature non ragionevoli : 17
+################################################################################
+
+################################################################################
+4900 - 5000 :
+{
+    "kirsch liqueur-liqueur": "Il kirsch è un distillato di ciliegie, non un liquore generico",
+    "beef t-bone steak-beef": "Il t-bone steak ha una composizione nutrizionale specifica data dalla presenza dell'osso e del filetto",
+    "Stolichnaya raspberry vodka-raspberry": "La vodka al lampone è una bevanda alcolica, non può essere approssimata al frutto lampone",
+    "pork side rib-pork": "Le costine di maiale hanno una composizione diversa dalla carne di maiale generica per la presenza di ossa",
+    "hot spiced cider mix-cider": "Il mix speziato ha una composizione diversa dal sidro puro",
+    "liquid glucose-sugar": "Il glucosio liquido ha proprietà e composizione diverse dallo zucchero comune",
+    "veal bone-veal": "L'osso di vitello ha una composizione molto diversa dalla carne di vitello",
+    "crab stick-crab": "Il surimi (bastoncini di granchio) è un prodotto processato con composizione diversa dal granchio vero",
+    "sun-dried tomato olive oil-tomato": "L'olio aromatizzato ha una composizione completamente diversa dal pomodoro",
+    "pig foot-pig": "Il piedino di maiale ha una composizione specifica data dalla presenza di ossa e cartilagini",
+    "angel hair cabbage-angel hair": "Il cavolo tagliato fine è un vegetale, non può essere approssimato alla pasta capelli d'angelo",
+    "nutmeg syrup-nutmeg": "Lo sciroppo alla noce moscata è una preparazione liquida zuccherina, non può essere approssimato alla spezia",
+    "fish roe-fish": "Le uova di pesce hanno una composizione nutrizionale molto diversa dalla carne di pesce",
+    "frozen peas and carrot-frozen peas": "La miscela di piselli e carote ha una composizione diversa dai soli piselli"
+}
+
+Numero di mappature non ragionevoli : 14
+################################################################################
+
+################################################################################
+5000 - 5100 :
+{
+    "banana chile-banana": "Il banana chile è un tipo di peperoncino, non ha relazione nutrizionale con la banana",
+    "chili seasoning mix-chili": "Il chili seasoning mix è un mix di spezie, mentre chili si riferisce al peperoncino - sono ingredienti diversi",
+    "cinnamon oil-cinnamon": "L'olio di cannella è un estratto concentrato con proprietà molto diverse dalla cannella in polvere",
+    "clove oil-clove": "L'olio di chiodi di garofano è un estratto concentrato con proprietà molto diverse dai chiodi di garofano",
+    "papaya seed-papaya": "I semi di papaya hanno valori nutrizionali molto diversi dalla polpa del frutto",
+    "cocktail peanut-cocktail": "Mapping errato - cocktail peanut sono arachidi, non ha senso mapparlo con cocktail",
+    "daikon turnip-daikon": "Il daikon è un tipo specifico di ravanello giapponese, non equivalente al turnip (rapa)",
+    "banana blossom-banana": "Il fiore di banana ha proprietà nutrizionali completamente diverse dal frutto",
+    "yellow pear tomato-pear": "È un tipo di pomodoro, non ha relazione con la pera",
+    "paradise-fruit": "Termine troppo generico e ambiguo per stabilire una mappatura nutrizionale valida",
+    "hazelnut wafer biscuit-hazelnut": "È un biscotto, non può essere equiparato alla nocciola pura",
+    "soy mayonnaise-mayonnaise": "La maionese di soia ha una composizione significativamente diversa dalla maionese tradizionale",
+    "lamb stock-lamb": "Il brodo di agnello ha valori nutrizionali molto diversi dalla carne",
+    "vegetarian meatball-meatball": "Le polpette vegetariane hanno una composizione nutrizionale completamente diversa da quelle di carne",
+    "recaito-pesto": "Il recaito è una base di soffritto portoricano, molto diverso dal pesto italiano"
+}
+
+Numero di mappature non ragionevoli : 15
+################################################################################
+
+################################################################################
+5100 - 5200 :
+{
+    "umeboshi-fruit": "Umeboshi è una prugna giapponese fermentata con caratteristiche nutrizionali specifiche molto diverse dalla frutta generica",
+    "tofutti sour cream-sour cream": "Tofutti è un'alternativa vegana al sour cream con composizione nutrizionale significativamente diversa",
+    "Boca meatless ground burger-burger": "Un burger vegetale ha una composizione nutrizionale molto diversa da un burger di carne",
+    "tofu mayonnaise-tofu": "La maionese di tofu è una salsa con composizione molto diversa dal tofu puro",
+    "fresh lime leaf-lime": "Le foglie di lime hanno proprietà nutrizionali completamente diverse dal frutto",
+    "French fry-french fry": "Le patatine fritte hanno valori nutrizionali molto diversi dalle patate crude a causa della frittura"
+}
+
+Numero di mappature non ragionevoli : 6
+################################################################################
+
+################################################################################
+5200 - 5300 :
+{
+    "cabbage kimchi-cabbage": "Kimchi è un alimento fermentato con proprietà nutrizionali diverse dal cavolo fresco",
+    "plum wine vinegar-plum": "Il vino di prugne fermentato in aceto ha proprietà molto diverse dalla prugna fresca",
+    "sour apple schnapps-apple": "Il liquore ha proprietà nutrizionali completamente diverse dalla mela fresca",
+    "sour apple hard candy-apple": "Le caramelle hanno una composizione nutrizionale molto diversa dalle mele fresche",
+    "pina colada concentrate-pina colada": "Il concentrato ha valori nutrizionali diversi dal cocktail completo",
+    "pineapple sage leaf-pineapple": "La salvia all'ananas è un'erba aromatica, completamente diversa dall'ananas",
+    "mint simple syrup-mint": "Lo sciroppo di menta ha una composizione nutrizionale molto diversa dalla menta fresca",
+    "orange essence-orange": "L'essenza è un estratto concentrato con proprietà diverse dall'arancia fresca",
+    "pear vodka-pear": "La vodka aromatizzata alla pera ha proprietà completamente diverse dalla pera fresca",
+    "mango yogurt-mango": "Lo yogurt alla mango ha una composizione nutrizionale diversa dal frutto fresco",
+    "vanilla ice milk-vanilla": "Il gelato alla vaniglia ha una composizione molto diversa dalla vaniglia pura",
+    "pear liqueur-pear": "Il liquore ha proprietà nutrizionali completamente diverse dalla pera fresca",
+    "apricot yoghurt-apricot": "Lo yogurt all'albicocca ha una composizione diversa dall'albicocca fresca",
+    "peach passionfruit tea-peach": "Il tè aromatizzato ha proprietà nutrizionali completamente diverse dalla pesca fresca",
+    "cherry vodka-cherry": "La vodka aromatizzata alla ciliegia ha proprietà completamente diverse dalla ciliegia fresca",
+    "orange liquor-orange": "Il liquore all'arancia ha proprietà nutrizionali completamente diverse dall'arancia fresca"
+}
+
+Numero di mappature non ragionevoli : 16
+################################################################################
+
+################################################################################
+5300 - 5400 :
+{
+    "lemon lime and bitters soft drink-lemon": "Una bevanda soft drink è significativamente diversa dal limone come ingrediente base",
+    "sliced orange peel-sliced orange": "La buccia d'arancia ha proprietà nutrizionali molto diverse dalla polpa",
+    "barley miso-barley": "Il miso di orzo è un prodotto fermentato con proprietà diverse dall'orzo",
+    "sweetened lemon juice-lemon juice": "Il succo di limone zuccherato ha valori nutrizionali diversi dal succo di limone puro",
+    "ketjap-ketchup": "Il ketjap (salsa di soia dolce) è un prodotto completamente diverso dal ketchup",
+    "chipotle chili in adobo seasoning-chili": "Il chipotle in salsa adobo ha proprietà diverse dal peperoncino semplice",
+    "mixed spring green-vegetables": "Termine troppo generico per rappresentare un mix specifico di verdure",
+    "cinnamon vodka-cinnamon": "La vodka alla cannella è una bevanda alcolica, non può essere equiparata alla spezia cannella",
+    "lemon thyme-lemon": "Il timo al limone è un'erba aromatica, non può essere equiparato al limone",
+    "raspberry drink-raspberry": "Una bevanda al lampone ha proprietà diverse dal frutto fresco",
+    "cherry drink-cherry": "Una bevanda alla ciliegia ha proprietà diverse dal frutto fresco",
+    "alize passion fruit cognac-passion fruit": "Un liquore al frutto della passione è molto diverso dal frutto fresco",
+    "alize cranberry fruit cognac-cranberry": "Un liquore al mirtillo rosso è molto diverso dal frutto fresco",
+    "lemon gin-lemon": "Il gin al limone è una bevanda alcolica, non può essere equiparato al limone",
+    "sweet-and-sour-fruit juice": "La salsa agrodolce ha proprietà molto diverse dal succo di frutta",
+    "sugar-free lemon Jell-O powder-lemon": "La gelatina al limone senza zucchero è un prodotto trasformato molto diverso dal limone"
+}
+
+Numero di mappature non ragionevoli : 16
+################################################################################
+
+################################################################################
+5400 - 5500 :
+{
+    "cooked rice noodle-cooked rice": "Rice noodles and cooked rice are different products with different nutritional profiles - noodles are processed/shaped while rice is whole grain",
+    "blackberry herbal tea bag-blackberry": "A tea bag flavored with blackberry is fundamentally different from actual blackberries",
+    "malibu pineapple rum-malibu": "Malibu pineapple rum has additional pineapple flavoring that would affect nutritional content",
+    "green ginger wine-ginger": "Ginger wine is an alcoholic beverage while ginger is a root/spice - very different nutritional profiles",
+    "Rotel diced tomato-rotel": "Rotel includes additional ingredients beyond just tomatoes",
+    "package McCormick mild chili seasoning-chili": "A seasoning mix is fundamentally different from chili peppers",
+    "blackberry brandy-blackberry": "Blackberry brandy is an alcoholic beverage while blackberries are fresh fruit",
+    "cinnamon apple-cinnamon": "Cinnamon apple is a fruit while cinnamon is a spice - very different foods",
+    "beef bullion square-beef": "Beef bullion is a concentrated flavoring while beef is actual meat",
+    "cloves crushed garlic-cloves": "Cloves and garlic are completely different spices/ingredients",
+    "peach wine-peach": "Peach wine is an alcoholic beverage while peaches are fresh fruit",
+    "very cherry-cherry": "Generic term 'very cherry' could refer to candy/flavoring rather than actual cherries"
+}
+
+Numero di mappature non ragionevoli : 12
+################################################################################
+
+################################################################################
+5500 - 5600 :
+{
+    "cassia chip-chip": "Cassia (cinnamon) and generic chips are completely different ingredients",
+    "red rice vinegar-red rice": "Red rice vinegar is a condiment while red rice is a grain",
+    "chocolate instant pudding-chocolate": "Chocolate instant pudding is a dessert mix while chocolate is a candy/ingredient",
+    "lime pepper-lime": "Lime pepper is a seasoning blend while lime is a citrus fruit",
+    "rose syrup-rose": "Rose syrup is a sweetened liquid while rose refers to the flower",
+    "recipe plain pie pastry-pie": "Pie pastry is the raw dough while pie is the finished baked product",
+    "sugar pumpkin-sugar": "Sugar pumpkin is a variety of squash while sugar is a sweetener",
+    "wooden popsicle stick-popsicle": "Wooden stick is an inedible implement while popsicle is a frozen dessert",
+    "walker chicken potato chip-chicken": "Chicken-flavored chips are very different nutritionally from actual chicken meat",
+    "carrot cake-carrot": "Carrot cake is a baked dessert with many ingredients besides carrots",
+    "jar candied cherry-cherry": "Candied cherries are processed with sugar and preservatives, very different from fresh cherries"
+}
+
+Numero di mappature non ragionevoli : 11
+################################################################################
+
+################################################################################
+5600 - 5700 :
+{
+    "chocolate swiss roll-chocolate": "Un swiss roll è un dolce completo, mentre il cioccolato è solo un ingrediente - i valori nutrizionali sono molto diversi",
+    "artichoke oil-artichoke": "L'olio di carciofo è un prodotto derivato con valori nutrizionali completamente diversi dal carciofo intero",
+    "black bean paste-black bean": "La pasta di fagioli neri è un prodotto concentrato con valori nutrizionali diversi dai fagioli neri interi",
+    "turkey chourico-turkey": "Il chourico è un insaccato lavorato con valori nutrizionali molto diversi dalla carne di tacchino pura",
+    "pumpkin quick bread mix-pumpkin": "Il mix per il pane alla zucca contiene farina e altri ingredienti, con valori nutrizionali molto diversi dalla zucca pura",
+    "egg replacer-egg": "I sostituti dell'uovo hanno una composizione nutrizionale significativamente diversa dalle uova vere",
+    "fruit vinegar-fruit": "L'aceto di frutta ha valori nutrizionali completamente diversi dalla frutta fresca",
+    "fruit cocktail-juice-fruit": "Il succo di frutta ha valori nutrizionali diversi dalla frutta intera",
+    "chile sauce-chile": "La salsa di peperoncino contiene altri ingredienti e ha valori nutrizionali diversi dal peperoncino puro",
+    "orange concentrate-orange": "Il concentrato d'arancia ha valori nutrizionali diversi dall'arancia fresca",
+    "frozen tart shell-tart": "Il guscio della torta è solo una parte con valori nutrizionali diversi dalla torta completa",
+    "peach slices in syrup-peach": "La pesca sciroppata ha valori nutrizionali diversi dalla pesca fresca a causa dello sciroppo",
+    "chicken salad-chicken salad": "L'insalata di pollo è un piatto composto con valori nutrizionali diversi dal pollo puro",
+    "steak spice-steak": "Le spezie per bistecca hanno valori nutrizionali completamente diversi dalla carne",
+    "mandarin orange peel-mandarin orange": "La buccia del mandarino ha valori nutrizionali molto diversi dal frutto intero",
+    "asian chili-garlic sauce-sauce": "La salsa è un prodotto composto con valori nutrizionali diversi dai singoli ingredienti",
+    "pears in heavy syrup-pears": "Le pere sciroppate hanno valori nutrizionali diversi dalle pere fresche a causa dello sciroppo",
+    "colored sugar sprinkle-sugar": "Le decorazioni di zucchero colorato contengono altri ingredienti oltre allo zucchero puro"
+}
+
+Numero di mappature non ragionevoli : 18
+################################################################################
+
+################################################################################
+5700 - 5800 :
+{
+    "kool-aid mix-orange": "Kool-aid mix è una bevanda artificiale in polvere, mentre orange è un frutto fresco - sono ingredienti completamente diversi",
+    "sour cream and chive Pasta Roni-sour cream": "Pasta Roni è un piatto di pasta, mentre sour cream è una crema acida - sono ingredienti completamente diversi",
+    "frozen dinner roll-frozen dinner": "Un panino congelato è molto diverso da un pasto completo congelato",
+    "beef consomme soup-beef": "Il consommé di manzo è una zuppa, mentre beef è carne - sono ingredienti fondamentalmente diversi",
+    "cinnamon roll icing-cinnamon roll": "La glassa per i cinnamon roll è solo una componente del dolce completo",
+    "light Hawaiian Punch-punch": "Hawaiian Punch light è una bevanda specifica zuccherata, mentre punch è un termine generico per cocktail",
+    "Bacardi Fuzzy Navel mix-bacardi": "Fuzzy Navel mix è un preparato per cocktail, mentre Bacardi è un rum - sono prodotti completamente diversi",
+    "chop suey vegetable-chop suey": "Le verdure per chop suey sono solo un ingrediente del piatto completo",
+    "strawberry vodka-strawberry": "La vodka alla fragola è una bevanda alcolica, mentre strawberry è un frutto - sono ingredienti completamente diversi",
+    "dehydrated soup greens-soup": "Verdure disidratate per zuppe sono un ingrediente, mentre soup è il piatto completo",
+    "pie cherry-pie": "Le ciliegie per torte sono un ingrediente, mentre pie è il dolce completo",
+    "chamomile flower-tea": "I fiori di camomilla sono l'ingrediente base, mentre tea è la bevanda preparata",
+    "pama pomegranate liqueur-pomegranate": "Il liquore al melograno è una bevanda alcolica, mentre pomegranate è un frutto fresco",
+    "cherry ripe candy bar-cherry": "Una barretta di cioccolato è molto diversa dalle ciliegie fresche",
+    "rice powder-rice": "La farina di riso è un prodotto trasformato, mentre rice è il chicco intero",
+    "malibu coconut-malibu": "Malibu coconut è un liquore specifico al cocco, mentre Malibu da solo è troppo generico",
+    "vanilla caramel-vanilla": "Il caramello alla vaniglia è un dolce, mentre vanilla è una spezia",
+    "elk rump roast-elk": "Un taglio specifico di carne di alce è diverso dalla carne di alce generica",
+    "dried tomato-tomato": "I pomodori secchi hanno proprietà nutrizionali molto diverse dai pomodori freschi",
+    "sorghum molasses-sorghum": "Il melasso di sorgo è uno sciroppo, mentre sorghum è un cereale"
+}
+
+Numero di mappature non ragionevoli : 20
+################################################################################
+
+################################################################################
+5800 - 5900 :
+{
+    "fresh apple cider-fresh apple": "Fresh apple cider è una bevanda, mentre fresh apple è un frutto intero - sono nutrizionalmente diversi",
+    "thai chili paste-thai chili": "La pasta di peperoncino thai ha una composizione e densità nutritiva diversa dal peperoncino intero",
+    "kalua pig-kalua": "Kalua pig è carne di maiale, mentre kalua da solo non ha un significato nutrizionale chiaro",
+    "orange-grapefruit juice-juice": "Il succo specifico ha valori nutrizionali diversi da un generico 'juice'",
+    "malt beer-malt": "La birra al malto è una bevanda fermentata con composizione diversa dal solo malto",
+    "fruit dip mix-fruit dip": "Il mix per salsa è in forma di polvere/concentrato, nutrizionalmente diverso dalla salsa pronta",
+    "caramel dip-caramel dip": "La salsa al caramello ha una composizione diversa dal caramello puro",
+    "garlic spread-garlic": "La crema all'aglio ha una composizione e densità calorica molto diversa dall'aglio fresco",
+    "emulsion-almond": "L'emulsione è un termine generico che non corrisponde nutrizionalmente alle mandorle",
+    "patty-peppermint": "Patty (hamburger) e menta piperita sono ingredienti completamente diversi",
+    "irish creme syrup-syrup": "Lo sciroppo alla crema irlandese ha una composizione diversa da un generico sciroppo",
+    "canola oil mayonnaise-canola oil": "La maionese all'olio di canola ha una composizione molto diversa dal solo olio",
+    "blackberry syrup-blackberry": "Lo sciroppo di more ha una composizione e densità calorica diversa dalle more fresche",
+    "coconut pudding-coconut": "Il budino al cocco ha una composizione nutrizionale molto diversa dal cocco fresco",
+    "citrus juice-juice": "Il succo di agrumi specifico ha valori nutrizionali diversi da un generico 'juice'"
+}
+
+Numero di mappature non ragionevoli : 15
+################################################################################
+
+################################################################################
+5900 - 6000 :
+{
+    "Rice Dream milk-rice": "Rice Dream è una bevanda di riso, non riso in chicchi. Meglio usare 'rice milk' come comparazione",
+    "8-inch unbaked pie shell-pie": "Una base per torta non cotta ha valori nutrizionali molto diversi da una torta completa",
+    "chowder-shellfish": "Il chowder è una zuppa che può contenere vari ingredienti, non solo frutti di mare",
+    "pomegranate-blueberry juice-juice": "Un succo specifico miscelato ha valori diversi da un generico 'succo'",
+    "prepared sweet-and-sour mix-fruit juice": "Il mix agrodolce è una salsa condita, non paragonabile al succo di frutta",
+    "raspberry Schnapps-raspberry": "Lo Schnapps è un liquore, non paragonabile al frutto fresco",
+    "ground nut oil-nut": "L'olio di arachidi ha valori nutrizionali molto diversi dalla frutta secca",
+    "jalapeno ketchup-jalapeno": "Il ketchup al jalapeno è una salsa condita, non paragonabile al peperoncino fresco",
+    "peach and vidallia hot sauce-peach": "Una salsa piccante ha valori molto diversi dalla pesca fresca",
+    "corn puff-corn": "Gli snack di mais soffiato hanno valori molto diversi dal mais fresco",
+    "apple dip-apple": "Una salsa per immersione ha valori diversi dalla mela fresca",
+    "lychee tea-lychee": "Il tè al litchi è una bevanda molto diversa dal frutto fresco",
+    "dash almond flavoring-almond": "L'aroma di mandorla è un additivo, non paragonabile alla mandorla"
+}
+
+Numero di mappature non ragionevoli : 13
+################################################################################
+
+################################################################################
+6000 - 6100 :
+{
+    "cranberry horseradish-cranberry": "Cranberry horseradish è una salsa/condimento che contiene sia mirtilli che rafano, non può essere approssimato solo con i valori nutrizionali del mirtillo",
+    "vegan chicken seasoning-chicken seasoning": "Il condimento vegano per pollo ha una composizione significativamente diversa dal condimento per pollo tradizionale",
+    "pork schnitzel-pork": "La cotoletta di maiale impanata ha valori nutrizionali diversi dalla carne di maiale semplice a causa della panatura e della frittura",
+    "korean red pepper paste-red pepper": "La pasta di peperoncino coreano (gochujang) è un condimento fermentato con ingredienti addizionali, non può essere approssimato al solo peperone",
+    "miniature phyllo cup-crispbread": "I cestini di pasta fillo hanno una composizione e valori nutrizionali diversi dal pane croccante",
+    "box instant lemon pudding-lemon pudding": "Il budino istantaneo al limone in polvere ha una composizione diversa dal budino al limone preparato",
+    "box lemon cake mix-lemon cake mix": "La miscela per torta al limone in polvere ha una composizione diversa dalla torta al limone preparata",
+    "pineapple jam-pineapple": "La marmellata di ananas ha valori nutrizionali diversi dall'ananas fresco a causa dell'aggiunta di zuccheri",
+    "carton pasteurized liquid egg-white-eggs": "L'albume liquido pastorizzato ha valori nutrizionali diversi dalle uova intere",
+    "link chicken & apple sausage-chicken": "La salsiccia di pollo e mela ha una composizione diversa dalla semplice carne di pollo",
+    "miso water-miso": "L'acqua di miso è una soluzione diluita con valori nutrizionali diversi dal miso puro",
+    "white chocolate syrup-white chocolate": "Lo sciroppo al cioccolato bianco ha una composizione diversa dal cioccolato bianco solido",
+    "vanilla vodka-vanilla": "La vodka alla vaniglia è una bevanda alcolica che non può essere approssimata alla sola vaniglia",
+    "powdered sugar glaze-powdered sugar": "La glassa di zucchero a velo ha una composizione diversa dal solo zucchero a velo",
+    "sugar beet molasses-sugar": "La melassa di barbabietola da zucchero ha una composizione nutritiva diversa dallo zucchero raffinato"
+}
+
+Numero di mappature non ragionevoli : 15
+################################################################################
+
+################################################################################
+6100 - 6200 :
+{
+    "wood chip-chip": "Wood chips sono trucioli di legno per affumicatura, non commestibili, mentre chips si riferisce a patatine/snack",
+    "candy leaf-candy": "Candy leaf è una pianta (Stevia rebaudiana), mentre candy sono dolciumi/caramelle",
+    "bread enhancer-bread": "Il bread enhancer è un additivo/miglioratore per panificazione, non pane",
+    "espresso vodka-espresso": "L'espresso vodka è un liquore alcolico, significativamente diverso dal caffè espresso",
+    "hot-pepper": "Il termine 'hot' è troppo generico e ambiguo per essere mappato su 'pepper'",
+    "japanese rice wine-japanese rice": "Il sake (vino di riso) è una bevanda alcolica, significativamente diversa dal riso",
+    "container apple crumble mix-apple crumble": "Il mix è una preparazione secca, significativamente diversa dal prodotto finale",
+    "poi-poi": "Non ci sono abbastanza informazioni per stabilire una corrispondenza nutrizionale",
+    "kumquat puree-kumquat": "Il purè ha una consistenza e concentrazione diversa dal frutto intero",
+    "crushed dried lemon verbena-lemon": "La verbena al limone è un'erba aromatica, significativamente diversa dal limone"
+}
+
+Numero di mappature non ragionevoli : 10
+################################################################################
+
+################################################################################
+6200 - 6300 :
+{
+    "kool-aide unsweetened lemonade mix-lemonade": "Il mix in polvere ha una composizione molto diversa dalla limonata pronta",
+    "tart jelly-tart": "Una gelatina di frutta è molto diversa da una torta/crostata",
+    "oatmeal stout beer-oatmeal": "La birra stout all'avena è una bevanda alcolica, non un porridge di avena",
+    "coconut marshmallow-coconut": "Un marshmallow al cocco è un dolce, non cocco puro",
+    "grape molasses-grape": "Il melasso d'uva è uno sciroppo concentrato, non uva fresca",
+    "water or milk alternative-water": "Le alternative al latte hanno valori nutrizionali molto diversi dall'acqua",
+    "portuguese sweet bread-sweet bread": "Il pane dolce portoghese è un tipo specifico con caratteristiche uniche",
+    "roll white bread-roll": "Un panino bianco ha valori nutrizionali diversi da un generico 'roll'",
+    "candy orange slices-candy": "Le fette d'arancia candite sono diverse dai dolciumi generici",
+    "candy lemon slices-candy": "Le fette di limone candite sono diverse dai dolciumi generici",
+    "davinci gourmet classic almond syrup-almond": "Lo sciroppo aromatizzato alla mandorla è molto diverso dalle mandorle",
+    "orange liquid-orange": "Un liquido all'arancia non è equivalente a un'arancia intera",
+    "garlic teriyaki sauce-garlic": "La salsa teriyaki all'aglio è molto diversa dall'aglio puro",
+    "box corn muffin mix-corn muffin": "Il preparato per muffin è diverso dal prodotto finito",
+    "Almond Breeze-almond": "La bevanda di mandorla è molto diversa dalle mandorle pure",
+    "sucanat with honey-honey": "Il sucanat con miele è un prodotto diverso dal miele puro",
+    "peach extract-peach": "L'estratto di pesca è un aroma concentrato, non frutta fresca",
+    "milk chocolate candy bar with almond-milk chocolate": "Una barretta con mandorle ha valori diversi dal cioccolato al latte puro",
+    "ice cold water-ice": "L'acqua fredda ha una composizione diversa dal ghiaccio"
+}
+
+Numero di mappature non ragionevoli : 19
+################################################################################
+
+################################################################################
+6300 - 6400 :
+{
+    "chianti wine vinegar-chianti wine": "Il vino e l'aceto di vino hanno valori nutrizionali molto diversi a causa del processo di fermentazione acetica",
+    "orange paste food coloring-orange": "Il colorante alimentare e l'arancia sono ingredienti completamente diversi, uno è un additivo sintetico e l'altro è un frutto",
+    "thyme honey-thyme": "Il miele al timo e il timo sono ingredienti molto diversi, uno è un dolcificante e l'altro è un'erba aromatica",
+    "matzot-bread": "Il matzot è un pane non lievitato con valori nutrizionali diversi dal pane comune",
+    "brer rabbit molasses-rabbit": "La melassa e la carne di coniglio sono ingredienti completamente diversi",
+    "garlic and herb sauce mix-garlic": "La salsa è un condimento composto mentre l'aglio è un singolo ingrediente",
+    "Salad Supreme dry seasoning-salad": "Il condimento secco e l'insalata sono categorie di alimenti completamente diverse",
+    "bottled gingerroot-root beer": "Lo zenzero in bottiglia e la root beer sono prodotti completamente diversi",
+    "garlic wine vinegar-garlic": "L'aceto aromatizzato all'aglio ha valori nutrizionali molto diversi dall'aglio fresco",
+    "marachino cherry liquid-cherry": "Il liquido delle ciliegie maraschino è molto diverso dalle ciliegie fresche",
+    "bitter orange preserves-orange": "La marmellata di arance amare ha valori nutrizionali molto diversi dalle arance fresche"
+}
+
+Numero di mappature non ragionevoli : 11
+################################################################################
+
+################################################################################
+6400 - 6500 :
+{
+    "cracker barrel pancake mix-cracker": "Cracker Barrel pancake mix è un preparato per pancake, mentre cracker è un tipo di biscotto salato - sono alimenti completamente diversi",
+    "vital gluten-wheat": "Il glutine vitale è una proteina concentrata estratta dal grano, con valori nutrizionali molto diversi dal grano intero",
+    "box ok lime Jell-O gelatin-lime": "La gelatina al lime è un dessert preparato, molto diverso dal frutto del lime",
+    "andes mint chip-andes": "Andes mint chip è una caramella al cioccolato e menta, non comparabile con il termine generico 'andes'",
+    "hersheys chocolate milk-hersheys": "Il latte al cioccolato Hershey's è una bevanda, non comparabile con il termine generico 'hersheys'",
+    "chocolate rosette-chocolate": "Una rosetta di cioccolato è una decorazione elaborata, con composizione e valori nutrizionali diversi dal cioccolato puro",
+    "hersheys chocolate candy bar-hersheys": "Una barretta di cioccolato Hershey's è un prodotto specifico, non comparabile con il termine generico 'hersheys'",
+    "fresh wild rose petal-rose": "I petali di rosa selvatica freschi sono parti commestibili del fiore, non comparabili con il termine generico 'rose'",
+    "canela-canela": "Termine troppo generico senza un riferimento specifico per B",
+    "Turkish Delight-turkish delight": "Termine troppo generico senza un riferimento specifico per B",
+    "chocolate-coated honeycomb candy-honeycomb": "Una caramella al cioccolato con honeycomb è un dolce preparato, non comparabile con il favo di miele puro",
+    "mochi flour-mochi": "La farina di mochi è un ingrediente base, mentre il mochi è un dolce giapponese preparato - sono prodotti diversi"
+}
+
+Numero di mappature non ragionevoli : 12
+################################################################################
+
+################################################################################
+6500 - 6600 :
+{
+    "chocolate Cool Whip-chocolate": "Cool Whip è una crema montata al cioccolato, non può essere approssimata con solo cioccolato",
+    "spiced gumdrop-sugar": "Le caramelle gommose speziate hanno una composizione molto diversa dallo zucchero puro",
+    "chopped gumdrop-sugar": "Le caramelle gommose hanno una composizione molto diversa dallo zucchero puro",
+    "goose giblet stock-goose": "Il brodo di interiora d'oca ha una composizione nutrizionale molto diversa dalla carne d'oca",
+    "rosette-chocolate": "Rosette si riferisce probabilmente a un tipo di biscotto/dolce, non a cioccolato",
+    "milk ball-milk": "Le palline di cioccolato al latte hanno una composizione molto diversa dal latte liquido",
+    "packages French vanilla instant pudding-vanilla": "Il budino alla vaniglia istantaneo ha una composizione molto diversa dalla vaniglia pura",
+    "tangerine essential oil-tangerine": "L'olio essenziale di mandarino ha una composizione completamente diversa dal frutto",
+    "crushed wine biscuit-wine": "I biscotti al vino hanno una composizione molto diversa dal vino",
+    "finely crushed root beer hard candy-root beer": "Le caramelle dure alla root beer hanno una composizione molto diversa dalla bevanda root beer",
+    "finely chopped root beer hard candy-root beer": "Le caramelle dure alla root beer hanno una composizione molto diversa dalla bevanda root beer"
+}
+
+Numero di mappature non ragionevoli : 11
+################################################################################
+
+################################################################################
+6600 - 6700 :
+{
+    "cherry wood chip-cherry": "Wood chips e ciliegie sono ingredienti completamente diversi nonostante il nome comune",
+    "apple wood chip-apple": "Wood chips e mele sono ingredienti completamente diversi nonostante il nome comune",
+    "pure anise oil-anise": "L'olio di anice è un estratto concentrato molto diverso dall'anice in sé",
+    "dash salt & pepper-salt": "Sale e pepe sono due condimenti distinti con proprietà nutrizionali diverse",
+    "crushed-tomato": "Manca l'ingrediente principale nella chiave A, non è possibile fare un confronto valido",
+    "Andes mint candy-andes": "'Andes' non è un ingrediente valido per il confronto",
+    "ground-almond": "Manca l'ingrediente principale nella chiave A, non è possibile fare un confronto valido"
+}
+
+Numero di mappature non ragionevoli : 7
+################################################################################
+
+################################################################################
+6700 - 6800 :
+{
+    "wasabi mashed potato-wasabi": "Questi sono due ingredienti molto diversi - le patate schiacciate al wasabi sono un piatto complesso mentre il wasabi è una spezia",
+    "raspberry twist vodka-raspberry": "La vodka aromatizzata al lampone è una bevanda alcolica, mentre il lampone è un frutto fresco - hanno valori nutrizionali molto diversi",
+    "peach Jell-O-peach": "La gelatina alla pesca è un dessert preparato molto diverso dalla pesca fresca",
+    "raspberry Jello-raspberry": "La gelatina al lampone è un dessert preparato molto diverso dal lampone fresco",
+    "blackberry Jell-O-blackberry": "La gelatina alla mora è un dessert preparato molto diverso dalla mora fresca",
+    "cherry kijafa wine-cherry": "Il vino alla ciliegia è una bevanda alcolica, mentre la ciliegia è un frutto fresco",
+    "crab pollock-crab": "Il surimi di pollack è un prodotto processato molto diverso dal granchio reale",
+    "berry blue gelatin mix-berry": "La gelatina blu ai frutti di bosco è un dessert artificiale molto diverso dai frutti di bosco freschi",
+    "sugar-free white chocolate pudding-white chocolate": "Il budino al cioccolato bianco senza zucchero è un dessert preparato molto diverso dal cioccolato bianco puro",
+    "meringue nest-meringue": "Un nido di meringa è una forma specifica che può avere composizione diversa dalla meringa generica",
+    "Mix-pudding": "Termine troppo generico per stabilire un'equivalenza nutrizionale",
+    "vegetable protein-vegetable": "Le proteine vegetali sono un estratto concentrato molto diverso dalle verdure intere"
+}
+
+Numero di mappature non ragionevoli : 12
+################################################################################
+
+################################################################################
+6800 - 6900 :
+{
+    "oil or fat-oil": "Troppo generico, 'fat' ha valori nutrizionali diversi dall'olio",
+    "tarragon white wine vinegar-tarragon": "Il vinegar ha valori nutrizionali molto diversi dal tarragon puro",
+    "feta salad dressing-feta": "Il dressing ha valori nutrizionali diversi dal formaggio feta puro",
+    "black raspberry liqueur-raspberry": "Il liquore ha valori nutrizionali molto diversi dal frutto",
+    "thick fruit filling-fruit": "Il filling contiene zuccheri e altri ingredienti oltre alla frutta",
+    "rum raisin ice cream-rum": "Il gelato ha valori nutrizionali molto diversi dal rum puro",
+    "watermelon rum-watermelon": "Il rum aromatizzato ha valori nutrizionali molto diversi dall'anguria",
+    "whipped cream vodka-whipped cream": "La vodka aromatizzata ha valori nutrizionali molto diversi dalla panna montata",
+    "vegetarian bacon-bacon": "Il bacon vegetariano ha una composizione nutrizionale molto diversa dal bacon di carne",
+    "squirrel-rabbit": "Sono carni di animali diversi con valori nutrizionali differenti",
+    "baileys original irish cream-baileys": "Il Baileys è un liquore cremoso con valori diversi dalla crema pura",
+    "hot pepper sesame oil-hot pepper": "L'olio di sesamo piccante ha valori nutrizionali molto diversi dal peperoncino puro",
+    "habanero peanut brittle-habanero": "Il croccante di arachidi ha valori nutrizionali molto diversi dal peperoncino habanero puro"
+}
+
+Numero di mappature non ragionevoli : 13
+################################################################################
+
+################################################################################
+6900 - 7000 :
+{
+    "cereal cream-cereal": "Cereal cream e cereali sono ingredienti diversi - il primo è una crema/panna a base di cereali mentre il secondo sono solo cereali secchi",
+    "evaporated-milk": "Evaporated milk (latte evaporato) ha una composizione nutrizionale significativamente diversa dal latte normale essendo concentrato",
+    "po boy roll-po boy": "Po boy roll è il pane utilizzato per il sandwich po boy, mentre po boy è il sandwich completo - sono concetti diversi",
+    "buds-buds": "Il termine 'buds' è troppo generico senza contesto e potrebbe riferirsi a diverse parti di piante",
+    "torani coconut sugar-free syrup-coconut": "Lo sciroppo aromatizzato al cocco senza zucchero ha una composizione molto diversa dal cocco fresco",
+    "packet Splenda sugar substitute-splenda": "Il pacchetto di Splenda ha un peso/porzione specifica rispetto al termine generico",
+    "whipped cream or ice cream-whipped cream": "Sono due prodotti diversi con composizioni nutrizionali differenti",
+    "phyllo tart shell-tart": "La base di pasta fillo è solo una componente della torta completa",
+    "nut and dried fruit filling-nut": "Il ripieno è una miscela di frutta secca e frutta disidratata, non solo frutta secca",
+    "sugar ice cream cone-sugar": "Il cono gelato è un prodotto completamente diverso dallo zucchero"
+}
+
+Numero di mappature non ragionevoli : 10
+################################################################################
+
+################################################################################
+7000 - 7100 :
+{
+    "amaretto flavored coffee creamer-amaretto": "L'amaretto è un liquore, mentre il coffee creamer è un prodotto cremoso non alcolico per il caffè - sono prodotti completamente diversi",
+    "sour cream pie crust-sour cream": "La crosta di torta con panna acida è un impasto/prodotto da forno, mentre la panna acida è un latticino - sono prodotti diversi",
+    "buttered bread crumb-buttered bread": "Il pangrattato imburrato è un ingrediente secco, mentre il pane imburrato è una fetta di pane con burro - sono preparazioni diverse",
+    "non-dairy vanilla coffee creamer-vanilla": "Il coffee creamer è un prodotto cremoso per il caffè, mentre la vaniglia è una spezia - sono ingredienti completamente diversi",
+    "nut quick bread mix-nut": "Il mix per pane veloce alla frutta secca è una preparazione completa per dolci, mentre la frutta secca è solo un ingrediente - sono prodotti diversi",
+    "crab cake seasoning-crab cake": "Il condimento per polpette di granchio è una miscela di spezie, mentre il crab cake è la polpetta di granchio completa - sono prodotti diversi",
+    "cream filled cookie-cream": "I biscotti ripieni di crema sono un prodotto da forno completo, mentre la crema è solo uno degli ingredienti - sono prodotti diversi",
+    "ginger nut biscuit-ginger": "I biscotti allo zenzero sono un prodotto da forno completo, mentre lo zenzero è solo una spezia - sono prodotti diversi",
+    "lean beef sausage-lean beef": "La salsiccia di manzo magro è un insaccato lavorato, mentre il manzo magro è carne cruda - sono preparazioni diverse"
+}
+
+Numero di mappature non ragionevoli : 9
+################################################################################
+
+################################################################################
+7100 - 7200 :
+{
+    "parchment paper-coffee": "Parchment paper è un materiale per cottura, mentre coffee è una bevanda - sono completamente diversi",
+    "whole wheat hamburger bun-wheat": "Un panino per hamburger è un prodotto da forno complesso, non equiparabile al semplice grano",
+    "beefsteak tomatoes-beefsteak": "Beefsteak tomatoes sono pomodori, mentre beefsteak è carne - sono alimenti completamente diversi",
+    "vanilla sponge cake-vanilla": "Una torta è un prodotto da forno complesso, non equiparabile alla sola vaniglia",
+    "strawberry ice cream-strawberry": "Il gelato alla fragola è un dessert elaborato, non equiparabile alla sola fragola",
+    "shrimp boil seasoning-shrimp": "È un condimento/mix di spezie, non equiparabile ai gamberetti",
+    "threads-saffron": "Threads è un termine troppo generico e non specificamente riferito allo zafferano",
+    "pepper bacon-pepper": "Il bacon al pepe è un prodotto a base di carne, non equiparabile al solo pepe",
+    "mesquite wood chips-chips": "Sono trucioli di legno per affumicatura, non patatine/chips commestibili",
+    "Campbells condensed cream of celery soup-celery": "Una zuppa cremosa preparata è un alimento complesso, non equiparabile al solo sedano"
+}
+
+Numero di mappature non ragionevoli : 10
+################################################################################
+
+################################################################################
+7200 - 7300 :
+{
+    "godiva milk chocolate liqueur-milk chocolate": "Il liquore al cioccolato è una bevanda alcolica, non può essere approssimato con il cioccolato al latte",
+    "tomato jam-tomato": "La marmellata di pomodoro ha una composizione e valori nutrizionali molto diversi dal pomodoro fresco",
+    "herb seasoned stuffing mix-herb": "Il mix per il ripieno è un prodotto complesso con più ingredienti, non può essere approssimato con le sole erbe",
+    "turkey drippings-turkey": "I succhi di cottura del tacchino hanno una composizione molto diversa dalla carne di tacchino",
+    "pistachio flavored instant pudding-pistachio": "Il budino istantaneo al pistacchio è un prodotto processato con composizione molto diversa dai pistacchi",
+    "thai salted preserved radish-radish": "Il ravanello in salamoia ha valori nutrizionali molto diversi dal ravanello fresco",
+    "butter pound cake-butter": "Il pound cake è un dolce complesso, non può essere approssimato con il solo burro",
+    "chicken consomme-chicken": "Il consommé è un brodo concentrato con composizione molto diversa dalla carne di pollo",
+    "annatto water-water": "L'acqua di annatto è un liquido colorato con proprietà diverse dall'acqua pura",
+    "orange lentil-orange": "Le lenticchie arancioni sono legumi, non possono essere approssimate con l'arancia",
+    "goldfish cracker-goldfish": "I crackers a forma di pesciolino sono snack processati, non hanno relazione con il pesce"
+}
+
+Numero di mappature non ragionevoli : 11
+################################################################################
+
+################################################################################
+7300 - 7400 :
+{
+    "salted soda biscuit-soda": "I biscotti e il bicarbonato di sodio sono ingredienti completamente diversi con valori nutrizionali non comparabili",
+    "butter mint-butter": "Il butter mint è una caramella alla menta, non ha valori nutrizionali paragonabili al burro",
+    "carrot water-carrot": "L'acqua di carota è molto più diluita e ha valori nutrizionali molto diversi dalla carota intera",
+    "butter rum-butter": "Il butter rum è una bevanda alcolica, non paragonabile al burro",
+    "fruit bread-fruit": "Il pane alla frutta è un prodotto da forno, non comparabile alla frutta generica",
+    "spinach noodle-spinach": "La pasta agli spinaci è un prodotto a base di farina, non comparabile agli spinaci puri",
+    "tofunaise-tofu": "La tofunaise è una maionese vegana, ha composizione e valori nutrizionali diversi dal tofu puro",
+    "sesame butter-butter": "Il burro di sesamo (tahini) è un prodotto a base di semi, non comparabile al burro tradizionale",
+    "apple schnapps-apple": "Il liquore alla mela ha valori nutrizionali completamente diversi dalla mela fresca"
+}
+
+Numero di mappature non ragionevoli : 9
+################################################################################
+
+################################################################################
+7400 - 7500 :
+{
+    "box peach Jell-O-peach": "Jell-O è un dessert gelatinoso molto diverso dal frutto della pesca",
+    "garden salsa pepper-salsa": "Il garden salsa pepper è un tipo di peperone, mentre la salsa è una salsa preparata",
+    "raisin pumpernickel bread-raisin": "Il pane pumpernickel con uvetta è un tipo di pane, non può essere approssimato con solo uvetta",
+    "dessert-cheesecake": "Il termine 'dessert' è troppo generico per essere approssimato con uno specifico tipo di dolce",
+    "chocolate chip bread-chocolate chip": "Il pane con gocce di cioccolato è sostanzialmente diverso dalle sole gocce di cioccolato",
+    "lavender bud-bud": "Il termine 'bud' è troppo generico e non specificato correttamente",
+    "Skor chips-chips": "Skor chips sono un tipo specifico di dolce al toffee, molto diverso dai chips generici",
+    "cherry frosting-cherry": "Il frosting alla ciliegia è una glassa, non può essere approssimato con la frutta",
+    "korma paste-korma": "La pasta korma è un condimento specifico che non può essere approssimato con il termine generico",
+    "dulce de leche ice cream-dulce de leche": "Il gelato al dulce de leche è un dessert diverso dal solo dulce de leche",
+    "lemon thyme leaf-lemon": "Il timo limone è un'erba aromatica, non può essere approssimato con il limone",
+    "low-fat buttermilk baking mix-buttermilk": "Il mix per dolci è un preparato che non può essere approssimato con il solo latticello",
+    "seafood stock-seafood": "Il brodo di pesce è un liquido di cottura che non può essere approssimato con il pesce stesso"
+}
+
+Numero di mappature non ragionevoli : 13
+################################################################################
+
+################################################################################
+7500 - 7600 :
+{
+    "hot carbonated lemon-lime beverage-soft drink": "Mentre sono entrambe bevande, il soft drink è una categoria troppo generica e potrebbe avere valori nutrizionali significativamente diversi dalla specifica bevanda citata",
+    "cold carbonated lemon-lime beverage-soft drink": "Mentre sono entrambe bevande, il soft drink è una categoria troppo generica e potrebbe avere valori nutrizionali significativamente diversi dalla specifica bevanda citata",
+    "crisco butter flavor shortening-butter": "Il shortening è un grasso solido vegetale con composizione diversa dal burro",
+    "cucumber ranch dressing-cucumber": "Il dressing è una salsa condita con diverse composizione dal cetriolo semplice",
+    "red grape tomato-red grape": "Il pomodorino è un tipo di pomodoro, non ha nulla a che vedere con l'uva rossa",
+    "yellow grape tomato-grape": "Il pomodorino è un tipo di pomodoro, non ha nulla a che vedere con l'uva",
+    "acini di pepe-pepper": "Gli acini di pepe sono un tipo di pasta, non hanno nulla a che vedere con il pepe",
+    "Milk Dud-milk": "I Milk Duds sono caramelle al cioccolato, non latte",
+    "bubble-cereals": "Il termine 'bubble' è troppo generico e non si riferisce necessariamente ai cereali",
+    "onion and pepper blend-onion": "Un mix di cipolle e peperoni ha una composizione nutrizionale diversa dalla sola cipolla"
+}
+
+Numero di mappature non ragionevoli : 10
+################################################################################
+
+################################################################################
+7600 - 7700 :
+{
+    "ammonia-baking soda": "Ammonia e bicarbonato di sodio sono sostanze chimiche completamente diverse con proprietà differenti",
+    "stars-chocolate": "Il termine 'stars' è troppo generico e non è chiaro che si riferisca al cioccolato",
+    "cream of shrimp soup-cream": "La zuppa di gamberi è un prodotto molto diverso dalla panna/crema semplice",
+    "chicken rub-chicken": "Il chicken rub è una miscela di spezie per condire il pollo, non è carne di pollo",
+    "almond brickle chips-almond": "Le mandorle caramellate hanno una composizione nutrizionale molto diversa dalle mandorle pure",
+    "lime yogurt-lime": "Lo yogurt al lime è un prodotto lattiero-caseario, non un agrume",
+    "wash-eggs": "Il termine 'wash' è troppo vago e non necessariamente si riferisce alle uova",
+    "almond bark chocolate-almond": "Il cioccolato con mandorle ha una composizione nutrizionale molto diversa dalle mandorle pure"
+}
+
+Numero di mappature non ragionevoli : 8
+################################################################################
+
+################################################################################
+7700 - 7800 :
+{
+    "berry juice-berry": "Il succo di frutti di bosco ha una composizione nutrizionale diversa dai frutti interi, essendo più diluito e privo di fibre",
+    "butternut-fruit": "Il butternut è una varietà di zucca, non un frutto. Composizione nutrizionale completamente diversa",
+    "habanero mango hot sauce-habanero": "La salsa contiene mango e altri ingredienti oltre al peperoncino habanero, con valori nutrizionali molto diversi",
+    "tang orange crystal-orange": "Il Tang è una bevanda in polvere artificiale con composizione molto diversa dall'arancia fresca",
+    "corn oil margarine-corn oil": "La margarina è un'emulsione con composizione diversa dall'olio di mais puro",
+    "powdered instant chocolate drink mix-chocolate drink": "La polvere ha composizione diversa dalla bevanda pronta",
+    "dill rye bread-dill": "Il pane di segale all'aneto è un prodotto complesso molto diverso dall'aneto puro",
+    "orange slice candy-orange": "Le caramelle all'arancia hanno una composizione completamente diversa dall'arancia fresca",
+    "french vanilla instant pudding-vanilla": "Il budino istantaneo ha una composizione molto diversa dalla vaniglia pura",
+    "instant pineapple pudding-pineapple": "Il budino all'ananas ha una composizione molto diversa dall'ananas fresco",
+    "barley malt syrup-barley": "Lo sciroppo di malto d'orzo è un prodotto trasformato con composizione diversa dall'orzo",
+    "garlic & herb spreadable cheese-garlic": "Il formaggio spalmabile è un prodotto complesso molto diverso dall'aglio puro",
+    "flavour-yogurt": "Il termine 'flavour' è troppo generico e non comparabile allo yogurt",
+    "chocolate mint kiss-chocolate mint": "Il cioccolatino è un prodotto complesso diverso dalla menta al cioccolato",
+    "coffee ice cube-coffee": "Il ghiaccio al caffè ha una composizione diversa dal caffè liquido",
+    "hot chocolate ice cube-hot chocolate": "Il ghiaccio alla cioccolata ha una composizione diversa dalla cioccolata calda"
+}
+
+Numero di mappature non ragionevoli : 16
+################################################################################
+
+################################################################################
+7800 - 7900 :
+{
+    "champagne mustard-champagne": "Champagne mustard è una salsa/condimento, mentre champagne è una bevanda alcolica - sono ingredienti completamente diversi",
+    "fettucine-egg": "Fettuccine è un tipo di pasta, mentre egg è un uovo - sono ingredienti completamente diversi",
+    "orange sprinkles-orange": "Orange sprinkles sono decorazioni dolci, mentre orange è un frutto - sono ingredienti completamente diversi",
+    "coconut pecan frosting-coconut": "Coconut pecan frosting è una glassa dolce composta, mentre coconut è solo un ingrediente - sono nutrizonalmente diversi",
+    "tart crust-tart": "Tart crust è specificamente la crosta/base della torta, mentre tart è il dolce completo - hanno composizioni diverse",
+    "ocean spray whole berry cranberry sauce-berry": "Ocean spray whole berry cranberry sauce è una salsa preparata, mentre berry è un frutto generico - sono ingredienti diversi",
+    "walnut vinegar-walnut": "Walnut vinegar è un aceto aromatizzato, mentre walnut è una noce - sono ingredienti completamente diversi",
+    "parsley sauce-parsley": "Parsley sauce è una salsa preparata, mentre parsley è un'erba aromatica - sono ingredienti completamente diversi",
+    "white dipping chocolate-chocolate": "White dipping chocolate è cioccolato bianco specifico per coperture, mentre chocolate è cioccolato generico - hanno composizioni diverse",
+    "blue food coloring-caramel": "Blue food coloring è un colorante alimentare blu, mentre caramel è caramello - sono ingredienti completamente diversi",
+    "artichoke marinade-artichoke": "Artichoke marinade è una marinatura preparata, mentre artichoke è un vegetale - sono ingredienti completamente diversi",
+    "chopped peeled tart apple-tart": "Chopped peeled tart apple è una mela, mentre tart è un dolce - sono ingredienti completamente diversi",
+    "muffin tin-muffin": "Muffin tin è uno stampo da cucina, non un ingrediente alimentare",
+    "lemon infused olive oil-lemon": "Lemon infused olive oil è un olio aromatizzato, mentre lemon è un frutto - sono ingredienti completamente diversi",
+    "parmesan flavored breadcrumb-parmesan": "Parmesan flavored breadcrumb è pan grattato aromatizzato, mentre parmesan è formaggio - sono ingredienti diversi",
+    "grapefruit zest-grapefruit": "Grapefruit zest è la scorza del pompelmo, mentre grapefruit è il frutto intero - hanno composizioni diverse",
+    "Jack Daniels Black Label Mix-jack daniels": "Jack Daniels Black Label Mix è un mix per cocktail, mentre jack daniels è whiskey - sono ingredienti diversi",
+    "skim condensed milk-skim": "Skim condensed milk è latte condensato scremato, mentre skim è un termine generico per 'scremato' - non sono comparabili"
+}
+
+Numero di mappature non ragionevoli : 18
+################################################################################
+
+################################################################################
+7900 - 8000 :
+{
+    "tarragon red wine vinegar-tarragon": "Il tarragon red wine vinegar è un condimento liquido, mentre il tarragon è un'erba aromatica - sono alimenti molto diversi",
+    "tomato and basil pasta sauce-tomato": "La salsa contiene altri ingredienti oltre al pomodoro, con valori nutrizionali significativamente diversi",
+    "glaze butter-glaze": "Il glaze butter è principalmente burro, mentre glaze generico ha composizione molto diversa",
+    "glaze cocoa-glaze": "Il glaze al cacao ha composizione e valori nutrizionali molto diversi dal glaze generico",
+    "glaze extract-glaze": "L'estratto per glaze ha una composizione molto diversa dal glaze generico",
+    "vanilla shortbread-vanilla": "I biscotti shortbread alla vaniglia sono un prodotto da forno complesso, molto diverso dalla vaniglia pura",
+    "roast chicken seasoning-roast chicken": "Il condimento è una miscela di spezie, mentre il pollo arrosto è carne - sono alimenti completamente diversi",
+    "orange crush orange soda-orange": "La soda all'arancia è una bevanda zuccherata gassata, molto diversa dall'arancia frutta",
+    "spinach tagliatelle-spinach": "La pasta agli spinaci è principalmente fatta di farina, con valori nutrizionali molto diversi dagli spinaci puri",
+    "wine chorizo sausage-wine": "Il chorizo al vino è un insaccato di carne, completamente diverso dal vino",
+    "drops red gel food coloring-caramel": "Il colorante alimentare in gel è un additivo sintetico, molto diverso dal caramello",
+    "seafood magic seasoning-seafood": "Il condimento è una miscela di spezie, mentre i frutti di mare sono proteine animali - completamente diversi",
+    "beef tomato-beef": "Il pomodoro cuore di bue è una varietà di pomodoro, non ha nulla a che fare con la carne di manzo"
+}
+
+Numero di mappature non ragionevoli : 13
+################################################################################
+
+################################################################################
+8000 - 8100 :
+{
+    "strawberry drink mix-strawberry": "Un mix per bevande alla fragola ha una composizione nutrizionale molto diversa dalla fragola fresca",
+    "cookie pie crust-cookie": "Una base per torta di biscotti ha una composizione diversa dai biscotti normali",
+    "raspberry junket danish dessert mix-raspberry": "Un mix per dessert al lampone ha una composizione molto diversa dal frutto fresco",
+    "fish-fry mix-fish": "Un mix per friggere il pesce ha una composizione molto diversa dal pesce",
+    "fruit salsa-fruit salsa": "Una salsa di frutta ha una composizione diversa dalla frutta fresca",
+    "fennel sausage-fennel": "Una salsiccia al finocchio ha una composizione completamente diversa dal finocchio",
+    "hot verde sauce-sauce": "Una salsa verde piccante è troppo specifica per essere approssimata con una generica 'sauce'",
+    "cheese dressing-cheese": "Un condimento al formaggio ha una composizione diversa dal formaggio",
+    "yogurt cheese-yogurt": "Il formaggio di yogurt ha una composizione diversa dallo yogurt normale",
+    "peach flavoring-peach": "Un aroma alla pesca ha una composizione completamente diversa dalla pesca fresca"
+}
+
+Numero di mappature non ragionevoli : 10
+################################################################################
+
+################################################################################
+8100 - 8200 :
+{
+    "oyster cracker-oyster": "Un oyster cracker è un tipo di cracker/biscotto salato, non ha relazione con le ostriche",
+    "chocolate graham wafer pie crust-chocolate graham": "Una crosta di torta è un prodotto finito diverso dal biscotto graham al cioccolato",
+    "imitation cream cheese-cream cheese": "Il formaggio cream cheese di imitazione ha una composizione nutrizionale diversa dal vero cream cheese",
+    "splenda brown sugar blend-splenda": "Il blend di zucchero bruno Splenda ha una composizione diversa dalla Splenda pura",
+    "meat stock-meat": "Il brodo di carne è un liquido con composizione molto diversa dalla carne",
+    "frango chocolate-covered mint candy-mint": "Una caramella al cioccolato e menta ha una composizione molto diversa dalla menta pura",
+    "green liquid food coloring-caramel": "Il colorante alimentare verde è completamente diverso dal caramello",
+    "Skor chip-chip": "Uno Skor chip è una barretta di cioccolato/toffee, non un chip generico",
+    "ginger brandy-ginger": "Il brandy allo zenzero è una bevanda alcolica, molto diversa dallo zenzero puro",
+    "raspberry chocolate chips-raspberry": "Le gocce di cioccolato al lampone sono principalmente cioccolato, non lamponi",
+    "gravy browner-gravy": "Il colorante per sugo è un additivo, non il sugo stesso",
+    "lingonberry butter-lingonberry": "Il burro di mirtilli rossi è un prodotto lavorato diverso dai mirtilli puri",
+    "butterscotch topping-butterscotch": "La salsa butterscotch è un prodotto liquido diverso dal butterscotch solido",
+    "dash yellow food coloring-caramel": "Il colorante alimentare giallo è completamente diverso dal caramello"
+}
+
+Numero di mappature non ragionevoli : 14
+################################################################################
+
+################################################################################
+8200 - 8300 :
+{
+    "berry sugar-berry": "Berry sugar è zucchero, non bacche. Dovrebbe essere mappato su sugar.",
+    "fruit chutney-fruit": "Il chutney è una salsa/condimento, non frutta fresca.",
+    "package almond brickle chip-almond": "L'almond brickle chip è un dolce/snack processato, non mandorle pure.",
+    "imitation strawberry extract-strawberry": "L'estratto artificiale ha valori nutrizionali molto diversi dalla frutta fresca.",
+    "banana cream pudding mix-banana": "Il pudding mix è un dessert processato, non banana fresca.",
+    "orange Kool-Aid mix-orange": "Il Kool-Aid è una bevanda artificiale, non arancia fresca.",
+    "packet asian home gourmet butter chicken paste-butter chicken": "La pasta è un condimento concentrato, non il piatto completo.",
+    "whip topping-ice cream": "Il whip topping è una crema montata artificiale, non gelato.",
+    "coffee-mate-coffee": "Il Coffee-mate è un sostituto del latte, non caffè.",
+    "shortbread pie crust-shortbread": "La base per torta ha composizione diversa dai biscotti shortbread.",
+    "vegetarian sausage-sausage": "La salsiccia vegetariana ha composizione molto diversa da quella di carne.",
+    "sheet parchment paper-coffee": "La carta da forno non ha nulla a che fare con il caffè.",
+    "fruit or pie filling-fruit": "Il ripieno per torte è processato e zuccherato, diverso dalla frutta fresca.",
+    "whole chicken wing-whole chicken": "L'ala è una parte specifica con valori diversi dal pollo intero.",
+    "pea sprout-pea": "I germogli hanno composizione diversa dai piselli.",
+    "spinach dip mix-spinach dip": "Il mix secco ha valori molto diversi dal dip pronto.",
+    "box chicken rice-a-roni-chicken": "Il Rice-a-Roni è un prodotto a base di riso, non pollo."
+}
+
+Numero di mappature non ragionevoli : 17
+################################################################################
+
+################################################################################
+8300 - 8400 :
+{
+    "orange cream sandwich biscuit-orange": "Un biscotto farcito alla crema d'arancia è nutrizionalmente molto diverso da un'arancia fresca",
+    "chocolate Oreo cookie crumbs-chocolate": "I biscotti Oreo sbriciolati hanno una composizione nutrizionale molto diversa dal cioccolato puro",
+    "huy fong chili-garlic sauce-sauce": "Una salsa specifica al chili e aglio ha valori nutrizionali molto diversi da una salsa generica",
+    "beef chipolata sausage-beef": "Una salsiccia di manzo ha valori nutrizionali diversi dalla carne di manzo pura",
+    "kraft Mac n\\ Cheese-cheese": "Un piatto preparato di pasta e formaggio ha valori nutrizionali molto diversi dal formaggio puro",
+    "slice crisp bacon-crisp": "Il bacon croccante ha valori nutrizionali completamente diversi da un generico 'crisp'",
+    "diced Rotel Tomatoes-rotel": "I pomodori in scatola Rotel non possono essere approssimati con un generico 'rotel'"
+}
+
+Numero di mappature non ragionevoli : 7
+################################################################################
+
+################################################################################
+8400 - 8500 :
+{
+    "spears-asparagus": "Il termine 'spears' è troppo generico e potrebbe riferirsi a diverse cose, non solo asparagi",
+    "fruit roll-up-fruit": "Un fruit roll-up è un prodotto dolciario trasformato con valori nutrizionali molto diversi dalla frutta fresca",
+    "verjuice-grapefruit juice": "Il verjuice è succo di uva acerba, non di pompelmo, con valori nutrizionali differenti",
+    "bean thread-bean": "I bean thread sono noodles di amido, non legumi, con valori nutrizionali molto diversi",
+    "milk dud-milk": "I milk duds sono caramelle al cioccolato, non latte, con valori nutrizionali completamente diversi",
+    "butter flavored cracker-butter": "I cracker al burro sono prodotti da forno, non burro, con valori nutrizionali molto diversi",
+    "red-hot candy-candy": "Le red-hot candies sono caramelle piccanti specifiche con valori nutrizionali diversi dalle caramelle generiche",
+    "chai mixed spice-chai": "Le spezie per chai sono un mix di spezie secche, mentre il chai è una bevanda, con valori nutrizionali diversi",
+    "olive salad-olive salad": "L'insalata di olive contiene altri ingredienti oltre alle olive, con valori nutrizionali diversi dalle sole olive",
+    "sundae sauce-sundae": "La salsa per sundae è solo un componente del sundae completo, con valori nutrizionali molto diversi"
+}
+
+Numero di mappature non ragionevoli : 10
+################################################################################
+
+################################################################################
+8500 - 8600 :
+{
+    "dipper-dressing": "Dipper è un termine generico che può riferirsi a vari tipi di alimenti per intingere, non necessariamente simili al dressing",
+    "pico-pico": "Termine troppo generico/ambiguo senza ulteriori specificazioni",
+    "emmeril vegetable dust seasoning-vegetable": "È un condimento/spezia, non un vegetale",
+    "port wine cheese-port wine": "Il port wine cheese è un formaggio, non vino",
+    "casserole mince-casserole": "Termini troppo generici/ambigui senza ulteriori specificazioni",
+    "birds custard powder-custard": "La polvere per budino e il budino pronto hanno valori nutrizionali significativamente diversi",
+    "cake batter-cake batter": "Termine troppo generico/ambiguo senza ulteriori specificazioni",
+    "meringue powder-meringue": "La polvere di meringa e la meringa hanno valori nutrizionali significativamente diversi",
+    "fresh spinach rotini pasta-fresh spinach": "È un tipo di pasta, non spinaci",
+    "fresh red pepper rotini pasta-red pepper": "È un tipo di pasta, non peperoni",
+    "salted pasta water-pasta": "L'acqua salata per la pasta non ha gli stessi valori nutrizionali della pasta"
+}
+
+Numero di mappature non ragionevoli : 11
+################################################################################
+
+################################################################################
+8600 - 8700 :
+{
+    "sundried tomato sauce-sundried tomato": "Il sugo di pomodori secchi ha una composizione nutrizionale diversa dai pomodori secchi, con più liquidi e altri ingredienti aggiunti",
+    "prune butter-prune": "Il burro di prugne è un prodotto concentrato con composizione diversa dalle prugne fresche",
+    "parmesan wafer-parmesan": "I wafer al parmigiano sono biscotti/cracker, con composizione molto diversa dal formaggio parmigiano",
+    "anise liqueur-anise": "Il liquore all'anice ha una composizione completamente diversa dall'anice come spezia",
+    "mccormick roasted garlic and bell pepper-garlic": "È un mix di spezie con composizione molto diversa dall'aglio",
+    "boursin garlic cheese roll-garlic": "È un formaggio aromatizzato, non comparabile all'aglio",
+    "nestle nesquik instant chocolate drink mix-nesquik": "È una bevanda istantanea con composizione diversa dal Nesquik classico",
+    "strawberry-flavor nestle nesquik powder-nesquik": "È una variante alla fragola con composizione diversa dal Nesquik classico",
+    "box Knorr Leek mix-leek": "È un preparato industriale con composizione molto diversa dai porri freschi",
+    "cheesecake flavor instant pudding-cheesecake": "Il budino istantaneo ha una composizione molto diversa dal cheesecake",
+    "buttermilk dressing-buttermilk": "Il condimento al latticello ha una composizione diversa dal latticello puro",
+    "potato topper-potato": "È un condimento/topping per patate, non comparabile alle patate",
+    "solid butter flavor shortening-butter": "Lo shortening aromatizzato al burro ha una composizione molto diversa dal burro vero",
+    "imitation coconut extract-coconut": "L'estratto artificiale di cocco ha una composizione completamente diversa dal cocco",
+    "tofu noodle-tofu": "La pasta di tofu ha una composizione diversa dal tofu puro"
+}
+
+Numero di mappature non ragionevoli : 15
+################################################################################
+
+################################################################################
+8700 - 8800 :
+{
+    "thick pepper bacon-pepper": "Pepper e bacon sono ingredienti completamente diversi - il bacon è un prodotto a base di carne mentre il pepe è una spezia",
+    "macadamia basil pesto-macadamia": "Il pesto è una salsa complessa con più ingredienti, non può essere approssimato con le sole noci macadamia",
+    "package nacho cheese flavored tortilla chips-nacho cheese": "I nachos sono chips di mais, non possono essere approssimati al solo formaggio",
+    "broccoli and cheese flavored rice mix-broccoli and cheese": "Il riso aromatizzato è un prodotto complesso che non può essere ridotto ai soli broccoli e formaggio",
+    "sultana natural bran-sultana": "La crusca con uvetta è un prodotto cerealicolo complesso, non può essere approssimato alla sola uvetta sultanina",
+    "cream of wild mushroom soup-cream": "La zuppa di funghi è un prodotto complesso che non può essere approssimato alla sola panna",
+    "Nutter Butter-butter": "Il Nutter Butter è un biscotto al burro di arachidi, non può essere approssimato al solo burro",
+    "baking chips-chips": "I baking chips sono un prodotto specifico per la cottura, diverso dalle comuni chips",
+    "pineapple flavoring-pineapple": "L'aroma di ananas è un prodotto artificiale, non può essere approssimato all'ananas fresco",
+    "Cracker Barrel Cheese-cracker": "Il Cracker Barrel è un formaggio, non può essere approssimato ai cracker",
+    "basil vinaigrette-basil": "La vinaigrette al basilico è un condimento complesso, non può essere approssimato al solo basilico",
+    "dried cannelloni tube-cannelloni": "I cannelloni secchi sono un tipo di pasta, serve una categoria più specifica"
+}
+
+Numero di mappature non ragionevoli : 12
+################################################################################
+
+################################################################################
+8800 - 8900 :
+{
+    "peppadew-pepper": "Peppadew è un marchio specifico di peperoni dolci piccanti, con caratteristiche nutrizionali diverse dai peperoni generici",
+    "monterey jack pepper-monterey jack": "Il Monterey Jack al peperoncino ha valori nutrizionali diversi dal Monterey Jack normale a causa dell'aggiunta di peperoni",
+    "whale meat-meat": "La carne di balena ha un profilo nutrizionale molto diverso dalle carni comuni",
+    "bear meat-meat": "La carne di orso ha caratteristiche nutrizionali specifiche e diverse dalle carni comuni",
+    "mushroom beef gravy-mushroom": "La salsa gravy con funghi e manzo ha un profilo nutrizionale molto diverso dai soli funghi",
+    "Rotel tomatoes-rotel": "I pomodori Rotel sono un prodotto specifico con ingredienti aggiuntivi rispetto ai normali pomodori",
+    "jar beef gravy-beef gravy": "La salsa gravy di manzo in barattolo può avere additivi e conservanti che ne modificano il profilo nutrizionale"
+}
+
+Numero di mappature non ragionevoli : 7
+################################################################################
+
+################################################################################
+8900 - 9000 :
+{
+    "ginger sesame paste-ginger": "Il ginger sesame paste è una pasta condita significativamente diversa dal solo zenzero",
+    "chipolte pepper-pepper": "Il peperoncino chipotle è un tipo specifico di peperoncino affumicato con valori nutrizionali diversi dal peperone generico",
+    "roll wrappers-roll": "I roll wrappers sono sfoglie per involtini, mentre roll è troppo generico",
+    "mashed instant potato flake-potato": "I fiocchi di patate istantanei hanno valori nutrizionali diversi dalle patate fresche",
+    "puff-cereals": "Puff è troppo generico e non necessariamente si riferisce a cereali",
+    "onion and mushroom soup mix-onion": "Il mix per zuppa contiene altri ingredienti oltre alla cipolla e ha valori molto diversi",
+    "berry red wine-berry": "Il vino ai frutti di bosco è una bevanda alcolica molto diversa dai frutti di bosco freschi",
+    "diced tomato and green chili-tomato": "La presenza del peperoncino verde modifica significativamente i valori nutrizionali",
+    "deli meat-meat": "La carne da gastronomia è troppo generica e può riferirsi a diversi tipi di carne lavorata",
+    "manwich-manwich": "Termine non standard, manca un riferimento B valido per il confronto",
+    "vegetable beef soup mix-vegetable beef soup": "Il mix secco per zuppa ha valori molto diversi dalla zuppa pronta",
+    "condiment-condiment": "Termine troppo generico che può riferirsi a molti tipi diversi di condimenti",
+    "tube-egg": "Termine troppo generico e non chiaramente riferito alle uova",
+    "piccalilli relish-relish": "Il piccalilli è un tipo specifico di relish con ingredienti e valori nutrizionali propri",
+    "vegetable cooking spray-vegetable": "Lo spray da cucina è un prodotto molto diverso dalle verdure"
+}
+
+Numero di mappature non ragionevoli : 15
+################################################################################
+
+################################################################################
+9000 - 9100 :
+{
+    "pepperoncini juice-pepperoncini": "Il succo di peperoncini è principalmente liquido mentre i peperoncini interi hanno una composizione nutrizionale diversa con più fibre",
+    "fungus-mushroom": "Il termine 'fungus' è troppo generico e potrebbe riferirsi a vari tipi di funghi non commestibili",
+    "lobster base-lobster": "Il lobster base è un concentrato/brodo che ha una composizione nutrizionale molto diversa dall'aragosta intera",
+    "honey_garlic_sauce-honey": "La salsa miele e aglio è una miscela complessa con ingredienti aggiuntivi, non paragonabile al solo miele",
+    "crisp chow mein noodles-crisp": "'Crisp' è un termine generico che non rappresenta la composizione dei noodles",
+    "almond_essence-almond": "L'essenza di mandorla è un aroma concentrato con composizione molto diversa dalle mandorle"
+}
+
+Numero di mappature non ragionevoli : 6
+################################################################################
