@@ -120,12 +120,13 @@ def answer_question(userData,userPrompt,token,memory,info):
 
     if(token == p.TASK_0_0_HOOK):
         log.save_log("PRESENTING_USER_LANGUAGE_RETRIEVAL", datetime.datetime.now(), "System", userData.id, PRINT_LOG)
-        response = lcs.execute_chain(p.GET_LANGUAGE_PROMPT_BASE_0_0, userPrompt, 0.6, userData)
+        # print(f"##### {userData.username} : {userData.language}")
+        response = lcs.execute_chain(p.GET_LANGUAGE_PROMPT_BASE_0_0.format(language_code=userData.language), userPrompt, 0.3, userData)
         return response
     
     if(token == p.TASK_0_0_1_HOOK):
         log.save_log("ASKING_USER_LANGUAGE_RETRIEVAL", datetime.datetime.now(), "System", userData.id, PRINT_LOG)
-        response = lcs.execute_chain(p.GET_LANGUAGE_PROMPT_BASE_0_1, userPrompt, 0.6, userData)
+        response = lcs.execute_chain(p.GET_LANGUAGE_PROMPT_BASE_0_1.format(language_code=userData.language), userPrompt, 0.3, userData)
         return response
     
     if(token == p.TASK_0_0_2_HOOK):
@@ -664,7 +665,8 @@ def answer_question(userData,userPrompt,token,memory,info):
 
         ingredientsData = ingService.get_nutritional_facts_from_list_of_ingredients(translated_ingredients)
         ingredientsData = utils.adapt_output_to_bot(ingredientsData)
-        
+
+        print("\n\ningredientsData :\n",ingredientsData)
         
         response = lcs.execute_chain(p.TASK_6_25_PROMPT.format(ingredients = ingredientsData, language=language, allergies = allergies, restrictions = restrictions), userPrompt, 0.3, userData, memory, True)
         return response

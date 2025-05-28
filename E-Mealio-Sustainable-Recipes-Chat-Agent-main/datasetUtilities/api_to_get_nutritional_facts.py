@@ -4,9 +4,13 @@ import requests
 print("inizio...............")
 
 # API key di CalorieNinjas
-API_KEY = "YyVkZ5veNfh+/8gH2rOIJg==dw1ZBCLe71eJ4bir"
+API_KEY = "Vtjc8FV7+TwFijnOIfWDGA==mdHBVdbHp2ddjbTP"
 
 headers = { "X-Api-Key": API_KEY }
+
+API_KEY_2 = "Vtjc8FV7+TwFijnOIfWDGA==mdHBVdbHp2ddjbTP"
+
+headers_2 = { "X-Api-Key": API_KEY_2 }
 
 url = "https://api.calorieninjas.com/v1/nutrition"
 
@@ -17,7 +21,7 @@ found_total = 0
 
 # colonne da aggiungere al csv
 columns_to_add = [
-    "calories", "fat_total_g", "fat_saturated_g", "cholesterol_mg", "sodium_mg",
+    "mapped_api_ingredient", "calories", "fat_total_g", "fat_saturated_g", "cholesterol_mg", "sodium_mg",
     "carbohydrates_total_g", "fiber_g", "sugar_g", "protein_g",
     "potassium_mg"
 ]
@@ -73,7 +77,7 @@ for index, ingredient in enumerate(df["ingredient"]):
                     "query": f"100g {mapped_item_query}"
                 }
 
-                response = requests.get(url, headers=headers, params=params)
+                response = requests.get(url, headers=headers_2, params=params)
                 data = response.json()
                 items = data.get("items", [])
 
@@ -101,7 +105,8 @@ for index, ingredient in enumerate(df["ingredient"]):
         # prendiamo il primo risultato
         item = items[0]  
 
-        # aggiorniamo i campi del csv con i risultati della richiesta        
+        # aggiorniamo i campi del csv con i risultati della richiesta      
+        df.at[index, "mapped_api_ingredient"] = item.get("name")  
         df.at[index, "calories"] = item.get("calories")
         df.at[index, "fat_total_g"] = item.get("fat_total_g")
         df.at[index, "fat_saturated_g"] = item.get("fat_saturated_g")
@@ -141,6 +146,8 @@ print(df["done"].value_counts())
 ###################################################################################################
 # PER PREPARE IL DATASET IN MODO DA IMPORTARLO IN MONGODB
 
+"""
+
 
 df = pd.read_csv("emealio_food_db.ingredients.csv")
 
@@ -165,3 +172,4 @@ df.rename(columns={k: v for k, v in rename_dict.items() if k in df.columns}, inp
 
 df.to_csv("emealio_food_db.ingredients.csv", index=False)
 print("CSV aggiornato e salvato.")
+"""

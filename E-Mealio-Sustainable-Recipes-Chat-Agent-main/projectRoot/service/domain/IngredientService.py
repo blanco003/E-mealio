@@ -147,6 +147,7 @@ def get_nutritional_facts(ingredient_name):
             ingredientData = ip.get_most_similar_ingredient(str(ingredient_name))
 
     if ingredientData != None:
+        #print("\n\n...Recuperando valori nutrizionali di : ",ingredientData.get("ingredient"), " (",ingredientData.get("mapped_api_ingredient"),")")
         nut_facts = {}
         for nut in nut_info:
             value = ingredientData.get(nut, None)

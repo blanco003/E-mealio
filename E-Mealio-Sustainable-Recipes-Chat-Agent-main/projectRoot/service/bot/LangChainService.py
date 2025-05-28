@@ -6,7 +6,8 @@ from langchain_anthropic import ChatAnthropic
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_core.output_parsers import StrOutputParser
 from dotenv import load_dotenv, find_dotenv
-from langchain.memory import ChatMessageHistory
+#from langchain.memory import ChatMessageHistory
+from langchain_community.chat_message_histories import ChatMessageHistory
 import Utils
 import service.bot.LogService as log
 import datetime
@@ -243,8 +244,8 @@ def translate_text(text, target_language):
     - str : testo tradotto.
     """
 
-    # se target_language è l'inglese non serve manco chiamare il LLM
-    if target_language.lower() == "english":
+    # se target_language è l'inglese non serve chiamare il LLM, il testo è già inglese
+    if target_language.lower() == "english" or target_language.lower() == "en":
         return text
 
 

@@ -92,6 +92,6 @@ def compute_recipe_ingredient_embedding():
     print("Done")
     
 ###### MAIN ######### 
-#compute_title_embedding()
+compute_title_embedding()
 compute_ingredients_embedding()
-#compute_recipe_ingredient_embedding()
+compute_recipe_ingredient_embedding()
