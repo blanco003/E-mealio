@@ -6,7 +6,7 @@ class User:
 
     def __init__(self, username, id, name, surname, dateOfBirth, nation, language, allergies, restrictions, disliked_ingredients, evolving_diet, reminder, days_reminder, hour_reminder, lastInteraction, tastes):
         """
-        Inizializza un oggetto istanza della classe Recipe.
+        Inizializza un oggetto istanza della classe User.
 
         Args:
         - username: Username dell'utente.
@@ -141,7 +141,7 @@ class User:
     
     def to_plain_json(self):
         """
-        Codifica l'oggetto Recipe in una stringa JSON senza metadati per la ricostruzione dell'oggetto.
+        Codifica l'oggetto User in una stringa JSON senza metadati per la ricostruzione dell'oggetto.
 
         Returns:
         - str: La rappresentazione JSON dell'oggetto non pickable.

@@ -224,9 +224,9 @@ Follow these steps to produce the output:
   Print the string "TOKEN 0.4" then explain that you need a yes/no answer and ask again if they want to receive the reminder."""
 
 
-CUSTOM_REMINDER_ACCEPTED = """I'm happy you accepted to receive reminders from me! If you forget to chat with me in {days_reminder} days, I will send you a message to help you stay on track with your sustainable habits!"""
+CUSTOM_REMINDER_ACCEPTED = """I'm happy you accepted to receive reminders from me! If you forget to chat with me in {days_reminder} days, I will send you a message to help you stay on track with your sustainable and healthy habits!"""
 
-DEFAULT_REMINDER_ACCEPTED = """I'm happy you accepted to receive reminders from me! If you forget to chat with me in 2 days, I will send you a message to help you stay on track with your sustainable habits!"""
+DEFAULT_REMINDER_ACCEPTED = """I'm happy you accepted to receive reminders from me! If you forget to chat with me in 2 days, I will send you a message to help you stay on track with your sustainable and healthy habits!"""
 
 REMINDER_DECLINED = """Ok, you decided not to receive reminders from me! If you change your mind, you can enable them by asking me to update your profile."""
 
@@ -256,9 +256,9 @@ Communicate with the user in the following language : {language}.
 
 Follow these steps to produce the output:
 
+- Print the string "TOKEN 2", welcome the user to the Recipe Recommendation Functionality, then continue by providing a detailed explanation of it, and ask the user for which type of meal he would like to receive the suggestion between breakfast, lunch, dinner or snack, and specifying any desired and undesired ingredients. 
+    Also specifies that if the user wants, he can add these two additional preferences: cooking time, for example "that it is quick to prepare", and healthiness, for example "that it is also healthy".
 
-
-- Print the string "TOKEN 2", welcome the user to the Recipe Recommendation Functionality, then continue by providing a detailed explanation of it, and ask the user for which type of meal he would like to receive the suggestion, specifying any desired and undesired ingredients. 
      Do NOT mention the number of the task, just the functionality.
      Conclude adding a reminder about using the /start command to return to the main menu and view the list of available functionalities.
 """
@@ -308,6 +308,8 @@ Follow these steps to produce the output:
   If the constraint "TAGS_DIETARY_PREFERENCES" does not appear in the "removedConstraints" field, emphasize that the suggested recipe is well aligned with the user's future dietary preferences {evolving_diet}, reinforcing that the recommendation supports their personal goals and sustainable food journey.
   Do not mention missing constraints if the "removedConstraints" field is empty. 
   Take into account the following allergies {allergies} and dietary restrictions {restrictions} to avoid trivial or irrelevant comparisons for the user.
+  If the recipe the recipe to be suggested contains ingredients that the user is allergic to, also provide only the name of the recipe beside to explain why he cant eat it,
+  without mentioning the sustainable/healthiness and instructions of it, but instead ask him if he wants to remove or ingredients to the preferences to receive a new recipe suggestion.
 
   Write an empty row for better readability before the environmental part.
 
@@ -353,11 +355,11 @@ Be succinct, using up to 150 words, and don't provide further hints about possib
 Maintain a respectful and polite tone."""
 
 
-SUGGESTION_ACCEPTED = """I'm glad you accepted my suggestion! If I can help you with other food sustainability questions, I'm here to help!"""
+SUGGESTION_ACCEPTED = """I'm glad you accepted my suggestion! If I can help you with other food sustainability and healthiness questions, I'm here to help!"""
 
-CUSTOM_SUGGESTION_ACCEPTED = """The substitutions you indicated have been applied successfully! I'm glad you accepted my suggestion! If I can help you with other food sustainability questions, I'm here to help!"""
+CUSTOM_SUGGESTION_ACCEPTED = """The substitutions you indicated have been applied successfully! I'm glad you accepted my suggestion! If I can help you with other food sustainability and healthiness questions, I'm here to help!"""
 
-SUGGESTION_DECLINED = """That's okay! I hope you find something that suits you next time. If you have any other questions about food sustainability, I'm here to help!"""
+SUGGESTION_DECLINED = """That's okay! I hope you find something that suits you next time. If you have any other questions about food sustainability or healthiness, I'm here to help!"""
 
 
 #loop state
@@ -398,7 +400,8 @@ Communicate with the user in the following language : {language}.
 
 Follow these steps to produce the output:
 
-- Print the string "TOKEN 3.10", welcome the user to the Recipe Improvement Functionality, then continue by providing a detailed explanation of it, and ask the user for the information needed to star using this functionality.
+- Print the string "TOKEN 3.10", welcome the user to the Recipe Improvement Functionality, then continue by providing a detailed explanation of it, and ask the user for the information needed to star using this functionality. 
+     Don't mention about improving factors that are not implemented, for example the flavor/consistency or the instructions of the recipes, but only specify that the improvement is in terms of sustainability.
      Do NOT mention the number of the task, just the functionality.
      Conclude adding a reminder about using the /start command to return to the main menu and view the list of available functionalities.
 """
@@ -520,11 +523,11 @@ Follow these steps to produce the output:
 Maintain a respectful and polite tone."""
 
 
-RECIPE_IMPROVEMENT_ACCEPTED = """I'm glad you accepted my improved version of the recipe! If I can help you with other food sustainability questions, I'm here to help!"""
+RECIPE_IMPROVEMENT_ACCEPTED = """I'm glad you accepted my improved version of the recipe! If I can help you with other food sustainability and healthiness questions, I'm here to help!"""
 
-CUSTOM_RECIPE_IMPROVEMENT_ACCEPTED = """The substitutions you indicated have been applied successfully! I'm glad you accepted my improved version of the recipe! If I can help you with other food sustainability questions, I'm here to help!"""
+CUSTOM_RECIPE_IMPROVEMENT_ACCEPTED = """The substitutions you indicated have been applied successfully! I'm glad you accepted my improved version of the recipe! If I can help you with other food sustainability and healthiness questions, I'm here to help!"""
 
-RECIPE_IMPROVEMENT_DECLINED = """That's okay! I hope you find something that suits you next time. If you have any other questions about food sustainability, I'm here to help!"""
+RECIPE_IMPROVEMENT_DECLINED = """That's okay! I hope you find something that suits you next time. If you have any other questions about food sustainability or healthiness, I'm here to help!"""
 
 
 #Profile summary and update (polished)
@@ -701,7 +704,7 @@ Communicate with the user in the following language : {language}.
 
 Follow these steps to produce the output:
 
-- Print the string "TOKEN 6", welcome the user to the Sustainability Expert, then continue by providing a detailed explanation of it, and say to the user that he can ask for broad information about environmental sustainability and healthiness of ingredients/recipe, and general questions.
+- Print the string "TOKEN 6", welcome the user to the Sustainability and Healthiness Expert, then continue by providing a detailed explanation of it, and say to the user that he can ask for broad information about environmental sustainability and healthiness of ingredients/recipe, and general questions.
 
      Do NOT mention the number of the task, just the functionality.
      Conclude adding a reminder about using the /start command to return to the main menu and view the list of available functionalities.

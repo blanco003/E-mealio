@@ -95,7 +95,7 @@ def get_recipe_suggestion(mealDataJson, userData):
 
 
     # nelle proiezioni usiamo 1 per indicare i campi che vogliamo considerare nel risultato.
-    projection = {"_id": 1, "recipe_id": 1, "title_embedding": 1, "ingredients_embedding": 1, "sustainability_score": 1} 
+    projection = {"_id": 1, "recipe_id": 1, "title_embedding": 1, "ingredients_embedding": 1, "sustainability_score": 1, "who_score":1} 
 
 
     #initialize as empty numpy array

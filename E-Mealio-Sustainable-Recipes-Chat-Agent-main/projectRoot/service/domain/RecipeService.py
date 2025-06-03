@@ -119,13 +119,14 @@ def convert_in_emealio_recipe(mongoRecipe,removedConstraints,mealType):
     id = mongoRecipe['recipe_id']
     instructions = mongoRecipe['recipe_url']
     sustainabilityScore = mongoRecipe['sustainability_score']
+    who_score = mongoRecipe['who_score']
     #check if the description is present
     if 'description' in mongoRecipe:
         description = mongoRecipe['description']
     else:
         description = None
     ingredients = ingredientService.get_ingredient_list_from_full_ingredient_string(mongoRecipe['ingredients'])
-    return recipe.Recipe(title,id,ingredients,sustainabilityScore,instructions,description,removedConstraints,mealType)
+    return recipe.Recipe(title,id,ingredients,sustainabilityScore,who_score,instructions,description,removedConstraints,mealType)
 
 
 def get_substitutions_info(DataJson):
@@ -181,10 +182,32 @@ def calculate_nutritional_facts_of_recipe(ingredients_names, quantites):
         nutritional_facts['servingSize [g]'] += int(quantity)
         if nut_facts_of_ing != None:
             for nut_fact in nutritional_facts:
-                nutritional_facts[nut_fact] += nut_facts_of_ing.get(nut_fact, 0) * (int(quantity)/100)
+                val = nut_facts_of_ing.get(nut_fact, 0) or 0  
+                nutritional_facts[nut_fact] += val * (int(quantity)/100)
 
     return nutritional_facts
 
+
+
+   
+def get_serving_size_by_id(recipe_id):
+    """
+    Recupera il serving size di una ricetta del db, a partire dal suo id.
+
+    Args : 
+    - recipe_id : id della ricetta di cui recuperare i valori nutrizionali.
+
+    Returns :
+    - serving_size : peso in grammi della ricetta.
+    """
+
+    recipeData = rp.get_recipe_by_id(int(recipe_id))
+
+    serving_size = ""
+    if recipeData['servingSize [g]'] is not None:
+        serving_size = recipeData['servingSize [g]']
+
+    return serving_size
 
     
 def get_nutritional_facts_by_id(recipe_id):
@@ -318,9 +341,7 @@ def _score_who_value(value, lower_bound, upper_bound, minimize=True, normalize=F
             else:
                 return 2
 
-
-
-def compute_who_score(protein, total_carbohydrate, sugars, total_fat, saturated_fat, dietary_fiber, sodium, serving_size,
+def compute_who_score_of_custom_recipe(protein, total_carbohydrate, sugars, total_fat, saturated_fat, dietary_fiber, sodium, serving_size,
               normalization_comment, normalize=False):
     """
     Calculates the WHO-Score. The range is 0-14, with 14 as the best.
@@ -362,3 +383,49 @@ def compute_who_score(protein, total_carbohydrate, sugars, total_fat, saturated_
         return _normalize(score, 14)
     else:
         return score
+
+
+def compute_who_score(recipe, normalization_comment, normalize=False):
+    """
+    Calculates the WHO-Score. The range is 0-14, with 14 as the best.
+
+    Args : 
+    - protein: The proteins in g per 100 g.
+    - total_carbohydrate: The carbohydrates in g per 100 g.
+    - sugars: The sugar in g per 100 g.
+    - total_fat: The fat in g per 100 g.
+    - saturated_fat: The saturated fat in g per 100 g.
+    - dietary_fiber: The dietary fiber in g per 100 g.
+    - sodium: The sodium in g per 100 g.
+    - serving_size: The size of a single portion.
+    - normalization_comment: The comment from the normalization.
+    - normalize: Whether the result shall be normalized in the range [0,1] or not. Default is False.
+    """
+
+    nutritional_facts = get_nutritional_facts_by_id(recipe.id)
+    serving_size = get_serving_size_by_id(recipe.id)
+    
+    # WHO score requires the daylie sodium value. As there are no user information here, we take the next best value-
+    # the sodium amount per portion (assuming the user eats one portion)
+    # Also, re-factor the normalization process.
+    if normalization_comment == '' and serving_size > 0:
+        sodium_per_serving = nutritional_facts['sodium [mg]'] / 100 * serving_size
+    else:  # for recipes with problematic normalization return an invalid score
+        sodium_per_serving = float('nan')
+
+    score = sum([_score_who_value(nutritional_facts['protein [g]'], lower_bound=10, upper_bound=15, normalize=normalize, minimize=False),
+                 _score_who_value(nutritional_facts['totalCarbohydrate [g]'], lower_bound=55, upper_bound=75, normalize=normalize,
+                                  minimize=False),
+                 _score_who_value(nutritional_facts['sugars [g]'], lower_bound=0, upper_bound=10, normalize=normalize),
+                 _score_who_value(nutritional_facts['totalFat [g]'], lower_bound=15, upper_bound=30, normalize=normalize),
+                 _score_who_value(nutritional_facts['saturatedFat [g]'], lower_bound=0, upper_bound=10, normalize=normalize),
+                 _score_who_value(nutritional_facts['dietaryFiber [g]'], lower_bound=0, upper_bound=3, normalize=normalize, minimize=False),
+                 _score_who_value(sodium_per_serving, lower_bound=0, upper_bound=2)])
+
+    if normalize:
+        score = _normalize(score, 14)
+    
+    recipe.who_score = score
+    
+
+

@@ -318,7 +318,9 @@ def answer_question(userData,userPrompt,token,memory,info):
             nutritional_facts = rcpService.get_nutritional_facts_by_id(int(temp_suggestedRecipe.id))
             nutritional_facts = utils.escape_curly_braces(str(nutritional_facts))
 
-            who_score = rcpService.get_who_score(int(temp_suggestedRecipe.id))
+            # who_score = rcpService.get_who_score(int(temp_suggestedRecipe.id))
+            who_score = temp_suggestedRecipe.who_score
+            print(f"\n\n@@@@@@@@@@@@@@@@@@@@@@@ who_score : {who_score} @@@@@@@@@@@@@@@@@@@@@@@\n\n")
 
             allergies = user.get_allergies(userData.id)
             restrictions = user.get_restrictions(userData.id)

@@ -4,7 +4,7 @@ class Recipe:
 
     """Rappresenta una ricetta già presente nel db."""
 
-    def __init__(self, name, id, ingredients, sustainabilityScore, instructions, description, removedConstraints, mealType):
+    def __init__(self, name, id, ingredients, sustainabilityScore, who_score, instructions, description, removedConstraints, mealType):
         """
         Inizializza un oggetto istanza della classe Recipe.
 
@@ -13,6 +13,7 @@ class Recipe:
         - id : Identificatore univoco della ricetta.
         - ingredients : Elenco degli ingredienti utilizzati nella ricetta.
         - sustainabilityScore : Punteggio di sostenibilità della ricetta.
+        - who_score : Punteggio di salubrità della ricetta.
         - instructions : URL che rimanda alle istruzioni di preparazione della ricetta.
         - description : Descrizione testuale della ricetta.
         - removedConstraints: Elenco di vincoli che sono stati rimossi dalla query per estrarre la ricetta.
@@ -22,6 +23,7 @@ class Recipe:
         self.id = id
         self.ingredients = ingredients
         self.sustainabilityScore = sustainabilityScore
+        self.who_score = who_score
         self.instructions = instructions
         self.description = description
         self.removedConstraints = removedConstraints
@@ -43,6 +45,7 @@ class Recipe:
         self.id = json_obj.id
         self.ingredients = json_obj.ingredients
         self.sustainabilityScore = json_obj.sustainabilityScore
+        self.who_score = json_obj.who_score
         self.instructions = json_obj.instructions
         self.description = json_obj.description
         self.removedConstraints = json_obj.removedConstraints

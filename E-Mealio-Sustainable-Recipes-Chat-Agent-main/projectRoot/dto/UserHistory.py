@@ -10,7 +10,7 @@ class UserHistory:
 
         Args:
         - userId: Id dell'utente.
-        - recipe: La ricetta che l'utente deve preparare.
+        - recipe: La ricetta di cui l'utentedeve ha accettato il suggerimento.
         - date: La data in cui l'utente deve preparare la ricetta.
         - status: Lo stato della ricetta in relazione all'utente  (accepted, declined, temporary_declined)
         """

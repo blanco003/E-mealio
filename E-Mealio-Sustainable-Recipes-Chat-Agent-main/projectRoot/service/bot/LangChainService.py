@@ -360,11 +360,16 @@ def ask_model(input, prompt):
         ("system", prompt),
         ("human", "{query}")
     ])
+
+    print("Input : \n", input)
+    print("Prompt : \n", prompt)
     
     output_parser = StrOutputParser()
     
     chain = prompt | llm | output_parser
 
     answer = chain.invoke({ "query": input })
+
+    print("Answer : \n", answer)
 
     return answer

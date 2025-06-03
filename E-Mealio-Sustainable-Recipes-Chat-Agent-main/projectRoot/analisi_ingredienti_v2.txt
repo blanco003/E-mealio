@@ -1,0 +1,3972 @@
+
+{
+    "sauce": {
+        "descrizione": "Termine troppo generico, può riferirsi a molti tipi di salse con valori nutrizionali molto diversi",
+        "inappropriatezza": 8
+    },
+    "broth": {
+        "descrizione": "Il brodo generico e il dado vegetale hanno composizioni nutrizionali diverse",
+        "inappropriatezza": 6
+    },
+    "soup": {
+        "descrizione": "Termine troppo generico, può riferirsi a zuppe molto diverse tra loro",
+        "inappropriatezza": 7
+    },
+    "soda": {
+        "descrizione": "Il termine generico e la bevanda gassata specifica hanno composizioni diverse",
+        "inappropriatezza": 7
+    },
+    "breadcrumb": {
+        "descrizione": "Il pangrattato ha una composizione diversa dal pane intero",
+        "inappropriatezza": 5
+    },
+    "stock": {
+        "descrizione": "Il brodo generico e il pesce processato sono alimenti molto diversi",
+        "inappropriatezza": 9
+    },
+    "paste": {
+        "descrizione": "Termine troppo generico, la pasta di pomodoro è un caso specifico",
+        "inappropriatezza": 7
+    },
+    "zest": {
+        "descrizione": "La scorza degli agrumi ha proprietà diverse dalla frutta intera",
+        "inappropriatezza": 8
+    },
+    "leaf": {
+        "descrizione": "Termine troppo generico per essere equiparato a verdure generiche",
+        "inappropriatezza": 6
+    },
+    "flake": {
+        "descrizione": "Termine troppo generico, i fiocchi d'orzo sono un caso specifico",
+        "inappropriatezza": 7
+    },
+
+    "white": {
+        "descrizione": "Il termine 'white' è troppo generico e non correlato a 'yogurt'. Manca il riferimento esplicito allo yogurt nell'ingrediente A.",
+        "inappropriatezza": 8
+    },
+    "peel": {
+        "descrizione": "Il termine 'peel' (buccia) è significativamente diverso da 'fruit' (frutto intero), con valori nutrizionali molto diversi.",
+        "inappropriatezza": 9
+    },
+    "flakes": {
+        "descrizione": "Il termine 'flakes' è troppo generico e potrebbe riferirsi a diversi tipi di alimenti, non necessariamente cereali.",
+        "inappropriatezza": 7
+    },
+    "soup mix": {
+        "descrizione": "Un mix per zuppe può avere composizione molto diversa da una zuppa già pronta.",
+        "inappropriatezza": 6
+    },
+    "icing sugar": {
+        "descrizione": "Il mapping con 'icing' (glassa) non è appropriato, sono prodotti diversi con composizioni diverse.",
+        "inappropriatezza": 8
+    },
+    "pie shell": {
+        "descrizione": "La base per torta ha una composizione molto diversa sia dalla torta intera che dal crispbread.",
+        "inappropriatezza": 8
+    }, 
+    "puree": {
+        "descrizione": "Il termine 'puree' è troppo generico rispetto a 'tomato puree', potrebbero essere puree di altri ingredienti con valori nutrizionali molto diversi",
+        "inappropriatezza": 6
+    },
+    "fish": {
+        "descrizione": "Il termine è troppo generico, ci sono molte varietà di pesce con valori nutrizionali significativamente diversi",
+        "inappropriatezza": 5
+    },
+    "sprout": {
+        "descrizione": "Il termine generico 'sprout' può riferirsi a germogli di vari tipi con valori nutrizionali diversi",
+        "inappropriatezza": 5
+    },
+    "pastry": {
+        "descrizione": "Il termine è troppo generico e può riferirsi a molti prodotti da forno con composizioni molto diverse",
+        "inappropriatezza": 6
+    },
+    "whites": {
+        "descrizione": "Il mapping tra 'whites' (presumibilmente albumi) e yogurt non è appropriato, sono alimenti completamente diversi",
+        "inappropriatezza": 9
+    },
+    "meat": {
+        "descrizione": "Il termine è troppo generico e può riferirsi a diversi tipi di carne con valori nutrizionali molto variabili",
+        "inappropriatezza": 6
+    },
+    "germ": {
+        "descrizione": "Il mapping tra 'germ' e 'wheat' non è appropriato, il germe è solo una parte del chicco di grano",
+        "inappropriatezza": 7
+    },
+    "shell": {
+        "descrizione": "Il termine 'shell' è troppo generico e può riferirsi a diversi tipi di alimenti (gusci, conchiglie, pasta). Il mapping con 'shell' o 'deep dish pastry pie shells' non è appropriato senza un contesto più specifico.",
+        "inappropriatezza": 7
+    },
+    "cube": {
+        "descrizione": "Il termine 'cube' da solo è troppo vago e non può essere mappato appropriatamente con 'vegetable' o 'vegetable bouillon cubes' senza ulteriore contesto.",
+        "inappropriatezza": 8
+    },
+    "rice wine vinegar": {
+        "descrizione": "Il mapping con 'rice wine' non è appropriato poiché il rice wine vinegar è un aceto, non un vino. Ha proprietà e valori nutrizionali molto diversi.",
+        "inappropriatezza": 9
+    },
+    "lime zest": {
+        "descrizione": "La scorza di lime ha proprietà nutrizionali molto diverse dal lime intero o dalle spezie. È più concentrata in oli essenziali e composti aromatici.",
+        "inappropriatezza": 7
+    },
+    "orange peel": {
+        "descrizione": "La scorza d'arancia ha proprietà nutrizionali molto diverse dall'arancia intera. È più concentrata in oli essenziali e composti aromatici.",
+        "inappropriatezza": 7
+    },
+    "ginger ale": {
+        "descrizione": "La bibita ginger ale ha proprietà nutrizionali molto diverse dallo zenzero fresco, essendo una bevanda gassata zuccherata.",
+        "inappropriatezza": 8
+    },
+    "lemon extract": {
+        "descrizione": "L'estratto di limone è un concentrato aromatico molto diverso dal limone fresco in termini di composizione e valori nutrizionali.",
+        "inappropriatezza": 8
+    },
+    "cherry pie filling": {
+        "descrizione": "Il ripieno per torta alla ciliegia contiene zuccheri aggiunti e altri ingredienti che lo rendono molto diverso dalle ciliegie fresche.",
+        "inappropriatezza": 7
+    },
+    "nectar": {
+        "descrizione": "Il nettare di frutta ha una composizione nutrizionale significativamente diversa dalla frutta intera",
+        "inappropriatezza": 7
+    },
+    "egg substitute": {
+        "descrizione": "I sostituti dell'uovo possono avere composizioni molto diverse dalle uova naturali",
+        "inappropriatezza": 6
+    },
+    "sugar substitute": {
+        "descrizione": "I sostituti dello zucchero hanno valori calorici e nutrizionali molto diversi dallo zucchero",
+        "inappropriatezza": 8
+    },
+    "gluten": {
+        "descrizione": "Il glutine è una proteina specifica con valori nutrizionali molto diversi dal grano intero",
+        "inappropriatezza": 9
+    },
+    "rose water": {
+        "descrizione": "L'acqua di rose è un prodotto molto diverso dalla rosa, con valori nutrizionali completamente differenti",
+        "inappropriatezza": 10
+    },
+    "corn flake": {
+        "descrizione": "I corn flakes sono un prodotto processato con valori nutrizionali diversi dal mais o dai fiocchi d'avena",
+        "inappropriatezza": 7
+    },
+    "vinaigrette": {
+        "descrizione": "La vinaigrette è una miscela di ingredienti con valori nutrizionali diversi dall'olio d'oliva",
+        "inappropriatezza": 6
+    },"beverage": {
+        "descrizione": "Termine troppo generico rispetto a soft drink che è una categoria specifica di bevande",
+        "inappropriatezza": 6
+    },
+    "food coloring": {
+        "descrizione": "Il colorante alimentare generico è diverso dal caramello che è un tipo specifico di colorante",
+        "inappropriatezza": 7
+    },
+    "coloring": {
+        "descrizione": "Il colorante generico è diverso dal caramello che è un tipo specifico di colorante",
+        "inappropriatezza": 7
+    },
+    "chop": {
+        "descrizione": "Termine troppo generico/ambiguo rispetto a carne di agnello che è un tipo specifico di carne",
+        "inappropriatezza": 8
+    },
+    "gravy": {
+        "descrizione": "La salsa gravy è completamente diversa dalle salsicce",
+        "inappropriatezza": 10
+    },
+    "orange extract": {
+        "descrizione": "L'estratto di arancia è un concentrato aromatico, molto diverso dall'arancia frutta",
+        "inappropriatezza": 8
+    },
+    "morsel": {
+        "descrizione": "Termine troppo generico/ambiguo rispetto al cioccolato",
+        "inappropriatezza": 7
+    },
+    "toast": {
+        "descrizione": "Il toast è pane tostato, con caratteristiche nutrizionali diverse dal pane normale",
+        "inappropriatezza": 4
+    },"scoop": {
+        "descrizione": "Scoop è un utensile/unità di misura, non un alimento. Non è appropriato mapparlo con gelato.",
+        "inappropriatezza": 9
+    },
+    "salad green": {
+        "descrizione": "Salad è un termine troppo generico rispetto a salad green che si riferisce specificatamente a verdure a foglia.",
+        "inappropriatezza": 6
+    },
+    "coconut extract": {
+        "descrizione": "L'estratto di cocco è un aroma concentrato, molto diverso dal cocco intero.",
+        "inappropriatezza": 8
+    },
+    "apple pie filling": {
+        "descrizione": "Il ripieno per torta di mele è un prodotto processato con zuccheri e altri ingredienti, diverso dalle mele crude.",
+        "inappropriatezza": 7
+    },
+    "lime peel": {
+        "descrizione": "La scorza di lime ha proprietà nutrizionali molto diverse dal frutto intero.",
+        "inappropriatezza": 7
+    },
+    "skewer": {
+        "descrizione": "Skewer si riferisce allo spiedino come utensile, non al cibo.",
+        "inappropriatezza": 10
+    },
+    "parmigiano-reggiano cheese": {
+        "descrizione": "Il formaggio generico non è rappresentativo del Parmigiano Reggiano che ha caratteristiche specifiche.",
+        "inappropriatezza": 6
+    },
+    "nectarine": {
+        "descrizione": "La nettarina e l'albicocca sono frutti diversi con valori nutrizionali distinti.",
+        "inappropriatezza": 7
+    },"dry breadcrumb": {
+        "descrizione": "Il pane secco grattugiato ha proprietà nutrizionali diverse dal pane fresco, essendo disidratato e più concentrato",
+        "inappropriatezza": 5
+    },
+    "weed": {
+        "descrizione": "Il termine generico 'weed' non può essere equiparato al finocchio, sono ingredienti completamente diversi",
+        "inappropriatezza": 10
+    },
+    "peach schnapps": {
+        "descrizione": "Il liquore alla pesca ha proprietà molto diverse dalla pesca fresca, essendo una bevanda alcolica",
+        "inappropriatezza": 8
+    },
+    "lime rind": {
+        "descrizione": "La scorza di lime ha proprietà nutrizionali diverse dal lime intero",
+        "inappropriatezza": 6
+    },
+    "wine vinegar": {
+        "descrizione": "L'aceto di vino ha proprietà molto diverse dal vino",
+        "inappropriatezza": 7
+    },
+    "cinnamon sugar": {
+        "descrizione": "La miscela di cannella e zucchero ha proprietà diverse dallo zucchero puro",
+        "inappropriatezza": 5
+    },
+    "gingersnap": {
+        "descrizione": "I biscotti allo zenzero hanno proprietà molto diverse dallo zenzero puro",
+        "inappropriatezza": 8
+    },
+    "sprinkle": {
+        "descrizione": "Le decorazioni per dolci hanno composizione diversa dalle caramelle generiche",
+        "inappropriatezza": 6
+    },
+    "pod": {
+        "descrizione": "Il baccello generico non può essere equiparato ai fagioli",
+        "inappropriatezza": 7
+    },
+    "pastry shell": {
+        "descrizione": "Il guscio di pasta sfoglia ha proprietà diverse dai biscotti",
+        "inappropriatezza": 6
+    },"heart": {
+        "descrizione": "Heart (organo) è completamente diverso da vegetables (verdure)",
+        "inappropriatezza": 10
+    },
+    "bar": {
+        "descrizione": "Bar è troppo generico rispetto a Snickers che è uno specifico tipo di barretta al cioccolato",
+        "inappropriatezza": 7
+    },
+    "butterscotch schnapps": {
+        "descrizione": "Butterscotch schnapps (liquore) è molto diverso dal butterscotch (caramello)",
+        "inappropriatezza": 8
+    },
+    "chipotle": {
+        "descrizione": "Chipotle (peperoncino affumicato) non è equivalente a un generico pepe/peperoncino",
+        "inappropriatezza": 6
+    },
+    "wrapper": {
+        "descrizione": "Wrapper (involucro) non ha nulla a che fare con uovo o pasta all'uovo",
+        "inappropriatezza": 10
+    },
+    "orange Jell-O": {
+        "descrizione": "La gelatina dolce aromatizzata all'arancia è molto diversa dall'arancia frutta",
+        "inappropriatezza": 8
+    },
+    "almond flavoring": {
+        "descrizione": "L'aroma di mandorla è un estratto/aroma artificiale, molto diverso dalla mandorla",
+        "inappropriatezza": 8
+    },
+    "rum extract": {
+        "descrizione": "L'estratto di rum è un aroma, molto diverso dal rum alcolico",
+        "inappropriatezza": 8
+    },
+    "bread machine yeast": {
+        "descrizione": "Il lievito per macchina del pane non può essere mappato con il pane",
+        "inappropriatezza": 9
+    },
+    "butter flavor crisco": {
+        "descrizione": "Lo shortening aromatizzato al burro è molto diverso dal burro vero",
+        "inappropriatezza": 8
+    },
+    "Rice Krispie": {
+        "descrizione": "I cereali Rice Krispies sono molto diversi dal riso normale",
+        "inappropriatezza": 7
+    },
+    "bacon grease": {
+        "descrizione": "Il grasso di bacon è diverso dal bacon intero",
+        "inappropriatezza": 6
+    },"grape tomato": {
+        "descrizione": "Il pomodoro uva è stato mappato con l'uva, che sono frutti completamente diversi con valori nutrizionali molto differenti",
+        "inappropriatezza": 9
+    },
+    "orange liqueur": {
+        "descrizione": "Il liquore all'arancia è stato mappato con l'arancia, che ha valori nutrizionali completamente diversi essendo un frutto anziché un alcolico",
+        "inappropriatezza": 9
+    },
+    "hearts": {
+        "descrizione": "Il termine generico 'hearts' è troppo vago per essere mappato direttamente con 'artichoke'",
+        "inappropriatezza": 6
+    },
+    "orange blossom water": {
+        "descrizione": "L'acqua di fiori d'arancia è stata mappata con l'arancia, che ha valori nutrizionali completamente diversi",
+        "inappropriatezza": 8
+    },
+    "consomme": {
+        "descrizione": "Il consommé è un brodo, mapparlo con la carne di manzo non è appropriato",
+        "inappropriatezza": 7
+    },
+    "kaffir lime leaf": {
+        "descrizione": "Le foglie di lime kaffir sono state mappate con il lime frutto, che ha valori nutrizionali molto diversi",
+        "inappropriatezza": 8
+    },
+    "hen": {
+        "descrizione": "La gallina è stata mappata genericamente con 'meat', troppo generico",
+        "inappropriatezza": 5
+    },
+    "sherry wine vinegar": {
+        "descrizione": "L'aceto di vino sherry è stato mappato con il vino sherry, che ha valori nutrizionali diversi",
+        "inappropriatezza": 7
+    },"pea pod": {
+        "descrizione": "Il baccello del pisello ha composizione nutrizionale molto diversa dal pisello stesso, essendo principalmente fibra",
+        "inappropriatezza": 7
+    },
+    "seasoning mix": {
+        "descrizione": "Un mix di condimenti generico è troppo vago e può avere composizioni molto diverse dal condimento base",
+        "inappropriatezza": 6
+    },
+    "chili-garlic sauce": {
+        "descrizione": "Una salsa specifica non può essere approssimata con 'sauce' generico o spezie",
+        "inappropriatezza": 7
+    },
+    "corn flake crumb": {
+        "descrizione": "Le briciole di corn flakes non possono essere rappresentate dal mais",
+        "inappropriatezza": 8
+    },
+    "apple pie spice": {
+        "descrizione": "Il mix di spezie per torta di mele è molto diverso dalla torta di mele stessa",
+        "inappropriatezza": 9
+    },
+    "maraschino cherry juice": {
+        "descrizione": "Il succo di maraschino ha composizione molto diversa dalla ciliegia maraschino intera",
+        "inappropriatezza": 7
+    },
+    "lime leaf": {
+        "descrizione": "La foglia di lime ha proprietà molto diverse dal frutto del lime",
+        "inappropriatezza": 8
+    },
+    "pomegranate molasses": {
+        "descrizione": "La melassa di melograno ha una composizione molto diversa dal frutto fresco",
+        "inappropriatezza": 8
+    },
+    "grease": {
+        "descrizione": "Il grasso generico può avere composizione molto diversa dall'olio",
+        "inappropriatezza": 6
+    },
+    "lemon Jell-O": {
+        "descrizione": "La gelatina al limone ha composizione molto diversa dal limone fresco",
+        "inappropriatezza": 9
+    },
+    "concentrate": {
+        "descrizione": "Un concentrato generico non può essere approssimato con succo di frutta",
+        "inappropriatezza": 7
+    }, "salt & pepper": {
+        "descrizione": "Il sale e il pepe sono due condimenti molto diversi con valori nutrizionali completamente differenti",
+        "inappropriatezza": 9
+    },
+    "pie filling": {
+        "descrizione": "Il ripieno della torta è molto diverso dalla torta intera o dalla frutta generica",
+        "inappropriatezza": 8
+    },
+    "rocket": {
+        "descrizione": "La rucola ha proprietà nutrizionali diverse dalla lattuga",
+        "inappropriatezza": 6
+    },
+    "cherry Jell-O": {
+        "descrizione": "Il Jell-O alla ciliegia è un prodotto trasformato molto diverso dalla ciliegia fresca",
+        "inappropriatezza": 8
+    },
+    "orange bell pepper": {
+        "descrizione": "Il peperone arancione è completamente diverso dall'arancia",
+        "inappropriatezza": 10
+    },
+    "bone": {
+        "descrizione": "L'osso ha valori nutrizionali molto diversi dal prosciutto",
+        "inappropriatezza": 10
+    },
+    "ice water": {
+        "descrizione": "Il ghiaccio ha valori nutrizionali diversi dall'acqua minerale",
+        "inappropriatezza": 5
+    },
+    "kiss": {
+        "descrizione": "Il termine è troppo generico e non necessariamente si riferisce al cioccolato",
+        "inappropriatezza": 7
+    },
+    "banana liqueur": {
+        "descrizione": "Il liquore alla banana ha valori nutrizionali molto diversi dalla banana",
+        "inappropriatezza": 8
+    },"starter": {
+        "descrizione": "Il termine 'starter' è troppo generico e non necessariamente equivalente a pane",
+        "inappropriatezza": 7
+    },
+    "butter flavoring": {
+        "descrizione": "L'aroma di burro è un additivo aromatizzante sintetico, molto diverso dal burro reale",
+        "inappropriatezza": 9
+    },
+    "apricot brandy": {
+        "descrizione": "È un liquore che combina caratteristiche sia dell'albicocca che del brandy, non equivalente a nessuno dei due singolarmente",
+        "inappropriatezza": 8
+    },
+    "strawberry Jell-O": {
+        "descrizione": "È un dessert gelatinoso aromatizzato, non equivalente a fragole fresche",
+        "inappropriatezza": 8
+    },
+    "square": {
+        "descrizione": "Termine troppo generico e ambiguo per essere mappato a crackers",
+        "inappropriatezza": 9
+    },
+    "shoot": {
+        "descrizione": "I germogli sono molto diversi dai piselli maturi",
+        "inappropriatezza": 7
+    },
+    "crisp rice cereal": {
+        "descrizione": "Specifico tipo di cereale trasformato, non equivalente a 'crisp' generico",
+        "inappropriatezza": 6
+    },
+    "Southern Comfort": {
+        "descrizione": "È un liquore specifico con caratteristiche uniche, non equivalente al bourbon generico",
+        "inappropriatezza": 7
+    },"celery root": {
+        "descrizione": "Il sedano rapa ha valori nutrizionali significativamente diversi dal sedano comune",
+        "inappropriatezza": 7
+    },
+    "glaze": {
+        "descrizione": "Termine troppo generico senza un riferimento specifico per essere mappato",
+        "inappropriatezza": 8
+    },
+    "malt vinegar": {
+        "descrizione": "Il malto ha valori nutrizionali molto diversi dall'aceto di malto",
+        "inappropriatezza": 8
+    },
+    "slices": {
+        "descrizione": "Termine troppo generico e non specifico per essere mappato al pane",
+        "inappropriatezza": 9
+    },
+    "raspberry Jell-O": {
+        "descrizione": "La gelatina al lampone ha una composizione molto diversa dal lampone fresco",
+        "inappropriatezza": 7
+    },
+    "alfalfa sprout": {
+        "descrizione": "I germogli di erba medica sono molto diversi dai cavolini di Bruxelles",
+        "inappropriatezza": 9
+    },
+    "rice paper": {
+        "descrizione": "La carta di riso ha una composizione molto diversa dai grani di riso",
+        "inappropriatezza": 8
+    },
+    "sour": {
+        "descrizione": "Termine troppo generico e non correlato alla soda alcolica",
+        "inappropriatezza": 9
+    },
+    "Dorito": {
+        "descrizione": "I Doritos hanno una composizione nutrizionale significativamente diversa dai crackers generici",
+        "inappropriatezza": 6
+    },"orange flower water": {
+        "descrizione": "Orange flower water è un estratto/essenza floreale, molto diverso dal frutto dell'arancia",
+        "inappropriatezza": 9
+    },
+    "palm": {
+        "descrizione": "Palm (palma) è una pianta, mentre nut (noce) è un frutto secco - sono completamente diversi",
+        "inappropriatezza": 10
+    },
+    "Creme de Cacao": {
+        "descrizione": "Creme de Cacao è un liquore, mentre cacao è l'ingrediente base - hanno valori nutrizionali molto diversi",
+        "inappropriatezza": 8
+    },
+    "Midori melon liqueur": {
+        "descrizione": "È un liquore al melone, non può essere approssimato al melone fresco",
+        "inappropriatezza": 8
+    },
+    "tart apple": {
+        "descrizione": "B (tart) si riferisce a una torta, non a una mela",
+        "inappropriatezza": 10
+    },
+    "Chambord raspberry liquor": {
+        "descrizione": "È un liquore al lampone, non può essere approssimato al chambord generico",
+        "inappropriatezza": 7
+    },
+    "French-fried onion": {
+        "descrizione": "Cipolla fritta ha valori nutrizionali molto diversi dalla cipolla cruda",
+        "inappropriatezza": 7
+    },
+    "custard powder": {
+        "descrizione": "La polvere per crema pasticcera non può essere approssimata alle spezie",
+        "inappropriatezza": 9
+    },
+    "Bisquick baking mix": {
+        "descrizione": "È un mix per dolci con ingredienti multipli, non può essere approssimato al lievito",
+        "inappropriatezza": 8
+    },
+    "round": {
+        "descrizione": "Round (taglio di carne) non può essere approssimato al pane",
+        "inappropriatezza": 10
+    },
+    "jack": {
+        "descrizione": "Jack da solo è un termine troppo generico per essere mappato a cheese",
+        "inappropriatezza": 6
+    },
+    "cherry brandy": {
+        "descrizione": "È un liquore, non può essere approssimato alla ciliegia",
+        "inappropriatezza": 8
+    },
+    "juice concentrate": {
+        "descrizione": "Il succo concentrato ha valori nutrizionali molto diversi dal succo normale",
+        "inappropriatezza": 6
+    },
+    "pork and bean": {
+        "descrizione": "È un piatto specifico, non può essere approssimato solo alla carne di maiale",
+        "inappropriatezza": 7
+    },"paper": {
+        "descrizione": "Paper non è un alimento, mentre rice è un cereale commestibile",
+        "inappropriatezza": 10
+    },
+    "chipotle powder": {
+        "descrizione": "Il chipotle è un peperoncino affumicato, mentre la polvere d'aglio è un condimento completamente diverso",
+        "inappropriatezza": 8
+    },
+    "unbaked pie shell": {
+        "descrizione": "La base per torta non cotta ha valori nutrizionali diversi dai biscotti",
+        "inappropriatezza": 6
+    },
+    "almond bark": {
+        "descrizione": "L'almond bark è una copertura dolce al cioccolato, non mandorle pure",
+        "inappropriatezza": 7
+    },
+    "mint extract": {
+        "descrizione": "L'estratto è un concentrato aromatico, non paragonabile alla menta fresca",
+        "inappropriatezza": 7
+    },
+    "butter flavor shortening": {
+        "descrizione": "Lo shortening aromatizzato al burro è un grasso vegetale, non burro vero",
+        "inappropriatezza": 7
+    },
+    "lime Jell-O gelatin": {
+        "descrizione": "La gelatina aromatizzata al lime è un dessert processato, non lime fresco",
+        "inappropriatezza": 8
+    },
+    "A.1. Original Sauce": {
+        "descrizione": "Una salsa specifica con ingredienti unici, non comparabile a una generica salsa BBQ",
+        "inappropriatezza": 6
+    },
+    "curry leaf": {
+        "descrizione": "Le foglie di curry sono diverse dal curry in polvere e dal coriandolo",
+        "inappropriatezza": 8
+    },
+    "phyllo": {
+        "descrizione": "La pasta fillo è una pasta molto sottile e particolare, diversa dal crispbread",
+        "inappropriatezza": 7
+    }, "spinach fettuccine": {
+        "descrizione": "Spinach fettuccine è una pasta, non può essere approssimata con solo spinaci",
+        "inappropriatezza": 8
+    },
+    "lime sherbet": {
+        "descrizione": "Il lime sherbet è un dessert gelato, non può essere rappresentato solo dal lime",
+        "inappropriatezza": 7
+    },
+    "vanilla flavoring": {
+        "descrizione": "L'aroma artificiale di vaniglia ha composizione molto diversa dalla vaniglia naturale",
+        "inappropriatezza": 6
+    },
+    "Italian breadcrumb": {
+        "descrizione": "Il pangrattato italiano ha una composizione specifica diversa dal crispbread",
+        "inappropriatezza": 5
+    },
+    "ham bone": {
+        "descrizione": "L'osso di prosciutto ha valori nutrizionali molto diversi dal prosciutto",
+        "inappropriatezza": 7
+    },
+    "instant potato flakes": {
+        "descrizione": "I fiocchi di patate istantanei hanno composizione diversa dalle patate fresche",
+        "inappropriatezza": 6
+    },
+    "brown": {
+        "descrizione": "Termine troppo generico per essere mappato al cioccolato",
+        "inappropriatezza": 8
+    },
+    "beef consomme": {
+        "descrizione": "Il consommé di manzo è un brodo, non carne di manzo",
+        "inappropriatezza": 8
+    },
+    "rum flavoring": {
+        "descrizione": "L'aroma artificiale di rum ha composizione molto diversa dal rum",
+        "inappropriatezza": 7
+    },
+    "almond syrup": {
+        "descrizione": "Lo sciroppo di mandorla ha composizione diversa dalle mandorle",
+        "inappropriatezza": 6
+    },
+    "gumdrop": {
+        "descrizione": "Le caramelle gommose hanno composizione diversa dallo zucchero puro",
+        "inappropriatezza": 7
+    },
+    "liquid": {
+        "descrizione": "Termine troppo generico per essere mappato al lievito",
+        "inappropriatezza": 9
+    },
+    "lime Jell-O": {
+        "descrizione": "Il Jell-O al lime è un dessert gelificato, non può essere rappresentato dal lime",
+        "inappropriatezza": 8
+    },
+    "coconut flavoring": {
+        "descrizione": "L'aroma artificiale di cocco ha composizione molto diversa dal cocco",
+        "inappropriatezza": 7
+    },
+    "wax": {
+        "descrizione": "La cera non può essere mappata ai fagioli",
+        "inappropriatezza": 10
+    },
+    "butterscotch": {
+        "descrizione": "Il butterscotch è un dolce caramellato, non può essere rappresentato dal burro",
+        "inappropriatezza": 7
+    },
+    "French onion dip": {
+        "descrizione": "La salsa French onion ha composizione diversa dalla cipolla",
+        "inappropriatezza": 6
+    },"currant jelly": {
+        "descrizione": "Il currant (ribes) e la gelatina hanno composizioni nutrizionali molto diverse",
+        "inappropriatezza": 7
+    },
+    "mung bean sprout": {
+        "descrizione": "I germogli di fagiolo mung hanno valori nutrizionali diversi dai fagioli mung interi",
+        "inappropriatezza": 6
+    },
+    "cinnamon-sugar mixture": {
+        "descrizione": "Una miscela di cannella e zucchero ha valori nutrizionali molto diversi dalla sola cannella",
+        "inappropriatezza": 8
+    },
+    "tarragon vinegar": {
+        "descrizione": "L'aceto aromatizzato al dragoncello ha una composizione diversa sia dal dragoncello che dall'aceto puro",
+        "inappropriatezza": 6
+    },
+    "lemon yogurt": {
+        "descrizione": "Lo yogurt al limone ha una composizione diversa sia dal limone che dallo yogurt naturale",
+        "inappropriatezza": 6
+    },
+    "yellow food coloring": {
+        "descrizione": "Il colorante alimentare giallo è molto diverso dal caramello",
+        "inappropriatezza": 9
+    },
+    "whole berry cranberry sauce": {
+        "descrizione": "La salsa di mirtilli rossi è molto diversa dai semplici frutti di bosco",
+        "inappropriatezza": 7
+    },
+    "chocolate milk mix": {
+        "descrizione": "Il preparato per latte al cioccolato ha una composizione diversa dal latte al cioccolato già pronto",
+        "inappropriatezza": 5
+    },
+    "buttermilk baking mix": {
+        "descrizione": "Il preparato per prodotti da forno al latticello è molto diverso dal semplice latticello",
+        "inappropriatezza": 8
+    },
+    "lime gelatin": {
+        "descrizione": "La gelatina al lime ha una composizione diversa dal lime",
+        "inappropriatezza": 7
+    },
+    "strawberry gelatin": {
+        "descrizione": "La gelatina alla fragola ha una composizione diversa dalle fragole",
+        "inappropriatezza": 7
+    },"Kool-Aid": {
+        "descrizione": "Il Kool-Aid è una bevanda artificiale con composizione molto diversa dall'arancia naturale",
+        "inappropriatezza": 8
+    },
+    "potato water": {
+        "descrizione": "L'acqua di cottura delle patate ha una composizione nutrizionale molto diversa dalle patate",
+        "inappropriatezza": 7
+    },
+    "ginger syrup": {
+        "descrizione": "Lo sciroppo di zenzero ha una composizione molto diversa dallo zenzero fresco",
+        "inappropriatezza": 7
+    },
+    "melon liqueur": {
+        "descrizione": "Il liquore al melone ha una composizione alcolica e zuccherina molto diversa dal melone",
+        "inappropriatezza": 8
+    },
+    "orange drink mix": {
+        "descrizione": "La bevanda in polvere ha una composizione molto diversa dal succo d'arancia",
+        "inappropriatezza": 7
+    },
+    "chicken rice-a-roni": {
+        "descrizione": "È un piatto preparato con composizione diversa sia dal pollo che dal riso singolarmente",
+        "inappropriatezza": 8
+    },
+    "onion ring": {
+        "descrizione": "Gli anelli di cipolla impanati e fritti hanno una composizione molto diversa dalla cipolla cruda",
+        "inappropriatezza": 7
+    },
+    "onion juice": {
+        "descrizione": "Il succo di cipolla ha una composizione diversa dalla cipolla intera",
+        "inappropriatezza": 6
+    },
+    "raspberry juice": {
+        "descrizione": "Il succo di lampone ha una composizione diversa dal lampone intero",
+        "inappropriatezza": 6
+    },
+    "chocolate drink mix": {
+        "descrizione": "La bevanda al cioccolato in polvere ha una composizione molto diversa dal cioccolato",
+        "inappropriatezza": 7
+    },
+    "candy coating": {
+        "descrizione": "Il rivestimento di caramello ha una composizione specifica diversa dalle caramelle generiche",
+        "inappropriatezza": 6
+    },"Italian seasoned breadcrumb": {
+        "descrizione": "Breadcrumb con condimenti italiani è significativamente diverso dal crispbread (pane croccante)",
+        "inappropriatezza": 7
+    },
+    "fraiche": {
+        "descrizione": "Crème fraîche è un prodotto lattiero-caseario cremoso, molto diverso dal formaggio generico",
+        "inappropriatezza": 8
+    },
+    "lemon pie filling": {
+        "descrizione": "Il ripieno per torta al limone è una preparazione complessa, molto diversa dalla torta al limone finita",
+        "inappropriatezza": 7
+    },
+    "amarula": {
+        "descrizione": "Amarula è un liquore, non può essere approssimato con frutta generica",
+        "inappropriatezza": 9
+    },
+    "amarula cream liqueur": {
+        "descrizione": "Il liquore alla crema di Amarula non può essere approssimato con crema semplice",
+        "inappropriatezza": 8
+    },
+    "jar marshmallow cream": {
+        "descrizione": "La crema di marshmallow è molto diversa dalla crema normale",
+        "inappropriatezza": 8
+    },
+    "butter flavor extract": {
+        "descrizione": "L'estratto di aroma di burro è molto diverso dal burro reale",
+        "inappropriatezza": 9
+    },
+    "seafood cocktail sauce": {
+        "descrizione": "La salsa cocktail per frutti di mare è molto diversa dal pesce o dalla maionese",
+        "inappropriatezza": 8
+    },
+    "raspberry gelatin powder": {
+        "descrizione": "La gelatina al lampone in polvere è diversa dal lampone fresco",
+        "inappropriatezza": 8
+    },
+    "crabapple": {
+        "descrizione": "La mela selvatica è un frutto, non può essere approssimata con verdure",
+        "inappropriatezza": 10
+    },
+    "cinnamon syrup": {
+        "descrizione": "Lo sciroppo alla cannella è molto diverso dalla cannella pura",
+        "inappropriatezza": 7
+    },
+    "strawberry Jell-O gelatin dessert": {
+        "descrizione": "Il dessert di gelatina alla fragola è diverso dalla fragola fresca",
+        "inappropriatezza": 8
+    },
+    "jalapeno juice": {
+        "descrizione": "Il succo di jalapeno è diverso dal jalapeno intero",
+        "inappropriatezza": 6
+    },
+    "raspberry liqueur": {
+        "descrizione": "Il liquore al lampone è molto diverso dal lampone fresco",
+        "inappropriatezza": 8
+    },
+    "head": {
+        "descrizione": "Head (testa) è un termine troppo generico per essere approssimato con verdure",
+        "inappropriatezza": 10
+    },
+    "pulp": {
+        "descrizione": "La polpa è diversa dal succo di frutta",
+        "inappropriatezza": 6
+    },"bulb": {
+        "descrizione": "Termine troppo generico che può riferirsi a diversi tipi di bulbi vegetali, mentre B (onion) è specifico per la cipolla",
+        "inappropriatezza": 6
+    },
+    "dog": {
+        "descrizione": "Si riferisce a un animale, non a un tipo di salsiccia",
+        "inappropriatezza": 10
+    },
+    "grape leaf": {
+        "descrizione": "Si riferisce alla foglia della vite, mentre B si riferisce all'uva (frutto)",
+        "inappropriatezza": 8
+    },
+    "sesame seed oil": {
+        "descrizione": "È un olio, mentre B si riferisce ai semi di sesamo",
+        "inappropriatezza": 7
+    },
+    "baking": {
+        "descrizione": "Termine troppo generico che si riferisce alla cottura in generale, mentre B è specifico per il lievito in polvere",
+        "inappropriatezza": 8
+    },
+    "patties": {
+        "descrizione": "Si riferisce a polpette/hamburger che possono essere di qualsiasi carne o vegetali, mentre B è specifico per la carne bovina",
+        "inappropriatezza": 7
+    },
+    "maple": {
+        "descrizione": "Si riferisce all'albero/pianta in generale, mentre B è lo sciroppo d'acero",
+        "inappropriatezza": 6
+    },
+    "poppy": {
+        "descrizione": "Si riferisce alla pianta in generale, mentre B si riferisce specificamente ai semi di papavero",
+        "inappropriatezza": 5
+    },
+    "almond liqueur": {
+        "descrizione": "È un liquore, mentre B si riferisce alle mandorle",
+        "inappropriatezza": 7
+    },
+    "thread": {
+        "descrizione": "Si riferisce a un filo generico, non allo zafferano",
+        "inappropriatezza": 10
+    },"jalapeno jack cheese": {
+        "descrizione": "Il jalapeno jack cheese è un formaggio specifico, mentre B è solo jalapeno (un peperone piccante)",
+        "inappropriatezza": 9
+    },
+    "orange Curacao": {
+        "descrizione": "Il Curacao è un liquore, mentre B è un'arancia (frutto)",
+        "inappropriatezza": 10
+    },
+    "drink": {
+        "descrizione": "Il termine 'drink' è troppo generico rispetto a 'soft drink'",
+        "inappropriatezza": 6
+    },
+    "apple brandy": {
+        "descrizione": "Apple brandy è un liquore, mentre B è una mela (frutto)",
+        "inappropriatezza": 10
+    },
+    "cayenne pepper sauce": {
+        "descrizione": "La salsa di peperoncino cayenne è diversa dal peperoncino cayenne in polvere",
+        "inappropriatezza": 7
+    },
+    "gingerbread": {
+        "descrizione": "Il pan di zenzero è un dolce, mentre B è lo zenzero (spezia)",
+        "inappropriatezza": 10
+    },
+    "salt and black pepper": {
+        "descrizione": "È una miscela di due condimenti, mentre B è solo sale",
+        "inappropriatezza": 7
+    },
+    "Chex": {
+        "descrizione": "Chex è un marchio specifico di cereali, B è troppo generico",
+        "inappropriatezza": 5
+    },"stem": {
+        "descrizione": "Il termine 'stem' è troppo generico e non può essere approssimato con 'vegetables' in quanto potrebbe riferirsi a parti diverse delle piante",
+        "inappropriatezza": 7
+    },
+    "almond essence": {
+        "descrizione": "L'essenza di mandorla è un aroma concentrato, molto diverso dalla mandorla intera",
+        "inappropriatezza": 8
+    },
+    "peach liqueur": {
+        "descrizione": "Il liquore alla pesca ha valori nutrizionali molto diversi dalla pesca fresca",
+        "inappropriatezza": 9
+    },
+    "7-Up soda": {
+        "descrizione": "Una marca specifica di soda potrebbe avere valori nutrizionali diversi da una soda generica",
+        "inappropriatezza": 4
+    },
+    "cake crumb": {
+        "descrizione": "Le briciole di torta hanno una composizione diversa dalla torta intera",
+        "inappropriatezza": 5
+    },
+    "beet leaf": {
+        "descrizione": "Le foglie di barbabietola hanno valori nutrizionali molto diversi dalla barbabietola",
+        "inappropriatezza": 8
+    },
+    "rice krispie": {
+        "descrizione": "I Rice Krispies sono cereali processati con valori nutrizionali molto diversi dal riso",
+        "inappropriatezza": 8
+    },
+    "Heath candy bar": {
+        "descrizione": "Una specifica barretta di cioccolato non può essere approssimata con il termine generico 'heath'",
+        "inappropriatezza": 7
+    },
+    "Hersheys Chocolate Syrup": {
+        "descrizione": "Lo sciroppo di cioccolato ha valori nutrizionali molto diversi dal cioccolato solido",
+        "inappropriatezza": 7
+    },
+    "rice-a-roni": {
+        "descrizione": "È un prodotto processato con ingredienti aggiuntivi, diverso dal riso semplice",
+        "inappropriatezza": 7
+    },
+    "orange food coloring": {
+        "descrizione": "Il colorante alimentare non ha nulla a che vedere con l'arancia come frutto",
+        "inappropriatezza": 10
+    },
+    "Amarula cream liqueur": {
+        "descrizione": "Un liquore alla crema ha valori nutrizionali molto diversi dalla crema semplice",
+        "inappropriatezza": 8
+    },
+    "malted milk powder": {
+        "descrizione": "Il latte maltato in polvere ha una composizione molto diversa dal latte normale",
+        "inappropriatezza": 7
+    },"Butter Flavor Crisco": {
+        "descrizione": "Il Butter Flavor Crisco è un grasso vegetale con aroma artificiale di burro, significativamente diverso dal burro vero e proprio in termini di composizione nutrizionale",
+        "inappropriatezza": 8
+    },
+    "Sweet n Low": {
+        "descrizione": "Sweet n Low è un dolcificante artificiale con composizione molto diversa dallo zucchero",
+        "inappropriatezza": 9
+    },
+    "fat-free half-and-half": {
+        "descrizione": "Il half-and-half senza grassi ha una composizione nutrizionale significativamente diversa dal latte intero",
+        "inappropriatezza": 7
+    },
+    "peach brandy": {
+        "descrizione": "Il brandy alla pesca è una bevanda alcolica, nutrizionalmente molto diversa dalla pesca fresca",
+        "inappropriatezza": 9
+    },
+    "raspberry Jell-O gelatin": {
+        "descrizione": "La gelatina al lampone ha una composizione nutrizionale molto diversa dal lampone fresco",
+        "inappropriatezza": 8
+    },
+    "Applejack": {
+        "descrizione": "Applejack è una bevanda alcolica distillata, nutrizionalmente molto diversa dalla mela",
+        "inappropriatezza": 9
+    },
+    "strong white bread flour": {
+        "descrizione": "La farina è nutrizionalmente diversa dal pane bianco",
+        "inappropriatezza": 7
+    },
+    "florets": {
+        "descrizione": "Il termine generico 'florets' non può essere mappato specificamente ai broccoli senza ulteriore contesto",
+        "inappropriatezza": 6
+    },
+    "imitation crabmeat": {
+        "descrizione": "La polpa di granchio imitazione è un prodotto processato molto diverso dalla vera polpa di granchio",
+        "inappropriatezza": 8
+    },
+    "instant malted milk powder": {
+        "descrizione": "Il latte maltato in polvere ha una composizione nutrizionale significativamente diversa dal latte normale",
+        "inappropriatezza": 7
+    },"onion seed": {
+        "descrizione": "I semi di cipolla hanno proprietà nutrizionali molto diverse dalla cipolla intera",
+        "inappropriatezza": 8
+    },
+    "tomato passata": {
+        "descrizione": "La passata ha una concentrazione di nutrienti diversa dal pomodoro fresco",
+        "inappropriatezza": 5
+    },
+    "juniper berry": {
+        "descrizione": "Le bacche di ginepro sono molto diverse dalle bacche comuni",
+        "inappropriatezza": 7
+    },
+    "bulgar": {
+        "descrizione": "Il bulgur ha proprietà nutrizionali specifiche diverse dal grano generico",
+        "inappropriatezza": 6
+    },
+    "Coco Lopez": {
+        "descrizione": "È una crema di cocco dolcificata, molto diversa dal cocco puro",
+        "inappropriatezza": 7
+    },
+    "nut oil": {
+        "descrizione": "L'olio di frutta secca ha proprietà diverse dalla frutta secca intera",
+        "inappropriatezza": 8
+    },
+    "brown rice syrup": {
+        "descrizione": "Lo sciroppo di riso è un dolcificante molto diverso dal riso integrale",
+        "inappropriatezza": 9
+    },
+    "rice syrup": {
+        "descrizione": "Lo sciroppo di riso ha proprietà molto diverse dal riso",
+        "inappropriatezza": 9
+    },
+    "orange gelatin": {
+        "descrizione": "La gelatina all'arancia ha proprietà molto diverse dall'arancia",
+        "inappropriatezza": 8
+    },
+    "sunflower": {
+        "descrizione": "Il girasole intero è diverso dai semi di girasole",
+        "inappropriatezza": 6
+    },
+    "banana extract": {
+        "descrizione": "L'estratto di banana ha proprietà molto diverse dalla banana",
+        "inappropriatezza": 8
+    },
+    "acid": {
+        "descrizione": "Il termine generico 'acido' non può essere approssimato al latte",
+        "inappropriatezza": 10
+    },
+    "chocolate soymilk": {
+        "descrizione": "Il latte di soia al cioccolato è molto diverso dal cioccolato puro",
+        "inappropriatezza": 8
+    },"curls": {
+        "descrizione": "Curls si riferisce probabilmente a un tipo di snack/pasta mentre B è cioccolato generico",
+        "inappropriatezza": 8
+    },
+    "panir": {
+        "descrizione": "Il panir è un formaggio fresco indiano molto diverso dal formaggio di capra",
+        "inappropriatezza": 8
+    },
+    "candy corn": {
+        "descrizione": "Il candy corn è una caramella/dolciume, non mais",
+        "inappropriatezza": 10
+    },
+    "cream sherry": {
+        "descrizione": "Lo sherry cream è un vino liquoroso, non una crema",
+        "inappropriatezza": 9
+    },
+    "pork & beans": {
+        "descrizione": "È un piatto composto, non solo carne di maiale",
+        "inappropriatezza": 7
+    },
+    "vanilla instant pudding mix": {
+        "descrizione": "È una miscela per budino, non vaniglia pura",
+        "inappropriatezza": 8
+    },
+    "lemon sherbet": {
+        "descrizione": "È un dessert ghiacciato, non limone puro",
+        "inappropriatezza": 8
+    },
+    "cherry gelatin": {
+        "descrizione": "È una gelatina aromatizzata alla ciliegia, non ciliegia pura",
+        "inappropriatezza": 7
+    },
+    "cherry Kool-Aid": {
+        "descrizione": "È una bevanda artificiale, non ciliegia",
+        "inappropriatezza": 9
+    },"apple syrup": {
+        "descrizione": "Lo sciroppo di mela ha una concentrazione di zuccheri molto più alta della mela fresca",
+        "inappropriatezza": 7
+    },
+    "strawberry extract": {
+        "descrizione": "L'estratto è un concentrato con proprietà molto diverse dal frutto intero",
+        "inappropriatezza": 8
+    },
+    "orange flavoring": {
+        "descrizione": "L'aroma artificiale ha una composizione completamente diversa dall'arancia naturale",
+        "inappropriatezza": 9
+    },
+    "soya flour": {
+        "descrizione": "La farina di soia ha una composizione nutrizionale molto diversa dalla farina comune",
+        "inappropriatezza": 8
+    },
+    "banana syrup": {
+        "descrizione": "Lo sciroppo di banana ha una concentrazione di zuccheri molto più alta della banana fresca",
+        "inappropriatezza": 7
+    },
+    "banana leaf": {
+        "descrizione": "La foglia di banana ha una composizione completamente diversa dal frutto",
+        "inappropriatezza": 10
+    },
+    "black bean garlic sauce": {
+        "descrizione": "La salsa è un prodotto complesso con ingredienti aggiuntivi rispetto ai fagioli neri",
+        "inappropriatezza": 8
+    },
+    "pine": {
+        "descrizione": "Il pino come pianta è completamente diverso dai pinoli",
+        "inappropriatezza": 10
+    },
+    "pasta water": {
+        "descrizione": "L'acqua di cottura della pasta ha proprietà molto diverse dalla pasta",
+        "inappropriatezza": 9
+    },"Italian herb seasoning": {
+        "descrizione": "Un mix di erbe aromatiche è significativamente diverso da una singola erba generica in termini di composizione e valori nutrizionali",
+        "inappropriatezza": 7
+    },
+    "lardon": {
+        "descrizione": "Il lardo è un taglio specifico di carne di maiale curata, con valori nutrizionali diversi dalla carne di maiale generica",
+        "inappropriatezza": 6
+    },
+    "Chinese wine": {
+        "descrizione": "Il vino cinese ha caratteristiche specifiche diverse dal vino generico",
+        "inappropriatezza": 4
+    },
+    "package dry onion soup mix": {
+        "descrizione": "Un mix per zuppa di cipolla contiene altri ingredienti oltre alle cipolle",
+        "inappropriatezza": 8
+    },
+    "red chili pepper flakes": {
+        "descrizione": "I fiocchi di peperoncino sono diversi dal peperoncino intero o dal pepe generico",
+        "inappropriatezza": 6
+    },
+    "pineapple sherbet": {
+        "descrizione": "Il sorbetto all'ananas è un dessert elaborato, diverso dall'ananas fresco",
+        "inappropriatezza": 8
+    },
+    "toasted pine nut": {
+        "descrizione": "I pinoli tostati sono specifici rispetto alla frutta secca generica",
+        "inappropriatezza": 5
+    },
+    "rose petal": {
+        "descrizione": "I petali di rosa sono una parte specifica del fiore con proprietà uniche",
+        "inappropriatezza": 9
+    },
+    "raspberry flavored syrup": {
+        "descrizione": "Lo sciroppo al lampone è un prodotto elaborato diverso dal lampone fresco",
+        "inappropriatezza": 8
+    },
+    "ReaLemon juice": {
+        "descrizione": "Un succo di limone commerciale specifico è diverso dal succo generico",
+        "inappropriatezza": 4
+    },
+    "Everclear alcohol": {
+        "descrizione": "Un tipo specifico di alcol con gradazione particolare, diverso dall'alcol generico",
+        "inappropriatezza": 7
+    },
+    "creme de banane": {
+        "descrizione": "Un liquore alla banana è molto diverso dalla banana fresca",
+        "inappropriatezza": 9
+    },
+    "popsicle stick": {
+        "descrizione": "Si riferisce al bastoncino non commestibile, non al ghiacciolo",
+        "inappropriatezza": 10
+    },
+    "jelly bean": {
+        "descrizione": "Le caramelle gelatinose sono molto diverse dalla gelatina pura",
+        "inappropriatezza": 8
+    },
+    "orange cake mix": {
+        "descrizione": "Un preparato per torta all'arancia è molto diverso dall'arancia fresca",
+        "inappropriatezza": 9
+    },
+    "cornbread stuffing mix": {
+        "descrizione": "Un preparato per ripieno è diverso dalla farina di mais",
+        "inappropriatezza": 8
+    },
+    "wasabi pea": {
+        "descrizione": "I piselli al wasabi sono un prodotto elaborato diverso sia dal wasabi che dai piselli",
+        "inappropriatezza": 7
+    },
+    "sun-dried tomato paste": {
+        "descrizione": "Il concentrato di pomodori secchi è diverso dalla frutta secca generica",
+        "inappropriatezza": 7
+    },
+    "carob chip": {
+        "descrizione": "Le gocce di carruba sono diverse dal carruba grezzo o dal cioccolato",
+        "inappropriatezza": 6
+    },"candy sprinkles": {
+        "descrizione": "I candy sprinkles sono decorazioni zuccherine specifiche, molto diverse dal generico 'candy' in termini di composizione e valori nutrizionali",
+        "inappropriatezza": 7
+    },
+    "cupcake liner": {
+        "descrizione": "Non è un alimento, è un oggetto non commestibile per cuocere",
+        "inappropriatezza": 10
+    },
+    "anise oil": {
+        "descrizione": "L'olio essenziale di anice ha una composizione molto diversa dall'anice o dall'olio generico",
+        "inappropriatezza": 8
+    },
+    "cinnamon schnapps": {
+        "descrizione": "È un liquore, molto diverso dalla cannella come spezia",
+        "inappropriatezza": 9
+    },
+    "rice bubble": {
+        "descrizione": "È un cereale processato, con valori nutrizionali molto diversi dal riso semplice",
+        "inappropriatezza": 7
+    },
+    "chicken fat": {
+        "descrizione": "Il grasso di pollo ha valori nutrizionali completamente diversi dalla carne di pollo",
+        "inappropriatezza": 9
+    },
+    "phyllo cup": {
+        "descrizione": "La pasta fillo è molto diversa dal crispbread in composizione e valori nutrizionali",
+        "inappropriatezza": 8
+    },
+    "chocolate whipped cream": {
+        "descrizione": "È una preparazione specifica che non può essere approssimata solo con cioccolato",
+        "inappropriatezza": 7
+    },
+    "spinach linguine": {
+        "descrizione": "È una pasta arricchita con spinaci, non può essere rappresentata solo dagli spinaci",
+        "inappropriatezza": 7
+    },
+    "salmon liquid": {
+        "descrizione": "È un derivato liquido del salmone, molto diverso dal pesce intero",
+        "inappropriatezza": 8
+    },
+    "black walnut flavoring": {
+        "descrizione": "È un aroma artificiale, molto diverso dalle noci vere",
+        "inappropriatezza": 9
+    },
+    "cream soup": {
+        "descrizione": "È una zuppa cremosa, non può essere rappresentata dalla sola panna",
+        "inappropriatezza": 7
+    },"butter substitute": {
+        "descrizione": "Il butter substitute ha una composizione nutrizionale significativamente diversa dal burro, essendo un prodotto artificiale",
+        "inappropriatezza": 7
+    },
+    "chive & onion cream cheese": {
+        "descrizione": "La cipolla è un ingrediente completamente diverso dal formaggio aromatizzato",
+        "inappropriatezza": 9
+    },
+    "grapefruit soda": {
+        "descrizione": "Il pompelmo fresco ha valori nutrizionali molto diversi da una bevanda gassata",
+        "inappropriatezza": 8
+    },
+    "orange syrup": {
+        "descrizione": "Lo sciroppo all'arancia ha una composizione molto diversa dall'arancia fresca",
+        "inappropriatezza": 8
+    },
+    "Cherry 7-Up": {
+        "descrizione": "La ciliegia fresca ha valori nutrizionali completamente diversi da una bevanda gassata",
+        "inappropriatezza": 9
+    },
+    "lemon balm": {
+        "descrizione": "Il melissa (lemon balm) è una pianta aromatica completamente diversa dal limone",
+        "inappropriatezza": 9
+    },
+    "raspberry vodka": {
+        "descrizione": "Il lampone fresco ha valori nutrizionali completamente diversi dal vodka aromatizzato",
+        "inappropriatezza": 9
+    },
+    "ginger biscuit": {
+        "descrizione": "Lo zenzero fresco ha valori nutrizionali molto diversi dai biscotti allo zenzero",
+        "inappropriatezza": 8
+    },
+    "coconut essence": {
+        "descrizione": "L'essenza di cocco è un aroma artificiale molto diverso dal cocco fresco",
+        "inappropriatezza": 9
+    },
+    "packet Lipton Onion Soup Mix": {
+        "descrizione": "Il mix per zuppa di cipolle ha una composizione molto diversa dalla cipolla fresca",
+        "inappropriatezza": 7
+    }, "clove minced garlic": {
+        "descrizione": "B (clove) è una spezia completamente diversa dal concetto di spicchio d'aglio tritato",
+        "inappropriatezza": 9
+    },
+    "plum jelly": {
+        "descrizione": "B (plum) è il frutto fresco, molto diverso dalla marmellata/gelatina di prugne",
+        "inappropriatezza": 7
+    },
+    "pineapple-orange juice": {
+        "descrizione": "B (juice) è troppo generico per rappresentare questo specifico succo misto",
+        "inappropriatezza": 6
+    },
+    "mixed baby green": {
+        "descrizione": "B (vegetables) è troppo generico per rappresentare specificamente insalate baby",
+        "inappropriatezza": 5
+    },
+    "pastry for double-crust pie": {
+        "descrizione": "B (pastry) è troppo generico per questa specifica preparazione per torte",
+        "inappropriatezza": 6
+    },
+    "marrow": {
+        "descrizione": "B (marrow) e C (vegetables) non rappresentano adeguatamente il midollo",
+        "inappropriatezza": 8
+    },
+    "pork bean": {
+        "descrizione": "B (pork) non rappresenta adeguatamente un piatto di fagioli con carne di maiale",
+        "inappropriatezza": 7
+    },"banana chip": {
+        "descrizione": "Il chip di banana è un prodotto trasformato e disidratato, con valori nutrizionali molto diversi dalla banana fresca",
+        "inappropriatezza": 7
+    },
+    "candy orange slice": {
+        "descrizione": "Le caramelle all'arancia sono dolciumi con valori nutrizionali completamente diversi dall'arancia",
+        "inappropriatezza": 8
+    },
+    "cranberry vodka": {
+        "descrizione": "Il liquore al mirtillo ha caratteristiche nutrizionali molto diverse sia dal mirtillo che dalla vodka pura",
+        "inappropriatezza": 7
+    },
+    "annatto oil": {
+        "descrizione": "L'olio di annatto ha proprietà e composizione specifiche diverse dall'olio generico",
+        "inappropriatezza": 5
+    },
+    "meat substitute": {
+        "descrizione": "I sostituti della carne hanno una composizione nutrizionale completamente diversa dalla carne",
+        "inappropriatezza": 9
+    },
+    "splenda": {
+        "descrizione": "Il dolcificante artificiale ha caratteristiche nutrizionali completamente diverse dallo zucchero",
+        "inappropriatezza": 10
+    },
+    "malibu coconut rum": {
+        "descrizione": "Il liquore al cocco ha caratteristiche nutrizionali specifiche diverse dal rum generico",
+        "inappropriatezza": 6
+    },
+    "Coffee-mate": {
+        "descrizione": "Il cremificante per caffè ha una composizione completamente diversa dal caffè",
+        "inappropriatezza": 10
+    },"rye whiskey": {
+        "descrizione": "Il rye whiskey è una bevanda alcolica, mentre il rye è un cereale",
+        "inappropriatezza": 9
+    },
+    "flower water": {
+        "descrizione": "L'acqua di fiori è un'acqua aromatizzata, molto diversa dall'acqua semplice",
+        "inappropriatezza": 7
+    },
+    "carrot cake mix": {
+        "descrizione": "Il mix per torta alle carote è un preparato complesso, non comparabile con la semplice carota",
+        "inappropriatezza": 8
+    },
+    "pie filling mix": {
+        "descrizione": "Il mix per ripieno di torta è un preparato complesso, non comparabile con una semplice torta o frutta",
+        "inappropriatezza": 8
+    },
+    "potato gnocchi": {
+        "descrizione": "Gli gnocchi di patate sono un prodotto trasformato con farina e altri ingredienti, non comparabile con le semplici patate",
+        "inappropriatezza": 7
+    },
+    "ginger wine": {
+        "descrizione": "Il vino allo zenzero è una bevanda alcolica, non comparabile con lo zenzero puro",
+        "inappropriatezza": 8
+    },
+    "crushed potato chip": {
+        "descrizione": "Le patatine sono un prodotto fritto e trasformato, non comparabile con le patate crude",
+        "inappropriatezza": 7
+    },
+    "artificial sweetener": {
+        "descrizione": "I dolcificanti artificiali hanno proprietà molto diverse dallo zucchero",
+        "inappropriatezza": 8
+    },
+    "chicken soup base": {
+        "descrizione": "Il brodo di pollo è un preparato liquido, non comparabile con la carne di pollo",
+        "inappropriatezza": 7
+    },
+    "rice chex": {
+        "descrizione": "I cereali Rice Chex sono un prodotto trasformato, non comparabile con il riso semplice",
+        "inappropriatezza": 7
+    },
+    "spinach souffle": {
+        "descrizione": "Il soufflé di spinaci è un piatto elaborato, non comparabile con gli spinaci semplici",
+        "inappropriatezza": 7
+    },
+    "hollandaise sauce mix": {
+        "descrizione": "La salsa olandese è molto diversa dalla maionese in composizione e valori nutrizionali",
+        "inappropriatezza": 8
+    },
+    "anise flavoring": {
+        "descrizione": "L'aroma di anice è un estratto/aroma, non comparabile con l'anice naturale",
+        "inappropriatezza": 7
+    },"banana flavoring": {
+        "descrizione": "Il banana flavoring è un aroma artificiale con composizione molto diversa dalla banana naturale",
+        "inappropriatezza": 8
+    },
+    "cake yeast": {
+        "descrizione": "Il lievito di birra fresco è un ingrediente completamente diverso dalla torta",
+        "inappropriatezza": 10
+    },
+    "shank": {
+        "descrizione": "Lo stinco è un taglio specifico di carne che non può essere approssimato con carne generica",
+        "inappropriatezza": 7
+    },
+    "drops green food coloring": {
+        "descrizione": "Il colorante verde è molto diverso dal caramello sia come composizione che come uso",
+        "inappropriatezza": 9
+    },
+    "coating": {
+        "descrizione": "Il termine coating (rivestimento) è troppo generico per essere equiparato a caramelle",
+        "inappropriatezza": 8
+    },
+    "pork seasoning": {
+        "descrizione": "Il condimento per maiale è un mix di spezie, non può essere equiparato alla carne di maiale",
+        "inappropriatezza": 9
+    },
+    "strawberry cream liqueur": {
+        "descrizione": "Un liquore alla fragola e crema non può essere equiparato alla fragola fresca",
+        "inappropriatezza": 8
+    },"salad cream": {
+        "descrizione": "Salad cream è una salsa/condimento specifico, mentre salad è un'insalata - sono alimenti completamente diversi",
+        "inappropriatezza": 9
+    },
+    "shrimp stock": {
+        "descrizione": "Il brodo di gamberi ha valori nutrizionali molto diversi dai gamberi interi",
+        "inappropriatezza": 7
+    },
+    "chocolate crumb crust": {
+        "descrizione": "Una crosta di briciole di cioccolato ha composizione e valori nutrizionali diversi dal cioccolato puro",
+        "inappropriatezza": 6
+    },
+    "pistachio pudding mix": {
+        "descrizione": "Il mix per budino al pistacchio è un prodotto processato con ingredienti e valori nutrizionali molto diversi dal pistacchio puro",
+        "inappropriatezza": 8
+    },
+    "strand": {
+        "descrizione": "Termine troppo generico e non chiaro, non correlato ai fagioli stringa proposti come mapping",
+        "inappropriatezza": 10
+    },
+    "cubes": {
+        "descrizione": "Termine troppo generico e non correlato ai dadi di brodo proposti come mapping",
+        "inappropriatezza": 10
+    },
+    "butter bud": {
+        "descrizione": "È un sostituto artificiale del burro con composizione molto diversa",
+        "inappropriatezza": 8
+    },
+    "turkey ham": {
+        "descrizione": "Il prosciutto di tacchino ha valori nutrizionali diversi dal tacchino semplice",
+        "inappropriatezza": 6
+    },
+    "squash blossom": {
+        "descrizione": "I fiori di zucca sono molto diversi dalla zucca come alimento",
+        "inappropriatezza": 8
+    },
+    "beefsteak tomato": {
+        "descrizione": "Beefsteak da solo non è appropriato, si riferisce a una bistecca di manzo mentre l'ingrediente è un pomodoro",
+        "inappropriatezza": 9
+    },
+    "alfredo": {
+        "descrizione": "La salsa Alfredo è una preparazione complessa, non equiparabile al formaggio",
+        "inappropriatezza": 7
+    },
+    "grain": {
+        "descrizione": "Termine troppo generico per essere mappato specificamente al grano",
+        "inappropriatezza": 6
+    },"green apple vodka": {
+        "descrizione": "Il vodka aromatizzato alla mela verde è un liquore con caratteristiche nutrizionali molto diverse dalla mela verde",
+        "inappropriatezza": 8
+    },
+    "pear nectar": {
+        "descrizione": "Il nettare di pera ha un contenuto di zuccheri e nutrienti diverso dalla pera fresca",
+        "inappropriatezza": 6
+    },
+    "orange pekoe tea bag": {
+        "descrizione": "È un tè, non ha nulla a che vedere con le arance dal punto di vista nutrizionale",
+        "inappropriatezza": 9
+    },
+    "plum wine": {
+        "descrizione": "Il vino di prugne è una bevanda alcolica con proprietà molto diverse dalle prugne fresche",
+        "inappropriatezza": 8
+    },
+    "strawberry daiquiri mix": {
+        "descrizione": "È un mix per cocktail con proprietà diverse dalle fragole fresche",
+        "inappropriatezza": 7
+    },
+    "peach gelatin": {
+        "descrizione": "La gelatina alla pesca ha proprietà nutrizionali molto diverse dalla pesca fresca",
+        "inappropriatezza": 7
+    },
+    "raspberry syrup": {
+        "descrizione": "Lo sciroppo di lamponi ha un contenuto di zuccheri molto più alto dei lamponi freschi",
+        "inappropriatezza": 7
+    },
+    "orange rind twists": {
+        "descrizione": "La scorza d'arancia ha proprietà nutrizionali molto diverse dall'arancia intera",
+        "inappropriatezza": 7
+    },
+    "fruit pectin": {
+        "descrizione": "La pectina è un additivo con proprietà molto diverse dalla frutta fresca",
+        "inappropriatezza": 9
+    },
+    "strawberry Kool-Aid": {
+        "descrizione": "È una bevanda artificiale con proprietà molto diverse dalle fragole",
+        "inappropriatezza": 8
+    },
+    "orange spice tea bag": {
+        "descrizione": "È un tè speziato, non ha proprietà nutrizionali simili all'arancia",
+        "inappropriatezza": 9
+    },
+    "banana rum": {
+        "descrizione": "È una bevanda alcolica aromatizzata, molto diversa dalla banana fresca",
+        "inappropriatezza": 8
+    },
+    "lemon verbena": {
+        "descrizione": "È un'erba aromatica con proprietà diverse dal limone",
+        "inappropriatezza": 8
+    },
+    "vanilla candy coating": {
+        "descrizione": "È una copertura dolciaria con proprietà molto diverse dalla vaniglia",
+        "inappropriatezza": 8
+    },
+    "lemon balm leaf": {
+        "descrizione": "È un'erba aromatica con proprietà diverse dal limone",
+        "inappropriatezza": 8
+    },
+    "apricot gelatin": {
+        "descrizione": "La gelatina all'albicocca ha proprietà nutrizionali molto diverse dall'albicocca fresca",
+        "inappropriatezza": 7
+    },"aquavit": {
+        "descrizione": "L'aquavit è un distillato di grano o patate aromatizzato con cumino e altre spezie, molto diverso dal vino",
+        "inappropriatezza": 9
+    },
+    "Tang orange crystal": {
+        "descrizione": "È una bevanda in polvere artificiale con composizione molto diversa dall'arancia fresca",
+        "inappropriatezza": 8
+    },
+    "egg mayonnaise": {
+        "descrizione": "La maionese con uovo ha una composizione nutrizionale molto diversa sia dall'uovo che dalla maionese standard",
+        "inappropriatezza": 7
+    },
+    "meat tenderizer": {
+        "descrizione": "È un prodotto enzimatico/chimico per intenerire la carne, non è carne",
+        "inappropriatezza": 10
+    },
+    "pineapple Jell-O": {
+        "descrizione": "È un dessert gelatinoso artificiale, molto diverso dall'ananas fresco",
+        "inappropriatezza": 8
+    },
+    "peach syrup": {
+        "descrizione": "Lo sciroppo di pesca ha una composizione nutrizionale molto diversa dalla pesca fresca",
+        "inappropriatezza": 7
+    },
+    "vanilla baking chip": {
+        "descrizione": "Sono gocce dolci per dolci, molto diverse dalla vaniglia pura",
+        "inappropriatezza": 8
+    },
+    "berbere": {
+        "descrizione": "È una miscela di spezie etiope con composizione specifica",
+        "inappropriatezza": 6
+    },"bell": {
+        "descrizione": "Bell è un termine troppo generico e non specifico, mentre pepper si riferisce a un ingrediente specifico",
+        "inappropriatezza": 8
+    },
+    "creamed coconut": {
+        "descrizione": "La versione cremosa del cocco ha una composizione nutrizionale diversa dal cocco intero",
+        "inappropriatezza": 6
+    },
+    "soup pasta": {
+        "descrizione": "Non può essere mappato su 'soup' che è una preparazione liquida completamente diversa",
+        "inappropriatezza": 9
+    },
+    "pomegranate syrup": {
+        "descrizione": "Lo sciroppo di melograno ha una composizione nutrizionale molto diversa dal frutto intero",
+        "inappropriatezza": 7
+    },
+    "cabbage and carrot coleslaw mix": {
+        "descrizione": "È un mix di ingredienti, non può essere mappato solo su cavolo",
+        "inappropriatezza": 6
+    },
+    "pocket": {
+        "descrizione": "Termine troppo generico per essere mappato su bread",
+        "inappropriatezza": 8
+    },
+    "raspberry chipotle sauce": {
+        "descrizione": "È una salsa complessa, non può essere mappata solo su lampone",
+        "inappropriatezza": 7
+    },
+    "clove crushed garlic": {
+        "descrizione": "Non può essere mappato su 'clove' (chiodo di garofano) che è una spezia completamente diversa",
+        "inappropriatezza": 10
+    },
+    "banana flower": {
+        "descrizione": "Il fiore di banana ha una composizione nutrizionale molto diversa dal frutto",
+        "inappropriatezza": 8
+    },
+    "bubbles": {
+        "descrizione": "Termine troppo generico e ambiguo per essere mappato su cereali",
+        "inappropriatezza": 9
+    },
+    "lemon-lime beverage": {
+        "descrizione": "Una bevanda gassata ha una composizione diversa dal succo di frutta",
+        "inappropriatezza": 7
+    },
+    "cranberry gelatin": {
+        "descrizione": "La gelatina ha una composizione molto diversa dal frutto intero",
+        "inappropriatezza": 7
+    },
+    "dried soup mix": {
+        "descrizione": "Un mix di ingredienti secchi non può essere mappato su zuppa o cipolla",
+        "inappropriatezza": 8
+    },
+    "ham stock": {
+        "descrizione": "Il brodo di prosciutto ha una composizione molto diversa dal prosciutto",
+        "inappropriatezza": 7
+    },
+    "goldschlager": {
+        "descrizione": "È un liquore alla cannella, non può essere mappato su crackers",
+        "inappropriatezza": 10
+    },"dry_ice": {
+        "descrizione": "Il ghiaccio secco (CO2 solida) è una sostanza completamente diversa dal ghiaccio (H2O solida), con proprietà chimiche e fisiche molto diverse",
+        "inappropriatezza": 10
+    },
+    "vegetable_juice_cocktail": {
+        "descrizione": "Un cocktail di succhi di verdura può avere una composizione nutrizionale significativamente diversa dal succo di verdura generico",
+        "inappropriatezza": 5
+    },
+    "orange-mango_juice": {
+        "descrizione": "Un succo misto arancia-mango ha una composizione nutrizionale diversa da un generico succo non specificato",
+        "inappropriatezza": 6
+    },
+    "Angostura_bitters": {
+        "descrizione": "L'Angostura è un amaro specifico con composizione molto diversa da generici amari o spezie",
+        "inappropriatezza": 7
+    },
+    "pineapple_concentrate": {
+        "descrizione": "Il concentrato di ananas ha valori nutrizionali molto diversi dall'ananas fresco",
+        "inappropriatezza": 7
+    },
+    "white_wine_worcestershire_sauce": {
+        "descrizione": "La salsa worcestershire al vino bianco è significativamente diversa dal solo vino bianco",
+        "inappropriatezza": 8
+    },
+    "chile_pepper_jam": {
+        "descrizione": "Una marmellata di peperoncino è molto diversa dal solo peperoncino",
+        "inappropriatezza": 8
+    },
+    "mushroom_soy_sauce": {
+        "descrizione": "La salsa di soia ai funghi è nutrizionalmente diversa dai funghi",
+        "inappropriatezza": 8
+    },
+    "macadamia_nut_oil": {
+        "descrizione": "L'olio di macadamia ha valori nutrizionali molto diversi dalle noci di macadamia intere",
+        "inappropriatezza": 7
+    },"mandarin orange juice": {
+        "descrizione": "Il succo di mandarino ha composizione diversa dal frutto intero",
+        "inappropriatezza": 6
+    },
+    "Chinese white rice vinegar": {
+        "descrizione": "L'aceto è un prodotto completamente diverso dal riso bianco",
+        "inappropriatezza": 9
+    },
+    "strawberry liqueur": {
+        "descrizione": "Il liquore alla fragola è molto diverso dalla fragola fresca",
+        "inappropriatezza": 8
+    },
+    "parsley root": {
+        "descrizione": "La radice di prezzemolo ha valori nutrizionali diversi dalle foglie",
+        "inappropriatezza": 7
+    },
+    "canned mandarin juice": {
+        "descrizione": "Il succo di mandarino in lattina è diverso dal frutto fresco",
+        "inappropriatezza": 6
+    },
+    "giblet": {
+        "descrizione": "Le interiora hanno valori nutrizionali molto diversi dalla carne generica",
+        "inappropriatezza": 8
+    },
+    "popped popcorn": {
+        "descrizione": "I popcorn hanno valori diversi dal mais in lattina",
+        "inappropriatezza": 7
+    },
+    "coconut juice": {
+        "descrizione": "Il succo di cocco ha valori nutrizionali diversi dal cocco intero",
+        "inappropriatezza": 6
+    },
+    "cheese whiz": {
+        "descrizione": "Il formaggio processato ha valori molto diversi dal formaggio fresco",
+        "inappropriatezza": 7
+    },"vanilla chips": {
+        "descrizione": "I chips alla vaniglia sono un prodotto dolciario specifico, molto diverso dalla vaniglia pura",
+        "inappropriatezza": 8
+    },
+    "corn husk": {
+        "descrizione": "La buccia del mais è molto diversa dal mais stesso, con valori nutrizionali completamente differenti",
+        "inappropriatezza": 9
+    },
+    "chestnut mushroom": {
+        "descrizione": "Un fungo è nutrizionalmente molto diverso da una castagna",
+        "inappropriatezza": 10
+    },
+    "orange oil": {
+        "descrizione": "L'olio di arancia è un concentrato con proprietà molto diverse dall'arancia intera",
+        "inappropriatezza": 8
+    },
+    "chipotle paste": {
+        "descrizione": "La pasta di chipotle è un condimento piccante molto diverso dalla pasta di pomodoro",
+        "inappropriatezza": 7
+    },
+    "Teddy Grahams": {
+        "descrizione": "È un prodotto specifico di biscotti, diverso dai crackers generici",
+        "inappropriatezza": 6
+    },
+    "tomato bouillon": {
+        "descrizione": "Il brodo di pomodoro ha una composizione diversa dal pomodoro fresco",
+        "inappropriatezza": 7
+    },
+    "snack": {
+        "descrizione": "Termine troppo generico per essere mappato specificamente sui biscotti",
+        "inappropriatezza": 8
+    },
+    "chocolate sorbet": {
+        "descrizione": "Il sorbetto al cioccolato ha una composizione molto diversa dal cioccolato puro",
+        "inappropriatezza": 7
+    },
+    "malted milk ball": {
+        "descrizione": "È un dolciume specifico, molto diverso dal latte semplice",
+        "inappropriatezza": 8
+    },
+    "preserved gingerroot": {
+        "descrizione": "Lo zenzero conservato ha proprietà diverse dalla marmellata generica",
+        "inappropriatezza": 7
+    },"drops red food coloring": {
+        "descrizione": "Il colorante alimentare rosso è un additivo colorante mentre il caramello è un dolcificante/colorante di natura diversa",
+        "inappropriatezza": 8
+    },
+    "ginger-garlic": {
+        "descrizione": "È una miscela di due ingredienti diversi, non può essere rappresentata solo dallo zenzero",
+        "inappropriatezza": 7
+    },
+    "gingered rum raisins": {
+        "descrizione": "È un prodotto complesso con rum e uvetta, non può essere rappresentato solo dal rum",
+        "inappropriatezza": 7
+    },
+    "citrus peel": {
+        "descrizione": "La buccia di agrumi ha proprietà nutrizionali molto diverse dalla frutta intera",
+        "inappropriatezza": 8
+    },
+    "salt & freshly ground black pepper": {
+        "descrizione": "È una miscela di due condimenti diversi, non può essere rappresentata solo dal sale",
+        "inappropriatezza": 7
+    },
+    "coconut liqueur": {
+        "descrizione": "Un liquore al cocco ha proprietà nutrizionali molto diverse dal cocco",
+        "inappropriatezza": 8
+    },
+    "brewers yeast": {
+        "descrizione": "Il lievito di birra ha proprietà nutrizionali diverse dalla birra",
+        "inappropriatezza": 9
+    },"chocolate stout": {
+        "descrizione": "Il chocolate stout è una birra scura, non può essere approssimato con il cioccolato",
+        "inappropriatezza": 9
+    },
+    "drop green food coloring": {
+        "descrizione": "Il colorante alimentare verde è molto diverso dal caramello",
+        "inappropriatezza": 10
+    },
+    "Campbells Cream of Mushroom Soup": {
+        "descrizione": "Una zuppa cremosa ai funghi non può essere approssimata solo con funghi",
+        "inappropriatezza": 7
+    },
+    "French vanilla flavored coffee creamer": {
+        "descrizione": "Un coffee creamer alla vaniglia francese non può essere approssimato con la sola vaniglia o il caffè liquido",
+        "inappropriatezza": 8
+    },
+    "chicken bacon": {
+        "descrizione": "Il bacon di pollo è significativamente diverso sia dal pollo che dal bacon tradizionale",
+        "inappropriatezza": 7
+    },
+    "pan dripping": {
+        "descrizione": "I grassi di cottura sono molto diversi dal condimento per insalata",
+        "inappropriatezza": 8
+    },
+    "chocolate crumb pie shell": {
+        "descrizione": "Una base per torta al cioccolato non può essere approssimata con il solo cioccolato",
+        "inappropriatezza": 7
+    },
+    "almond flavored liqueur": {
+        "descrizione": "Un liquore aromatizzato alle mandorle non può essere approssimato con le mandorle",
+        "inappropriatezza": 7
+    },"cream_of_onion_soup": {
+        "descrizione": "La crema di cipolla è una zuppa elaborata, molto diversa dalla semplice panna",
+        "inappropriatezza": 8
+    },
+    "herb_stuffing_mix": {
+        "descrizione": "Il mix per ripieno è un prodotto composto molto diverso dalle erbe semplici",
+        "inappropriatezza": 7
+    },
+    "Jello_Instant_Vanilla_Pudding": {
+        "descrizione": "Il budino alla vaniglia istantaneo è un prodotto specifico diverso dal generico Jello",
+        "inappropriatezza": 6
+    },
+    "strawberry_ice_cream_topping": {
+        "descrizione": "Il topping è una salsa dolce, molto diversa dal gelato alla fragola",
+        "inappropriatezza": 7
+    },
+    "chocolate-covered_coffee_bean": {
+        "descrizione": "I chicchi di caffè ricoperti di cioccolato sono molto diversi dal caffè in bevanda",
+        "inappropriatezza": 8
+    },
+    "lemon_oil": {
+        "descrizione": "L'olio al limone è un prodotto aromatico molto diverso dal limone fresco",
+        "inappropriatezza": 8
+    },
+    "chicken_giblet": {
+        "descrizione": "Le interiora di pollo sono molto diverse dalla carne di pollo",
+        "inappropriatezza": 8
+    },
+    "Sweet_Low": {
+        "descrizione": "È un dolcificante artificiale, molto diverso dallo zucchero",
+        "inappropriatezza": 9
+    },
+    "butter_powder": {
+        "descrizione": "Il burro in polvere ha composizione molto diversa dal burro normale",
+        "inappropriatezza": 7
+    },
+    "caponata": {
+        "descrizione": "La caponata è un piatto elaborato, non solo melanzane",
+        "inappropriatezza": 8
+    },
+    "nonstick_spray": {
+        "descrizione": "Lo spray antiaderente ha composizione diversa dall'olio puro",
+        "inappropriatezza": 6
+    },
+    "gingersnaps": {
+        "descrizione": "I biscotti allo zenzero sono molto diversi dallo zenzero puro",
+        "inappropriatezza": 8
+    },
+    "honey_barbecue_sauce": {
+        "descrizione": "La salsa barbecue al miele è molto diversa dal miele puro",
+        "inappropriatezza": 9
+    },
+    "soy_cheese": {
+        "descrizione": "Il formaggio di soia ha composizione molto diversa dal formaggio normale",
+        "inappropriatezza": 8
+    },"butter flavor": {
+        "descrizione": "Il butter flavor è un aroma sintetico che ha proprietà nutrizionali molto diverse dal burro reale",
+        "inappropriatezza": 8
+    },
+    "browning sauce": {
+        "descrizione": "La browning sauce è principalmente un colorante/insaporitore a base di caramello, molto diverso da una generica salsa",
+        "inappropriatezza": 7
+    },
+    "sun-dried tomatoes": {
+        "descrizione": "I pomodori secchi hanno valori nutrizionali molto più concentrati dei pomodori freschi",
+        "inappropriatezza": 6
+    },
+    "chocolate flavoring": {
+        "descrizione": "L'aroma al cioccolato è un ingrediente sintetico con proprietà nutrizionali molto diverse dal cioccolato",
+        "inappropriatezza": 8
+    },
+    "non-dairy whipped topping": {
+        "descrizione": "Un topping non caseario ha una composizione molto diversa da una crema di latte",
+        "inappropriatezza": 7
+    },
+    "chai concentrate": {
+        "descrizione": "Il concentrato di chai è un prodotto molto diverso dalle spezie generiche",
+        "inappropriatezza": 6
+    },
+    "almond brickle chip": {
+        "descrizione": "Le mandorle caramellate hanno valori nutrizionali molto diversi dalle mandorle pure",
+        "inappropriatezza": 6
+    },
+    "squash seed": {
+        "descrizione": "I semi di zucca sono nutrizionalmente molto diversi dalla zucca",
+        "inappropriatezza": 8
+    },"garlic cheese roll": {
+        "descrizione": "Un formaggio aromatizzato all'aglio è sostanzialmente diverso dall'aglio puro",
+        "inappropriatezza": 8
+    },
+    "grape Jell-O": {
+        "descrizione": "La gelatina all'uva è molto diversa dall'uva fresca",
+        "inappropriatezza": 7
+    },
+    "salt water": {
+        "descrizione": "L'acqua salata ha proprietà nutrizionali molto diverse dal sale puro",
+        "inappropriatezza": 8
+    },
+    "cream cheese spread": {
+        "descrizione": "Il formaggio spalmabile è sostanzialmente diverso dalla panna",
+        "inappropriatezza": 7
+    },
+    "Frenchs cheddar french fried onion": {
+        "descrizione": "Le cipolle fritte al cheddar sono molto diverse sia dal cheddar che dalla cipolla pura",
+        "inappropriatezza": 8
+    },
+    "raspberry-flavored wine cooler": {
+        "descrizione": "Un cocktail al lampone è molto diverso dal lampone puro",
+        "inappropriatezza": 7
+    },
+    "pie": {
+        "descrizione": "Una torta generica è troppo vaga per essere mappata con una torta specifica alle ciliegie",
+        "inappropriatezza": 6
+    },
+    "brandy flavoring": {
+        "descrizione": "Un aroma al brandy è sostanzialmente diverso dal brandy reale",
+        "inappropriatezza": 7
+    },
+    "banana liquor": {
+        "descrizione": "Un liquore alla banana è molto diverso dalla banana fresca",
+        "inappropriatezza": 7
+    },
+    "orange jelly crystal": {
+        "descrizione": "La gelatina all'arancia è molto diversa dall'arancia fresca",
+        "inappropriatezza": 7
+    },
+    "orange yogurt": {
+        "descrizione": "Lo yogurt all'arancia è sostanzialmente diverso dall'arancia pura",
+        "inappropriatezza": 6
+    },"vanilla whey protein powder": {
+        "descrizione": "Il contenuto proteico e i valori nutrizionali della vaniglia pura sono molto diversi da quelli di un integratore proteico",
+        "inappropriatezza": 9
+    },
+    "diet 7-Up": {
+        "descrizione": "Una bevanda dietetica ha valori nutrizionali significativamente diversi da una normale soft drink",
+        "inappropriatezza": 6
+    },
+    "sugar-free strawberry gelatin": {
+        "descrizione": "La gelatina senza zucchero ha valori nutrizionali molto diversi dalle fragole fresche",
+        "inappropriatezza": 8
+    },
+    "ice wine": {
+        "descrizione": "Il ghiaccio e il vino sono completamente diversi come alimenti",
+        "inappropriatezza": 10
+    },
+    "pepper berry": {
+        "descrizione": "Il pepe e le bacche di pepe hanno proprietà nutrizionali diverse",
+        "inappropriatezza": 6
+    },
+    "candied mint leaf": {
+        "descrizione": "La menta candita ha un contenuto di zuccheri molto diverso dalla menta fresca",
+        "inappropriatezza": 7
+    },
+    "dash red food coloring": {
+        "descrizione": "Il colorante alimentare e il caramello hanno composizioni completamente diverse",
+        "inappropriatezza": 9
+    },
+    "kool-aid": {
+        "descrizione": "Il kool-aid ha una composizione molto diversa dall'arancia fresca",
+        "inappropriatezza": 8
+    },
+    "lemon cucumber": {
+        "descrizione": "Il limone e il cetriolo sono alimenti completamente diversi",
+        "inappropriatezza": 10
+    },
+    "cold ginger ale": {
+        "descrizione": "La ginger ale è una bevanda gassata con valori nutrizionali molto diversi dallo zenzero fresco",
+        "inappropriatezza": 8
+    },
+    "mint ice cube": {
+        "descrizione": "Il ghiaccio alla menta è principalmente acqua, molto diverso dalla menta fresca",
+        "inappropriatezza": 7
+    },
+    "tahitian coconut vanilla rum": {
+        "descrizione": "Il rum aromatizzato ha valori nutrizionali molto diversi dal cocco fresco",
+        "inappropriatezza": 9
+    },
+    "hibiscus": {
+        "descrizione": "L'ibisco ha proprietà e valori nutrizionali diversi dal tè generico",
+        "inappropriatezza": 6
+    },"arrow starch": {
+        "descrizione": "Il tubero (tuber) è un alimento completamente diverso dall'amido (starch), con valori nutrizionali molto differenti",
+        "inappropriatezza": 8
+    },
+    "oat milk": {
+        "descrizione": "Il latte d'avena ha valori nutrizionali significativamente diversi dall'avena semplice",
+        "inappropriatezza": 7
+    },
+    "hiram walker sour apple liqueur": {
+        "descrizione": "Un liquore alla mela ha valori nutrizionali completamente diversi dalla mela fresca",
+        "inappropriatezza": 9
+    },
+    "seafood salad": {
+        "descrizione": "L'insalata di mare è un piatto preparato con valori nutrizionali diversi dal pesce semplice",
+        "inappropriatezza": 6
+    },
+    "garlic and herb marinade": {
+        "descrizione": "Una marinata è un condimento con valori nutrizionali molto diversi dall'aglio semplice",
+        "inappropriatezza": 8
+    },
+    "melon seeds": {
+        "descrizione": "I semi di melone hanno valori nutrizionali completamente diversi dal melone",
+        "inappropriatezza": 9
+    },
+    "clover": {
+        "descrizione": "Il trifoglio è una pianta specifica con valori nutrizionali diversi da generici vegetali",
+        "inappropriatezza": 7
+    },
+    "rooibos": {
+        "descrizione": "Il rooibos è una bevanda con valori nutrizionali molto diversi dai vegetali generici",
+        "inappropriatezza": 9
+    },
+    "caramel apple dip": {
+        "descrizione": "Una salsa al caramello ha valori nutrizionali molto diversi dalla mela caramellata",
+        "inappropriatezza": 8
+    },
+    "dekuyper pucker raspberry Schnapps": {
+        "descrizione": "Un liquore al lampone ha valori nutrizionali completamente diversi dal lampone fresco",
+        "inappropriatezza": 9
+    },
+    "lemon soda": {
+        "descrizione": "Una bevanda gassata al limone ha valori nutrizionali molto diversi dal limone",
+        "inappropriatezza": 8
+    },
+    "vegetable seasoning": {
+        "descrizione": "Un condimento vegetale ha valori nutrizionali molto diversi dai vegetali semplici",
+        "inappropriatezza": 7
+    },
+    "cherry drink mix": {
+        "descrizione": "Una bevanda alla ciliegia ha valori nutrizionali diversi dalla ciliegia fresca",
+        "inappropriatezza": 7
+    },
+    "blackberry wine": {
+        "descrizione": "Il vino di more ha valori nutrizionali completamente diversi dalle more fresche",
+        "inappropriatezza": 9
+    },
+    "black currant liqueur": {
+        "descrizione": "Un liquore al ribes nero ha valori nutrizionali completamente diversi dal ribes fresco",
+        "inappropriatezza": 9
+    },
+    "white malt vinegar": {
+        "descrizione": "L'aceto di malto ha valori nutrizionali completamente diversi dal malto",
+        "inappropriatezza": 8
+    },
+    "powdered fruit pectin": {
+        "descrizione": "La pectina in polvere ha valori nutrizionali molto diversi dalla frutta generica",
+        "inappropriatezza": 9
+    },"kirsch liqueur": {
+        "descrizione": "Il kirsch è un tipo specifico di liquore alla ciliegia, con caratteristiche nutrizionali potenzialmente diverse da un generico liquore",
+        "inappropriatezza": 4
+    },
+    "Stolichnaya raspberry vodka": {
+        "descrizione": "Non può essere approssimato né con raspberry né con vodka generica, essendo un prodotto specifico con caratteristiche uniche",
+        "inappropriatezza": 7
+    },
+    "hot spiced cider mix": {
+        "descrizione": "Un mix speziato è significativamente diverso dal semplice sidro",
+        "inappropriatezza": 6
+    },
+    "liquid glucose": {
+        "descrizione": "Il glucosio liquido ha proprietà nutrizionali diverse dallo zucchero comune",
+        "inappropriatezza": 5
+    },
+    "crab stick": {
+        "descrizione": "Il surimi (bastoncini di granchio) ha una composizione molto diversa dal granchio vero",
+        "inappropriatezza": 8
+    },
+    "sun-dried tomato olive oil": {
+        "descrizione": "È un olio aromatizzato, con caratteristiche diverse sia dal pomodoro che dall'olio d'oliva puro",
+        "inappropriatezza": 7
+    },
+    "angel hair cabbage": {
+        "descrizione": "Non può essere approssimato con angel hair (pasta) essendo un tipo di cavolo tagliato finemente",
+        "inappropriatezza": 9
+    },
+    "nutmeg syrup": {
+        "descrizione": "Uno sciroppo aromatizzato alla noce moscata è significativamente diverso sia dalla spezia che da un generico sciroppo",
+        "inappropriatezza": 6
+    },
+    "frozen peas and carrot": {
+        "descrizione": "È una miscela di due verdure, non può essere approssimata solo con piselli congelati",
+        "inappropriatezza": 5
+    },"banana chile": {
+        "descrizione": "Un peperoncino banana è un tipo di peperoncino, non una banana",
+        "inappropriatezza": 8
+    },
+    "chili seasoning mix": {
+        "descrizione": "Un mix di spezie è nutrizionalmente molto diverso dal peperoncino puro",
+        "inappropriatezza": 7
+    },
+    "papaya seed": {
+        "descrizione": "I semi di papaya sono nutrizionalmente molto diversi dalla papaya",
+        "inappropriatezza": 8
+    },
+    "cinnamon oil": {
+        "descrizione": "L'olio di cannella è un concentrato molto diverso dalla cannella in polvere",
+        "inappropriatezza": 7
+    },
+    "clove oil": {
+        "descrizione": "L'olio di chiodi di garofano è un concentrato molto diverso dai chiodi di garofano",
+        "inappropriatezza": 7
+    },
+    "cocktail peanut": {
+        "descrizione": "Il confronto con 'cocktail' non ha senso, dovrebbe essere con 'peanut'",
+        "inappropriatezza": 9
+    },
+    "hot-tamale jelly bean": {
+        "descrizione": "Una caramella aromatizzata è molto diversa dal cibo che imita",
+        "inappropriatezza": 8
+    },
+    "yellow pear tomato": {
+        "descrizione": "È un tipo di pomodoro, non una pera",
+        "inappropriatezza": 9
+    },
+    "paradise": {
+        "descrizione": "Termine troppo generico per essere mappato su 'fruit'",
+        "inappropriatezza": 8
+    },
+    "hazelnut wafer biscuit": {
+        "descrizione": "Un biscotto è nutrizionalmente diverso dalla nocciola pura",
+        "inappropriatezza": 7
+    },
+    "soy mayonnaise": {
+        "descrizione": "La maionese di soia è significativamente diversa dalla maionese tradizionale",
+        "inappropriatezza": 6
+    },
+    "lamb stock": {
+        "descrizione": "Il brodo di agnello è molto diverso dalla carne di agnello",
+        "inappropriatezza": 8
+    },
+    "vegetarian meatball": {
+        "descrizione": "Le polpette vegetariane sono molto diverse dalle polpette di carne",
+        "inappropriatezza": 8
+    },
+    "recaito": {
+        "descrizione": "Il recaito è una salsa verde caraibica molto diversa dal pesto",
+        "inappropriatezza": 8
+    },"Kashi": {
+        "descrizione": "Kashi è un marchio specifico di cereali, mentre 'cereals' è troppo generico e potrebbe avere valori nutrizionali molto diversi",
+        "inappropriatezza": 6
+    },
+    "tofutti sour cream": {
+        "descrizione": "Tofutti è un'alternativa vegana al sour cream, con composizione e valori nutrizionali significativamente diversi",
+        "inappropriatezza": 8
+    },
+    "Boca meatless ground burger": {
+        "descrizione": "Un burger vegetale ha valori nutrizionali molto diversi da un normale burger di carne",
+        "inappropriatezza": 9
+    },
+    "cassia bud": {
+        "descrizione": "Il termine 'bud' è troppo generico e non correlato specificamente alla cassia",
+        "inappropriatezza": 7
+    },
+    "mince": {
+        "descrizione": "Il termine è troppo vago senza specificare il tipo di carne o alimento tritato",
+        "inappropriatezza": 6
+    },
+    "umeboshi": {
+        "descrizione": "Umeboshi è un tipo specifico di prugna fermentata giapponese, molto diversa da un generico 'fruit'",
+        "inappropriatezza": 8
+    },
+    "brown beef gravy mix": {
+        "descrizione": "Un preparato per salsa ha composizione e valori nutrizionali diversi dalla salsa pronta",
+        "inappropriatezza": 6
+    },
+    "tofu mayonnaise": {
+        "descrizione": "Non è appropriato mappare una maionese di tofu con il tofu semplice, hanno composizioni molto diverse",
+        "inappropriatezza": 8
+    },
+    "rabe": {
+        "descrizione": "Il termine 'vegetables' è troppo generico per rappresentare questo specifico vegetale",
+        "inappropriatezza": 5
+    },"cabbage kimchi": {
+        "descrizione": "Il kimchi è un alimento fermentato con profilo nutrizionale diverso dal cavolo fresco",
+        "inappropriatezza": 6
+    },
+    "mongolian fire oil": {
+        "descrizione": "È un olio aromatizzato/speziato con profilo nutrizionale potenzialmente diverso dall'olio generico",
+        "inappropriatezza": 4
+    },
+    "candle nut": {
+        "descrizione": "È una specifica varietà di noce con profilo nutrizionale proprio",
+        "inappropriatezza": 5
+    },
+    "sour apple schnapps": {
+        "descrizione": "È una bevanda alcolica, non paragonabile alla mela",
+        "inappropriatezza": 9
+    },
+    "sour apple hard candy": {
+        "descrizione": "È un dolciume, non paragonabile alla mela",
+        "inappropriatezza": 9
+    },
+    "pineapple sage leaf": {
+        "descrizione": "È un'erba aromatica, non correlata all'ananas",
+        "inappropriatezza": 10
+    },
+    "mint simple syrup": {
+        "descrizione": "È uno sciroppo aromatizzato, non paragonabile alla menta fresca",
+        "inappropriatezza": 7
+    },
+    "pear vodka": {
+        "descrizione": "È una bevanda alcolica, non paragonabile alla pera",
+        "inappropriatezza": 9
+    },
+    "vanilla ice milk": {
+        "descrizione": "È un dessert gelato, non paragonabile alla vaniglia",
+        "inappropriatezza": 8
+    },
+    "pear liqueur": {
+        "descrizione": "È una bevanda alcolica, non paragonabile alla pera",
+        "inappropriatezza": 9
+    },
+    "apricot yoghurt": {
+        "descrizione": "È un prodotto lattiero-caseario, non paragonabile all'albicocca",
+        "inappropriatezza": 8
+    },
+    "orange-infused vodka": {
+        "descrizione": "È una bevanda alcolica, non paragonabile all'arancia",
+        "inappropriatezza": 9
+    },
+    "peach passionfruit tea": {
+        "descrizione": "È una bevanda, non paragonabile alla pesca",
+        "inappropriatezza": 8
+    },
+    "cherry vodka": {
+        "descrizione": "È una bevanda alcolica, non paragonabile alla ciliegia",
+        "inappropriatezza": 9
+    },
+    "orange liquor": {
+        "descrizione": "È una bevanda alcolica, non paragonabile all'arancia",
+        "inappropriatezza": 9
+    },"lemon lime and bitters soft drink": {
+        "descrizione": "È una bevanda complessa con più ingredienti, non può essere approssimata al solo limone",
+        "inappropriatezza": 8
+    },
+    "barley miso": {
+        "descrizione": "Il miso è un prodotto fermentato con caratteristiche nutrizionali molto diverse dall'orzo",
+        "inappropriatezza": 7
+    },
+    "ketjap": {
+        "descrizione": "Il ketjap è una salsa di soia dolce indonesiana, molto diversa dal ketchup",
+        "inappropriatezza": 9
+    },
+    "lemon thyme": {
+        "descrizione": "È un'erba aromatica, non può essere approssimata al limone",
+        "inappropriatezza": 8
+    },
+    "cinnamon vodka": {
+        "descrizione": "È un liquore aromatizzato, non può essere approssimato alla cannella",
+        "inappropriatezza": 7
+    },
+    "orange kool-aid": {
+        "descrizione": "È una bevanda artificiale, non può essere approssimata all'arancia",
+        "inappropriatezza": 7
+    },
+    "milo": {
+        "descrizione": "È una bevanda malto-cioccolatata fortificata, non può essere approssimata al cioccolato semplice",
+        "inappropriatezza": 6
+    },
+    "raspberry drink": {
+        "descrizione": "È una bevanda artificiale, non può essere approssimata al lampone",
+        "inappropriatezza": 7
+    },
+    "alize passion fruit cognac": {
+        "descrizione": "È un liquore complesso, non può essere approssimato al frutto della passione",
+        "inappropriatezza": 8
+    },
+    "alize cranberry fruit cognac": {
+        "descrizione": "È un liquore complesso, non può essere approssimato al mirtillo rosso",
+        "inappropriatezza": 8
+    },
+    "lemon gin": {
+        "descrizione": "È un liquore aromatizzato, non può essere approssimato al limone",
+        "inappropriatezza": 7
+    },
+    "pineapple leaves": {
+        "descrizione": "Le foglie hanno proprietà nutrizionali completamente diverse dal frutto",
+        "inappropriatezza": 9
+    },
+    "sweet-and-sour": {
+        "descrizione": "È una salsa complessa, non può essere approssimata al succo di frutta",
+        "inappropriatezza": 8
+    },"cooked rice noodle": {
+        "descrizione": "Il riso cotto e le tagliatelle di riso sono alimenti con composizioni nutrizionali diverse",
+        "inappropriatezza": 7
+    },
+    "blackberry herbal tea bag": {
+        "descrizione": "Il tè alle erbe e le more sono alimenti completamente diversi",
+        "inappropriatezza": 8
+    },
+    "malibu pineapple rum": {
+        "descrizione": "Il Malibu è un liquore specifico diverso dal rum generico",
+        "inappropriatezza": 6
+    },
+    "green ginger wine": {
+        "descrizione": "Il vino allo zenzero è molto diverso dallo zenzero puro",
+        "inappropriatezza": 8
+    },
+    "fresh grape tomato": {
+        "descrizione": "L'uva e i pomodorini sono alimenti completamente diversi",
+        "inappropriatezza": 9
+    },
+    "cinnamon apple": {
+        "descrizione": "La cannella e le mele sono ingredienti completamente diversi",
+        "inappropriatezza": 9
+    },
+    "beef bullion square": {
+        "descrizione": "Il dado da brodo e la carne di manzo sono prodotti molto diversi",
+        "inappropriatezza": 8
+    },
+    "cloves crushed garlic": {
+        "descrizione": "I chiodi di garofano e l'aglio sono spezie completamente diverse",
+        "inappropriatezza": 9
+    },
+    "cranberry herbal tea bag": {
+        "descrizione": "Il tè ai mirtilli è molto diverso dai mirtilli puri",
+        "inappropriatezza": 8
+    },
+    "peach wine": {
+        "descrizione": "Il vino alla pesca è molto diverso dalla pesca",
+        "inappropriatezza": 8
+    },
+    "very cherry": {
+        "descrizione": "Sembra riferirsi a caramelle/dolciumi, non a ciliegie fresche",
+        "inappropriatezza": 7
+    },"package macaroni": {
+        "descrizione": "Il packaging potrebbe contenere altri elementi oltre alla pasta",
+        "inappropriatezza": 2
+    },
+    "daiquiri mix": {
+        "descrizione": "Il mix per daiquiri ha composizione e valori nutrizionali molto diversi dal daiquiri preparato",
+        "inappropriatezza": 7
+    },
+    "cranberry liqueur": {
+        "descrizione": "Il liquore al mirtillo ha valori nutrizionali molto diversi dal mirtillo fresco",
+        "inappropriatezza": 8
+    },
+    "chilli paste": {
+        "descrizione": "La pasta di peperoncino ha una concentrazione e composizione molto diversa dal peperoncino fresco",
+        "inappropriatezza": 7
+    },
+    "cassia chip": {
+        "descrizione": "La cassia e un generico 'chip' sono alimenti completamente diversi",
+        "inappropriatezza": 10
+    },
+    "red rice vinegar": {
+        "descrizione": "L'aceto di riso rosso è molto diverso dal riso rosso",
+        "inappropriatezza": 8
+    },
+    "lime pepper": {
+        "descrizione": "Il pepe al lime ha una composizione diversa dal lime",
+        "inappropriatezza": 8
+    },
+    "rose syrup": {
+        "descrizione": "Lo sciroppo di rosa ha valori nutrizionali molto diversi dalla rosa",
+        "inappropriatezza": 9
+    },
+    "chocolate instant pudding": {
+        "descrizione": "Il budino istantaneo al cioccolato ha una composizione diversa dal cioccolato puro",
+        "inappropriatezza": 7
+    },
+    "sugar pumpkin": {
+        "descrizione": "La zucca zuccherina è un tipo di zucca, non zucchero",
+        "inappropriatezza": 10
+    },
+    "wooden popsicle stick": {
+        "descrizione": "Il bastoncino di legno non è commestibile e non ha senso mapparlo con il ghiacciolo",
+        "inappropriatezza": 10
+    },
+    "walker chicken potato chip": {
+        "descrizione": "Le patatine al gusto di pollo hanno una composizione molto diversa dal pollo",
+        "inappropriatezza": 9
+    },
+    "carrot cake": {
+        "descrizione": "La torta alle carote ha una composizione molto diversa dalle carote pure",
+        "inappropriatezza": 8
+    },
+    "jar candied cherry": {
+        "descrizione": "Le ciliegie candite hanno valori nutrizionali molto diversi dalle ciliegie fresche",
+        "inappropriatezza": 7
+    },"chocolate swiss roll": {
+        "descrizione": "Un swiss roll al cioccolato è un dolce complesso, non può essere approssimato con il solo cioccolato",
+        "inappropriatezza": 8
+    },
+    "artichoke oil": {
+        "descrizione": "L'olio di carciofo ha proprietà nutrizionali diverse dal carciofo stesso",
+        "inappropriatezza": 7
+    },
+    "black bean paste": {
+        "descrizione": "La pasta di fagioli neri ha una concentrazione e composizione diversa dai fagioli neri interi",
+        "inappropriatezza": 6
+    },
+    "turkey chourico": {
+        "descrizione": "Il chourico di tacchino è un insaccato specifico, non approssimabile con il solo tacchino",
+        "inappropriatezza": 7
+    },
+    "peach salsa": {
+        "descrizione": "La salsa di pesca è una preparazione complessa, non riconducibile alla sola pesca",
+        "inappropriatezza": 6
+    },
+    "citrus mixed candied peel": {
+        "descrizione": "La scorza candita di agrumi ha proprietà nutrizionali molto diverse dalla frutta secca generica",
+        "inappropriatezza": 6
+    },
+    "pumpkin quick bread mix": {
+        "descrizione": "Un mix per pane alla zucca è una preparazione complessa, non approssimabile con la sola zucca",
+        "inappropriatezza": 8
+    },
+    "egg replacer": {
+        "descrizione": "Il sostituto dell'uovo ha una composizione completamente diversa dall'uovo",
+        "inappropriatezza": 9
+    },
+    "fruit vinegar": {
+        "descrizione": "L'aceto di frutta ha proprietà nutrizionali molto diverse dalla frutta",
+        "inappropriatezza": 8
+    },
+    "fruit cocktail-juice": {
+        "descrizione": "Un cocktail di succhi di frutta ha una composizione diversa dalla semplice frutta",
+        "inappropriatezza": 6
+    },
+    "pineapple-orange juice concentrate": {
+        "descrizione": "Il concentrato di succo di ananas e arancia è diverso dal generico succo",
+        "inappropriatezza": 5
+    },
+    "chicken salad": {
+        "descrizione": "L'insalata di pollo è una preparazione complessa, non riconducibile alle sole verdure",
+        "inappropriatezza": 7
+    },
+    "asian chili-garlic sauce": {
+        "descrizione": "La salsa chili-aglio asiatica è una preparazione complessa, non riconducibile al solo aglio",
+        "inappropriatezza": 7
+    },
+    "pears in heavy syrup": {
+        "descrizione": "Le pere sciroppate hanno una composizione nutrizionale diversa dalle pere fresche",
+        "inappropriatezza": 6
+    },
+    "colored sugar sprinkle": {
+        "descrizione": "Le decorazioni di zucchero colorato sono diverse dal semplice zucchero",
+        "inappropriatezza": 5
+    },"kool-aid mix": {
+        "descrizione": "Il kool-aid mix è una bevanda in polvere zuccherata, molto diversa da un'arancia fresca",
+        "inappropriatezza": 9
+    },
+    "sour cream and chive Pasta Roni": {
+        "descrizione": "È un piatto di pasta preparato con panna acida e erba cipollina, non solo panna acida",
+        "inappropriatezza": 8
+    },
+    "frozen dinner roll": {
+        "descrizione": "Un panino surgelato non è paragonabile a un pasto completo surgelato",
+        "inappropriatezza": 8
+    },
+    "beef consomme soup": {
+        "descrizione": "Una zuppa di manzo è molto diversa dalla carne di manzo pura",
+        "inappropriatezza": 7
+    },
+    "Bacardi Fuzzy Navel mix": {
+        "descrizione": "Un mix per cocktail è molto diverso dal rum Bacardi puro",
+        "inappropriatezza": 8
+    },
+    "Hawaiian Punch": {
+        "descrizione": "Una bevanda zuccherata artificiale è diversa da un punch tradizionale",
+        "inappropriatezza": 7
+    },
+    "chicken-flavored vegetarian seasoning": {
+        "descrizione": "Un condimento vegetariano con aroma di pollo è molto diverso da un generico condimento",
+        "inappropriatezza": 6
+    },
+    "strawberry vodka": {
+        "descrizione": "La vodka aromatizzata alla fragola è diversa sia dalla fragola che dalla vodka pura",
+        "inappropriatezza": 7
+    },
+    "dehydrated soup greens": {
+        "descrizione": "Verdure disidratate per zuppe sono diverse da una zuppa completa",
+        "inappropriatezza": 8
+    },
+    "pie cherry": {
+        "descrizione": "Le ciliegie per torte sono diverse da una torta intera",
+        "inappropriatezza": 8
+    },
+    "chamomile flower": {
+        "descrizione": "I fiori di camomilla freschi sono diversi dal tè",
+        "inappropriatezza": 7
+    },
+    "onion skin": {
+        "descrizione": "La buccia della cipolla è molto diversa dalla cipolla intera",
+        "inappropriatezza": 9
+    },
+    "pama pomegranate liqueur": {
+        "descrizione": "Un liquore al melograno è molto diverso dal frutto del melograno",
+        "inappropriatezza": 8
+    },
+    "cherry ripe candy bar": {
+        "descrizione": "Una barretta di cioccolato alla ciliegia è molto diversa dalle ciliegie",
+        "inappropriatezza": 8
+    },
+    "nama shoyu": {
+        "descrizione": "Una specifica varietà di salsa di soia non pastorizzata è diversa dalla salsa di soia generica",
+        "inappropriatezza": 4
+    },
+    "malibu coconut": {
+        "descrizione": "Il liquore al cocco Malibu è molto diverso dal rum generico",
+        "inappropriatezza": 7
+    },
+    "elk rump roast": {
+        "descrizione": "L'arrosto di alce è significativamente diverso dalla carne di alce generica",
+        "inappropriatezza": 5
+    },
+    "sorghum molasses": {
+        "descrizione": "Il melasso di sorgo è molto diverso dal sorgo come cereale",
+        "inappropriatezza": 9
+    },"fruit dip mix": {
+        "descrizione": "Un mix per intingolo alla frutta è sostanzialmente diverso dalla marmellata in termini di composizione e valori nutrizionali",
+        "inappropriatezza": 7
+    },
+    "caramel dip": {
+        "descrizione": "Una salsa al caramello ha una composizione molto diversa dallo zucchero semplice",
+        "inappropriatezza": 8
+    },
+    "garlic spread": {
+        "descrizione": "Una crema/salsa all'aglio ha una composizione diversa sia dall'aglio fresco che dall'aglio in polvere",
+        "inappropriatezza": 7
+    },
+    "moose rump roast": {
+        "descrizione": "La carne di alce ha un profilo nutrizionale significativamente diverso dalla carne bovina",
+        "inappropriatezza": 8
+    },
+    "emulsion": {
+        "descrizione": "Un'emulsione generica non può essere approssimata con le mandorle",
+        "inappropriatezza": 9
+    },
+    "patty": {
+        "descrizione": "Un generico patty (polpetta/hamburger) non può essere approssimato con la menta piperita",
+        "inappropriatezza": 10
+    },
+    "canola oil mayonnaise": {
+        "descrizione": "La maionese con olio di canola non può essere approssimata con il solo olio di canola",
+        "inappropriatezza": 6
+    },
+    "frying": {
+        "descrizione": "Il termine 'frying' è un metodo di cottura, non può essere approssimato con l'olio",
+        "inappropriatezza": 9
+    },
+    "coconut pudding": {
+        "descrizione": "Un budino al cocco non può essere approssimato né col cocco né col budino generico",
+        "inappropriatezza": 7
+    },
+    "shaved ice": {
+        "descrizione": "Il ghiaccio tritato è sostanzialmente diverso dal gelato",
+        "inappropriatezza": 8
+    },
+    "fruit salad": {
+        "descrizione": "Una macedonia è una miscela di frutti diversi, non può essere approssimata con un generico 'frutto'",
+        "inappropriatezza": 6
+    },"Rice Dream milk": {
+        "descrizione": "Rice Dream milk è una bevanda specifica a base di riso, mentre 'rice' è il cereale grezzo. C è più appropriato.",
+        "inappropriatezza": 8
+    },
+    "8-inch unbaked pie shell": {
+        "descrizione": "Una base per torta non può essere approssimata con una torta intera o biscotti, hanno composizioni molto diverse",
+        "inappropriatezza": 7
+    },
+    "chowder": {
+        "descrizione": "Chowder è una zuppa cremosa che può contenere vari ingredienti, non può essere approssimata con frutti di mare",
+        "inappropriatezza": 8
+    },
+    "pomegranate-blueberry juice": {
+        "descrizione": "Un succo specifico non può essere approssimato con 'juice' generico, le composizioni nutritive sono diverse",
+        "inappropriatezza": 6
+    },
+    "prepared sweet-and-sour mix": {
+        "descrizione": "Una salsa agrodolce preparata non può essere approssimata con succo di frutta",
+        "inappropriatezza": 9
+    },
+    "raspberry Schnapps": {
+        "descrizione": "Un liquore al lampone non può essere approssimato con il frutto lampone",
+        "inappropriatezza": 9
+    },
+    "ground nut oil": {
+        "descrizione": "L'olio di arachidi non può essere approssimato con la frutta secca",
+        "inappropriatezza": 8
+    },
+    "jalapeno ketchup": {
+        "descrizione": "Il ketchup al jalapeno non può essere approssimato con il solo jalapeno",
+        "inappropriatezza": 7
+    },
+    "peach and vidallia hot sauce": {
+        "descrizione": "Una salsa piccante specifica non può essere approssimata con pesca o verdure generiche",
+        "inappropriatezza": 8
+    },
+    "soy vay": {
+        "descrizione": "Soy vay è una marca di salse, non può essere approssimata con soia",
+        "inappropriatezza": 9
+    },
+    "apple dip": {
+        "descrizione": "Una salsa per immersione non può essere approssimata con la mela o marmellata",
+        "inappropriatezza": 7
+    },
+    "lychee tea": {
+        "descrizione": "Il tè al litchi non può essere approssimato con il solo litchi",
+        "inappropriatezza": 7
+    },
+    "goya sazon": {
+        "descrizione": "Goya sazon è un condimento specifico, non può essere approssimato con il coriandolo",
+        "inappropriatezza": 8
+    },
+    "dash almond flavoring": {
+        "descrizione": "L'aroma di mandorla non può essere approssimato con le mandorle",
+        "inappropriatezza": 8
+    },
+    "gold fish cracker": {
+        "descrizione": "I crackers Goldfish sono un prodotto specifico che non può essere approssimato con pesce o crackers generici",
+        "inappropriatezza": 6
+    },"cranberry horseradish": {
+        "descrizione": "Il cranberry horseradish è una salsa/condimento che combina mirtilli e rafano, molto diverso dal solo cranberry",
+        "inappropriatezza": 8
+    },
+    "vegan chicken seasoning": {
+        "descrizione": "Il condimento vegano al pollo è un mix di spezie specifico, diverso dal condimento per pollo generico",
+        "inappropriatezza": 6
+    },
+    "condensed vegetable beef soup": {
+        "descrizione": "La zuppa condensata è molto diversa dalla zuppa normale, e ancora più diversa dalle verdure in lattina",
+        "inappropriatezza": 8
+    },
+    "pork schnitzel": {
+        "descrizione": "La cotoletta di maiale impanata ha valori nutrizionali molto diversi dal maiale semplice",
+        "inappropriatezza": 7
+    },
+    "korean red pepper paste": {
+        "descrizione": "Il gochujang è una pasta fermentata molto diversa dal peperone rosso fresco",
+        "inappropriatezza": 9
+    },
+    "miniature phyllo cup": {
+        "descrizione": "I cestini di pasta fillo sono molto diversi dal pane croccante",
+        "inappropriatezza": 8
+    },
+    "box instant lemon pudding": {
+        "descrizione": "Il pudding istantaneo al limone in polvere è diverso dal pudding al limone pronto",
+        "inappropriatezza": 6
+    },
+    "pineapple jam": {
+        "descrizione": "La marmellata di ananas ha valori nutrizionali molto diversi dall'ananas fresco",
+        "inappropriatezza": 8
+    },
+    "link chicken & apple sausage": {
+        "descrizione": "La salsiccia di pollo e mela è molto diversa dal pollo semplice",
+        "inappropriatezza": 8
+    },
+    "miso water": {
+        "descrizione": "L'acqua di miso è molto diluita rispetto al miso",
+        "inappropriatezza": 7
+    },
+    "white chocolate syrup": {
+        "descrizione": "Lo sciroppo al cioccolato bianco è molto diverso dal cioccolato bianco solido",
+        "inappropriatezza": 7
+    },
+    "Splenda Sugar Blend": {
+        "descrizione": "Il dolcificante Splenda ha valori nutrizionali molto diversi dallo zucchero",
+        "inappropriatezza": 9
+    },
+    "vanilla vodka": {
+        "descrizione": "La vodka alla vaniglia è molto diversa sia dalla vaniglia che dalla vodka normale",
+        "inappropriatezza": 8
+    },
+    "amish batter": {
+        "descrizione": "La pastella Amish è molto diversa dal pane",
+        "inappropriatezza": 7
+    },
+    "powdered sugar glaze": {
+        "descrizione": "La glassa di zucchero a velo è molto diversa dallo zucchero a velo semplice",
+        "inappropriatezza": 7
+    },
+    "sugar beet molasses": {
+        "descrizione": "La melassa di barbabietola da zucchero è molto diversa dallo zucchero",
+        "inappropriatezza": 8
+    },"wood chip": {
+        "descrizione": "Wood chip non è un ingrediente alimentare, mentre chip si riferisce a patatine/snack",
+        "inappropriatezza": 10
+    },
+    "candy leaf": {
+        "descrizione": "Candy leaf è una pianta (Stevia), mentre candy si riferisce a caramelle/dolciumi",
+        "inappropriatezza": 8
+    },
+    "bread enhancer": {
+        "descrizione": "Bread enhancer è un additivo/miglioratore, mentre bread è il pane stesso",
+        "inappropriatezza": 9
+    },
+    "espresso vodka": {
+        "descrizione": "Espresso vodka è un liquore aromatizzato, mentre espresso è una bevanda caffeinata non alcolica",
+        "inappropriatezza": 7
+    },
+    "hot": {
+        "descrizione": "Hot è un aggettivo generico, non può essere mappato su pepper che è un ingrediente specifico",
+        "inappropriatezza": 10
+    },
+    "japanese rice wine": {
+        "descrizione": "Japanese rice wine (sake) è una bevanda alcolica fermentata, mentre japanese rice è riso",
+        "inappropriatezza": 8
+    },
+    "container apple crumble mix": {
+        "descrizione": "È un preparato premiscelato specifico, non confrontabile con apple crumble che è il prodotto finito",
+        "inappropriatezza": 6
+    },
+    "poi": {
+        "descrizione": "Poi è un alimento tradizionale hawaiano a base di taro, non ha un mapping appropriato",
+        "inappropriatezza": 10
+    },
+    "kumquat puree": {
+        "descrizione": "Il purè di kumquat ha una composizione diversa dal frutto intero",
+        "inappropriatezza": 5
+    },"kool-aide unsweetened lemonade mix": {
+        "descrizione": "Il mix in polvere ha una composizione diversa dalla limonata pronta",
+        "inappropriatezza": 6
+    },
+    "tart jelly": {
+        "descrizione": "La gelatina di torta è molto diversa da una torta",
+        "inappropriatezza": 8
+    },
+    "oatmeal stout beer": {
+        "descrizione": "La birra stout all'avena è molto diversa dall'avena",
+        "inappropriatezza": 9
+    },
+    "coconut marshmallow": {
+        "descrizione": "Il marshmallow al cocco è diverso dal cocco",
+        "inappropriatezza": 7
+    },
+    "grape molasses": {
+        "descrizione": "La melassa d'uva è un prodotto molto diverso dall'uva",
+        "inappropriatezza": 8
+    },
+    "water or milk alternative": {
+        "descrizione": "L'acqua ha proprietà nutrizionali molto diverse dai sostituti del latte",
+        "inappropriatezza": 9
+    },
+    "sesame seed paste": {
+        "descrizione": "La pasta di semi di sesamo ha proprietà diverse dai semi interi",
+        "inappropriatezza": 6
+    },
+    "candy orange slices": {
+        "descrizione": "Le caramelle all'arancia sono molto diverse dalle caramelle generiche",
+        "inappropriatezza": 7
+    },
+    "candy lemon slices": {
+        "descrizione": "Le caramelle al limone sono molto diverse dalle caramelle generiche",
+        "inappropriatezza": 7
+    },
+    "davinci gourmet classic almond syrup": {
+        "descrizione": "Lo sciroppo di mandorla è molto diverso dalle mandorle",
+        "inappropriatezza": 8
+    },
+    "orange liquid": {
+        "descrizione": "Un liquido all'arancia generico può essere molto diverso dall'arancia",
+        "inappropriatezza": 7
+    },
+    "garlic teriyaki sauce": {
+        "descrizione": "La salsa teriyaki all'aglio è molto diversa dall'aglio",
+        "inappropriatezza": 8
+    },
+    "sucanat with honey": {
+        "descrizione": "Il sucanat con miele ha proprietà diverse dal miele puro",
+        "inappropriatezza": 6
+    },
+    "ice cold water": {
+        "descrizione": "Il ghiaccio ha proprietà fisiche diverse dall'acqua fredda",
+        "inappropriatezza": 5
+    },"orange paste food coloring": {
+        "descrizione": "Il colorante alimentare è un additivo completamente diverso dall'arancia come frutto",
+        "inappropriatezza": 10
+    },
+    "thyme honey": {
+        "descrizione": "Il timo è un'erba aromatica mentre si vuole rappresentare il miele al timo",
+        "inappropriatezza": 9
+    },
+    "Krispie": {
+        "descrizione": "I Krispies sono cereali specifici, diversi dai crackers",
+        "inappropriatezza": 8
+    },
+    "matzot": {
+        "descrizione": "Il matzot è un tipo specifico di pane azzimo ebraico, con caratteristiche nutrizionali diverse dal pane comune",
+        "inappropriatezza": 7
+    },
+    "finely chopped lime peel": {
+        "descrizione": "La scorza di lime ha proprietà nutrizionali molto diverse dal lime intero o dal succo di frutta",
+        "inappropriatezza": 8
+    },
+    "broiler": {
+        "descrizione": "Il termine broiler è troppo generico e non necessariamente si riferisce a carne di pollo",
+        "inappropriatezza": 6
+    },
+    "brer rabbit molasses": {
+        "descrizione": "La melassa è completamente diversa dalla carne di coniglio",
+        "inappropriatezza": 10
+    },
+    "garlic and herb sauce mix": {
+        "descrizione": "Una salsa con aglio ed erbe è molto diversa dall'aglio da solo",
+        "inappropriatezza": 8
+    },
+    "Salad Supreme dry seasoning": {
+        "descrizione": "Un condimento secco è molto diverso da un'insalata",
+        "inappropriatezza": 9
+    },
+    "bottled gingerroot": {
+        "descrizione": "La radice di zenzero in bottiglia è molto diversa dalla root beer",
+        "inappropriatezza": 10
+    },
+    "garlic wine vinegar": {
+        "descrizione": "L'aceto aromatizzato all'aglio è diverso dall'aglio puro",
+        "inappropriatezza": 8
+    },
+    "marachino cherry liquid": {
+        "descrizione": "Il liquido delle ciliegie al maraschino è molto diverso dalle ciliegie fresche",
+        "inappropriatezza": 8
+    }, "cracker barrel pancake mix": {
+        "descrizione": "Un mix per pancake è sostanzialmente diverso da un cracker sia per composizione che per valori nutrizionali",
+        "inappropriatezza": 9
+    },
+    "vindaloo masala": {
+        "descrizione": "Manca un termine di confronto B appropriato",
+        "inappropriatezza": 8
+    },
+    "vital gluten": {
+        "descrizione": "Il glutine puro è molto diverso dal grano intero in termini di composizione proteica",
+        "inappropriatezza": 8
+    },
+    "box ok lime Jell-O gelatin": {
+        "descrizione": "La gelatina al lime è molto diversa dal lime frutto",
+        "inappropriatezza": 9
+    },
+    "andes mint chip": {
+        "descrizione": "Un chip di cioccolato alla menta è diverso dalla menta pura",
+        "inappropriatezza": 7
+    },
+    "hersheys chocolate milk": {
+        "descrizione": "Il brand specifico Hershey's non è un termine di confronto appropriato",
+        "inappropriatezza": 6
+    },
+    "hersheys chocolate candy bar": {
+        "descrizione": "Il brand specifico Hershey's non è un termine di confronto appropriato",
+        "inappropriatezza": 6
+    },
+    "chocolate rosette": {
+        "descrizione": "Una decorazione di cioccolato ha composizione diversa dal cioccolato puro",
+        "inappropriatezza": 5
+    },
+    "fresh wild rose petal": {
+        "descrizione": "I petali di rosa selvatica sono molto diversi dalla rosa come pianta",
+        "inappropriatezza": 8
+    },
+    "canela": {
+        "descrizione": "Manca un termine di confronto B appropriato",
+        "inappropriatezza": 8
+    },
+    "Turkish Delight": {
+        "descrizione": "Manca un termine di confronto B appropriato",
+        "inappropriatezza": 8
+    },
+    "chocolate-coated honeycomb candy": {
+        "descrizione": "Un dolce al miele ricoperto di cioccolato è molto diverso dal favo di miele puro",
+        "inappropriatezza": 9
+    },
+    "mochi flour": {
+        "descrizione": "La farina di mochi è significativamente diversa dal mochi come dolce finito",
+        "inappropriatezza": 7
+    },"chocolate Cool Whip": {
+        "descrizione": "Cool Whip è una crema montata con ingredienti e valori nutrizionali diversi dal cioccolato puro",
+        "inappropriatezza": 8
+    },
+    "spiced gumdrop": {
+        "descrizione": "Le caramelle gommose speziate hanno una composizione molto diversa dallo zucchero puro",
+        "inappropriatezza": 9
+    },
+    "chopped gumdrop": {
+        "descrizione": "Le caramelle gommose hanno una composizione molto diversa dallo zucchero puro",
+        "inappropriatezza": 9
+    },
+    "goose giblet stock": {
+        "descrizione": "Il brodo di rigaglie d'oca ha una composizione molto diversa dalla carne d'oca",
+        "inappropriatezza": 8
+    },
+    "rosette": {
+        "descrizione": "Rosette si riferisce probabilmente a un dolce/biscotto, non a cioccolato puro",
+        "inappropriatezza": 7
+    },
+    "milk ball": {
+        "descrizione": "Le palline di cioccolato al latte hanno una composizione diversa dal latte liquido",
+        "inappropriatezza": 8
+    },
+    "crushed wine biscuit": {
+        "descrizione": "I biscotti al vino hanno una composizione molto diversa dal vino",
+        "inappropriatezza": 9
+    },
+    "tangerine essential oil": {
+        "descrizione": "L'olio essenziale di mandarino ha proprietà e composizione molto diverse dal frutto",
+        "inappropriatezza": 10
+    },"apple wood chip": {
+        "descrizione": "I chips di legno di melo sono materiale per affumicatura, non un alimento come le mele",
+        "inappropriatezza": 10
+    },
+    "cherry wood chip": {
+        "descrizione": "I chips di legno di ciliegio sono materiale per affumicatura, non un alimento come le ciliegie",
+        "inappropriatezza": 10
+    },
+    "pure anise oil": {
+        "descrizione": "L'olio essenziale di anice è molto diverso dall'anice come spezia",
+        "inappropriatezza": 8
+    },
+    "xylitol": {
+        "descrizione": "Lo xilitolo è un dolcificante con proprietà molto diverse dallo zucchero",
+        "inappropriatezza": 7
+    },
+    "butter shortbread cookie": {
+        "descrizione": "Un biscotto al burro è molto diverso dal burro puro",
+        "inappropriatezza": 9
+    },
+    "red hot red cinnamon candies": {
+        "descrizione": "Le caramelle alla cannella sono molto diverse dalla cannella pura",
+        "inappropriatezza": 8
+    },
+    "dash salt & pepper": {
+        "descrizione": "La miscela sale e pepe non può essere rappresentata dal solo sale",
+        "inappropriatezza": 6
+    },
+    "prepared mincemeat": {
+        "descrizione": "Il mincemeat è una miscela di frutta e spezie, non carne di manzo",
+        "inappropriatezza": 9
+    },"wasabi mashed potato": {
+        "descrizione": "Wasabi mashed potato è un piatto composto che ha caratteristiche nutrizionali molto diverse dal wasabi puro",
+        "inappropriatezza": 8
+    },
+    "raspberry twist vodka": {
+        "descrizione": "Il liquore aromatizzato ha caratteristiche nutrizionali diverse sia dal lampone che dalla vodka pura",
+        "inappropriatezza": 7
+    },
+    "lemon balm sprig": {
+        "descrizione": "La melissa (lemon balm) è un'erba aromatica con proprietà molto diverse dal limone",
+        "inappropriatezza": 9
+    },
+    "orange blossom": {
+        "descrizione": "I fiori d'arancio hanno composizione e valori nutrizionali completamente diversi dall'arancia",
+        "inappropriatezza": 10
+    },
+    "peach Jell-O": {
+        "descrizione": "La gelatina alla pesca ha una composizione molto diversa dalla pesca fresca",
+        "inappropriatezza": 8
+    },
+    "raspberry Jello": {
+        "descrizione": "La gelatina al lampone ha una composizione molto diversa dal lampone fresco",
+        "inappropriatezza": 8
+    },
+    "blackberry Jell-O": {
+        "descrizione": "La gelatina alla mora ha una composizione molto diversa dalla mora fresca",
+        "inappropriatezza": 8
+    },
+    "cherry kijafa wine": {
+        "descrizione": "Il vino aromatizzato alla ciliegia ha caratteristiche nutrizionali diverse sia dalla ciliegia che dal vino generico",
+        "inappropriatezza": 7
+    },
+    "crab pollock": {
+        "descrizione": "Il surimi di merluzzo (pollock) ha una composizione nutrizionale diversa dal granchio vero",
+        "inappropriatezza": 8
+    },
+    "berry blue gelatin mix": {
+        "descrizione": "La gelatina ai frutti di bosco artificiale ha una composizione molto diversa dai frutti di bosco freschi",
+        "inappropriatezza": 8
+    },
+    "sugar-free white chocolate pudding": {
+        "descrizione": "Il budino senza zucchero ha una composizione molto diversa dal cioccolato bianco",
+        "inappropriatezza": 8
+    },
+    "vegetable protein": {
+        "descrizione": "Le proteine vegetali isolate hanno una composizione nutrizionale molto diversa dalle verdure intere",
+        "inappropriatezza": 7
+    },
+    "chamomile": {
+        "descrizione": "La camomilla è un'infusione di fiori con proprietà molto diverse dal tè",
+        "inappropriatezza": 7
+    },
+    "strawberry Cool Whip": {
+        "descrizione": "La panna montata aromatizzata alla fragola ha una composizione molto diversa dalla fragola fresca",
+        "inappropriatezza": 8
+    },"anchovy oil": {
+        "descrizione": "Anchovy oil è un condimento derivato dalle acciughe, mentre anchovy è il pesce intero. Hanno proprietà nutrizionali molto diverse.",
+        "inappropriatezza": 7
+    },
+    "jar bushs chili": {
+        "descrizione": "Un chili in barattolo è una preparazione complessa con più ingredienti, mentre il chili semplice è una spezia. Valori nutrizionali molto diversi.",
+        "inappropriatezza": 8
+    },
+    "sweet": {
+        "descrizione": "Il termine 'sweet' è troppo generico e non può essere approssimato con la patata dolce (sweet potato).",
+        "inappropriatezza": 9
+    },
+    "oil or fat": {
+        "descrizione": "La categoria 'oil or fat' include sia oli che grassi, mentre B si riferisce solo agli oli. È troppo generica.",
+        "inappropriatezza": 6
+    },
+    "tarragon white wine vinegar": {
+        "descrizione": "È un condimento specifico, non può essere approssimato con il solo dragoncello (tarragon).",
+        "inappropriatezza": 7
+    },
+    "feta salad dressing": {
+        "descrizione": "È un condimento complesso, non può essere approssimato con il solo formaggio feta.",
+        "inappropriatezza": 7
+    },
+    "black raspberry liqueur": {
+        "descrizione": "È un liquore, non può essere approssimato con il frutto del lampone.",
+        "inappropriatezza": 8
+    },
+    "thick fruit filling": {
+        "descrizione": "È una preparazione dolciaria, non può essere approssimata con la semplice frutta.",
+        "inappropriatezza": 7
+    },
+    "berry blue": {
+        "descrizione": "È un termine troppo generico/ambiguo per essere approssimato con berry.",
+        "inappropriatezza": 6
+    },
+    "rum raisin ice cream": {
+        "descrizione": "È un gelato complesso, non può essere approssimato con il solo rum.",
+        "inappropriatezza": 8
+    },
+    "watermelon rum": {
+        "descrizione": "È una bevanda alcolica aromatizzata, non può essere approssimata con l'anguria.",
+        "inappropriatezza": 8
+    },
+    "whipped cream vodka": {
+        "descrizione": "È una bevanda alcolica aromatizzata, non può essere approssimata con la panna montata.",
+        "inappropriatezza": 8
+    },
+    "squirrel": {
+        "descrizione": "Lo scoiattolo è una specie diversa dal coniglio, con valori nutrizionali differenti.",
+        "inappropriatezza": 9
+    },
+    "white cream-style corn": {
+        "descrizione": "È una preparazione specifica di mais, non può essere approssimata con il mais semplice.",
+        "inappropriatezza": 6
+    },
+    "hot pepper sesame oil": {
+        "descrizione": "È un olio aromatizzato specifico, non può essere approssimato con il peperoncino.",
+        "inappropriatezza": 7
+    },
+    "habanero peanut brittle": {
+        "descrizione": "È un dolce complesso, non può essere approssimato con il solo habanero.",
+        "inappropriatezza": 8
+    },"cereal cream": {
+        "descrizione": "Cereal e cream sono due ingredienti completamente diversi, uno è un cereale e l'altro è un prodotto lattiero-caseario",
+        "inappropriatezza": 9
+    },
+    "po boy roll": {
+        "descrizione": "Un po' boy roll è un tipo specifico di panino, mentre fish mixed è un mix di pesce generico - categorie diverse",
+        "inappropriatezza": 8
+    },
+    "buds": {
+        "descrizione": "Termine troppo generico per essere mappato a vegetables, potrebbe riferirsi a germogli specifici",
+        "inappropriatezza": 6
+    },
+    "instant vanilla flavor pudding and pie filling": {
+        "descrizione": "È un prodotto specifico per dessert, non può essere approssimato con vanilla semplice",
+        "inappropriatezza": 7
+    },
+    "torani coconut sugar-free syrup": {
+        "descrizione": "È uno sciroppo aromatizzato specifico, non può essere approssimato con coconut semplice",
+        "inappropriatezza": 7
+    },
+    "phyllo tart shell": {
+        "descrizione": "È una specifica base per torte in pasta fillo, non può essere approssimata con un generico tart o crispbread",
+        "inappropriatezza": 8
+    },
+    "nut and dried fruit filling": {
+        "descrizione": "È un ripieno composto sia da frutta secca che da frutta disidratata, non può essere rappresentato da uno solo dei componenti",
+        "inappropriatezza": 7
+    },
+    "froth": {
+        "descrizione": "Si riferisce alla schiuma/consistenza, non al latte in sé",
+        "inappropriatezza": 8
+    },
+    "sugar ice cream cone": {
+        "descrizione": "È un cono gelato specifico, non può essere approssimato con zucchero semplice",
+        "inappropriatezza": 9
+    },"amaretto flavored coffee creamer": {
+        "descrizione": "L'amaretto è un liquore, mentre il coffee creamer è un prodotto lattiero completamente diverso",
+        "inappropriatezza": 9
+    },
+    "wattleseed": {
+        "descrizione": "Il wattleseed è un seme australiano molto diverso dal seme di canapa",
+        "inappropriatezza": 8
+    },
+    "sour cream pie crust": {
+        "descrizione": "La crosta della torta è un prodotto da forno, mentre la sour cream è un latticino",
+        "inappropriatezza": 9
+    },
+    "buttered bread crumb": {
+        "descrizione": "Il pangrattato imburrato ha una composizione diversa dal pane imburrato",
+        "inappropriatezza": 6
+    },
+    "nut quick bread mix": {
+        "descrizione": "Un mix per pane è molto diverso dalla frutta secca",
+        "inappropriatezza": 9
+    },
+    "home fry": {
+        "descrizione": "Il termine è troppo generico e non specificato correttamente",
+        "inappropriatezza": 7
+    },
+    "cream filled cookie": {
+        "descrizione": "Un biscotto ripieno è diverso dalla crema semplice",
+        "inappropriatezza": 8
+    },
+    "ginger nut biscuit": {
+        "descrizione": "Un biscotto allo zenzero è diverso dallo zenzero puro",
+        "inappropriatezza": 8
+    },
+    "lean beef sausage": {
+        "descrizione": "Una salsiccia di manzo magro è diversa dal manzo magro puro",
+        "inappropriatezza": 6
+    },
+    "diced potatoes": {
+        "descrizione": "Le patate a dadini sono completamente diverse dagli spinaci",
+        "inappropriatezza": 10
+    },"parchment paper": {
+        "descrizione": "Parchment paper è un materiale non commestibile, mentre coffee è una bevanda. Sono completamente diversi e non correlati.",
+        "inappropriatezza": 10
+    },
+    "whole wheat hamburger bun": {
+        "descrizione": "Un panino per hamburger integrale è un prodotto da forno specifico, mentre wheat è solo il grano. Sono correlati ma nutrizionalmente molto diversi.",
+        "inappropriatezza": 7
+    },
+    "ground rose petal": {
+        "descrizione": "I petali di rosa macinati sono una spezia/ingrediente aromatico, mentre rose si riferisce al fiore. Hanno usi e valori nutrizionali molto diversi.",
+        "inappropriatezza": 8
+    },
+    "shrimp boil seasoning": {
+        "descrizione": "È un mix di spezie per condire i gamberi, mentre shrimp si riferisce ai gamberi stessi. Sono ingredienti completamente diversi.",
+        "inappropriatezza": 9
+    },
+    "threads": {
+        "descrizione": "Il termine threads da solo è troppo generico e non identificabile come ingrediente alimentare specifico.",
+        "inappropriatezza": 8
+    },
+    "pepper bacon": {
+        "descrizione": "È bacon pepato, mentre pepper è solo pepe. Sono ingredienti diversi con valori nutrizionali molto differenti.",
+        "inappropriatezza": 7
+    },
+    "mesquite wood chips": {
+        "descrizione": "Sono trucioli di legno per affumicatura, non commestibili, mentre chips si riferisce tipicamente a patatine/snack. Completamente diversi.",
+        "inappropriatezza": 10
+    },
+    "Campbells condensed cream of celery soup": {
+        "descrizione": "È una zuppa preparata specifica con valori nutrizionali propri, mentre celery è solo sedano fresco. Sono nutrizionalmente molto diversi.",
+        "inappropriatezza": 6
+    },"godiva milk chocolate liqueur": {
+        "descrizione": "Il liquore al cioccolato ha proprietà e composizione molto diverse dal cioccolato al latte normale",
+        "inappropriatezza": 8
+    },
+    "tomato jam": {
+        "descrizione": "La marmellata di pomodoro ha proprietà nutrizionali diverse dal pomodoro fresco",
+        "inappropriatezza": 7
+    },
+    "herb seasoned stuffing mix": {
+        "descrizione": "Le erbe aromatiche da sole non sono rappresentative di un mix per ripieno",
+        "inappropriatezza": 9
+    },
+    "warrigal green": {
+        "descrizione": "È una specifica verdura nativa australiana, non rappresentativa delle verdure generiche",
+        "inappropriatezza": 6
+    },
+    "turkey drippings": {
+        "descrizione": "I succhi di cottura del tacchino hanno composizione molto diversa dalla carne di tacchino",
+        "inappropriatezza": 8
+    },
+    "butter pound cake": {
+        "descrizione": "Una torta al burro è molto diversa dal solo burro come ingrediente",
+        "inappropriatezza": 9
+    },
+    "annatto water": {
+        "descrizione": "L'acqua colorata con annatto ha proprietà diverse dall'acqua pura",
+        "inappropriatezza": 5
+    },
+    "cloves minced garlic": {
+        "descrizione": "I chiodi di garofano sono molto diversi dall'aglio",
+        "inappropriatezza": 10
+    },
+    "tempeh bacon": {
+        "descrizione": "Il tempeh ha una composizione nutrizionale molto diversa dal bacon",
+        "inappropriatezza": 9
+    },
+    "orange lentil": {
+        "descrizione": "Le lenticchie arancioni sono un legume, non hanno nulla a che fare con l'arancia",
+        "inappropriatezza": 10
+    },
+    "bacon butter pan drippings": {
+        "descrizione": "I grassi di cottura hanno composizione diversa sia dal bacon che dal burro",
+        "inappropriatezza": 7
+    },
+    "box sure-gel fruit pectin": {
+        "descrizione": "La pectina è un additivo molto diverso dalla frutta intera",
+        "inappropriatezza": 9
+    },"butter mint": {
+        "descrizione": "Un dolce alla menta (butter mint) è completamente diverso dal burro (butter)",
+        "inappropriatezza": 9
+    },
+    "carrot water": {
+        "descrizione": "L'acqua di carota ha proprietà nutrizionali molto diverse dalla carota intera",
+        "inappropriatezza": 7
+    },
+    "butter rum": {
+        "descrizione": "Il rum al burro è una bevanda alcolica, completamente diversa dal burro",
+        "inappropriatezza": 9
+    },
+    "fruit bread": {
+        "descrizione": "Il pane alla frutta non può essere approssimato con la sola frutta",
+        "inappropriatezza": 8
+    },
+    "spinach noodle": {
+        "descrizione": "La pasta agli spinaci non può essere approssimata con i soli spinaci",
+        "inappropriatezza": 8
+    },
+    "potato crisp": {
+        "descrizione": "Le patatine fritte hanno valori nutrizionali molto diversi dalle patate crude",
+        "inappropriatezza": 7
+    },
+    "sesame butter": {
+        "descrizione": "Il burro di sesamo (tahini) è molto diverso dal burro normale",
+        "inappropriatezza": 8
+    },
+    "apple schnapps": {
+        "descrizione": "Un liquore alla mela è completamente diverso dalla mela",
+        "inappropriatezza": 9
+    },"box peach Jell-O": {
+        "descrizione": "Il Jell-O è un dessert gelatinoso che ha valori nutrizionali molto diversi dalla pesca fresca",
+        "inappropriatezza": 8
+    },
+    "garden salsa pepper": {
+        "descrizione": "La salsa è una preparazione complessa con ingredienti multipli, non paragonabile a un singolo peperone",
+        "inappropriatezza": 7
+    },
+    "raisin pumpernickel bread": {
+        "descrizione": "L'uvetta da sola non rappresenta adeguatamente un pane complesso come il pumpernickel con uvetta",
+        "inappropriatezza": 8
+    },
+    "Pickapeppa Sauce": {
+        "descrizione": "Una salsa specifica e complessa non può essere approssimata da una generica 'sauce'",
+        "inappropriatezza": 7
+    },
+    "lavender bud": {
+        "descrizione": "Il termine 'bud' è troppo generico per rappresentare la lavanda che ha proprietà specifiche",
+        "inappropriatezza": 6
+    },
+    "Skor chips": {
+        "descrizione": "Skor chips sono dolciumi specifici che non possono essere rappresentati da generiche chips",
+        "inappropriatezza": 7
+    },
+    "cherry frosting": {
+        "descrizione": "La ciliegia fresca ha valori nutrizionali molto diversi da una glassa alla ciliegia",
+        "inappropriatezza": 8
+    },
+    "dulce de leche ice cream": {
+        "descrizione": "Il dulce de leche da solo non rappresenta adeguatamente un gelato al dulce de leche",
+        "inappropriatezza": 6
+    },
+    "bottom": {
+        "descrizione": "Il termine 'bottom' è troppo vago e non può essere equiparato al carciofo",
+        "inappropriatezza": 9
+    },
+    "lemon thyme leaf": {
+        "descrizione": "Il limone non rappresenta adeguatamente il timo al limone che è un'erba aromatica specifica",
+        "inappropriatezza": 7
+    },
+    "packet hot chocolate cocoa powder": {
+        "descrizione": "La cioccolata calda preparata ha valori nutrizionali diversi dal cacao in polvere puro",
+        "inappropriatezza": 6
+    },
+    "low-fat buttermilk baking mix": {
+        "descrizione": "Il latticello da solo non rappresenta un mix da forno che contiene altri ingredienti",
+        "inappropriatezza": 7
+    },
+    "seafood stock": {
+        "descrizione": "Il brodo di pesce ha valori nutrizionali molto diversi dal pesce intero",
+        "inappropriatezza": 7
+    },"citrus lemon pepper": {
+        "descrizione": "Il citrus lemon pepper è un condimento specifico con agrumi, mentre lemon pepper è un mix di spezie diverso",
+        "inappropriatezza": 4
+    },
+    "hot carbonated lemon-lime beverage": {
+        "descrizione": "La temperatura può influenzare significativamente i valori nutrizionali delle bevande gassate",
+        "inappropriatezza": 3
+    },
+    "crisco butter flavor shortening": {
+        "descrizione": "È un grasso vegetale con aroma di burro, molto diverso dal burro vero",
+        "inappropriatezza": 8
+    },
+    "dark Creme de Cacao": {
+        "descrizione": "È un liquore, non comparabile al cacao puro",
+        "inappropriatezza": 9
+    },
+    "Godiva white chocolate liqueur": {
+        "descrizione": "È un liquore, non comparabile al cioccolato bianco puro",
+        "inappropriatezza": 9
+    },
+    "cucumber ranch dressing": {
+        "descrizione": "È un condimento complesso, non comparabile al solo cetriolo",
+        "inappropriatezza": 8
+    },
+    "red grape tomato": {
+        "descrizione": "È un pomodoro, non un'uva rossa",
+        "inappropriatezza": 10
+    },
+    "yellow grape tomato": {
+        "descrizione": "È un pomodoro, non un'uva",
+        "inappropriatezza": 10
+    },
+    "acini di pepe": {
+        "descrizione": "È un tipo di pasta, non pepe",
+        "inappropriatezza": 10
+    },
+    "reserved pasta cooking liquid": {
+        "descrizione": "È acqua di cottura, non pasta",
+        "inappropriatezza": 10
+    },
+    "Milk Dud": {
+        "descrizione": "È una caramella al cioccolato, non latte",
+        "inappropriatezza": 10
+    },
+    "bubble": {
+        "descrizione": "Termine troppo generico per essere mappato a cereali",
+        "inappropriatezza": 8
+    },
+    "onion and pepper blend": {
+        "descrizione": "È un mix di verdure, non solo cipolla",
+        "inappropriatezza": 7
+    },"stars": {
+        "descrizione": "Stars è troppo generico e non è chiaro che si riferisca al cioccolato",
+        "inappropriatezza": 8
+    },
+    "gluten-free crisp rice cereal": {
+        "descrizione": "Crisp è troppo generico e non specifica il tipo di cereale",
+        "inappropriatezza": 7
+    },
+    "cream of shrimp soup": {
+        "descrizione": "La crema semplice è molto diversa da una zuppa di gamberi in crema",
+        "inappropriatezza": 9
+    },
+    "almond brickle chips": {
+        "descrizione": "Le chips di mandorle caramellate sono diverse dalle mandorle semplici",
+        "inappropriatezza": 7
+    },
+    "chicken rub": {
+        "descrizione": "Il rub è una miscela di spezie, non carne di pollo",
+        "inappropriatezza": 10
+    },
+    "rounds": {
+        "descrizione": "Termine troppo generico e ambiguo per essere mappato al pane",
+        "inappropriatezza": 8
+    },
+    "orange liqueur or orange juice": {
+        "descrizione": "Il liquore all'arancia e il succo d'arancia sono bevande molto diverse dall'arancia",
+        "inappropriatezza": 8
+    },
+    "almond bark chocolate": {
+        "descrizione": "È un tipo di cioccolato, non mandorle semplici",
+        "inappropriatezza": 9
+    },
+    "ammonia": {
+        "descrizione": "L'ammoniaca è un composto chimico completamente diverso dal bicarbonato",
+        "inappropriatezza": 10
+    },
+    "lime yogurt": {
+        "descrizione": "Lo yogurt al lime è diverso dal lime semplice",
+        "inappropriatezza": 8
+    },
+    "wash": {
+        "descrizione": "Wash è troppo generico e ambiguo per essere mappato alle uova",
+        "inappropriatezza": 9
+    },"berry juice": {
+        "descrizione": "Il succo di bacche ha una composizione nutrizionale diversa dalle bacche intere, con meno fibre e nutrienti solidi",
+        "inappropriatezza": 6
+    },
+    "butternut": {
+        "descrizione": "La zucca butternut è un ortaggio, non un frutto generico",
+        "inappropriatezza": 9
+    },
+    "habanero mango hot sauce": {
+        "descrizione": "Una salsa composta è molto diversa dal solo peperoncino habanero",
+        "inappropriatezza": 8
+    },
+    "tang orange crystal": {
+        "descrizione": "Una bevanda in polvere zuccherata è molto diversa dall'arancia fresca",
+        "inappropriatezza": 8
+    },
+    "corn oil margarine": {
+        "descrizione": "La margarina è un prodotto diverso dall'olio di mais puro",
+        "inappropriatezza": 7
+    },
+    "powdered instant chocolate drink mix": {
+        "descrizione": "Una bevanda al cioccolato istantanea è diversa da una bevanda al cioccolato preparata",
+        "inappropriatezza": 6
+    },
+    "dill rye bread": {
+        "descrizione": "Il pane di segale all'aneto è molto diverso dall'aneto da solo",
+        "inappropriatezza": 9
+    },
+    "medium tart apple": {
+        "descrizione": "Una mela è molto diversa da una torta",
+        "inappropriatezza": 10
+    },
+    "orange slice candy": {
+        "descrizione": "Le caramelle all'arancia sono molto diverse dalle arance fresche",
+        "inappropriatezza": 9
+    },
+    "herb breadcrumb": {
+        "descrizione": "Il pangrattato alle erbe è diverso dalle erbe pure",
+        "inappropriatezza": 8
+    },
+    "instant pineapple pudding": {
+        "descrizione": "Un budino all'ananas è molto diverso dall'ananas fresco",
+        "inappropriatezza": 8
+    },
+    "garlic rub": {
+        "descrizione": "Una miscela per sfregamento all'aglio è diversa dall'aglio fresco",
+        "inappropriatezza": 7
+    },
+    "garlic & herb spreadable cheese": {
+        "descrizione": "Un formaggio spalmabile aromatizzato è molto diverso dall'aglio puro",
+        "inappropriatezza": 9
+    },
+    "chocolate mint kiss": {
+        "descrizione": "Una caramella al cioccolato e menta è diversa dal cioccolato alla menta generico",
+        "inappropriatezza": 6
+    },
+    "coffee ice cube": {
+        "descrizione": "Il caffè ghiacciato ha una composizione diversa dal caffè liquido",
+        "inappropriatezza": 5
+    },
+    "hot chocolate ice cube": {
+        "descrizione": "Un cubetto di cioccolata calda ghiacciata è molto diverso dalla cioccolata calda liquida",
+        "inappropriatezza": 6
+    },"champagne mustard": {
+        "descrizione": "Il champagne e la mostarda sono due alimenti completamente diversi con profili nutrizionali molto distanti",
+        "inappropriatezza": 10
+    },
+    "fettucine": {
+        "descrizione": "Le uova hanno un profilo nutrizionale molto diverso dalla pasta",
+        "inappropriatezza": 9
+    },
+    "orange sprinkles": {
+        "descrizione": "Gli zuccherini decorativi hanno un profilo nutrizionale molto diverso dall'arancia",
+        "inappropriatezza": 8
+    },
+    "coconut pecan frosting": {
+        "descrizione": "La glassa al cocco e noci pecan ha un profilo nutrizionale diverso dal solo cocco",
+        "inappropriatezza": 7
+    },
+    "tart crust": {
+        "descrizione": "La base per torta ha un profilo nutrizionale diverso dalla torta intera o dal pane croccante",
+        "inappropriatezza": 6
+    },
+    "walnut vinegar": {
+        "descrizione": "L'aceto di noci ha un profilo nutrizionale diverso dalle sole noci",
+        "inappropriatezza": 7
+    },
+    "parsley sauce": {
+        "descrizione": "La salsa al prezzemolo ha un profilo nutrizionale molto diverso dal solo prezzemolo",
+        "inappropriatezza": 7
+    },
+    "white dipping chocolate": {
+        "descrizione": "Il cioccolato bianco da intingere ha un profilo nutrizionale diverso dal cioccolato generico",
+        "inappropriatezza": 5
+    },
+    "blue food coloring": {
+        "descrizione": "Il colorante alimentare blu è completamente diverso dal caramello",
+        "inappropriatezza": 10
+    },
+    "mornay sauce": {
+        "descrizione": "La salsa mornay ha un profilo nutrizionale specifico diverso da una generica salsa o formaggio",
+        "inappropriatezza": 6
+    },
+    "muffin tin": {
+        "descrizione": "Lo stampo per muffin non è un alimento e non può essere confrontato con un muffin",
+        "inappropriatezza": 10
+    },
+    "lemon infused olive oil": {
+        "descrizione": "L'olio al limone ha un profilo nutrizionale diverso dal solo limone",
+        "inappropriatezza": 7
+    },"tarragon red wine vinegar": {
+        "descrizione": "Il tarragon (dragoncello) è un'erba aromatica, non comparabile con il vinegar che è un condimento acido",
+        "inappropriatezza": 8
+    },
+    "glaze butter": {
+        "descrizione": "La glassa (glaze) è un rivestimento dolce, molto diverso dal burro",
+        "inappropriatezza": 8
+    },
+    "glaze cocoa": {
+        "descrizione": "La glassa (glaze) è un rivestimento già pronto, diverso dal cacao puro",
+        "inappropriatezza": 7
+    },
+    "glaze extract": {
+        "descrizione": "L'estratto di glassa non è comparabile con la glassa stessa",
+        "inappropriatezza": 6
+    },
+    "vanilla shortbread": {
+        "descrizione": "I biscotti alla vaniglia sono un prodotto finito, non comparabile con la vaniglia pura",
+        "inappropriatezza": 8
+    },
+    "roast chicken seasoning": {
+        "descrizione": "Il condimento per pollo arrosto è una miscela di spezie, non comparabile con il pollo arrosto",
+        "inappropriatezza": 9
+    },
+    "orange crush orange soda": {
+        "descrizione": "La bevanda gassata all'arancia è molto diversa dall'arancia frutta",
+        "inappropriatezza": 9
+    },
+    "spinach tagliatelle": {
+        "descrizione": "La pasta agli spinaci è un prodotto finito, non comparabile con gli spinaci puri",
+        "inappropriatezza": 7
+    },
+    "pickled beet": {
+        "descrizione": "La barbabietola sottaceto ha valori nutrizionali diversi dalla barbabietola fresca",
+        "inappropriatezza": 5
+    },
+    "wine chorizo sausage": {
+        "descrizione": "La salsiccia chorizo al vino non è comparabile con il vino",
+        "inappropriatezza": 10
+    },
+    "drops red gel food coloring": {
+        "descrizione": "Il colorante alimentare è un additivo, non comparabile con il caramello",
+        "inappropriatezza": 9
+    },
+    "seafood magic seasoning": {
+        "descrizione": "Il condimento per frutti di mare è una miscela di spezie, non comparabile con i frutti di mare",
+        "inappropriatezza": 9
+    },
+    "beef tomato": {
+        "descrizione": "Il pomodoro cuore di bue è una varietà di pomodoro, non ha nulla a che fare con la carne di manzo",
+        "inappropriatezza": 10
+    },"strawberry drink mix": {
+        "descrizione": "Un mix per bevande è significativamente diverso dalla frutta fresca in termini di contenuto nutrizionale",
+        "inappropriatezza": 8
+    },
+    "cookie pie crust": {
+        "descrizione": "Una crosta di biscotti ha una composizione nutrizionale diversa dai biscotti interi",
+        "inappropriatezza": 6
+    },
+    "fish-fry mix": {
+        "descrizione": "Un mix per impanare il pesce è molto diverso dal pesce stesso",
+        "inappropriatezza": 9
+    },
+    "fennel sausage": {
+        "descrizione": "Il finocchio è completamente diverso dalla salsiccia al finocchio",
+        "inappropriatezza": 10
+    },
+    "cheese dressing": {
+        "descrizione": "Un condimento al formaggio ha una composizione molto diversa dal formaggio puro",
+        "inappropriatezza": 7
+    },
+    "yogurt cheese": {
+        "descrizione": "Lo yogurt ha una composizione nutrizionale significativamente diversa dal formaggio",
+        "inappropriatezza": 7
+    },
+    "garlic rice and vermicelli mix": {
+        "descrizione": "Un mix di riso all'aglio e vermicelli è molto diverso dall'aglio puro",
+        "inappropriatezza": 9
+    },
+    "raspberry junket danish dessert mix": {
+        "descrizione": "Un mix per dessert è molto diverso dal lampone fresco",
+        "inappropriatezza": 8
+    },
+    "cheesecake pudding mix": {
+        "descrizione": "Un mix per pudding al cheesecake è diverso dal cheesecake tradizionale",
+        "inappropriatezza": 7
+    },
+    "gluten free flour": {
+        "descrizione": "La farina senza glutine ha una composizione nutrizionale diversa dalla farina normale",
+        "inappropriatezza": 6
+    },"oyster cracker": {
+        "descrizione": "Un oyster cracker è un tipo di cracker, non ha nulla a che fare con le ostriche",
+        "inappropriatezza": 9
+    },
+    "chocolate graham wafer pie crust": {
+        "descrizione": "È una base per torta complessa, non comparabile al semplice chocolate graham",
+        "inappropriatezza": 7
+    },
+    "chopped chive": {
+        "descrizione": "L'erba cipollina è un ingrediente specifico, non può essere approssimato con verdure generiche",
+        "inappropriatezza": 8
+    },
+    "imitation cream cheese": {
+        "descrizione": "Un formaggio cremoso di imitazione ha valori nutrizionali diversi dal formaggio fresco",
+        "inappropriatezza": 7
+    },
+    "meat stock": {
+        "descrizione": "Il brodo di carne ha valori nutrizionali molto diversi dalla carne",
+        "inappropriatezza": 9
+    },
+    "green liquid food coloring": {
+        "descrizione": "Un colorante alimentare verde è molto diverso dal caramello",
+        "inappropriatezza": 10
+    },
+    "Skor chip": {
+        "descrizione": "Un tipo specifico di caramella al cioccolato non può essere approssimato con chip generico",
+        "inappropriatezza": 7
+    },
+    "ginger brandy": {
+        "descrizione": "Il brandy allo zenzero non può essere approssimato né con lo zenzero né con il brandy semplice",
+        "inappropriatezza": 8
+    },
+    "raspberry chocolate chips": {
+        "descrizione": "Chips al cioccolato e lampone non sono comparabili né al lampone né al cioccolato semplice",
+        "inappropriatezza": 7
+    },
+    "gravy browner": {
+        "descrizione": "Un colorante per salse non è comparabile alla salsa stessa",
+        "inappropriatezza": 9
+    },
+    "false cardamom powder": {
+        "descrizione": "Il cardamomo falso ha proprietà diverse dal cardamomo vero",
+        "inappropriatezza": 7
+    },
+    "lemon verbena leaf": {
+        "descrizione": "La verbena al limone è un'erba aromatica, non comparabile al limone",
+        "inappropriatezza": 8
+    },
+    "lingonberry butter": {
+        "descrizione": "Una preparazione di burro ai mirtilli rossi non è comparabile né al mirtillo né al burro semplice",
+        "inappropriatezza": 7
+    },
+    "coffee mocha ice cream": {
+        "descrizione": "Il gelato al caffè mocha non può essere approssimato con il caffè",
+        "inappropriatezza": 8
+    },
+    "dash yellow food coloring": {
+        "descrizione": "Un colorante alimentare giallo è molto diverso dal caramello",
+        "inappropriatezza": 10
+    },"berry sugar": {
+        "descrizione": "È una combinazione di due ingredienti completamente diversi (bacche e zucchero), non può essere approssimato solo con 'berry'",
+        "inappropriatezza": 8
+    },
+    "hash": {
+        "descrizione": "Il termine è troppo generico e può riferirsi a diversi tipi di preparazioni, non solo a base di patate",
+        "inappropriatezza": 5
+    },
+    "imitation strawberry extract": {
+        "descrizione": "È un aroma artificiale, non può essere approssimato con fragole reali",
+        "inappropriatezza": 8
+    },
+    "banana cream pudding mix": {
+        "descrizione": "È un preparato per budino, non può essere approssimato con banane fresche",
+        "inappropriatezza": 7
+    },
+    "orange Kool-Aid mix": {
+        "descrizione": "È una bevanda artificiale in polvere, non può essere approssimata con arance",
+        "inappropriatezza": 9
+    },
+    "whip topping": {
+        "descrizione": "È una preparazione diversa dal gelato, con composizione e valori nutrizionali differenti",
+        "inappropriatezza": 7
+    },
+    "coffee-mate": {
+        "descrizione": "È un sostituto del latte per il caffè, non può essere approssimato con il caffè",
+        "inappropriatezza": 9
+    },
+    "sheet parchment paper": {
+        "descrizione": "È un materiale non commestibile, non può essere mappato con il caffè",
+        "inappropriatezza": 10
+    },
+    "fruit or pie filling": {
+        "descrizione": "È una preparazione specifica per ripieno di torte, non può essere approssimata con frutta generica",
+        "inappropriatezza": 6
+    },
+    "whole chicken wing": {
+        "descrizione": "È una parte specifica del pollo, non può essere approssimata con pollo intero",
+        "inappropriatezza": 6
+    },
+    "box chicken rice-a-roni": {
+        "descrizione": "È un preparato specifico con riso e condimenti, non può essere approssimato solo con pollo",
+        "inappropriatezza": 7
+    },"v-8 vegetable juice": {
+        "descrizione": "V8 è un prodotto specifico con una composizione particolare di vegetali, non equivalente a un generico succo di vegetali o pomodoro",
+        "inappropriatezza": 5
+    },
+    "orange cream sandwich biscuit": {
+        "descrizione": "Un biscotto farcito all'arancia non può essere nutrizionalmente equivalente a un'arancia",
+        "inappropriatezza": 9
+    },
+    "chocolate Oreo cookie crumbs": {
+        "descrizione": "Le briciole di Oreo al cioccolato non sono equivalenti al cioccolato puro",
+        "inappropriatezza": 8
+    },
+    "huy fong chili-garlic sauce": {
+        "descrizione": "Una salsa specifica piccante all'aglio non può essere approssimata con una generica salsa o con l'aglio",
+        "inappropriatezza": 7
+    },
+    "reduced-fat half-and-half": {
+        "descrizione": "Half-and-half a ridotto contenuto di grassi ha una composizione significativamente diversa dal latte normale",
+        "inappropriatezza": 6
+    },
+    "beef chipolata sausage": {
+        "descrizione": "Una salsiccia di manzo non può essere rappresentata nutrizionalmente dal solo manzo",
+        "inappropriatezza": 7
+    },
+    "mustard-mayonnaise blend": {
+        "descrizione": "Un mix di senape e maionese non può essere rappresentato dalla sola senape",
+        "inappropriatezza": 7
+    },
+    "kraft Mac n\\ Cheese": {
+        "descrizione": "Un piatto preparato di pasta e formaggio non può essere rappresentato dal solo formaggio",
+        "inappropriatezza": 8
+    },
+    "slice crisp bacon": {
+        "descrizione": "Il bacon croccante non può essere rappresentato da 'crisp'",
+        "inappropriatezza": 9
+    },"strawberry cream soda": {
+        "descrizione": "Una bevanda gassata aromatizzata alla fragola è significativamente diversa dalla fragola fresca in termini nutrizionali",
+        "inappropriatezza": 8
+    },
+    "hot and spicy oil": {
+        "descrizione": "Un olio aromatizzato/piccante ha un profilo nutrizionale diverso dall'olio semplice",
+        "inappropriatezza": 5
+    },
+    "spears": {
+        "descrizione": "Il termine è troppo generico e non specificamente riferito agli asparagi",
+        "inappropriatezza": 7
+    },
+    "Reeses miniature peanut butter cup": {
+        "descrizione": "Un dolce al burro di arachidi è molto diverso dal solo Reese's in termini di composizione",
+        "inappropriatezza": 6
+    },
+    "oyster liquor": {
+        "descrizione": "Il liquido delle ostriche è molto diverso dalle ostriche intere",
+        "inappropriatezza": 8
+    },
+    "fruit roll-up": {
+        "descrizione": "Uno snack dolce trasformato è molto diverso dalla frutta fresca",
+        "inappropriatezza": 9
+    },
+    "verjuice": {
+        "descrizione": "Il verjuice (succo di uva acerba) è significativamente diverso dal succo di pompelmo",
+        "inappropriatezza": 9
+    },
+    "bean thread": {
+        "descrizione": "I noodles di amido sono molto diversi dai fagioli",
+        "inappropriatezza": 10
+    },
+    "milk dud": {
+        "descrizione": "Un dolce al caramello ricoperto di cioccolato è completamente diverso dal latte",
+        "inappropriatezza": 10
+    },
+    "vanilla butternut flavoring": {
+        "descrizione": "Un aroma artificiale è molto diverso dalla vaniglia naturale",
+        "inappropriatezza": 8
+    },
+    "Buds": {
+        "descrizione": "Il termine è troppo generico e non specificamente riferito a verdure",
+        "inappropriatezza": 7
+    },
+    "butter flavored cracker": {
+        "descrizione": "Un cracker aromatizzato al burro è diverso dal burro",
+        "inappropriatezza": 9
+    },
+    "monterey jack and cheddar cheese blend": {
+        "descrizione": "Un mix di formaggi è diverso dal solo monterey jack",
+        "inappropriatezza": 5
+    },
+    "red sweet bell pepper": {
+        "descrizione": "Un peperone non può essere approssimato genericamente come frutta",
+        "inappropriatezza": 8
+    },"dipper": {
+        "descrizione": "Un dipper è un tipo di snack/strumento per intingere, non è equivalente a un dressing che è una salsa/condimento",
+        "inappropriatezza": 8
+    },
+    "emmeril vegetable dust seasoning": {
+        "descrizione": "È un condimento specifico, non può essere approssimato con un generico vegetale",
+        "inappropriatezza": 9
+    },
+    "port wine cheese": {
+        "descrizione": "È un formaggio, non può essere approssimato con il vino Porto",
+        "inappropriatezza": 10
+    },
+    "fresh spinach rotini pasta": {
+        "descrizione": "È una pasta, non può essere approssimata con gli spinaci freschi",
+        "inappropriatezza": 9
+    },
+    "fresh red pepper rotini pasta": {
+        "descrizione": "È una pasta, non può essere approssimata con il peperone rosso",
+        "inappropriatezza": 9
+    },
+    "casserole mince": {
+        "descrizione": "Un tritato per casseruola non può essere approssimato con una generica casserole",
+        "inappropriatezza": 7
+    },
+    "chopped sun-dried tomatoes": {
+        "descrizione": "I pomodori secchi hanno valori nutrizionali molto diversi dai pomodori freschi",
+        "inappropriatezza": 7
+    },
+    "box butter recipe cake mix": {
+        "descrizione": "È una miscela per torte, non può essere approssimata con il burro",
+        "inappropriatezza": 10
+    },
+    "yellow butter recipe cake mix": {
+        "descrizione": "È una miscela per torte, non può essere approssimata con il burro",
+        "inappropriatezza": 10
+    },"sundried tomato sauce": {
+        "descrizione": "Il sugo di pomodori secchi ha una composizione nutrizionale significativamente diversa dai pomodori secchi semplici",
+        "inappropriatezza": 6
+    },
+    "chicken stuffing mix": {
+        "descrizione": "Il mix per ripieno ha una composizione molto diversa dalla carne di pollo",
+        "inappropriatezza": 8
+    },
+    "prune butter": {
+        "descrizione": "La crema di prugne ha una consistenza e composizione diversa dalle prugne intere",
+        "inappropriatezza": 5
+    },
+    "envelope white sauce mix": {
+        "descrizione": "Il mix per salsa bianca è molto diverso dalla salsa bianca pronta e completamente diverso dalla cipolla",
+        "inappropriatezza": 9
+    },
+    "frozen california-blend vegetable": {
+        "descrizione": "Un mix specifico di verdure non può essere approssimato con verdure generiche",
+        "inappropriatezza": 5
+    },
+    "parmesan wafer": {
+        "descrizione": "I wafer di parmigiano sono processati e hanno composizione diversa dal parmigiano",
+        "inappropriatezza": 6
+    },
+    "anise liqueur": {
+        "descrizione": "Il liquore all'anice è molto diverso dall'anice come spezia",
+        "inappropriatezza": 8
+    },
+    "smoke seasoning": {
+        "descrizione": "L'aroma di affumicato è diverso da un generico condimento",
+        "inappropriatezza": 7
+    },
+    "mccormick roasted garlic and bell pepper": {
+        "descrizione": "Un mix di spezie specifico non può essere approssimato con il solo aglio",
+        "inappropriatezza": 8
+    },
+    "boursin garlic cheese roll": {
+        "descrizione": "Il formaggio boursin all'aglio non può essere approssimato con il solo aglio",
+        "inappropriatezza": 9
+    },
+    "box Knorr Leek mix": {
+        "descrizione": "Un mix preparato ha composizione diversa dal porro fresco",
+        "inappropriatezza": 7
+    },
+    "cheesecake flavor instant pudding": {
+        "descrizione": "Il budino istantaneo al gusto cheesecake è molto diverso dalla cheesecake",
+        "inappropriatezza": 8
+    },
+    "potato topper": {
+        "descrizione": "Un condimento per patate è molto diverso dalle patate stesse",
+        "inappropriatezza": 9
+    },
+    "solid butter flavor shortening": {
+        "descrizione": "Lo shortening aromatizzato al burro ha composizione molto diversa dal burro",
+        "inappropriatezza": 8
+    },
+    "vanilla cream-filled sandwich style cookie": {
+        "descrizione": "I biscotti ripieni alla vaniglia non possono essere approssimati con la sola vaniglia",
+        "inappropriatezza": 9
+    },
+    "Nutter Butter Bite": {
+        "descrizione": "I biscotti Nutter Butter non possono essere approssimati con il burro",
+        "inappropriatezza": 10
+    },
+    "artificial bacon bit": {
+        "descrizione": "Il bacon artificiale ha composizione molto diversa dal bacon vero",
+        "inappropriatezza": 8
+    },
+    "imitation coconut extract": {
+        "descrizione": "L'estratto artificiale di cocco è molto diverso dal cocco fresco",
+        "inappropriatezza": 9
+    },
+    "tofu noodle": {
+        "descrizione": "La pasta di tofu ha composizione diversa dal tofu semplice",
+        "inappropriatezza": 6
+    },"thick pepper bacon": {
+        "descrizione": "Il pepe (B) è una spezia completamente diversa dal bacon al pepe (A)",
+        "inappropriatezza": 10
+    },
+    "macadamia basil pesto": {
+        "descrizione": "La macadamia (B) è solo uno degli ingredienti del pesto, non rappresenta il prodotto finale",
+        "inappropriatezza": 8
+    },
+    "package nacho cheese flavored tortilla chips": {
+        "descrizione": "Il formaggio nacho (B) è solo un ingrediente/aroma delle tortilla chips, non rappresenta il prodotto finale",
+        "inappropriatezza": 7
+    },
+    "broccoli and cheese flavored rice mix": {
+        "descrizione": "Broccoli e formaggio (B) sono solo gli aromi del mix di riso, non rappresentano il prodotto finale",
+        "inappropriatezza": 7
+    },
+    "sultana natural bran": {
+        "descrizione": "L'uvetta sultanina (B) è diversa dalla crusca naturale con uvetta",
+        "inappropriatezza": 8
+    },
+    "cream of wild mushroom soup": {
+        "descrizione": "La panna (B) è solo uno degli ingredienti della zuppa, non rappresenta il prodotto finale",
+        "inappropriatezza": 8
+    },
+    "Nutter Butter": {
+        "descrizione": "Il burro (B) non è rappresentativo di questo snack dolce al burro di arachidi",
+        "inappropriatezza": 9
+    },
+    "bottle red food coloring": {
+        "descrizione": "Il caramello (B) è un colorante specifico diverso dal colorante rosso",
+        "inappropriatezza": 9
+    },
+    "baking chips": {
+        "descrizione": "Le chips (B) da snack sono diverse dalle gocce di cioccolato per dolci",
+        "inappropriatezza": 8
+    },
+    "Cracker Barrel Cheese": {
+        "descrizione": "I cracker (B) sono completamente diversi dal formaggio Cracker Barrel",
+        "inappropriatezza": 10
+    },
+    "basil vinaigrette": {
+        "descrizione": "Il basilico (B) è solo uno degli ingredienti della vinaigrette, non rappresenta il condimento finale",
+        "inappropriatezza": 7
+    },"peppadew": {
+        "descrizione": "Peppadew è una varietà specifica di peperone dolce con caratteristiche nutrizionali diverse dai peperoni comuni",
+        "inappropriatezza": 7
+    },
+    "monterey jack pepper": {
+        "descrizione": "È un formaggio, non un peperone. Il mapping con 'pepper' è completamente errato",
+        "inappropriatezza": 10
+    },
+    "whale meat": {
+        "descrizione": "La carne di balena ha caratteristiche nutrizionali molto diverse dalla carne generica",
+        "inappropriatezza": 8
+    },
+    "bear meat": {
+        "descrizione": "La carne di orso ha caratteristiche nutrizionali molto diverse dalla carne generica",
+        "inappropriatezza": 8
+    },
+    "bloody mary mix": {
+        "descrizione": "Il mix per bloody mary contiene altri ingredienti oltre al succo di pomodoro",
+        "inappropriatezza": 6
+    },
+    "vegetable curry": {
+        "descrizione": "Il curry di verdure è un piatto preparato con spezie e altri ingredienti, non solo verdure",
+        "inappropriatezza": 7
+    },
+    "mushroom beef gravy": {
+        "descrizione": "Mapping con 'mushroom' non è appropriato, è una salsa con funghi e carne",
+        "inappropriatezza": 8
+    },
+    "Rotel tomatoes": {
+        "descrizione": "I pomodori Rotel contengono anche peperoncini e spezie, non solo pomodori",
+        "inappropriatezza": 6
+    },
+    "accent seasoning": {
+        "descrizione": "È un condimento specifico (glutammato monosodico) molto diverso dai condimenti generici",
+        "inappropriatezza": 7
+    },
+    "soup bone": {
+        "descrizione": "Il mapping con 'soup' è inappropriato, è un osso per brodo",
+        "inappropriatezza": 9
+    },
+    "Campbells French onion soup": {
+        "descrizione": "È una zuppa preparata con vari ingredienti, non solo cipolla",
+        "inappropriatezza": 7
+    }, "pepperoncini pepper juice": {
+        "descrizione": "Il succo di peperoncini è un liquido con composizione molto diversa dai peperoncini interi",
+        "inappropriatezza": 7
+    },
+    "ginger sesame paste": {
+        "descrizione": "La pasta di zenzero e sesamo è un prodotto composto molto diverso dallo zenzero semplice",
+        "inappropriatezza": 8
+    },
+    "chipolte pepper": {
+        "descrizione": "Il peperoncino chipotle ha caratteristiche specifiche diverse dal generico pepe/peperoncino",
+        "inappropriatezza": 6
+    },
+    "liquid smoke seasoning": {
+        "descrizione": "L'aroma di affumicato liquido è un condimento molto specifico e diverso da un generico condimento",
+        "inappropriatezza": 8
+    },
+    "puff": {
+        "descrizione": "Gli snack puff sono molto diversi dai cereali per colazione",
+        "inappropriatezza": 9
+    },
+    "onion and mushroom soup mix": {
+        "descrizione": "Il mix per zuppa è un prodotto composto molto diverso dalla semplice cipolla",
+        "inappropriatezza": 8
+    },
+    "berry red wine": {
+        "descrizione": "Il vino ai frutti di bosco è diverso dai frutti di bosco freschi",
+        "inappropriatezza": 9
+    },
+    "diced tomato and green chili": {
+        "descrizione": "Il prodotto contiene anche peperoncini verdi oltre ai pomodori",
+        "inappropriatezza": 6
+    },
+    "manwich": {
+        "descrizione": "È una salsa specifica per sandwich, non mappabile con nessuna delle alternative proposte",
+        "inappropriatezza": 10
+    },
+    "piccalilli relish": {
+        "descrizione": "È una salsa specifica di sottaceti, non mappabile con la semplice relish",
+        "inappropriatezza": 7
+    },
+    "vegetable cooking spray": {
+        "descrizione": "Lo spray da cucina è un prodotto molto diverso dalle verdure",
+        "inappropriatezza": 10
+    },
+    "garlic and onion pasta sauce": {
+        "descrizione": "La salsa è un prodotto composto molto diverso dall'aglio semplice",
+        "inappropriatezza": 8
+    },"fungus": {
+        "descrizione": "Il termine 'fungus' è troppo generico e può riferirsi a vari tipi di funghi, non necessariamente commestibili, mentre 'mushroom' si riferisce specificamente a funghi commestibili",
+        "inappropriatezza": 6
+    },
+    "crisp chow mein noodles": {
+        "descrizione": "Non è appropriato mappare noodles specifici con il termine generico 'crisp', sono alimenti completamente diversi",
+        "inappropriatezza": 9
+    },
+    "warm flat beer": {
+        "descrizione": "Lo stato 'warm flat' della birra può alterare significativamente le proprietà nutrizionali rispetto alla birra standard",
+        "inappropriatezza": 4
+    },
+    "Splenda_sugar_substitute": {
+        "descrizione": "Un dolcificante artificiale ha proprietà nutrizionali molto diverse dallo zucchero",
+        "inappropriatezza": 8
+    },
+    "honey_garlic_sauce": {
+        "descrizione": "Una salsa composta non può essere mappata con uno solo dei suoi ingredienti (miele)",
+        "inappropriatezza": 7
+    },
+    "almond_essence": {
+        "descrizione": "L'essenza di mandorla è un aroma/estratto, non può essere mappato con la mandorla intera",
+        "inappropriatezza": 9
+    },
+    "raspberry_vinegar": {
+        "descrizione": "L'aceto ai lamponi ha proprietà molto diverse dal succo di frutta",
+        "inappropriatezza": 8
+    }
+}
+

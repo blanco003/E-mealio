@@ -32,7 +32,7 @@ def get_base_recipe(mealDataJson):
             dBrecipe = recipePersistence.get_most_similar_recipe(mealData['name'])
         ingredients = ingService.get_ingredient_list_from_full_ingredient_string(dBrecipe['ingredients'])
 
-    baseRecipe = recipe.Recipe(mealData["name"],None,ingredients,None,None,None,None,None)
+    baseRecipe = recipe.Recipe(mealData["name"],None,ingredients,None,None,None,None,None,None)
     recipeService.compute_recipe_sustainability_score(baseRecipe)
     return baseRecipe
 

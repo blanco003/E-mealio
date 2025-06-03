@@ -7,7 +7,8 @@ import dto.CustomRecipe as customRecipe
 import service.domain.RecipeService as recipeService
 import service.domain.IngredientService as ingService
 import persistence.IngredientPersistence as ip
-
+import Utils as utils
+import service.bot.LangChainService as lcs
 
 def get_custom_dates(DataJson):
     """
@@ -152,7 +153,9 @@ def build_and_save_user_history(userData, jsonRecipe, status, ingredients_to_rem
     - ingredients_to_add : evenutali nomi degli ingredienti da aggiungere alla ricetta prima di salvarla.
     """
 
-    suggestedRecipe = recipe.Recipe(None,None,None,None,None,None,None,None)
+    suggestedRecipe = recipe.Recipe(None,None,None,None,None,None,None,None,None)
+
+    print("---------------------------------------------------------------------\nJSON RECIPE : \n",jsonRecipe)
     suggestedRecipe.from_json(jsonRecipe)
 
     # rimuoviamo eventuali ingredienti
@@ -172,10 +175,49 @@ def build_and_save_user_history(userData, jsonRecipe, status, ingredients_to_rem
         suggestedRecipe.ingredients.extend(ingredients_obj_to_add)
         
 
-    # se ci sono stati cambiamenti ricalcoliamo lo score di sostenibilità
+    ########################################################################################################
+    # se ci sono stati cambiamenti ricalcoliamo lo score di sostenibilità e salubrità
     if ingredients_to_remove or ingredients_to_add:
-        recipeService.compute_recipe_sustainability_score(suggestedRecipe)
         
+        #print("\n\nRicalcolo.................................")
+
+  
+        print("\nOLD sustainability_score : ",suggestedRecipe.sustainabilityScore)
+        recipeService.compute_recipe_sustainability_score(suggestedRecipe)
+        print("NEW sustainability_score : ",suggestedRecipe.sustainabilityScore)
+
+        # come fa a calcolarlo senza grammature ??
+        # recipeService.compute_who_score(suggestedRecipe,"",True)
+
+        # per ricalcolare il who score abbiamo bisogno delle grammature degli ingredienti
+        prompt = """
+                    Given the following recipe, in json format, return a json string containing the fields 'ingredients' and 'quantities', with the corresponding lists of ingredients and weights.
+                    If the ingredients appear in the recipe instructions, extract the corresponding weights, in grams, otherwise assume it based on the portion generally used or recommended of the corresponding ingredient. Report only the number of the weights without grams or g.
+                """
+        answer = lcs.ask_model(input=utils.adapt_output_to_bot(suggestedRecipe),prompt=prompt)
+
+        info = jsonpickle.decode(answer)
+
+        ingredients = ingService.get_ingredient_list_from_generic_list_of_string(info['ingredients'])
+        quantities = info['quantities']
+
+        # calcoliamo i valori nutrizionali totali della ricetta
+        nutritional_facts = recipeService.calculate_nutritional_facts_of_recipe(ingredients, quantities)
+
+        print("\nOLD who_score : ",suggestedRecipe.who_score)
+
+        # calcoliamo il who score
+        who_score = recipeService.compute_who_score_of_custom_recipe(nutritional_facts['protein [g]'],nutritional_facts['totalCarbohydrate [g]'],
+                                                nutritional_facts['sugars [g]'],nutritional_facts['totalFat [g]'],
+                                                nutritional_facts['saturatedFat [g]'],nutritional_facts['dietaryFiber [g]'],
+                                                nutritional_facts['sodium [mg]'],1,"",True)
+
+        suggestedRecipe.who_score = who_score
+
+        print("NEW who_score : ",suggestedRecipe.who_score)
+        
+        
+    ########################################################################################################
 
     sysdate = datetime.today().strftime('%Y-%m-%d %H:%M:%S')
     userHistory = uh.UserHistory(userData.id, suggestedRecipe.id, suggestedRecipe, sysdate, status)
@@ -206,7 +248,7 @@ def build_and_save_user_history_from_user_assertion(userData, jsonRecipeAssertio
     nutritional_facts = recipeService.calculate_nutritional_facts_of_recipe(ingredients, custom_recipe_Assertion['quantities'])
 
     # calcoliamo il who score
-    who_score = recipeService.compute_who_score(nutritional_facts['protein [g]'],nutritional_facts['totalCarbohydrate [g]'],
+    who_score = recipeService.compute_who_score_of_custom_recipe(nutritional_facts['protein [g]'],nutritional_facts['totalCarbohydrate [g]'],
                                                 nutritional_facts['sugars [g]'],nutritional_facts['totalFat [g]'],
                                                 nutritional_facts['saturatedFat [g]'],nutritional_facts['dietaryFiber [g]'],
                                                 nutritional_facts['sodium [mg]'],1,"",True)
