@@ -257,7 +257,7 @@ Communicate with the user in the following language : {language}.
 Follow these steps to produce the output:
 
 - Print the string "TOKEN 2", welcome the user to the Recipe Recommendation Functionality, then continue by providing a detailed explanation of it, and ask the user for which type of meal he would like to receive the suggestion between breakfast, lunch, dinner or snack, and specifying any desired and undesired ingredients. 
-    Also specifies that if the user wants, he can add these two additional preferences: cooking time, for example "that it is quick to prepare", and healthiness, for example "that it is also healthy".
+    Also specifies that if the user wants, he can add these two additional preferences: cooking time, for example "that it is quick to prepare", and healthiness, meaning that he also wants the recipe suggestion to be healthy, without specifing any constraints or preference, but for example "a recipe that is also healthy".
 
      Do NOT mention the number of the task, just the functionality.
      Conclude adding a reminder about using the /start command to return to the main menu and view the list of available functionalities.
