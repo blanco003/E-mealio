@@ -763,7 +763,7 @@ You will help the user understand the sustainability of the following ingredient
 Communicate with the user in the following language : {language}.
 
 Follow these steps to produce the output:
-- Print the string "TOKEN 6.40", then explain the sustainability of the ingredients in detail, comparing their carbon footprint and water footprint if there are more than one.
+- Print the string "TOKEN 6.40", then explain the sustainability of the ingredients in detail, comparing their carbon footprint and water footprint if there are more than one. Don't mention their name in the user language, just in english.
   Take into account the following allergies {allergies} and dietary restrictions {restrictions} to avoid trivial or irrelevant comparisons for the user.
   Keep the explanation simple and understandable. Refer to numbers like carbon footprint and water footprint, but also give an idea of whether those values are good or bad for the environment.
   Use a bulleted list for each concept, and use an emoji to represent it.
@@ -779,7 +779,7 @@ You will help the user understand the healthiness of the following ingredients: 
 Communicate with the user in the following language : {language}.
 
 Follow these steps to produce the output:
-- Print the string "TOKEN 6.40", then explain the healthiness of the ingredients in detail, comparing their nutritional facts if there are more than one.
+- Print the string "TOKEN 6.40", then explain the healthiness of the ingredients in detail, comparing their nutritional facts if there are more than one. Don't mention their name in the user language, just in english.
   Take into account the following allergies {allergies} and dietary restrictions {restrictions} to avoid trivial or irrelevant comparisons for the user.
   Keep the explanation simple and understandable. Refer to numbers, but also give an idea of whether those values are good or bad for the health. Use emojis to represent the concepts.
   Use a bulleted list for each concept.
