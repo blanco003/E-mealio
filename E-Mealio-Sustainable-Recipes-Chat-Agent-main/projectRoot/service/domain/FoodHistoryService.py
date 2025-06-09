@@ -193,6 +193,7 @@ def build_and_save_user_history(userData, jsonRecipe, status, ingredients_to_rem
         prompt = """
                     Given the following recipe, in json format, return a json string containing the fields 'ingredients' and 'quantities', with the corresponding lists of ingredients and weights.
                     If the ingredients appear in the recipe instructions, extract the corresponding weights, in grams, otherwise assume it based on the portion generally used or recommended of the corresponding ingredient. Report only the number of the weights without grams or g.
+                    Print only the JSON string. Do not add any explanation, comment, or text before or after the JSON.
                 """
         answer = lcs.ask_model(input=utils.adapt_output_to_bot(suggestedRecipe),prompt=prompt)
 
