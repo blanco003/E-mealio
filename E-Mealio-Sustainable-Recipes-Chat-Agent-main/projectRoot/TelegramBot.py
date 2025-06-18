@@ -59,18 +59,38 @@ MULTIPLE_MESSAGES = True
 INTERACTION = range(1)
 """Stato responsabile della gestione della conversazione continua tra l'utente e l'agente."""
 
+MENU_LABELS = {
+    "it": {
+        "recipe_recommendation": "Suggerimento Ricetta",
+        "recipe_improvement": "Miglioramento Ricetta",
+        "food_expert": "Esperto Alimentare",
+        "profile": "Profilo Utente",
+        "diary": "Diario Alimentare",
+        "diary_recap": "Riepilogo Diario"
+    },
+    "en": {
+        "recipe_recommendation": "Recipe Recommendation",
+        "recipe_improvement": "Recipe Improvement",
+        "food_expert": "Food Expert",
+        "profile": "User Profile Recap and Update",
+        "diary": "Food Diary",
+        "diary_recap": "Food Diary Recap"
+    }
+}
 
-MENU_BUTTON = [
-        [InlineKeyboardButton("🍽️ Recipe Recommendation", callback_data="Recipe Recommendation")],
-        [InlineKeyboardButton("🛠️ Recipe Improvement", callback_data="Recipe Improvement")],
-        [InlineKeyboardButton("🌱 Food Expert", callback_data="Food Expert")],  
-        [InlineKeyboardButton("👤 User Profile Recap and Update", callback_data="User Profile Recap and Update")],
-        [InlineKeyboardButton("📊 Food Diary Recap", callback_data="Food Diary Recap")],
-        [InlineKeyboardButton("🥘 Food Diary", callback_data="Food Diary")],
-        ]
 
+def build_menu_buttons(language: str = "en"):
+    labels = MENU_LABELS.get(language, MENU_LABELS["en"])  # recupera in inglese se la lingua non è ancora supportata
 
-
+    return [
+        [InlineKeyboardButton("🍽️ " + labels["recipe_recommendation"], callback_data="Recipe Recommendation")],
+        [InlineKeyboardButton("🛠️ " + labels["recipe_improvement"], callback_data="Recipe Improvement")],
+        [InlineKeyboardButton("🌱 " + labels["food_expert"], callback_data="Food Expert")],
+        [InlineKeyboardButton("👤 " + labels["profile"], callback_data="User Profile Recap and Update")],
+        [InlineKeyboardButton("🥘 " + labels["diary"], callback_data="Food Diary")],
+        [InlineKeyboardButton("📊 " + labels["diary_recap"], callback_data="Food Diary Recap")],
+        
+    ]
 
 
 def update_context(context: ContextTypes.DEFAULT_TYPE, response):
@@ -178,12 +198,8 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
         print("Invio messaggio all'utente : \n",response.answer)
         print("+++++++++++++++++++++++++++++++++++++++++++++++\n")
 
-        
+        tastiera_markup = InlineKeyboardMarkup(build_menu_buttons(context.user_data['userData'].language))
 
-       
-        tastiera_markup = InlineKeyboardMarkup(MENU_BUTTON)
-
-        
         #await context.bot.sendMessage(chat_id=update.message.chat_id, text=response.answer)
         await update.message.reply_text(response.answer, reply_markup=tastiera_markup)
         
@@ -220,7 +236,8 @@ async def interaction(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int
     if response.action == con.TASK_1_HOOK or response.action == con.TASK_MINUS_1_HOOK    :
         if context.user_data.get('menu_ready', False):
             # secondo messaggio: mostra il menu
-            tastiera_markup = InlineKeyboardMarkup(MENU_BUTTON)
+            
+            tastiera_markup = InlineKeyboardMarkup(build_menu_buttons(context.user_data['userData'].language))
             await update.message.reply_text(response.answer, reply_markup=tastiera_markup)
             context.user_data['menu_ready'] = False  
         else:
@@ -311,12 +328,12 @@ async def callback(update: Update, context: CallbackContext) -> None:
     
     context = update_context(context,response)
 
-    """
-    await update.effective_user.send_message(
-        f"{update.effective_user.username} ha cliccato : {opzione} !"
-    )
-    """
-    await update.callback_query.message.delete()
+
+    # ELIMINA IL MESSAGGIO CON I BOTTONI
+    #await update.callback_query.message.delete()
+
+    # ELIMINA SOLO I BOTTONI E LASCIA IL MESSAGGIO DEL MENU
+    await update.callback_query.message.edit_reply_markup(reply_markup=None)
 
 
 

@@ -633,7 +633,11 @@ def answer_question(userData,userPrompt,token,memory,info):
         restrictions = user.get_restrictions(userData.id)
         ingredientsData = jsonpickle.decode(info)
 
+        print("INGREDIENTS_DATA : \n", ingredientsData)
+
         translated_ingredients = lcs.translate_ingredients_list(ingredientsData['ingredients'],language)
+
+        print("TRANSLATED_INGREDIENTS : \n", ingredientsData)
 
         # recupera le fonti
         ingredients_data_origins = {}
@@ -650,8 +654,13 @@ def answer_question(userData,userPrompt,token,memory,info):
         
 
         ingredients_data_origins = utils.adapt_output_to_bot(ingredients_data_origins)
-        
         ingredientsData = utils.adapt_output_to_bot(ingService.get_ingredient_list_from_generic_list_of_string(translated_ingredients))
+        
+        # filtra eventuali messaggi vuoti
+        # Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'messages.3: all messages must have non-empty content except for the optional final assistant message'}}
+        if memory is not None:
+            memory.messages = [m for m in memory.messages if m.content and m.content.strip()]
+            
         response = lcs.execute_chain(p.TASK_6_20_PROMPT.format(ingredients = ingredientsData, language=language, allergies = allergies, restrictions = restrictions, ingredients_data_origins=ingredients_data_origins), userPrompt, 0.3, userData, memory, True)
         return response
     
@@ -669,7 +678,12 @@ def answer_question(userData,userPrompt,token,memory,info):
         ingredientsData = utils.adapt_output_to_bot(ingredientsData)
 
         print("\n\ningredientsData :\n",ingredientsData)
-        
+
+        # filtra eventuali messaggi vuoti
+        # Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'messages.3: all messages must have non-empty content except for the optional final assistant message'}}
+        if memory is not None:
+            memory.messages = [m for m in memory.messages if m.content and m.content.strip()]
+            
         response = lcs.execute_chain(p.TASK_6_25_PROMPT.format(ingredients = ingredientsData, language=language, allergies = allergies, restrictions = restrictions), userPrompt, 0.3, userData, memory, True)
         return response
     
@@ -715,9 +729,11 @@ def answer_question(userData,userPrompt,token,memory,info):
     
     elif(token == p.TASK_6_40_HOOK):
         log.save_log("SUSTAINABILITY_EXPERT_LOOP", datetime.datetime.now(), "System", userData.id, PRINT_LOG)
-        response = lcs.execute_chain(p.TASK_6_40_PROMPT.format(language=language), userPrompt, 0.3, userData, memory, True)
+
+        response = lcs.execute_chain(p.TASK_6_40_PROMPT.format(language=language),userPrompt, 0.3, userData, memory, True)
         if response.action == p.TASK_MINUS_1_HOOK:
             response.modifiedPrompt = p.USER_GREETINGS_PHRASE
+
         return response
     
 ########################################################################################
