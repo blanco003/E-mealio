@@ -22,7 +22,7 @@ reminder: a boolean value that indicates whether the user allows receiving remin
 days_reminder : days of inactivity after the user wants to receive the reminder.
 hour_reminder : time of day, after the days of inactivity has passed, when the user wants to receive the reminder.
 disliked_ingredients: a list of ingredients that the user doesnt like.
-evolving_diet: a list of alimentary restrictions that the user could have in the future, to nudge him through recipe suggestions."""
+evolving_diet: a list of alimentary restrictions that the user could have in the future, to nudge him through recipe suggestions. The possible constraints are ["vegan", "vegetarian", "kosher"]."""
 
 
 USER_DATA_STRUCTURE_TEMPLATE_WITH_MANDATORINESS = """
@@ -34,7 +34,7 @@ nation: the country (e.g., "Italy", "France") where the user currently resides. 
 allergies: a list of foods that the user cannot eat. The possible constraints are ["gluten", "crustacean", "egg", "fish", "peanut", "soy", "lactose", "nut", "celery", "mustard", "sesame", "sulfite", "lupin", "mollusk"]. If the user mentions a term related to an allergy item, match it to the closest predefined constraint and use that item as a constraint. Optional.
 restrictions: a list of alimentary restrictions derived from ethical choices or religious beliefs that the user currently follows. The possible constraints are ["vegan", "vegetarian", "kosher"]. Optional.
 disliked_ingredients: a list of ingredients that the user doesnt like. Optional.  
-evolving_diet: a list of alimentary restrictions that the user could have in the future, to nudge him through recipe suggestions. Optional."""
+evolving_diet: a list of alimentary restrictions that the user could have in the future, to nudge him through recipe suggestions. The possible constraints are ["vegan", "vegetarian", "kosher"]. Optional."""
 
 #Hub (polished, tested, described)
 

@@ -194,7 +194,7 @@ def get_recipe_suggestion(mealDataJson, userData):
     if(evolving_diet != None and evolving_diet != '' and evolving_diet != []):
         tagsPreference = """ "$and": [ """
         for pref in evolving_diet:
-            tagsPreference += """ {"tags": { "$regex": "%s-free" }}, """ % pref
+            tagsPreference += """ {"tags": { "$regex": "%s" }}, """ % pref
         tagsPreference = tagsPreference[:-2]
         tagsPreference += """ ] """
 
