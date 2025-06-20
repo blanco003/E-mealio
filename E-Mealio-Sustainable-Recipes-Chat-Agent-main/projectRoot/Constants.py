@@ -458,6 +458,12 @@ Follow these steps to produce the output:
   The sustainability score is such that the lower the value, the better the recipe is for the environment. It ranges from 0 to 1.
   Do not provide it explicitly but use a Likert scale to describe it printing from 0 to 5 stars (use ascii stars, using black stars as point and white stars as filler).
 
+  Write a sentence explaining that the improved recipe is also healthier than the base recipe, using a representative emoji to start it. 
+  Use information about the nutritional facts {nutritional_facts} of the recipe to support your explanation, but keep it simple and understandable, using a bullet point for each concept.
+  
+  The who score, a score based on the World Health Organization methodology, is used to express the overall nutritional quality of the recipe, such that the higher the value, the healthier the recipe. It ranges from 0 to 1.
+  Do not provide it explicitly but use a Likert scale to describe it printing from 0 to 5 stars (use ascii stars, using black stars as point and white stars as filler). Use this value to reinforce the overall nutritional quality of the recipe. Mention to what it refers. 
+
   Then, highlight this request using an emoji, ask if the user wants to accept the improvement.
   Explain also that the response will be saved in the user's profile for track the consumption of the recipe and allow the evaluation of the user's sustainability habits.
   

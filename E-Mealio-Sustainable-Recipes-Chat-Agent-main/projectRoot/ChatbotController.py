@@ -430,7 +430,7 @@ def answer_question(userData,userPrompt,token,memory,info):
 
         result_ingredient = list(set(base_ingredient_list + imp_ingredient_list))
 
-        improvedRecipe = utils.adapt_output_to_bot(improvedRecipe)
+        
 
         if(improvedRecipe != 'null'):
             
@@ -445,10 +445,13 @@ def answer_question(userData,userPrompt,token,memory,info):
                 else :
                     ingredients_data_origins[ingredient] = sueatablelife_link
         
+            # recuperiamo le informazioni sulla ricetta da suggerire
+            nutritional_facts = rcpService.get_nutritional_facts_by_id(int(improvedRecipe.id))
+            nutritional_facts = utils.escape_curly_braces(str(nutritional_facts))
 
             ingredients_data_origins = utils.adapt_output_to_bot(ingredients_data_origins)
 
-            response = lcs.execute_chain(p.TASK_3_20_PROMPT.format(baseRecipe=utils.adapt_output_to_bot(baseRecipe), improvedRecipe=improvedRecipe, language=language, ingredients_data_origins=ingredients_data_origins), userPrompt, 0.1, userData, memory, True)
+            response = lcs.execute_chain(p.TASK_3_20_PROMPT.format(baseRecipe=utils.adapt_output_to_bot(baseRecipe), improvedRecipe=utils.adapt_output_to_bot(improvedRecipe), language=language, ingredients_data_origins=ingredients_data_origins, nutritional_facts=nutritional_facts), userPrompt, 0.1, userData, memory, True)
         else:
             None
             userDataStr = utils.escape_curly_braces(userData.to_json())
