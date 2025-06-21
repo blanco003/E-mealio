@@ -143,7 +143,19 @@ def send_action(action):
             Returns : 
             - restituisce l'output effettivo della funzione wrappata.
             """
-            await context.bot.send_chat_action(chat_id=update.effective_message.chat_id, action=action)
+            # solo per i messaggi di testo
+            #await context.bot.send_chat_action(chat_id=update.effective_message.chat_id, action=action)
+            #return await func(update, context,  *args, **kwargs)
+
+            # per gestire anche i callback
+            if update.message:
+                chat_id = update.message.chat_id
+            elif update.callback_query:
+                chat_id = update.callback_query.message.chat_id
+            else:
+                chat_id = update.effective_user.id  # fallback
+
+            await context.bot.send_chat_action(chat_id=chat_id, action=action)
             return await func(update, context,  *args, **kwargs)
         return command_func
     
@@ -309,7 +321,7 @@ async def compute_monthly_user_taste():
     cmu.compute_monthly_user_taste()
 
 
-
+@send_action(ChatAction.TYPING)
 async def callback(update: Update, context: CallbackContext) -> None:
     
     opzione = update.callback_query.data
