@@ -244,8 +244,9 @@ async def interaction(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int
     print("Invio messaggio all'utente : \n", response.answer)
     print("+++++++++++++++++++++++++++++++++++++++++++++++\n")
 
+
     # LOGICA PER MENU AL SECONDO MESSAGGIO TASK_1_HOOK O TASK_MINUS_1_HOOK
-    if response.action == con.TASK_1_HOOK or response.action == con.TASK_MINUS_1_HOOK    :
+    if response.action == con.TASK_1_HOOK or response.action == con.TASK_MINUS_1_HOOK:
         if context.user_data.get('menu_ready', False):
             # secondo messaggio: mostra il menu
             
@@ -262,11 +263,11 @@ async def interaction(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int
         context.user_data['menu_ready'] = False  
 
     context = update_context(context, response)
-
+    
     # gestione ricorsiva
     if len(context.user_data['callbackMessage']) > 0 and MULTIPLE_MESSAGES:
         return await interaction(update, context)
-    if context.user_data['action'] == "TASK -1" and MULTIPLE_MESSAGES:
+    if context.user_data['action'] == "TOKEN -1" and MULTIPLE_MESSAGES:
         context.user_data['callbackMessage'] = con.USER_GREETINGS_PHRASE
         return await interaction(update, context)
 

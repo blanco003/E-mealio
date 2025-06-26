@@ -615,11 +615,12 @@ def answer_question(userData,userPrompt,token,memory,info):
         log.save_log("SUSTAINABILITY_CONCEPT_EXPERT_INTERACTION", datetime.datetime.now(), "System", userData.id, PRINT_LOG)
         allergies = user.get_allergies(userData.id)
         restrictions = user.get_restrictions(userData.id)
-        conceptData = jsonpickle.decode(info)
+    
+        #print("Concept : ",userPrompt)
+        concept = lcs.translate_concept(userPrompt,language)
+        #print("Translated concept : ",concept)
 
-        concept = conceptData['concept']
-
-        response = ws.web_search(p.WEB_SEARCH_PROMPT.format(concept = concept), userPrompt, 0.2, userData, None, True)
+        response = ws.web_search(p.WEB_SEARCH_PROMPT.format(concept = concept), concept, 0.2, userData, None, True)
 
         clean_answer = response.answer['clean_answer']
         citations_and_urls = response.answer['citations_and_urls']

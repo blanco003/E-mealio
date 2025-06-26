@@ -310,8 +310,6 @@ def translate_info(info, input_language, fields_to_translate = None):
 
 
 
-
-
 def translate_ingredients_list(ingredients, input_language):
     """
     Traduce una lista di nomi di ingredienti, dalla lingua di partenza all'inglese.
@@ -324,6 +322,10 @@ def translate_ingredients_list(ingredients, input_language):
     - lista di stringhe rappresentanti in nomi degli ingredienti tradotti in inglese.
     
     """
+
+    if input_language.lower() == "english" or input_language.lower() == "en" :
+        return ingredients
+    
     # Costruisci il prompt con la lista come stringa
     joined_ingredients = ", ".join(ingredients)
     
@@ -373,3 +375,46 @@ def ask_model(input, prompt):
     print("Answer : \n", answer)
 
     return answer
+
+
+
+
+
+def translate_concept(text, input_language):
+    """
+    Traduce un testo nella lingua specificata utilizzando il LLM.
+
+    Args:
+    - text : testo da tradurre.
+    - target_language : lingua di destinazione.
+
+    Returns:
+    - str : testo tradotto.
+    """
+
+
+    # se input_language è l'inglese non serve chiamare il LLM, il testo è già inglese
+    if input_language.lower() == "english" or input_language.lower() == "en":
+        return text
+
+
+    translation_prompt = f"Translate the following text into English. Provide only the translation, keeping the original text structure and line breaks, without adding explanations or comments."
+    
+    prompt = ChatPromptTemplate.from_messages([
+        ("system", translation_prompt),
+        ("human", "{query}")
+    ])
+    
+    #print("text : ", text)
+
+    output_parser = StrOutputParser()
+
+    chain = prompt | llm | output_parser
+
+    translated = chain.invoke({ "query": text })
+
+    translated_text = translated.strip()
+
+    #print("translated_text : ",translated_text)
+
+    return translated_text

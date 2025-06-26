@@ -83,6 +83,9 @@ def web_search(input_prompt, input_query, temperature, userData, memory=None, me
     #print("temperature : ", temperature)
     #print("userData : ", userData)
 
+    # input prompt  : prompt già costruito tramite WEB_SEARCH.format(concept=concep)
+    # input_query : serve per aggiornare la memoria solo con la domanda dell'utente senza salvare tutto il prompt
+
     log.save_log(input_query, datetime.datetime.now(), "User", userData.id, PRINT_LOG)
     log.save_log(input_prompt, datetime.datetime.now(), "System: input_prompt", userData.id, PRINT_LOG)
 
@@ -95,22 +98,11 @@ def web_search(input_prompt, input_query, temperature, userData, memory=None, me
         memory.append({"role": "user", "content": input_query})
 
     """
-    Esempio di memory : (sintassi obbligatoria per Web Search con Claude)
-
-    [ {'role': 'user', 'content': 'How is food related to climate change?'},
-
-    {'role': 'assistant', 'content': 'I\'d be happy to explain the relationship...'},
-
-    {'role': 'user', 'content': "Tell me more about the Food Production's Contribution to Climate Change"},
-     
-    ... ]
-    
-    """
-
     print("\nMemory aggiornata:")
     for msg in memory:
         print(msg)
         print()
+    """
 
     response = client.messages.create(
         model=MODEL,
