@@ -14,6 +14,7 @@ from apscheduler.schedulers.background import BackgroundScheduler
 from datetime import datetime, timedelta
 import service.asyncr.ComputeMonthlyUserTasteService as cmu
 import asyncio
+import service.bot.LangChainService as lcs
 
 #---------------------------------------------------------
 ## PER SALVARE L'OUTPUT SUL FILE TXT
@@ -282,24 +283,13 @@ async def cancel(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
 
 
 
-
-"""
-# VERSIONE VECCHIA
-async def send_reminder(context: CallbackContext):
-   
-    users = us.get_all_users_with_reminder()
-    for user in users:
-        last_interaction = datetime.strptime(user['lastInteraction'], '%Y-%m-%d %H:%M:%S').date()
-        if datetime.now().date() - last_interaction >= timedelta(days=2):
-            await context.bot.send_message(chat_id=user['id'], text="Hey! It's been a while since we last talked. How about a chat to keep up with your sustainable habits and discover new recipe? Just write me something and I'll be here for you!")
-"""
-
 def schedule_user_reminder(scheduler, bot, user):
     
     async def personalized_reminder():
         last_interaction = datetime.strptime(user['lastInteraction'], '%Y-%m-%d %H:%M:%S').date()
         if datetime.now().date() - last_interaction >= timedelta(days=us.get_num_days_reminder(user['id'])):
-            await bot.send_message(chat_id=user['id'], text="Hey! It's been a while since we last talked. How about a chat to keep up with your sustainable habits and discover new recipe? Just write me something and I'll be here for you!")
+            # traduciamo il messaggio da inviare in base alla lingua dell'utente
+            await bot.send_message(chat_id=user['id'], text=lcs.translate_text(con.REMINDER,user['language']))
 
     # Rimuove job esistenti con lo stesso ID (per evitare duplicati)
     job_id = f"user_reminder_{user['id']}"
@@ -341,14 +331,11 @@ async def callback(update: Update, context: CallbackContext) -> None:
     
     context = update_context(context,response)
 
-
     # ELIMINA IL MESSAGGIO CON I BOTTONI
     #await update.callback_query.message.delete()
 
     # ELIMINA SOLO I BOTTONI E LASCIA IL MESSAGGIO DEL MENU
     await update.callback_query.message.edit_reply_markup(reply_markup=None)
-
-
 
 
 def main() -> None:
@@ -379,18 +366,13 @@ def main() -> None:
     # Handle the case when a user sends /start but they're not in a conversation
     application.add_handler(CommandHandler('start', start))
 
-    ###################
+    # Handle callback of the menu buttons
     application.add_handler(CallbackQueryHandler(callback))
-    ####################
 
     # configuriamo lo scheduler (che verrà eseguito in background su un thread separato)
     scheduler = BackgroundScheduler()
 
     #reminder scheduled to be sent every day at 12:00 if the user hasn't interacted in the last 2 days
-    
-    # VERSIONE VECCHIA : TUTTI GLI UTENTI UGUALI
-    # scheduler.add_job(lambda: asyncio.run(send_reminder(application)), 'cron', hour=12, minute=00)
-
     # VERSIONE NUOVA : PERSONALIZZATO IN BASE ALL'UTENTE
     users = us.get_all_users_with_reminder()
     for user in users:
@@ -401,9 +383,9 @@ def main() -> None:
 
     scheduler.start()
 
-    # per restare in attesa di messagggi (gestiti dalle funzioni asincrone)
     application.run_polling()
 
-
+    
 if __name__ == '__main__':
     main()
+

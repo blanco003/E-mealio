@@ -931,7 +931,7 @@ Follow these steps to produce the output:
 """
 ####################################################################################################################
 
-
+REMINDER = "Hey! It's been a while since we last talked. How about a chat to keep up with your sustainable habits and discover new recipe? Just write me something and I'll be here for you!"
 
 #TOKENS############################################################################################################
 
