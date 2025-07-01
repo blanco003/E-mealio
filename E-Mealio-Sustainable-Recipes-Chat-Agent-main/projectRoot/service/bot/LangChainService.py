@@ -279,12 +279,12 @@ def translate_info(info, input_language, fields_to_translate = None):
     Data una stringa rappresentante un json, traduce i valori dei campi dalla lingua di partenza data in input all'inglese.
     """
 
-    if input_language.lower() == "english":
+    if input_language.lower() == "english" or input_language.lower() == "en" :
         print("\nfunz. translate_info : restituito direttamente")
         return info
 
     if fields_to_translate == None :
-        translation_prompt = f"I valori dei campi nella seguente stringa, in formato JSON, sono scritti in {input_language}. Riscrivili in inglese, mantenendo la struttura originale e senza aggiungere spiegazioni o commenti. Se sono scritti già in inglese non c'è bisogno di tradurli, puoi restituirli direttamente."
+        translation_prompt = f"I valori dei campi nella seguente stringa, in formato JSON, sono scritti in {input_language}. Riscrivili in inglese, mantenendo la struttura originale e senza aggiungere spiegazioni o commenti."
     else:
         translation_prompt = f"I valori dei campi {fields_to_translate} nella seguente stringa, in formato JSON, sono scritti in {input_language}. Riscrivili in inglese, mantenendo la struttura originale e senza aggiungere spiegazioni o commenti." 
     
