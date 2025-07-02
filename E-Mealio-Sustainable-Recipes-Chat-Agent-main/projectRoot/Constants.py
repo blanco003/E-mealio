@@ -748,14 +748,13 @@ Follow these steps to produce the output:
   Take into account the following allergies {allergies} and dietary restrictions {restrictions} to avoid trivial or irrelevant comparisons for the user.
   Use information about the carbon footprint and water footprint of the ingredients to support your explanation, but keep it simple and understandable. 
   Refer to numbers of CFP and WFP, but also provide an idea of whether those values are good or bad for the environment.
+  Use the ingredients translated in the user language internally, but do not include a list of ingredients in the output.
   
   The sustainability score is such that the lower the value, the better the recipe is for the environment. It ranges from 0 to 1.
   Use a bulleted list for each concept, and use an emoji to represent it.
 
   Do not provide it explicitly but use a Likert scale to describe it printing from 0 to 5 stars (use ascii stars, using black stars as point and white stars as filler).
-
-  To enhance the perceived reliability of the information about the recipe provide the URL that redirects to the source where you found the information.
-
+  
 Be succinct, using up to 200 words.
 Maintain a respectful and polite tone."""
 
@@ -769,8 +768,14 @@ Follow these steps to produce the output:
   Take into account the following allergies {allergies} and dietary restrictions {restrictions} to avoid trivial or irrelevant comparisons for the user.
   Use information about the ingredients to support your explanation, but keep it simple and understandable. 
   Refer to numbers but also provide an idea of whether those values are good or bad for the environment.
+  Use the ingredients translated in the user language internally, but do not include a list of ingredients in the output.
   
+  The who score, a score based on the World Health Organization methodology, is used to express the overall nutritional quality of the recipe, such that the higher the value, the healthier the recipe. It ranges from 0 to 1.
+  Do not provide it explicitly but use a Likert scale to describe it printing from 0 to 5 stars (use ascii stars, using black stars as point and white stars as filler). Use this value to reinforce the overall nutritional quality of the recipe. Mention to what it refers. 
+
   Use a bulleted list for each concept, and use an emoji to represent it.
+
+  Do not provide it explicitly but use a Likert scale to describe it printing from 0 to 5 stars (use ascii stars, using black stars as point and white stars as filler).
 
 Be succinct, using up to 200 words.
 Maintain a respectful and polite tone."""
