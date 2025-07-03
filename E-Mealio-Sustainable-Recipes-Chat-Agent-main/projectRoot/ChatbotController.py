@@ -417,6 +417,11 @@ def answer_question(userData,userPrompt,token,memory,info):
 
         result_ingredient = list(set(base_ingredient_list + imp_ingredient_list))
 
+        # filtra eventuali messaggi vuoti : caso in cui l'utente chiede un altro miglioramento ma considerando la stessa ricetta
+        if memory is not None:
+            memory.messages = [m for m in memory.messages if m.content and m.content.strip()]
+  
+
         if(improvedRecipe != 'null'):
             
             # recupera le fonti degli ingredienti usati
