@@ -344,16 +344,13 @@ Follow these steps to produce the output:
 - If the user asks a question about the food suggestion previously provided: 
   Print the string "TOKEN 2.20", then answer the question and persuade the user to accept the suggestion by explicitly asking if they want to eat the suggested food.
 
+- If the user asks for a new food suggestion, print the string "TOKEN 2.05", then print a JSON with the information previously collectet. Include every field, but set the absent information as an empty string (for atomic fields) or an empty list (for list fields).
 - If the user likes the recipe and wants to accept the suggestion with a substitution of ingredients that you have proposed in your last message, for example  "you could use ingredient x" instead of "ingredient y", or just adding or removing any ingredients, print the string "TOKEN 2.25", then print a JSON with both the ingredients that the you said in your last message to remove and add, in two fields named ingredients_to_remove and ingredients_to_add (translate the ingredients in english). 
 - If the user likes the recipe and wants to accept the suggestion with a substitution of ingredients, for example specifying that he will use "ingredient x" instead of "ingredient y", or just with adding or removing any ingredients, print the string "TOKEN 2.25", then print a JSON with both the ingredients that the user wants to remove and add, in two fields named ingredients_to_remove and ingredients_to_add (translate the ingredients in english). 
-
 - If the user likes the recipe and/or accepts the suggestion, print the string "TOKEN 2.30". Do not write anything else.
-
+- If the user doesnt like the recipe and asks for a new food suggestion, print the string "TOKEN 2.05", then print a JSON with the information previously collectet. Include every field, but set the absent information as an empty string (for atomic fields) or an empty list (for list fields).
 - If the user doesnt like the recipe and want to add new costraints, print the string "TOKEN 2.05", then print a JSON with both the information previously collected and add the new one by adding them together. Include every field, but set the absent information as an empty string (for atomic fields) or an empty list (for list fields).
-
 - If the user declines the suggestion, print the string "TOKEN 2.40". Do not write anything else.
-
-- If the user asks for a new food suggestion, print the string "TOKEN 2.50". Do not write anything else.
 
 - If the user asks or tells something completely unrelated to the current suggestion, follow these steps to produce the output :
   """ + HANDLE_LOOP_STATE + """
@@ -369,7 +366,7 @@ Communicate with the user in the following language : {language}.
 Follow these steps to produce the output:
 
 - Print the string "TOKEN 3.10", welcome the user to the Recipe Improvement Functionality, then continue by providing a detailed explanation of it, and ask the user for the information needed to star using this functionality. 
-     Don't mention about improving factors that are not implemented, for example the flavor/consistency or the instructions of the recipes, but only specify that the improvement is in terms of sustainability.
+     Don't mention about improving factors that are not implemented, for example the flavor/consistency, instructions of the recipes or quantities of the ingredients, but only specify that the improvement is in terms of sustainability.
      Do NOT mention the number of the task, just the functionality.
      Conclude adding a reminder about using the /start command to return to the main menu and view the list of available functionalities.
 """
@@ -472,13 +469,12 @@ Follow these steps to produce the output:
 - If the user asks questions about the recipe improvement previously provided: 
   Print the string "TOKEN 3.30", then answer to the question, and persuade them to accept the consumption of the improved recipe.
 
+- If the user asks for a new improvement based for the same base recipe, print the string "TOKEN 3.10", then print a JSON with the information previously collected, name and improving_factor. Include every field, but set the absent information as an empty string (for atomic fields) or an empty list (for list fields).
+- If the user asks for a new improvement suggestion with a different base recipe, print the string "TOKEN 3.60". Do not write anything else.
 - If the user likes the recipe and wants to accept the improvement suggestion with a substitution of ingredients, for example specifying that he will use "ingredient x" instead of "ingredient y", or just with adding or removing any ingredients, print the string "TOKEN 3.35", then print a JSON with both the ingredients that the user wants to remove and add, in two fields named ingredients_to_remove and ingredients_to_add (translate the ingredients in english). 
-
 - If the user likes the recipe and/or accepts the improvement suggestion, print the string "TOKEN 3.40". Do not write anything else.
-
 - If the user declines the improvement suggestion, print the string "TOKEN 3.50". Do not write anything else.
 
-- If the user asks for a new improvement suggestion, print the string "TOKEN 3.60". Do not write anything else.
 
 - If the user asks or tells something unrelated to the current improvement, follow these steps to produce the output :
   """ + HANDLE_LOOP_STATE + """
